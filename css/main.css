@@ -1,0 +1,17 @@
+.events_plinth{
+	height: 3000px;
+	background-color: grey;
+}
+
+#img1{
+	position: fixed;
+	left: 40%;
+	top: 150px;	
+}
+
+#img2{
+	position: fixed;
+	left: 40%;
+	top: 150px;
+	display: none;
+}
