@@ -3,13 +3,29 @@
 	background-color: grey;
 }
 
-#img1{
+.oxxx{
 	position: fixed;
 	left: 40%;
-	top: 150px;	
+	top: 150px;
+	z-index: 4;	
+}
+#line1{
+	position: relative;
+	top: -122px;
+	left: -210px;
+	z-index: 1;
+}
+#img1{
+	z-index: 4;
+}
+#name1{
+	position: relative;
+	top: -200px;
+	left: -370px;
 }
 
-#img2{
+
+.oxxx2{
 	position: fixed;
 	left: 40%;
 	top: 150px;
