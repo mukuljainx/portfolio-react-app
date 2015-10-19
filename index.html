@@ -1,32 +1,140 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Plinth</title>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Compiled and minified CSS -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/animateModal/css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/animateModal/css/animate.min.css">
+  	<link rel="stylesheet" href="assets/materialize/css/materialize.css">
+  	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  	<!-- Compiled and minified JavaScript -->
+  	<script src="assets/materialize/js/materialize.js"></script>
 
-<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-<link rel="stylesheet" href="./css/main.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+
+	<title>conf.kde.in 2016</title>
+
 </head>
-<body ng-app="Plinth2016">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<div class="events_plinth" ng-controller="EventController">
-<div class="main_events" ng-repeat="poly in polys">
-<main-pole info="poly"></main-pole>
-</div>
-<div class="sub_events" ng-repeat="sub in compt">
-<main-pole info="sub"></main-pole>
-</div>
-</div>
+<body>
+	<nav>
+	  <div class="nav-wrapper">
+	    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	    <ul class="right hide-on-med-and-down">
+	      <li class="active"><a id="d1" href="#">HOME</a></li>
+	      <li><a class="d1" href="#about">ABOUT</a></li>
+	      <li><a class="d2" href="#schedule">SCHEDULE</a></li>
+	      <li><a class="d3" href="#cfp">CFP</a></li>
+	      <li><a class="d4" href="#speakers">SPEAKERS</a></li>
+	      <li><a class="d5" href="#faqs">FAQS</a></li>
+	      <li><a class="d6" href="#sponsers">SPONSERS</a></li>
+	      <li><a class="d7" href="#location">LOCATION</a></li>
+	      <li><a class="d8" href="#contactus">CONTACT-US</a></li>
+	    </ul>
+	    <ul class="side-nav" id="mobile-demo">
+	      <li class="active"><a href="#">HOME</a></li>
+	      <li><a class="d1" href="#about">ABOUT</a></li>
+	      <li><a class="d2" href="#schedule">SCHEDULE</a></li>
+	      <li><a class="d3" href="#cfp">CFP</a></li>
+	      <li><a class="d4" href="#speakers">SPEAKERS</a></li>
+	      <li><a class="d5" href="#faqs">FAQS</a></li>
+	      <li><a class="d6" href="#sponsers">SPONSERS</a></li>
+	      <li><a class="d7" href="#location">LOCATION</a></li>
+	      <li><a class="d8" href="#contactus">CONTACT-US</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="wrap">
 
-<!-- Modules -->
-    <script src="js/app.js"></script>
+	<div class= "container"></div>
+		<div id="home">
+			<div id="typed-content">
+			</div>
+			
+		</div>
+	</div>
 
-    <!-- Controllers -->
-    <script src="js/controllers/EventController.js"></script>
 
-    <!-- Directives -->
-    <script src="js/directives/mainPole.js"></script>
+	<div id="about">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+            
+        <div class="modal-content container">
+
+        	<h3 class="myh3">
+        	Conf.kde.in '16
+        	</h3>
+        	<p>As with the previous editions, conf.kde.in is a platform for Qt/KDE contributors, developers and enthusiasts to come together, share their knowledge, contribute, learn and play. Most importantly it's an excellent arena for collaboration and exchange of ideas, skills and thoughts among like minded people passionate about open source in general.
+
+conf.kde.in is an awesome opportunity for any student who is passionate to experience the magic of open source. Here you can meet the veterans in open source software development, develop professional connections which , for sure, will help you a great deal in future, chat with student contributors who can guide you , present in front of a grand audience (wow!) and most importantly grasp the essence of open source development. It is indeed a ‘never miss’ opportunity that will give you a strong foundation to build on! </p>
+
+			<br><a class="waves-effect waves-light btn orange">Participate</a>&nbsp;&nbsp;&nbsp;<a class="waves-effect waves-light btn orange">Speak</a>
+
+        </div>
+    </div>
+
+    <div id="cfp">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+
+            
+        <div class="modal-content container">
+
+        	<h3 class="myh3">
+        	Call For Papers
+        	</h3>
+        	<p>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Conf.kde.in welcomes you to submit your talk proposals. It is an event primarily focused on KDE/Qt and we welcome talks that cover the technical aspects of KDE software collection and those that discuss our community and it's values or even talks around our FOSS culture.</p>
+
+			<p>Every speaker would be given 30 minutes to present the talk including Q&A. For convenience, speakers are expected to use their laptops during the course of their presentation. Internet and projectors would be provided during the presentation.</p>
+
+			<p>We are also working on providing travel and accommodation assistance for speakers. Please leave a comment in the CFP form if you'd like to get assistance for the same.</p>
+
+			<p><b>Sounds exciting?</b> Sign up for a <a href="#">KDE identity account</a> and <a href="#">Propose a Session</a> now.</p>
+
+			<b>Note: The proposal submission period closes on the 20 March 2015.</b> </p>
+
+			
+
+        </div>
+    </div>
+
+
+    <div id="faqs">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->            
+        <div class="modal-content container">
+
+        	<h3 class="myh3">
+        	Frequently Asked Questions
+        	</h3>
+        	
+
+        	<b>Que.) What is the registration fee for the event ?</b><br>
+        	You should visit <a href="http://cki2015.doattend.com/">http://cki2015.doattend.com/</a><br><br>
+
+        	<b>Que.) What about my accommodation ?</b><br>
+        	
+
+        	Accommodation will be provided in the college hostels and the Ashram at a cost of Rs 50 /- . You may however, choose to stay in nearby lodges.<br>
+
+        	Refer to the accommodation page for further info.<br><br>
+
+        	<b>Que.) What all do I need to bring ?</b><br>
+        	Please Do Bring:<br><ul>
+        	<li> Id cards</li>
+        	<li>Laptops (recommended)</li>
+        	<li><a href="#">Doattend Registration receipt</a></li>
+        	</ul>
+        	<b>Que.) How to I get to Jaipur?</b><br>
+        	Please refer to: <a href="#">How to reach Us</a><br>
+
+			<br><a class="waves-effect waves-light btn orange">READ MORE</a>
+        </div>
+    </div>
+
+	</div>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script src="assets/animateModal/js/animatedModal.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+
+
 </body>
 </html>
