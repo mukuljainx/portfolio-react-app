@@ -111,7 +111,7 @@ $(window).scroll(function() {
      
  });
 
-$("#img1").click(function(){
+$( "body" ).delegate( "#img1", "click", function() {
         $('#event1').css("-webkit-transform" , "translate(-120%,-100px)");
         $('#event2').css("-webkit-transform" , "translate(120%,-100px)");
         $('#event3').css("-webkit-transform" , "translate(-60%,-100px)");
