@@ -113,3 +113,26 @@ nav ul a{
 	padding: 10px 20% 0 20%;
 	line-height: 1.5em;
 }
+
+nav a.button-collapse{
+	display: inline !important;}
+
+#liveclock{
+	float: right;
+	color: white;
+	font-weight: 400;
+	margin-right: 10px;
+	font-size: 14px; 
+}
+
+#tophead{
+	margin-left: 40%;
+	/*border-bottom: 1px solid white;
+	border-top: 1px solid white;*/
+	padding: 0px 10px;
+	border-left: 4px double white;
+	border-right: 4px double white;
+	color: white;
+	font-weight: 350;
+	font-size: 20px;
+}

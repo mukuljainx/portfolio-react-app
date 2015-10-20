@@ -14,23 +14,12 @@
 	<title>conf.kde.in 2016</title>
 
 </head>
-<body ng-app="KDE">
-	<div class="navbar-fixed">
+<body ng-app="KDE" onload="startTime()">
+<div class="navbar-fixed">
 	<nav>
-	  <div class="nav-wrapper">
-	    <a href="#" ng-click="navbar();" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	    <ul class="right hide-on-med-and-down">
-	      <li class="active" class="d1"><a  href="#/">HOME</a></li>
-	      <li class="d2"><a  href="#/about">ABOUT</a></li>
-	      <li class="d3"><a href="#/schedule">SCHEDULE</a></li>
-	      <li class="d4"><a href="#/cfp">CFP</a></li>
-	      <li class="d5"><a href="#/speakers">SPEAKERS</a></li>
-	      <li class="d6"><a href="#/faqs">FAQS</a></li>
-	      <li class="d7"><a href="#/sponsers">SPONSERS</a></li>
-	      <li class="d8"><a href="#/location">LOCATION</a></li>
-	      <li class="d9"><a href="#/contactus">CONTACT-US</a></li>
-	    </ul>
+	    <a href="#"  data-activates="mobile-demo" class="button-collapse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="material-icons">toc</i></a>
 	    <ul class="side-nav" id="mobile-demo">
+	      <img src="./media/images/logo.png" width="50px" height="50px">
 	      <li class="active"><a href="#">HOME</a></li>
 	      <li><a class="d1" href="#/about">ABOUT</a></li>
 	      <li><a class="d2" href="#/schedule">SCHEDULE</a></li>
@@ -41,9 +30,9 @@
 	      <li><a class="d7" href="#/location">LOCATION</a></li>
 	      <li><a class="d8" href="#/contactus">CONTACT-US</a></li>
 	    </ul>
-	  </div>
-	</nav>	</div>
-
+	    <span id="tophead">Conf.Kde.In</span>
+	    <span id="liveclock"></span> 
+	</nav></div>
 	<div ng-view></div>
 
 
@@ -60,6 +49,7 @@
   	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   	<script src="assets/materialize/js/materialize.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
+    <script type="text/javascript" src="js/liveclock.js"></script>
 
 
 </body>
