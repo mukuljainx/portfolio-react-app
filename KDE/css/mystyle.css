@@ -1,0 +1,115 @@
+html, body{
+	width:100%;
+	height:100%;
+	font-size: 14px;
+	background-size: 100% 150%;
+}
+.wrap{
+	height: 100%;
+	width: 100%;
+}
+#typed-content{
+	font-size:3em;
+	font-weight: 5;
+	color:#fff;
+	text-align: center;
+	padding: 10% 0;
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.closebt-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.closebt {
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+.closebt:hover{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+.modal-content{
+	padding-top:1%;
+	color:#ffffff;
+	font-weight: 6;
+	font-size: 20px;
+	margin-bottom: 30px;
+
+}
+.myh3{
+	text-align: center;
+	padding:7px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 3%;
+}
+
+nav,.nav-wrapper{
+	background-color:#1976D2;
+	box-shadow: 5px 10px 4px #888888;	
+	color: black !important;
+}
+
+.right{
+	width: 56%;
+	margin-right: 20.5%;
+	min-width: 810px;
+	background-color: rgba(0,0,0,0);
+	color: black !important;
+}
+
+nav ul a{
+	color: black;
+}
+
+.about_img{
+	background-image: url('http://schoolbook.getmyuni.com/assets/images/rev_img/8456__3010/1439807505lnmiit-admissions.png');
+	background-size: 100% 100%;
+	height: 400px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.cfb_x{
+	background-image: url('https://www.wrike.com/blog/wp-content/uploads/2015/07/martech-conference-guide.jpg');
+	position: fixed;
+	background-size: 100% 100%;
+	width: 100%;
+	height: calc(100%);
+}
+
+.cardxxx{
+	position: relative;
+	width: 90%;
+	height: calc(100%);
+	left: 5%;
+	}
+
+.ceter{
+	border: 1px solid;
+	padding: 10px 20% 0 20%;
+	line-height: 1.5em;
+}
