@@ -20,7 +20,7 @@ app.config(function($routeProvider)
 		templateUrl : 'views/cfp.html'
 	})
 	.when('/speakers',{
-		controller : 'MainController',
+		controller : 'SpeakersController',
 		templateUrl : 'views/speakers.html'
 	})
 	.when('/faqs',{

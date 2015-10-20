@@ -1,0 +1,24 @@
+<div id="margin"></div>
+
+<div ng-repeat="speaker in speakers">
+
+<div class="col s12 m3">  
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://www.davidhill.co/wp-content/uploads/2015/08/ps.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">{{speaker.name}} 
+      <i class="material-icons right">more_vert</i></span>
+      <img src="./media/images/fb.svg" width="30px" height="30px">
+      <img src="./media/images/tw.svg" width="30px" height="30px">
+      <img src="./media/images/in.svg" width="30px" height="30px">
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{speaker.name}}<i class="material-icons right">close</i></span>
+      <p>{{speaker.info}}</p>
+    </div>
+  </div>
+</div>
+
+</div>
