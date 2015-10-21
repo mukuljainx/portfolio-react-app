@@ -21,17 +21,17 @@ $("#DateCountdown").TimeCircles({
     "time": {
         "Days": {
             "text": "Days",
-            "color": "#FFCC66",
+            "color": "#F44336",
             "show": true
         },
         "Hours": {
             "text": "Hours",
-            "color": "#99CCFF",
+            "color": "#2196F3",
             "show": true
         },
         "Minutes": {
             "text": "Minutes",
-            "color": "#BBFFBB",
+            "color": "#FFC107",
             "show": true
         },
         "Seconds": {

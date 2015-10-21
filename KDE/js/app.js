@@ -31,6 +31,10 @@ app.config(function($routeProvider)
 		controller : 'MainController',
 		templateUrl : 'views/sponsors.html'
 	})
+	.when('/location',{
+		controller : 'MainController',
+		templateUrl : 'views/location.html'
+	})
 	.when('/contactus',{
 		controller : 'MainController',
 		templateUrl : 'views/contactus.html'

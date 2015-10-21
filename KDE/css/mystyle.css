@@ -4,68 +4,6 @@ html, body{
 	font-size: 14px;
 	background-size: 100% 150%;
 }
-.wrap{
-	height: 100%;
-	width: 100%;
-}
-#typed-content{
-	font-size:3em;
-	font-weight: 5;
-	color:#fff;
-	text-align: center;
-	padding: 10% 0;
-}
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-.closebt-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-}
-.closebt {
-    transition: all 0.2s ease 0s;
-    cursor: pointer;
-}
-.closebt:hover{
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-}
-.modal-content{
-	padding-top:1%;
-	color:#ffffff;
-	font-weight: 6;
-	font-size: 20px;
-	margin-bottom: 30px;
-
-}
-.myh3{
-	text-align: center;
-	padding:7px;
-	border-top: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	margin-bottom: 3%;
-}
 
 nav,.nav-wrapper{
 	background-color:#1976D2;
@@ -85,13 +23,6 @@ nav ul a{
 	color: black;
 }
 
-.about_img{
-	background-image: url('http://schoolbook.getmyuni.com/assets/images/rev_img/8456__3010/1439807505lnmiit-admissions.png');
-	background-size: 100% 100%;
-	height: 400px;
-	width: 90%;
-	margin-left: 5%;
-}
 
 .cfb_x{
 	background-image: url('https://www.wrike.com/blog/wp-content/uploads/2015/07/martech-conference-guide.jpg');
@@ -167,3 +98,75 @@ nav a.button-collapse{
 	margin-bottom: -8px;
 
 }
+
+.about_img{
+	background-image: url('http://schoolbook.getmyuni.com/assets/images/rev_img/8456__3010/1439807505lnmiit-admissions.png');
+	background-size: 100% 100%;
+	height: 400px;
+	width: 100%;
+}
+
+#aboutus{
+	position: absolute;
+	top: 300px;
+	margin-left: 14%;
+
+}
+
+#aboutus>p{
+
+	width: 70%;
+	margin-left: 15%;
+}
+
+.cfb_img{
+	background-image: url('http://www.dumblittleman.com/wp-content/uploads/2014/04/Fear-of-Public-Speaking.jpg');
+	background-size: 100% 140%;
+	height: 400px;
+	width: 100%;
+}
+
+
+#location{
+	position: absolute;
+	top: 500px;
+	margin-left: 14%;
+
+}
+
+
+  /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #1976D2;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #1976D2;
+     box-shadow: 0 1px 0 0 #1976D2;
+   }
+   .input-field input[type=email]:focus + label {
+     color: #1976D2;
+   }
+
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #1976D2;
+     box-shadow: 0 1px 0 0 #1976D2;
+   }
+
+   .input-field input[type=text]:focus + label {
+     color: #1976D2;
+   }
+
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #1976D2;
+     box-shadow: 0 1px 0 0 #1976D2;
+   }
+
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #1976D2;
+   }
