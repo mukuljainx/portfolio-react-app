@@ -1,0 +1,261 @@
+app.controller('EventController',['$scope', function($scope){
+
+	$scope.polys = [
+	{
+		name  : 'competition',
+		classx: 'eventx',
+		evenx : 'event1',
+		imgid : 'comptimg',
+		url   :  '#a',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'MUN',
+		classx: 'eventx',
+		evenx : 'event2',
+		imgid : 'munimg',
+		url   :  '#b',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Workshops',
+		classx: 'eventx',
+		evenx : 'event3',
+		imgid : 'workimg',
+		url   :  '#c',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Talks',
+		classx: 'eventx',
+		evenx : 'event4',
+		imgid : 'talkimg',
+		url   :  '#d',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Exhibations',
+		classx: 'eventx',
+		evenx : 'event5',
+		imgid : 'exhimg',
+		url   : '#e',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	}];
+
+	$scope.compt = [
+	{
+		name  : 'Robotics',
+		classx: 'eventy',
+		evenx : 'eventy1',
+		imgid : 'img1xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Management',
+		classx: 'eventy',
+		evenx : 'eventy2',
+		imgid : 'img2xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Literary',
+		classx: 'eventy',
+		evenx : 'eventy3',
+		imgid : 'img3xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Astronomy',
+		classx: 'eventy',
+		evenx : 'eventy4',
+		imgid : 'img4xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Coding',
+		classx: 'eventy',
+		evenx : 'eventy5',
+		imgid : 'img5xxxx',
+		url   : '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	}];
+
+	$scope.workshops = [
+	
+	{
+		name  : 'workshop1',
+		classx: 'workshopevent',
+		evenx : 'workevent1',
+		imgid : 'img1xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'workshop2',
+		classx: 'workshopevent',
+		evenx : 'workevent2',
+		imgid : 'img2xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'workshop3',
+		classx: 'workshopevent',
+		evenx : 'workevent3',
+		imgid : 'img3xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'workshop4',
+		classx: 'workshopevent',
+		evenx : 'workevent4',
+		imgid : 'img4xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'workshop5',
+		classx: 'workshopevent',
+		evenx : 'workevent5',
+		imgid : 'img5xxxx',
+		url   : '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	}];
+
+	$scope.talks = [
+	
+	{
+		name  : 'talk1',
+		classx: 'talkevent',
+		evenx : 'talkevent1',
+		imgid : 'img1xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'talk2',
+		classx: 'talkevent',
+		evenx : 'talkevent2',
+		imgid : 'img2xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'talk3',
+		classx: 'talkevent',
+		evenx : 'talkevent3',
+		imgid : 'img3xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'talk4',
+		classx: 'talkevent',
+		evenx : 'talkevent4',
+		imgid : 'img4xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'talk5',
+		classx: 'talkevent',
+		evenx : 'talkevent5',
+		imgid : 'img5xxxx',
+		url   : '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	}];
+
+	$scope.exhibations = [
+	
+	{
+		name  : 'exhibation1',
+		classx: 'exhibationevent',
+		evenx : 'exhevent1',
+		imgid : 'img1xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'exhibation2',
+		classx: 'exhibationevent',
+		evenx : 'exhevent2',
+		imgid : 'img2xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'exhibation3',
+		classx: 'exhibationevent',
+		evenx : 'exhevent3',
+		imgid : 'img3xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'exhibation4',
+		classx: 'exhibationevent',
+		evenx : 'exhevent4',
+		imgid : 'img4xxxx',
+		url   :  '##',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	}];
+
+	$scope.funevents = [
+	{
+		name  : 'School Outreach Program',
+		classx: 'funevent',
+		evenx : 'funevent1',
+		imgid : 'img1xxxx',
+		url   :  '##x',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'Informals',
+		classx: 'funevent',
+		evenx : 'funevent2',
+		imgid : 'img2xxxx',
+		url   :  '##y',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	},
+	{
+		name  : 'More...',
+		classx: 'funevent',
+		evenx : 'funevent3',
+		imgid : 'img3xxxx',
+		url   : '##z',
+		mimg  : 'media/images/1.png',
+		limg  : 'media/images/line.png',
+	}];
+
+}]);

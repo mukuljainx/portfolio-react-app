@@ -1,0 +1,20 @@
+#welcome{
+	position: relative;
+	height: 600px;
+	width: 100%;
+	background-color: pink;
+}
+
+#ending{
+	position: relative;
+	height: 700px;
+	width: 100%;
+	background-color: blue;
+}
+
+.simple_page{
+
+	width: 100%;
+	height: 500px;
+	background-color: black;
+}
