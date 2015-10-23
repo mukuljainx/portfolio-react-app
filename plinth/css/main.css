@@ -1,16 +1,51 @@
-#welcome{
-	position: relative;
-	height: 600px;
-	width: 100%;
-	background-color: pink;
+nav{
+	background-color: rgba(0,0,0,0)
 }
 
-#ending{
+#welcome{
 	position: relative;
-	height: 700px;
+	margin-top: -64px;
+	height: 100%;
 	width: 100%;
-	background-color: blue;
+	background-image: url('../media/images/welcome.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
 }
+
+.events_plinth{
+	height: 10000px;
+	background-color: grey;
+}
+
+.video_container{
+	width: 50%;
+	margin-top: 64px;
+	margin-left: 25%;
+}
+
+#social_nav>img{
+	width: 50px;
+	height: 50px;
+}
+
+#contact_us_btn{
+
+	margin-top: 30px;
+	background-color: #3F51B5; 
+}
+
+#social_nav{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#contactus{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
 
 .simple_page{
 

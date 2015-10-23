@@ -7,13 +7,35 @@
 
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="stylesheet" href="./css/event.css" />
 	<link rel="stylesheet" href="./css/animate.css" />
+	<link rel="stylesheet" href="./css/event.css" />
+	<link rel="stylesheet" href="./css/main.css" />
 
 </head>
 
 <body ng-app="Plinth2016">
+
+<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+     		<a href="#" class="brand-logo">Logo</a>
+     		<a href="##" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+     		<ul id="nav-mobile" class="right hide-on-med-and-down">
+      			<li><a href="##">Home</a></li>
+      	 		<li><a href="##">About</a></li>
+        		<li><a href="##">Events</a></li>
+        		<li><a href="##">FAQ</a></li>
+        		<li><a href="##">Contact Us</a></li>
+      		</ul>
+      		<ul class="side-nav" id="mobile-demo">
+        		<li><a href="##">Home</a></li>
+        		<li><a href="##">About</a></li>
+        		<li><a href="##">Events</a></li>
+        		<li><a href="##">FAQ</a></li>
+        		<li><a href="##">Contact Us</a></li>
+      </ul>
+    	</div>
+	</nav></div>
 
 <div id="welcome"></div>
 
@@ -43,7 +65,22 @@
 </div>
 
 
-<div id="ending"></div>
+<div id="contactus">
+	<div class="video_container">
+	<div class="video-container">
+		<iframe src="https://youtube.com/embed/c-EC9shWzsY?autoplay=0&controls=0&showinfo=0&autohide=1"  frameborder="1" allowfullscreen></iframe>
+	</div>
+</div>
+<div class="center">
+	<a class="waves-effect waves-light btn" id="contact_us_btn">Contact Us</a>
+</div>  
+<div id="social_nav">
+	<img src="./media/images/fb.svg">
+    <img style="margin : 0 30px;" src="./media/images/tw.svg">
+	<img src="./media/images/gp.svg">
+</div>
+
+</div>
 
 	<!-- Modules -->
     <script src="js/app.js"></script>
@@ -56,8 +93,8 @@
 
     <!---JS-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/eventclick.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>

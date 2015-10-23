@@ -1,5 +1,12 @@
+$(".button-collapse").sideNav();
+
 
 $(window).scroll(function() {
+
+     if($(this).scrollTop() < $('#welcome').height())
+     {
+        $('.eventx').hide();        
+     }
 
      if ($(this).scrollTop()<$( '#welcome').height() + 9000)
      {
@@ -51,7 +58,7 @@ $(window).scroll(function() {
      }
 
      if($(this).scrollTop()>$( '#welcome').height() + 3200)
-     {
+     {  
         $('#event3').fadeIn();
      }
      else{
@@ -111,24 +118,26 @@ $(window).scroll(function() {
 
      if($(this).scrollTop() < $( '#welcome').height() + 7200)
      {
-        $('#eventy1').fadeOut();
-        $('#eventy2').fadeOut();
-        $('#eventy3').fadeOut();
-        $('#eventy4').fadeOut();
-        $('#eventy5').fadeOut();
+        $('.eventy').fadeOut();
+        $('.workshopevent').fadeOut();
+        $('.exhibationevent').fadeOut();
+        $('.talkevent').fadeOut();
      }
 
      }
 
-     var hx = 9700 + screen.height * 0.35 + "px";
+     var hx = 9700 + screen.height * 0.55 + "px";
      // window.alert(hx);
 
-     if($(this).scrollTop() > 9700)
+     if($(this).scrollTop() > 9500)
      {
 
         $('.funevent').removeClass("fadeOutDown");
         $('.eventx').addClass("animated fadeOut");
         $('.eventy').addClass("animated fadeOut");
+        $('.workshopevent').addClass("animated fadeOut");
+        $('.talkevent').addClass("animated fadeOut");
+        $('.exhibationevent').addClass("animated fadeOut");
         $('.funevent').css("display","inline");
         $('.funevent').css("top", hx);
         $('.funevent').addClass("animated fadeInUp");
@@ -137,13 +146,18 @@ $(window).scroll(function() {
         $('.eventx').removeClass("fadeOut");
         $('.eventx').addClass("fadeIn");
         $('.eventy').removeClass("fadeOut");
-        $('.eventy').addClass("fadeIn");    
+        $('.eventy').addClass("fadeIn");
+        $('.workshopevent').removeClass("fadeOut");
+        $('.workshopevent').addClass("fadeIn");
+        $('.exhibationevent').removeClass("fadeOut");
+        $('.exhibationevent').addClass("fadeIn");
+        $('.talkevent').removeClass("fadeOut");
+        $('.talkevent').addClass("fadeIn");
         $('.funevent').removeClass("fadeInUp");
         $('.funevent').addClass("fadeOutDown"); 
      }
      
     });
-
 
 
 

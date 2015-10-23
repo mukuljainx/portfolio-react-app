@@ -1,9 +1,9 @@
 $( "body" ).delegate( "#comptimg", "click", function() {
         
-        $('.eventy').fadeIn();
         $('.workshopevent').fadeOut();
         $('.talkevent').fadeOut();
         $('.exhibationevent').fadeOut();
+        $('.eventy').fadeIn();
         
 
         setTimeout(
@@ -39,9 +39,9 @@ $( "body" ).delegate( "#comptimg", "click", function() {
 $( "body" ).delegate( "#workimg", "click", function() {
         
         $('.eventy').fadeOut();
-        $('.workshopevent').fadeIn();
         $('.talkevent').fadeOut();
         $('.exhibationevent').fadeOut();
+        $('.workshopevent').fadeIn();
 
         setTimeout(
   function() 
@@ -108,8 +108,8 @@ $( "body" ).delegate( "#talkimg", "click", function() {
         
         $('.eventy').fadeOut();
         $('.workshopevent').fadeOut();
-        $('.talkevent').fadeIn();
         $('.exhibationevent').fadeOut();
+        $('.talkevent').fadeIn();
 
         setTimeout(
   function() 
