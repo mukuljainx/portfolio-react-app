@@ -53,7 +53,7 @@ app.controller('EventController',['$scope', function($scope){
 		classx: 'eventy',
 		evenx : 'eventy1',
 		imgid : 'img1xxxx',
-		url   :  '##',
+		url   :  'events/compt.html',
 		mimg  : 'media/images/1.png',
 		limg  : 'media/images/line.png',
 	},
