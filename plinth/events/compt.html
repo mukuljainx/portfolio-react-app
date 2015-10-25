@@ -8,7 +8,8 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" href="../css/animate.css" />
-	<link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="dropdown.css" />
 
 </head>
 
@@ -17,7 +18,17 @@
 <div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-     		<a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;Robotics</a>
+        <samp id="event_head_head">Events|</samp>
+     		<div class="input-field col s12 event_menu">
+    <select>
+      <option value="1" selected>Robotics</option>
+      <option value="2" >Management</option>
+      <option value="3" >Coding</option>
+      <option value="4" >Quizzing</option>
+      <option value="5" >Astronomy</option>
+      <option value="6" >Literary</option>
+    </select>
+  </div></a>
      		<a href="##" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
      		<ul id="nav-mobile" class="right hide-on-med-and-down">
       			<li><a href="##">Home</a></li>
@@ -36,14 +47,41 @@
     	</div>
 	</nav></div>
 
-  <div class="events_menu row container card-panel hoverable">
-    <ul>
+
+
+  <div class="events_menu row container card-panel hoverable x1">
+    <ul id="Robotics">
       <a href="##"><li>Transporter</li></a>
       <a href="##"><li>Gird Solver</li></a>
       <a href="##"><li>Line Follower</li></a>
       <a href="##"><li>Lumos</li></a>
       <a href="##"><li>Robo Race</li></a>
     </ul>
+    <ul id="Management">
+      <a href="##"><li>Technovation</li></a>
+      <a href="##"><li>Ace in Venture</li></a>
+  </ul>
+  <ul id="Coding">
+      <a href="##"><li>IUPC</li></a>
+      <a href="##"><li>Distraction IUPC</li></a>
+      <a href="##"><li>Fix the Bug</li></a>
+    </ul>
+    <ul id="Quizzing">
+      <a href="##"><li>Biz Quiz</li></a>
+      <a href="##"><li>Modern India Quiz</li></a>
+      <a href="##"><li>Cricket WC Quiz</li></a>
+    </ul>
+    <ul id="Astronomy">
+      <a href="##"><li>Astro Hunt</li></a>
+      <a href="##"><li>Contrivance</li></a>
+      <a href="##"><li>Space Walk</li></a>
+    </ul>
+    <ul id="Literary">
+      <a href="##"><li>Dual Edge</li></a>
+      <a href="##"><li>Lyrewrite</li></a>
+      <a href="##"><li>Floor Crossing</li></a>
+    </ul>
+
   </div>
 
   <div ng-view class="view_div "></div>
