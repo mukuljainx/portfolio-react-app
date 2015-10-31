@@ -17,7 +17,7 @@
 
 .nav-wrapper{
 	font-family: roboto-light;
-	background-color: #0c46a0;
+	background-color: #2196F3;
 	text-align: center !important;
 }
 }
@@ -33,7 +33,7 @@
 
 .nav-wrapper>ul{
 	text-align: center !important;
-	
+
 }
 
 .nav-wrapper>ul>li{
@@ -149,7 +149,7 @@ section.module.parallax h1 {
 }
 
 #map{
-	background-color: #1875d1;
+	background-color: #2196F3;
 	height: 700px;
 }
 
@@ -170,10 +170,22 @@ footer.page-footer{
 }
 
 .collapsible-header:hover{
-	background-color: #006B61;
+	background-color: #2196F3;
 	color: white;
 }
 
 .collapsible-body{
-	color: #006B61;
+	color: #2196F3;
+}
+
+.btn{
+	background-color: #2196F3;
+}
+
+.custom_size{
+	font-size: 42px;
+}
+
+.downtown_size{
+	width: 100%;
 }

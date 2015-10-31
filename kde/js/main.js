@@ -39,6 +39,13 @@ $('.registerx').click(function(){
     return false;
 });
 
+$('.faqx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
 $('.locationx').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
