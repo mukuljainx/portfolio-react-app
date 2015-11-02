@@ -38,12 +38,12 @@ app.controller('EventController',['$scope', function($scope){
 		limg  : 'media/images/line.png',
 	},
 	{
-		name  : 'Exhibations',
+		name  : 'Exhibitions',
 		classx: 'eventx',
 		evenx : 'event5',
 		imgid : 'exhimg',
 		url   : '#e',
-		mimg  : 'media/images/exhibition.png',
+		mimg  : 'media/images/exhibitipng',
 		limg  : 'media/images/line.png',
 	}];
 

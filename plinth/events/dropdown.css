@@ -12,7 +12,12 @@
 }
 /*the sign which comes with dropdown*/
 .select-wrapper span.caret{
-	display: none;
+	display: inline;
+	color: white;
+	position: fixed;
+	left : 140px;
+	top: 2px;
+	width: 10px;
 }
 
 /*whole dropdown menu*/
@@ -33,4 +38,12 @@
 	float: left;
 	font-size: 2rem;
 	font-weight: 500;	
+}
+
+@media only screen and (max-width : 992px) {
+	.select-wrapper span.caret{
+	left : 165px;
+	
+}
+
 }

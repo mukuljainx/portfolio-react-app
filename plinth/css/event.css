@@ -30,6 +30,7 @@
 
 #event1{
 	z-index: 1;
+	display: inline;
 }
 #event2{
 	z-index: 5;
