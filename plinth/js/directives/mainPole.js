@@ -4,7 +4,8 @@ app.directive('mainPole', function() {
     scope: { 
       info: '=' 
     }, 
-    templateUrl: 'js/directives/mainpole.html' 
+    templateUrl: 'js/directives/mainpole.html',
+     
   }; 
 });
 

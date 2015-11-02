@@ -1,3 +1,10 @@
+.events_plinth{
+	height: 10500px;
+	background-color: #EEEEEE;
+	margin-top: -64px;
+}
+
+
 /*Main events*/
 
 .eventx{
@@ -10,11 +17,14 @@
 	position: relative;
 	top: -122px;
 	left: -210px;
+	display: hidden;
+	opacity: 0;
 }
 #name1{
 	position: relative;
-	top: -200px;
-	left: -370px;
+	top: 15px;
+	left: -265px;
+	text-align: center;
 }
 
 
@@ -34,6 +44,13 @@
 	z-index: 3;
 }
 
+#event4>#name1{
+	left: -245px;
+}
+#event2>#name1{
+	left: -245px;
+}
+
 /*Competition events*/
 
 .eventy{
@@ -41,108 +58,6 @@
 	left: 20%;
 	top: 70%;
 	display: none;
-}
-
-#line2{
-	position: relative;
-	top: 50px;
-	left: -210px;
-
-}
-
-
-#name2{
-	position: relative;
-	top: 46px;
-	left: -379px;
-}
-
-#eventy1{
-	z-index: 6;
-}
-#eventy2{
-	z-index: 7;
-}
-#eventy3{
-	z-index: 8;
-}
-#eventy4{
-	z-index: 9;
-}
-#eventy5{
-	z-index: 10;
-}
-
-/*workshops*/
-
-.workshopevent{
-	position: fixed;
-	left: 20%;
-	top: 70%;
-	display: none;
-}
-
-#workevent1{
-	z-index: 6;
-}
-#workevent2{
-	z-index: 7;
-}
-#workevent3{
-	z-index: 8;
-}
-#workevent4{
-	z-index: 9;
-}
-#workevent5{
-	z-index: 10;
-}
-
-/*talk events*/
-
-.talkevent{
-	position: fixed;
-	left: 20%;
-	top: 70%;
-	display: none;
-}
-
-#talkevent1{
-	z-index: 6;
-}
-#talkevent2{
-	z-index: 7;
-}
-#talkevent3{
-	z-index: 8;
-}
-#talkevent4{
-	z-index: 9;
-}
-#talkevent5{
-	z-index: 10;
-}
-
-/*exhibationevent*/
-
-.exhibationevent{
-	position: fixed;
-	left: 20%;
-	top: 70%;
-	display: none;
-}
-
-#exhevent1{
-	z-index: 6;
-}
-#exhevent2{
-	z-index: 7;
-}
-#exhevent3{
-	z-index: 8;
-}
-#exhevent4{
-	z-index: 9;
 }
 
 /*fun events*/
@@ -153,10 +68,22 @@
 	display: none;
 }
 
+#funevent1{
+	left: 43%;
+}
+
 #funevent2{
 	left: 15%;
 }
 
 #funevent3{
 	left: 70%;
+}
+
+#funevent1>#name1{
+	left: -310px;
+}
+
+#funevent3>#name1{
+	left: -250px;
 }

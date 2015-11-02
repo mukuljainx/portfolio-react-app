@@ -7,7 +7,6 @@ nav>ul>li{
 }
 
 
-
 .events_menu{
 	position: fixed;
 	width: 200px;
@@ -22,9 +21,10 @@ nav>ul>li{
 }
 	
 .events_menu>ul>a>li{
+	padding: 10px 0px !important;
 	padding-left: 20px !important;
 	border:1px solid white;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
 	color: grey;
 	padding: 4px 0px;
@@ -58,4 +58,22 @@ nav>ul>li{
 
 
 
-
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}

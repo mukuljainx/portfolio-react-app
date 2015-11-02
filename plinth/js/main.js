@@ -1,24 +1,30 @@
 $(".button-collapse").sideNav();
+$(".parallax").parallax();
 
+var lastPos = null,
+    timer = 0;
+
+function clear() {
+    lastPos = null;
+};
+
+window.onscroll = checkScrollSpeed;
+
+function checkScrollSpeed(){
+    var newPos = window.scrollY;
+    if ( lastPos != null ){ // && newPos < maxScroll 
+        var delta = newPos -  lastPos;
+        console.log(delta); // this is the result
+    }
+    lastPos = newPos;
+    timer && clearTimeout(timer);
+    timer = setTimeout(clear, 30);
+};
 
 $(window).scroll(function() {
 
-     if($(this).scrollTop() < $('#welcome').height())
-     {
-        $('.eventx').hide();        
-     }
 
-     if ($(this).scrollTop()<$( '#welcome').height() + 9000)
-     {
-     if($(this).scrollTop()>$( '#welcome').height())
-     {
-        $('#event1').fadeIn();
-     }
-     else{
-        $('#event1').fadeOut();
-     }
-
-    if ($(this).scrollTop()>$( '#welcome').height() + 200)
+    if ($(this).scrollTop()>  200)
      {
         $('#event1').fadeIn();
         $('#event1').css("-webkit-transform" , "translate(-120%)");
@@ -34,7 +40,7 @@ $(window).scroll(function() {
         $('#event1').css("-moz-transform" , "translate(0,0)");
      }
      
-     if($(this).scrollTop()>$( '#welcome').height() + 1200)
+     if($(this).scrollTop()>  1200)
      {
         $('#event2').fadeIn();
      }
@@ -42,7 +48,7 @@ $(window).scroll(function() {
         $('#event2').fadeOut();
      }
      
-     if ($(this).scrollTop()>$( '#welcome').height() + 2200)
+     if ($(this).scrollTop()>  2200)
      {
         $('#event2').css("-webkit-transform" , "translate(120%)");
         $('#event2').css("-webkit-transition" , "1.3s ease-in");
@@ -57,7 +63,7 @@ $(window).scroll(function() {
         $('#event2+').css("-moz-transform" , "translate(0,0)");
      }
 
-     if($(this).scrollTop()>$( '#welcome').height() + 3200)
+     if($(this).scrollTop()>  3200)
      {  
         $('#event3').fadeIn();
      }
@@ -65,7 +71,7 @@ $(window).scroll(function() {
         $('#event3').fadeOut();
      }
 
-     if ($(this).scrollTop()>$( '#welcome').height() + 4200)
+     if ($(this).scrollTop()>  4200)
      {
         $('#event3').css("-webkit-transform" , "translate(-60%)");
         $('#event3').css("-webkit-transition" , "1.3s ease-in");
@@ -80,7 +86,7 @@ $(window).scroll(function() {
         $('#event3').css("-moz-transform" , "translate(0,0)");
      }
 
-     if($(this).scrollTop()>$( '#welcome').height() + 5200)
+     if($(this).scrollTop()>  5200)
      {
         $('#event4').fadeIn();
      }
@@ -88,7 +94,7 @@ $(window).scroll(function() {
         $('#event4').fadeOut();
      }
 
-     if ($(this).scrollTop()>$( '#welcome').height() + 6200)
+     if ($(this).scrollTop()>  6200)
      {
         $('#event4').css("-webkit-transform" , "translate(60%)");
         $('#event4').css("-webkit-transition" , "1.3s ease-in");
@@ -103,7 +109,7 @@ $(window).scroll(function() {
         $('#event4').css("-moz-transform" , "translate(0,0)");
      }
 
-     if($(this).scrollTop()>$( '#welcome').height() + 7200)
+     if($(this).scrollTop()>  7200)
      {
         $('#event5').fadeIn();
         $('#event5').css("-webkit-transform" , "translate(0%)");
@@ -116,7 +122,7 @@ $(window).scroll(function() {
         $('#event5').fadeOut();
      }
 
-     if($(this).scrollTop() < $( '#welcome').height() + 7200)
+     if($(this).scrollTop() <   7200)
      {
         $('.eventy').fadeOut();
         $('.workshopevent').fadeOut();
@@ -124,7 +130,6 @@ $(window).scroll(function() {
         $('.talkevent').fadeOut();
      }
 
-     }
 
      var hx = 9700 + screen.height * 0.55 + "px";
      // window.alert(hx);
