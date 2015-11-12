@@ -51,12 +51,22 @@ $('.contactx').click(function(){
   );
 
 
-  var l_marginx = (window.innerWidth -235)/2;
+var l_marginx = (window.innerWidth -235)/2;
 document.getElementById("make_center").style.marginLeft = l_marginx + "px";
 
 $(window).resize(function(){
     var l_margin = (window.innerWidth -235)/2;
     document.getElementById("make_center").style.marginLeft = l_margin + "px";
+});
+
+var x_width = $("#com_container").width();
+alert(x_width);
+var x_marginx = (window.innerWidth -235)/2;
+document.getElementById("com_container").style.marginLeft = l_marginx + "px";
+
+$(window).resize(function(){
+    var x_margin = (window.innerWidth -235)/2;
+    document.getElementById("com_container").style.marginLeft = l_margin + "px";
 });
 
 
