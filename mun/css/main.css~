@@ -115,6 +115,7 @@ section.module.parallax h1 {
 	font-size: 34px;
 	text-align: center;
 	border: 5px solid;
+	margin-left: 36%;
 	line-height: 200px;
 	padding: 0% 2%;
 

@@ -6,6 +6,7 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/jquery.countdown.css"  media="screen,projection"/>
 	  <title>Plinth MUN</title>
 
       <!--Let browser know website is optimized for mobile-->
@@ -22,6 +23,13 @@
         <li><a class="comittieesx" href="#comittieesx">Committees</a></li>
         <li><a class="contactx" href="#contactx">Contact</a></li>
       </ul>
+      <!-- <ul class="side-nav" id="mobile-demo">
+        <li><a class="homex" href="#homex">Home</a></li>
+        <li><a class="aboutx" href="#aboutx">About</a></li>
+        <li><a class="organizerx" href="#organizerx">Organizer's Desk</a></li>
+        <li><a class="comittieesx" href="#comittieesx">Committees</a></li>
+        <li><a class="contactx" href="#contactx">Contact</a></li>
+      </ul> -->
     </div>
   </nav>
   </div>
@@ -30,17 +38,24 @@
 <!--<img src="./media/images/unic.png" id="imp-logo">-->
 
 <section id="homex" class="module parallax parallax-1">
-  <div class="container">
+  <div class="container center">
     <h1>LNMIIT MUN'16</h1>
     <span id="dates">January 23rd-24th</span><br />
     <div class="center" style="color:white; margin-top:20px;"><a href="#register_eeb" class="registereebx" style="border: 4px solid white; color:white; font-size:20px; padding: 6px 12px; weight:150;">Register for Executive Board</a></div>
    <!-- <a href="#"><span id="register">Register Now</span></a>-->
+  
+  <div id="countdown" class="countdownHolder">
+  <span class="countDays">
+  </span>
+</div>
+
+
   </div>
 </section>
 
 <section id="aboutx" class="module content">
   <div class="container">
-    <h2>About Us</h2>
+    <h2 class="center">About Us</h2>
     <p id="about-us" style="text-align:justify;">The LNMIIT Model United Nations Conference (LNMIIT MUN) takes place at LNMIIT, jaipur. LNMIIT MUN 2016 offers delegates the unique opportunity to discuss and debate key world issues, and meet new people from all over 
 India in the rich cultural environment that only one of prestigious university can provide.<br><br>
 
@@ -102,18 +117,43 @@ I welcome you again and look forward to see you all here at LNMIIT MUN 2016.</p>
 
   </section>
         <h2 id="comittieesx" style="text-align:center;">Committees</h2>
+        <h5 id="comittieesx" style="text-align:center; color:#0C46A0">New Committee</h2>
  
 
   <section>
 
+<div class="row">
+<div class="col s6 m3" style="width:235px" id="make_center">        
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" height="150px" src="./media/images/5.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4" style="font-size:15px;">Indo-Pak Peace Conference<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Indo-Pak Peace Conference<i class="material-icons right">close</i></span>
+      <p style="text-align:justify;font-size:10px">Crisis committees, in many respects, compose the upper echelon of the Model United Nations 
+
+circuit. You will have many opportunities to speak; therefore, the quality of your speech must 
+
+maintain strength or you risk invalidating your own points.</p>
+</div>
+</div>
+  </div>
+</div>
+
+<div id="just-a-line"></div>
+<br>
+
 <div class="row" style="  margin: 0% 13%;">
-  <div class="col s6 m3">
+  <div class="col s6 m3" style="width:235px;">
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" height="150px" width="100px" src="./media/images/5.png">
       </div>
       <div class="card-content" style="-bottom:20px;">
-      <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">GA-DISEC<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4" style="font-size:15px;">GA-DISEC<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">GA-DISEC<i class="material-icons right">close</i></span>
@@ -129,13 +169,13 @@ regime.</p>
     </div>
 
 
-        <div class="col s6 m3">  
+        <div class="col s6 m3" style="width:235px;">  
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" height="150px" src="./media/images/2.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">EU<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4" style="font-size:15px;">EU<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">EU<i class="material-icons right">close</i></span>
@@ -149,13 +189,13 @@ between twenty eight of its member European countries.</p>
 </div>
 
         
-       <div class="col s6 m3">          
+       <div class="col s6 m3"  style="width:235px;">          
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" height="150px" src="./media/images/3.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="font-size:20px;">WTO<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4" style="font-size:15px;">WTO<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">WTO<i class="material-icons right">close</i></span>
@@ -170,13 +210,13 @@ and positively as possible.</p>
   </div>
   </div>
 
-<div class="col s6 m3">        
+<div class="col s6 m3" style="width:235px;">        
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" height="150px" src="./media/images/5.png">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4" style="font-size:18px;">Crisis Committee<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4" style="font-size:15px;">Crisis Committee<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">Crisis Committee<i class="material-icons right">close</i></span>
@@ -188,6 +228,9 @@ maintain strength or you risk invalidating your own points.</p>
 </div>
 </div>
   </div>
+
+  
+
   </div>
             
   </section>
@@ -227,6 +270,7 @@ maintain strength or you risk invalidating your own points.</p>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/jquery.countdown.js"></script>
     </body>
   </html>
         
