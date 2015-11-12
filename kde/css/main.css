@@ -14,6 +14,11 @@
 }
 
 
+.hide-on-med-and-down{
+	width: 712px;
+	height: 64px;
+	/*border: 1px solid;*/
+}
 
 .nav-wrapper{
 	font-family: roboto-light;
@@ -104,7 +109,6 @@ section.module.parallax h1 {
 	color: white;
 	font-size: 22px;
 	text-align: center;
-	margin-left: 39%;
 	line-height: 0px;
 }
 
@@ -113,7 +117,6 @@ section.module.parallax h1 {
 	font-size: 34px;
 	text-align: center;
 	border: 5px solid;
-	margin-left: 36%;
 	line-height: 200px;
 	padding: 0% 2%;
 
@@ -160,7 +163,7 @@ footer.page-footer{
 
 #DateCountdown{
 	width: 70%;
-	margin-left: 15%;
+	margin: 0% 15%;
 	margin-top: 3%;
 }
 
