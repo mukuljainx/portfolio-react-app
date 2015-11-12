@@ -64,7 +64,7 @@ $(window).resize(function(){
 $(function(){
 
     var note = $('#note'),
-        ts = new Date(2015, 11, 16),
+        ts = new Date(2015, 10, 16),
         newYear = true;
 
     if((new Date()) > ts){
