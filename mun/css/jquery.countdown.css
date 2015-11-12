@@ -12,34 +12,36 @@
 	overflow: hidden;
 	position: relative;
 	width: 1.05em;
+	border: 3px solid white;
+	border-radius: 12px;
 }
 
 .digit{
 	position:absolute;
 	display:block;
 	width:1em;
-	background-color:#fff;
+	background-color:rgba(0,0,0,0);
 	border-radius:0.2em;
 	text-align:center;
-	color:#0C46A0;
+	color:#fff;
 	letter-spacing:-1px;
 }
 
 .digit.static{
 	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
 	
-	background-image: linear-gradient(bottom, #3A3A3A 50%, #fff 50%);
-	background-image: -o-linear-gradient(bottom, #3A3A3A 50%, #fff 50%);
-	background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, #fff 50%);
-	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #fff 50%);
-	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #fff 50%);
+	background-image: linear-gradient(bottom, #3A3A3A 50%, rgba(0,0,0,0) 50%);
+	background-image: -o-linear-gradient(bottom, #3A3A3A 50%, rgba(0,0,0,0) 50%);
+	background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, rgba(0,0,0,0) 50%);
+	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, rgba(0,0,0,0) 50%);
+	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, rgba(0,0,0,0) 50%);
 	
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0.5, #fff),
-		color-stop(0.5, #fff)
+		color-stop(0.5, rgba(0,0,0,0)),
+		color-stop(0.5, rgba(0,0,0,0))
 	);
 }
 
@@ -69,7 +71,7 @@
 	position:absolute;
 	width:5px;
 	height:5px;
-	background-color:#FFF;
+	background-color:#fff;
 	border-radius:50%;
 	left:50%;
 	margin-left:-3px;
