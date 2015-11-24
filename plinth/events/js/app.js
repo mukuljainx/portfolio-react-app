@@ -7,21 +7,25 @@ app.config(function($routeProvider)
 		controller : 'MainController',
 		templateUrl : 'views/transporter.html'
 	})
-	.when('/gridsolver',{
+	.when('/robowar',{
 		controller : 'MainController',
-		templateUrl : 'views/gridsolver.html'
+		templateUrl : 'views/robowar.html'
 	})
 	.when('/linefollower',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/linefollower.html'
 	})
 	.when('/lumos',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/lumos.html'
 	})
 	.when('/roborace',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/roborace.html'
+	})
+	.when('/robosoccer',{
+		controller : 'MainController',
+		templateUrl : 'views/robosoccer.html'
 	})
 	.when('/technovation',{
 		controller : 'MainController',
@@ -67,20 +71,20 @@ app.config(function($routeProvider)
 		controller : 'MainController',
 		templateUrl : 'views/event.html'
 	})
-	.when('/',{
+	.when('/turncoat',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/turncoat.html'
 	})
-	.when('/',{
+	.when('/floorcrossing',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/floorcrossing.html'
 	})
-	.when('/',{
+	.when('/finderskeepers',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/finderskeepers.html'
 	})
-	.when('/',{
+	.when('/lyrewrite',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/lyrewrite.html'
 	})
 });

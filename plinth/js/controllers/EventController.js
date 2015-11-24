@@ -43,7 +43,7 @@ app.controller('EventController',['$scope', function($scope){
 		evenx : 'event5',
 		imgid : 'exhimg',
 		url   : '#e',
-		mimg  : 'media/images/exhibitipng',
+		mimg  : 'media/images/exhibition.png',
 		limg  : 'media/images/line.png',
 	}];
 

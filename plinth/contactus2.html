@@ -20,11 +20,8 @@
   background-color: #00BCD4 ;
 }
 
-body{
-  overflow: hidden;
-}
 </style>
-<body ng-app="Plinth2016">
+<body style="overflow:hidden !important;">
 
 <div class="navbar-fixed">
   <nav>
@@ -51,8 +48,7 @@ body{
   </nav></div>
 
 
-<div id="contactus">
-
+<div id="contactus" style="overflow : hidden !important;">
 <div >
 <div id="margin"></div>
 <div class="row container card-panel hoverable" style="width:70%; margin-left:15%;" >
@@ -133,8 +129,6 @@ body{
 	<script type="text/javascript" src="js/eventclick.js"></script>
 
   <script>
-      
-      $('.submit_btn').click(function(){
       $('#input-form').one('submit',function(){
           var inputq1 = encodeURIComponent($('.input-q1').val());
           var inputq2 = encodeURIComponent($('.input-q2').val());
@@ -148,13 +142,12 @@ body{
           var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" +inputq3 + submitRef);
           console.log(submitURL);
           $(this)[0].action=submitURL;          
-          $( '#input-form' ).each(function(){
-            this.reset();
-          window.alert("Thankyou " + inputq1 +  ", for Contacting us");
-
       });
 
-
+      $('.submit_btn').click(function(){
+        window.alert("Thankyou for Contacting us");
+        $( '#input-form' ).each(function(){
+            this.reset();
           });
 
 

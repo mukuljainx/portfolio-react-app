@@ -11,8 +11,15 @@
 
 </head>
 
-<body ng-app="Plinth2016">
-
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
@@ -37,11 +44,29 @@
       </div>
   </nav></div>
 
-<div id="welcome"></div>
-  <style type="text/css">
+<div id="welcome">
+<div class="mini-fb-page-container">
+  <div class="fb-page" data-href="https://www.facebook.com/Plinth.LNMIIT/?fref=ts" data-width="300px" data-height="400px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Plinth.LNMIIT/?fref=ts"><a href="https://www.facebook.com/Plinth.LNMIIT/?fref=ts">Plinth, The LNMIIT-Jaipur</a></blockquote></div></div>
+</div>
+
+<div class="footer-x">
+  <img src="./media/images/fb.png" class="footer-x-fb">
+<!-- icon credit : https://www.iconfinder.com/makiibao -->
+</div>
+
+
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+</div>
+<style type="text/css">
   ul>li>a{
     color: black;
-  }
+}
 
   </style>
 
@@ -50,6 +75,5 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/eventclick.js"></script>
-
 </body>
 </html>
