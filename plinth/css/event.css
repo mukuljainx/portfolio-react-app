@@ -1,90 +1,131 @@
-.events_plinth{
-	height: 10500px;
-	background-color: #EEEEEE;
-	margin-top: -64px;
+.event-up{
+	background-color:#4ec2f6;
+	width: 100%;
+	height: 200px;
 }
 
-
-/*Main events*/
-
-.eventx{
-	position: fixed;
-	left: 45%;
-	top: 35%;
-	display: none;
-}
-#line1{
-	position: relative;
-	top: -122px;
-	left: -210px;
-	display: hidden;
-	opacity: 0;
-}
-#name1{
-	position: relative;
-	top: 15px;
-	left: -265px;
-	text-align: center;
+#event-container{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 500px;
+	margin-top: -150px;
 }
 
-
-#event1{
-	z-index: 1;
-	display: inline;
+.event-semi-card{
+	width: 170px;
+	height: 210px;
+	float: left;
+	margin-right: 20px;
 }
-#event2{
-	z-index: 5;
+.even-card-name{
+    position: relative;
+    top: -54px;
 }
-#event3{
-	z-index: 2;
-}
-#event4{
-	z-index: 4;
-}
-#event5{
-	z-index: 3;
+.even-card-name-more{
+position: relative;
+    top: 145px;
+    left:35px;
 }
 
-#event4>#name1{
-	left: -245px;
+.even-card-coming-soon{
+	left: 5px;
+    color: #414141;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+    display: none;
 }
-#event2>#name1{
-	left: -245px;
+.event-semi-card1,.event-semi-card5 {
+	margin-left: 190px;
 }
-
-/*Competition events*/
-
-.eventy{
-	position: fixed;
-	left: 20%;
-	top: 70%;
-	display: none;
-}
-
-/*fun events*/
-
-.funevent{
-	position: absolute;
-	left: 45%;
-	display: none;
+#event-imagex{
+	width: 200px;
+    position: relative;
+    top: -38px;
+    left: -36px;
 }
 
-#funevent1{
-	left: 43%;
+body{
+	background-color: #eee;
 }
 
-#funevent2{
-	left: 15%;
+@media screen and (max-width: 1200px) {
+.event-semi-card1,.event-semi-card5{
+	margin-left: 150px;
+}
 }
 
-#funevent3{
-	left: 70%;
+@media screen and (max-width: 1150px) {
+.event-semi-card1,.event-semi-card5{
+	margin-left: 100px;
+}
 }
 
-#funevent1>#name1{
-	left: -310px;
+@media screen and (max-width: 1050px) {
+.event-semi-card1,.event-semi-card5{
+	margin-left: 50px;
+}
 }
 
-#funevent3>#name1{
-	left: -250px;
+@media screen and (max-width: 970px) {
+.event-semi-card1,.event-semi-card5{
+	margin-left: 20px;
+}
+}
+
+@media screen and (max-width: 920px) {
+.event-semi-card1,.event-semi-card4{
+	margin-left: 110px;
+}
+.event-semi-card5{
+	margin-left: 0px;	
+}
+#event-container{
+	height: 720px;
+}
+.event-semi-card7{
+	margin-left: 200px;
+}
+}
+
+@media screen and (max-width: 850px) {
+.event-semi-card1,.event-semi-card4{
+	margin-left: 50px;
+}
+.event-semi-card5{
+	margin-left: 0px;	
+}
+#event-container{
+	height: 720px;
+}
+.event-semi-card7{
+	margin-left: 100px;
+}
+}
+
+@media screen and (max-width: 748px) {
+.event-semi-card1,.event-semi-card3, .event-semi-card5,.event-semi-card7{
+	margin-left: 100px;
+}
+.event-semi-card4{
+	margin-left: 0px;
+}
+#event-container{
+	height: 950px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+.event-semi-card1,.event-semi-card3, .event-semi-card5,.event-semi-card7{
+	margin-left: 35px;
+}
+.event-semi-card4{
+	margin-left: 0px;
+}
+#event-container{
+	height: 950px;
+}
+
 }

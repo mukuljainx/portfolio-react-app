@@ -19,6 +19,7 @@ $( "select" )
                 $(this).css("background-color","#fff");
                 $(this).css("color","grey");
             });
+            window.location.replace("./compt.html#/transporter");
             $('#Robotics').show();
     		$('#Management').hide();
     		$('#Coding').hide();
@@ -95,6 +96,7 @@ $( "select" )
                 $(this).css("background-color","#fff");
                 $(this).css("color","grey");
             });
+            window.location.replace("./compt.html#/astrohunt");
     		$('#Robotics').hide();
     		$('#Management').hide();
     		$('#Coding').hide();
@@ -114,6 +116,7 @@ $( "select" )
                 $(this).css("background-color","#fff");
                 $(this).css("color","grey");
             });
+            window.location.replace("./compt.html#/finderskeepers");
     		$('#Robotics').hide();
     		$('#Management').hide();
     		$('#Coding').hide();

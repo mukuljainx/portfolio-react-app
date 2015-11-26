@@ -1,5 +1,5 @@
 nav{
-	background-color: rgba(0,0,0,0);
+	background-color: #4388FD;
 }
 
 #logo_img{
@@ -68,7 +68,7 @@ nav{
 	}
 
 .mini-fb-page-container{
-	bottom: 0;
+	top: 150;
 	right: 0	;
 	position: fixed;
 	width:300px;
@@ -76,18 +76,101 @@ nav{
 	display: none;
 }
 
-.footer-x{
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	height: 50px;
-	background-color: rgba(0,0,0,.1);
+#aboutus-container{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 820px;
+	margin-top: -150px;
 }
 
-.footer-x-fb{
-	width: 40px;
-	height: 40px;
-	float: right;
-	margin-top: 5px;
-	margin-right: 10px;		
+#just-a-line{
+	border: 1px solid #bcbcbc;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.iframevideo1,.iframevideo2{
+	width:400px;
+	height:235px;
+}
+
+.iframevideo1{
+	margin-left: 20px;
+}
+.iframevideo2{
+	margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1280px) {
+.iframevideo1,.iframevideo2{
+	width:700px;
+	height:411px;
+}
+
+.iframevideo1{
+	margin-left: 65px;
+}
+.iframevideo2{
+	margin-top: 20px;
+	margin-left: 65px;
+}
+#aboutus-container{
+	height: 1380px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+.iframevideo1{
+	margin-left: 25px;
+}
+.iframevideo2{
+	margin-left: 25px;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.iframevideo1{
+	margin-left: 5px;
+}
+.iframevideo2{
+	margin-left: 5px;
+}
+}
+
+@media screen and (max-width: 900px) {
+.iframevideo1,.iframevideo2{
+	width:500px;
+	height:294px;
+}
+
+.iframevideo1{
+	margin-left: 15px;
+}
+.iframevideo2{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#aboutus-container{
+	height: 1230px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.iframevideo1,.iframevideo2{
+	width:400px;
+	height:235px;
+}
+
+.iframevideo1{
+	margin-left: 15px;
+}
+.iframevideo2{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#aboutus-container{
+	height: 1170px;
+}
 }

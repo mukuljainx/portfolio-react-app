@@ -1,7 +1,7 @@
 $(".button-collapse").sideNav();
 $(".parallax").parallax();
 
-$('.footer-x-fb').mouseenter(function(){
+$('.x-fb').mouseenter(function(){
     $('.mini-fb-page-container').fadeIn('700');
 });
 

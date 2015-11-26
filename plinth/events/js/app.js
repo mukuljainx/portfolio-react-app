@@ -59,17 +59,17 @@ app.config(function($routeProvider)
 		controller : 'MainController',
 		templateUrl : 'views/event.html'
 	})
-	.when('/',{
+	.when('/asgard',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/asgard.html'
 	})
-	.when('/',{
+	.when('/into',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/into.html'
 	})
-	.when('/',{
+	.when('/astrohunt',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/astrohunt.html'
 	})
 	.when('/turncoat',{
 		controller : 'MainController',
