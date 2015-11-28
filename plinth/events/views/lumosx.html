@@ -1,0 +1,319 @@
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s2"><a class="active" href="#test1">Synopsis</a></li>
+        <li class="tab col s2"><a href="#test2">Problem Statement</a></li>
+        <li class="tab col s2"><a href="#test3">Rules</a></li>
+        <li class="tab col s2"><a href="#test4">Register</a></li>
+      </ul>
+</div></div>
+<div class="compt-margin">
+
+<div id="test1" class="col s12">
+<div id="event_head">
+  <img id="event_img" src="./media/transporter2.png"> 
+  <h2 style="margin-top:0px;">Lumos</h2>
+</div>
+<div class="class">
+<p>
+Light is something we all crave for, something we all seek. It is time for robots to
+
+express those same desires. In this autonomous event there are no guides -­‐    
+
+no lines or walls or objects to look to. The only way forward is to perceive 
+
+the luminosity of sources scattered around the arena, in an attempt to switch off 
+
+as many as possible before time runs out.<br>
+
+<q>Insisto Lux Lucis. Follow the Light.</q></p>
+</div>
+</div>
+
+<div id="test2" class="col s12">
+<div>
+<h4>Problem Statement</h4>
+<p>Build autonomous robot that can differentiate between a number of light sources
+
+of similar intensity kept inside an isolated room (Arena) and turn each one off.</p>
+
+<h5>TASK</h5>
+<p>The robot(s) has/have to begin its/their run from a predefined position in a dark 
+
+isolated room with the light sources kept in different directions w.r.t. the initial 
+
+position of the robot. There will be no guiding path on the floor of the arena. The 
+
+robot(s) has/have to decide its/their path by light detection only. The objective is 
+
+to switch off the maximum number of light sources by the end of the runtime.</p>
+</div>
+
+<h5>Round 1 :</h5>
+<ol>
+<li>There will be a total of 5 light sources placed in the room.
+</li>
+<li>All the light sources will be stationary.
+</li>
+<li>The total runtime for this round is 5 minutes.
+</li></ol>
+
+<h5>Round 2 :</h5>
+<ol>
+<li>There will be a total of 6 light sources placed in the room:
+</li>
+<ul>
+<li>4 of the light sources will be Stationary.</li>
+
+<li>2 of the light sources will be moving at a maximum speed of 4 cm/s.</li>
+</ul>
+<li>The total runtime for this round is 7 minutes.</li>
+</ol>
+
+<h5>ARENA</h5>
+
+<li>The light sources will be placed at any random positions in the arena.
+
+</li><li>The actual positions of the light sources in the arena will be disclosed just 
+
+before the commencement of the run.
+
+</li><li>The arena will be enclosed by walls on all sides. The walls will be covered 
+
+by black cloth.</li>
+
+<h5>Round 1 :</h5>
+<ol>
+<li>The arena is an enclosed circular area of radius 3.0m.
+</li>
+<li>The starting position will be a 60 cm sided square in the arena.
+</li></ol>
+<h5>Round 2:</h5>
+<ol>
+<li>The arena is an enclosed circular area of radius 3.0m.
+</li>
+<li>The starting position will be the same as in the first round.
+</li></ol>
+
+<h5>Light Sources :</h5>
+<ol>
+<li>Each light source will be a cylindrical setup of height 25 cm and diameter 25 
+</li>
+cm.
+<li>The intensity distribution of the each light source measured individually, in a 
+</li>
+completely dark room, will be nearly the same.
+<li>All dimensions have a tolerance of 15 %.
+</li>
+<li>The rating of the bulb to be used for all light sources is 100 Watt, 220 V.
+</li>
+</ol>
+</div>
+
+
+<div id="test3" class="col s12">
+<h4>Rules</h4>
+
+<h5>GENERAL Rules</h5>
+<ol>
+<li>No abstract submission is required for the event.
+</li>
+<li>Each team can consist of a maximum of 4 members.
+</li>
+<li>Each team should have unique participants i.e. no two teams can have even 
+any common participant.
+</li>
+
+<li>The team members can be from different institutes or colleges.
+</li>
+<li>The right spirit of participation is expected from the participants.
+</li>
+<li>The decision of Team PLINTH will be final and binding on all participants.
+</li></ol>
+
+<h5>EVENT</h5>
+
+<h6>Stationary sources</h6>
+<ol>
+<li>There would be stationary light sources present in the arena in both the 
+</li>
+rounds.
+
+<li>The intensity distribution of the each light source measured individually, 
+
+in a completely dark room, will be nearly the same.</li>
+
+<li>The robot has to reach each light source and bump into the metal 
+
+plates present around each light source. This would deactivate the light 
+
+source i.e. it would be switched off.</li>
+
+<li>The light source is considered to be deactivated only if it is switched off. 
+
+In case  a  robot  collides  and  the  source  is  still  illuminated  it  would   
+
+be considered as an active light source.</li>
+</ol>
+
+<h6>Moving sources</h6>
+<ol>
+<li>There would be two moving light sources present in the arena during the 
+
+second round of the event.
+</li>
+<li>The moving light sources would be autonomous having pre-­‐defined 
+
+algorithm and they would be moving in an unknown path.
+</li>
+<li>The moving light sources can be deactivated in the same way as stationary 
+
+light sources.
+</li>
+<li>The moving sources will stop automatically upon deactivation.
+</li></ol>
+
+<h6>Traversal</h6>
+<ol>
+<li>The robot(s) must avoid colliding with already deactivated sources as it 
+traverses towards another light source. Collision with any deactivated 
+light source will lead to a penalty.</li>
+
+<li>For the time bonus to be rewarded, it is compulsory to deactivate at 
+least two (2) light sources before the end of the run, in case the 
+participant wishes to call off the run before the allotted run time.</li></ol>
+
+<h6>Initial Orientation of Robot(s)</h6>
+<ol>
+<li>The participant is allowed to decide the initial orientation of his robot(s) but 
+
+it should be such that it is not facing any light source directly.
+</li>
+<li>Team PLINTH reserves the right to disallow any initial orientation of the 
+
+robot(s)  inside  the  starting  zone  if  it  gives  the  participant  an  undue 
+advantage solely based on the judge's discretion.
+</li></ol>
+
+<h5>Restarts & Timeouts</h5>
+<ol>
+<li>A maximum of 2 Timeouts of 2 minutes each may be taken in the first 
+
+round. For the second round a maximum of 3 Timeouts of 2 minutes each 
+
+may be taken.</li>
+
+<li>In both the rounds, a Penalty will be awarded for each timeout and the 
+
+robots will start from the last light source it has deactivated, if none have 
+
+been deactivated then from the start zone. In case of multiple robots, this 
+
+rule is applicable to each of the robots individually.</li>
+
+<li>The participant's robots can have a maximum of three restarts in both the 
+
+round. Restarts, if any, will apply to all the robots.  A penalty will be 
+
+imposed on the team for every restart that they take.</li>
+
+<li>In case of a restart the participant's robot(s) will be set to their initial 
+
+positions. Timer will be set to zero and the run will start afresh with the 
+
+addition of the penalty for restart.</li></ol>
+
+<h5>ROBOT SPECIFICATIONS</h5>
+<ol>
+<li>Multiple robots are allowed in this event.</li>
+
+<li> The robot(s) must fit inside a cube of side 55cm when measured. No 
+
+part/mechanism of/on the robot should exceed the given dimensions 
+
+before the commencement of the event run. The robots can exceed their 
+
+respective dimensions once the event commences.</li>
+
+<li>The autonomous robots should be On-­‐board processing robots, i.e., 
+
+the robots cannot be controlled by a remotely kept computer. The 
+
+Processor used for on the robot must be at maximum 16 bit processor.</li>
+
+<li>LEGO kits or its spare parts or pre-­‐made mechanical parts are not 
+
+allowed.</li>
+
+<li>Ready--made gearboxes, sensors, development boards can be used but 
+
+no other part of the robot should contain any ready-­‐made components. 
+
+Simple car bases with no extra features may be used.</li>
+
+<li>The robots should not harm the arena in any way. If it does so, a penalty 
+
+will be imposed on the team. The magnitude of the penalty will be decided 
+
+by Team PLINTH.</li></ol>
+
+
+<h5>TECHNICAL</h5>
+<ol>
+<li>All the dimensions of the arena and light sources are to be considered with 
+a tolerance of 15%.
+</li>
+
+<li>The robot can be powered on-­‐board as well as off-­‐board.
+</li>
+<li>No kind of external control will be allowed.
+</li>
+<li>All circuitry and sensory equipment should be placed on the robot adhering 
+</li>
+to the ROBOT SPECIFICATIONS.
+
+<li>Participants will have to bring their own programmers, cables and software. 
+No programmers will be provided.
+</li>
+</ol>
+<h5>SCORING</h5>
+<ul>
+<li>Rewards
+<ol>
+<li>No. of stationary light sources Deactivated : (S)
+</li>
+<li>No. of moving light sources Deactivated: (M)
+</li>
+<li>Time Bonus: {B = (Total Time-­‐ Run Time)/2}
+</li></ol></li>
+
+<li>Penalties
+<ol>
+<li>No. of times the robot again hits an already deactivated light source: (D)
+</li>
+<li>No. of Timeouts taken: (T)</li>
+
+<li>No. of Restarts taken: (R).</li>
+</ol>
+</li>
+</ul>
+<b>Final Score</b> = 500 + (S*80) + (M*120) + (B) – (D*30) – (T*20) – (R*50).
+</div>
+
+<div id="test4" class="col s12">
+</div>
+</div>
+ 
+  <style type="text/css">
+ .tabs .indicator {
+  background-color: black;
+ }
+
+ .tabs .tab a { 
+  color: black;
+ }
+
+ .tabs .tab a:hover {
+  color: grey;
+ }
+  </style>

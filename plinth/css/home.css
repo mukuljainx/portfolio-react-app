@@ -1,3 +1,13 @@
+/*for modals*/
+.md-close{
+  position: relative !important;
+  top: -92px;
+  left: 100px;
+}
+.fa{
+  color:white;
+}
+/*done with modals*/
 @font-face {
   font-family: caviar;
   src: url(../font/CaviarDreams_0.ttf);
