@@ -5,86 +5,86 @@ app.config(function($routeProvider)
 	$routeProvider
 	.when('/transporter',{
 		controller : 'MainController',
-		templateUrl : 'views/transporterx.html'
+		templateUrl : 'views/transporterxx.html'
 	})
 	.when('/robowar',{
 		controller : 'MainController',
-		templateUrl : 'views/robowarx.html'
+		templateUrl : 'views/robowarxx.html'
 	})
 	.when('/linefollower',{
 		controller : 'MainController',
-		templateUrl : 'views/linefollowerx.html'
+		templateUrl : 'views/linefollowerxx.html'
 	})
 	.when('/lumos',{
 		controller : 'MainController',
-		templateUrl : 'views/lumosx.html'
+		templateUrl : 'views/lumosxx.html'
 	})
 	.when('/roborace',{
 		controller : 'MainController',
-		templateUrl : 'views/roboracex.html'
+		templateUrl : 'views/roboracexx.html'
 	})
 	.when('/robosoccer',{
 		controller : 'MainController',
-		templateUrl : 'views/robosoccerxx.html'
+		templateUrl : 'views/robosoccerxxx.html'
 	})
 	.when('/technovation',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/eventxx.html'
 	})
 	.when('/aceinventure',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/eventxx.html'
 	})
 	.when('/iupc',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/eventxx.html'
 	})
 	.when('/sif',{
 		controller : 'MainController',
-		templateUrl : 'views/sifx.html'
+		templateUrl : 'views/sifxx.html'
 	})
 	.when('/bplan',{
 		controller : 'MainController',
-		templateUrl : 'views/bplanx.html'
+		templateUrl : 'views/bplanxx.html'
 	})
 	.when('/',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/eventxx.html'
 	})
 	.when('/',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/eventxx.html'
 	})
 	.when('/',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/eventxx.html'
 	})
 	.when('/asgard',{
 		controller : 'MainController',
-		templateUrl : 'views/asgardx.html'
+		templateUrl : 'views/asgardxx.html'
 	})
 	.when('/into',{
 		controller : 'MainController',
-		templateUrl : 'views/intox.html'
+		templateUrl : 'views/intoxx.html'
 	})
 	.when('/astrohunt',{
 		controller : 'MainController',
-		templateUrl : 'views/astrohuntx.html'
+		templateUrl : 'views/astrohuntxx.html'
 	})
 	.when('/turncoat',{
 		controller : 'MainController',
-		templateUrl : 'views/turncoatx.html'
+		templateUrl : 'views/turncoatxx.html'
 	})
 	.when('/floorcrossing',{
 		controller : 'MainController',
-		templateUrl : 'views/floorcrossingx.html'
+		templateUrl : 'views/floorcrossingxx.html'
 	})
 	.when('/finderskeepers',{
 		controller : 'MainController',
-		templateUrl : 'views/finderskeepersx.html'
+		templateUrl : 'views/finderskeepersxx.html'
 	})
 	.when('/lyrewrite',{
 		controller : 'MainController',
-		templateUrl : 'views/lyrewritex.html'
+		templateUrl : 'views/lyrewritexx.html'
 	})
 });

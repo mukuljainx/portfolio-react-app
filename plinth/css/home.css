@@ -1,12 +1,16 @@
 /*for modals*/
-.md-close{
-  position: relative !important;
-  top: -92px;
-  left: 100px;
+.workshops_back{
+  position: fixed;
+    background-color: #E57373;
+    width: 215px;
+    height: 111px;}
+.speaker_back{
+  position: absolute;
 }
-.fa{
-  color:white;
+.exhibation_back{
+  position: absolute;
 }
+
 /*done with modals*/
 @font-face {
   font-family: caviar;
