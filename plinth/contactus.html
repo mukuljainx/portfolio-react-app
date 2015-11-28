@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Plinth</title>
+<title>Plinth | Contact Us</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
   <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
@@ -24,7 +24,12 @@ body{
   overflow: hidden;
 }
 </style>
-<body ng-app="Plinth2016">
+<body>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.020568546761!2d75.9241481362457!3d26.934562401460173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1421642727353" width="100%" height="100%" frameborder="0" style="border:0;"></iframe>
+    </div>
+  </div>
 
 <div class="navbar-fixed">
   <nav>
@@ -37,7 +42,7 @@ body{
             <li><a href="event.html">Events</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li class="active"><a href="contactus.html">Contact Us</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="home.html">Home</a></li>
@@ -88,8 +93,8 @@ body{
     <div class="col s6 " >
       <br>
       <h6>For any Query : </h6>
-      <span><i class="material-icons prefix">call</i> +91-7221008771</span><br>
-      <span><i class="material-icons prefix">email</i> jainmukul1996@gmail.com</span>
+      <span><i class="material-icons prefix">call</i> +91-7023479993</span><br>
+      <span><i class="material-icons prefix">email</i> lnmiit.plinth@gmail.com</span>
       <br>
       <br><br>
       <div class="col s12" >
@@ -102,10 +107,12 @@ body{
         </p>
       </div>
     </div>
+
   <div id="social_nav">
-  <img id="fbx" style="margin : 15px 20px 0px 0px;" src="./media/images/fb1.svg">
-  <img id="twx" style="margin : 15px 20px 0px 0px;" src="./media/images/tw1.svg">
-  <img id="gpx" style="margin : 15px 20px 0px 0px;" src="./media/images/gp1.svg">
+  <a target="_blank" href="https://www.facebook.com/Plinth.LNMIIT/?fref=ts"><img width="40px" height="40px" id="fbx" style="margin : 15px 20px 0px 0px;" src="./media/images/fb1.svg"></a>
+  <a target="_blank" href="https://twitter.com/PlinthLNMIIT"><img width="40px" height="40px" id="twx" style="margin : 15px 20px 0px 0px;" src="./media/images/tw1.svg"></a>
+  <a target="_blank" href="https://plus.google.com/+PLINTHLNMIIT/posts"><img width="40px" height="40px" id="gpx" style="margin : 15px 20px 0px 0px;" src="./media/images/gp1.svg"></a>
+  <a class="modal-trigger" href="#modal1"><img width="40px" height="40px" id="mpx" style="margin : 15px 20px 0px 0px;" src="./media/images/map.svg"></a>
 </div>
 
   </div>

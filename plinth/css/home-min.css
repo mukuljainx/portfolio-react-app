@@ -1,5 +1,11 @@
 @media screen and (max-width: 850px) {
 
+#homei2,#homei3,#homei4,#homei5,#homei6,#homei7,#homei8,#homei9,#homei10{
+    top: -75px;
+    left: 87px;
+}
+
+
 .notification-center{
   top: 80px;
 }
@@ -370,7 +376,7 @@ width: 348px;
     width: 233px;
   height: 119px;
   position: absolute;
-  top:469px;
+  top:340px;
 }
 .e-cell{
 
@@ -386,7 +392,7 @@ width: 348px;
       width: 233px;
   height: 119px;
   position: absolute;
-  top:340px;
+  top:469px;
 }
 
 .speaker{
@@ -552,16 +558,19 @@ width: 348px;
   margin-right: 10px;
 }
 
-.social-btn-home{
-  position: fixed;
-  right : 40px;
-  top: 100px;
-}
+
 
 .notification-center{
   position: absolute;
   right: 30px;
-  top: 150px;
+  top: 80px;
+  font-size: 12px;
+}
+.row-rocks{
+  /*border: 1px solid black;*/
+  width: 200px;
+  display: inline-block;
+  margin-left: 40px;
 }
 
 .card-panel{
@@ -571,29 +580,31 @@ width: 348px;
 
 #plinth-text1{
 position: relative;
-top: 40px;
-font-family: bold;
+top: 60px;
 font-size: 4rem;
 }
 #plinth-text2{
 position: relative;
-top: 50px;
+top: 60px;
+left:40px;
 }
 
-
-.notification-center{
-  top: 80px;
+#plinth-text3{
+top: 30px; 
+left:35px;
+font-size: 14px;
 }
 
 .social-btn-home{
   position: fixed;
-  right : 0px;
+  right : -10px;
   top: 250px;
   width: 50px;
 }
 
 .home-icon{
-   margin-bottom: 10px;
+   margin-bottom: 2px;
+   width: 35px;
 }
 .x-3-container{
     margin-left:0px;

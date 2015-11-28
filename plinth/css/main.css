@@ -19,7 +19,9 @@ nav{
 
 }
 
-
+.active{
+	border-bottom:2px solid white;
+}
 
 .video_container{
 	width: 50%;
@@ -102,6 +104,23 @@ nav{
 	margin-left: 10px;
 }
 
+@media screen and (width: 1920px) {
+.iframevideo1,.iframevideo2{
+	width:500px;
+	height:294px;
+}
+
+.iframevideo1{
+	margin-left: 100px;
+}
+.iframevideo2{
+	margin-left: 30px;
+}
+#aboutus-container{
+	height: 800px;
+}
+}
+
 
 @media screen and (max-width: 1280px) {
 .iframevideo1,.iframevideo2{
@@ -173,4 +192,9 @@ nav{
 #aboutus-container{
 	height: 1170px;
 }
+}
+
+
+.modal-content{
+	padding: 0px !important;
 }

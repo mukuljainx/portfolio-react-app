@@ -50,6 +50,17 @@ body{
 	background-color: #eee;
 }
 
+@media screen and (width: 1920px) {
+#event-container{
+	margin-left: 320px;
+	margin-right: 0px;
+}
+.event-semi-card1,.event-semi-card5 {
+	margin-left: 240px;
+}
+}
+
+
 @media screen and (max-width: 1200px) {
 .event-semi-card1,.event-semi-card5{
 	margin-left: 150px;

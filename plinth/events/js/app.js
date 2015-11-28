@@ -39,9 +39,9 @@ app.config(function($routeProvider)
 		controller : 'MainController',
 		templateUrl : 'views/event.html'
 	})
-	.when('/',{
+	.when('/sif',{
 		controller : 'MainController',
-		templateUrl : 'views/event.html'
+		templateUrl : 'views/sif.html'
 	})
 	.when('/',{
 		controller : 'MainController',

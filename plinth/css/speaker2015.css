@@ -1,0 +1,27 @@
+.speaker2015card{
+	width: 250px;
+	float: left;
+	margin-right: 30px;
+}
+
+.speaker2015card1{
+	margin-left: 90px;
+}
+
+.speaker2015card5{
+	margin-left: 240px;
+}
+
+.speakers-2015-text{
+	font-size: 18px;
+	line-height: 22px;
+}
+
+@media screen and (width: 1920px) {
+.speaker2015card1{
+	margin-left: 420px;
+}
+.speaker2015card5{
+	margin-left: 560px;
+}
+}

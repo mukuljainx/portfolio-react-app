@@ -14,6 +14,10 @@ body{
   background-size: 100% 100%;
 }
 
+.card-panel:hover{
+  cursor: hand;
+}
+
 #homei1{
       top: -73px;
     left: 84px;
@@ -236,6 +240,23 @@ top: -1px;
 left: 42px;
 }
 
+@media screen and (width: 1920px) {
+
+.x-3-container{
+    margin-top: :275px;
+    margin-left:700px;
+    margin-bottom: -37px; 
+}
+.x-4-container{
+  margin-left: 288px;
+}
+
+.x-5-container{
+  margin-left: 288px;
+}
+
+}
+
 @media screen and (max-width: 1200px) {
 
 .x-3-container{
@@ -312,4 +333,13 @@ left: 42px;
  width: 200px;
 }
 
+}
+
+
+#myvid{
+  position: fixed;
+  top: 0; left: 0;
+  width: calc(100%);
+  overflow: hidden;
+  z-index: 999999999;
 }
