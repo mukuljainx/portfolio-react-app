@@ -1,17 +1,3 @@
-/*for modals*/
-.workshops_back{
-  position: fixed;
-    background-color: #E57373;
-    width: 215px;
-    height: 111px;}
-.speaker_back{
-  position: absolute;
-}
-.exhibation_back{
-  position: absolute;
-}
-
-/*done with modals*/
 @font-face {
   font-family: caviar;
   src: url(../font/CaviarDreams_0.ttf);
@@ -126,7 +112,8 @@ body{
     position: relative;
     top: -127px;
     left: 245px;
-    /*border: 1px solid;*/
+    -webkit-transition: -webkit-transform 1.3s;
+    transition: transform 1.3s;
 }
 
 .speaker{
@@ -137,7 +124,8 @@ body{
     position: relative;
     top: -41px;
     left: 50px;
-    /*border: 1px solid;*/
+    -webkit-transition: -webkit-transform 1.3s;
+    transition: transform 1.3s;
 }
 .plinth{
     color: #4489FE;  
@@ -199,6 +187,8 @@ body{
     position: relative;
     top: -18px;
     left: -15px;
+    -webkit-transition: -webkit-transform 1.3s;
+    transition: transform 1.3s;
 }
 
 #inner-text{

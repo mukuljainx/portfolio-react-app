@@ -1,46 +1,46 @@
-var workshopsxy1 = $('.workshops').offset();
-var exhibationxy1 = $('.workshops').offset();
-var speakerxy1 = $('.workshops').offset();
+$('.workshops').click(function(){
+    $('.workshops').css("-webkit-transform", "rotateY(360deg)");
+    $('.workshops').css("-moz-transform", "rotateY(360deg)");
+	$('.tq1').fadeOut(0);
+	$('.tq1').text("Coming Soon..!");
+	$('.tq1').fadeIn(1300);
 
-$('.workshops_back').css("top",workshopsxy1.top)
-$('.workshops_back').css("left",workshopsxy1.left)
-
-console.log($('.workshops').offset().top);
-console.log($('.workshops_back').offset().top);
-
-
-
-$(window).resize(function(){
-    var workshopsxy2 = $('.workshops').offset();
-	var exhibationxy2= $('.workshops').offset();
-	var speakerxy2 = $('.workshops').offset();
+});
+$('.workshops').mouseleave(function(){
+    $('.workshops').css("-webkit-transform", "rotateY(0deg)");
+    $('.workshops').css("-moz-transform", "rotateY(0deg)");
+	$('.tq1').fadeOut(0);
+	$('.tq1').text("WORKSHOPS");
+	$('.tq1').fadeIn(1300);
 });
 
-// $('.workshops').click(function(){
-//     $('.workshops').css("-webkit-transform", "rotateY(-180deg)");
-//     $('.workshops').css("-moz-transform", "rotateY(-180deg)");
-//  	$('.workshops_back').css("-webkit-transform", "rotateY(0deg)");
-//     $('.workshops_back').css("-moz-transform", "rotateY(0deg)");
+$('.exhibation').click(function(){
+    $('.exhibation').css("-webkit-transform", "rotateY(360deg)");
+    $('.exhibation').css("-moz-transform", "rotateY(360deg)");
+	$('.tq2').fadeOut(0);
+	$('.tq2').text("Coming Soon..!");
+	$('.tq2').fadeIn(1300);
 
-// });
-// $('.workshops').mouseleave(function(){
-//     $('.workshops').css("-webkit-transform", "rotateY(0deg)");
-//     $('.workshops').css("-moz-transform", "rotateY(0deg)");
-//  	$('.workshops_back').css("-webkit-transform", "rotateY(-180deg)");
-//     $('.workshops_back').css("-moz-transform", "rotateY(-180deg)");
-// });
+});
+$('.exhibation').mouseleave(function(){
+    $('.exhibation').css("-webkit-transform", "rotateY(0deg)");
+    $('.exhibation').css("-moz-transform", "rotateY(0deg)");
+	$('.tq2').fadeOut(0);
+	$('.tq2').text("EXHIBATIONS");
+	$('.tq2').fadeIn(1300);
+});
+$('.speaker').click(function(){
+    $('.speaker').css("-webkit-transform", "rotateY(360deg)");
+    $('.speaker').css("-moz-transform", "rotateY(360deg)");
+	$('.tq3').fadeOut(0);
+	$('.tq3').text("Coming Soon..!");
+	$('.tq3').fadeIn(1300);
 
-// $('.exhibition').click(function(){
-//     $('.exhibition').css("-webkit-transform", "rotateY(-180deg)");
-//     $('.exhibition').css("-moz-transform", "rotateY(-180deg)");
-//  	$('.exhibition_back').css("-webkit-transform", "rotateY(0deg)");
-//     $('.exhibition_back').css("-moz-transform", "rotateY(0deg)");
-
-// });
-// $('.exhibition').mouseleave(function(){
-//     $('.exhibition').css("-webkit-transform", "rotateY(0deg)");
-//     $('.exhibition').css("-moz-transform", "rotateY(0deg)");
-//  	$('.exhibition_back').css("-webkit-transform", "rotateY(-180deg)");
-//     $('.exhibition_back').css("-moz-transform", "rotateY(-180deg)");
-// });
-
+});
+$('.speaker').mouseleave(function(){
+    $('.speaker').css("-webkit-transform", "rotateY(0deg)");
+    $('.speaker').css("-moz-transform", "rotateY(0deg)");
+	$('.tq3').fadeOut(0);
+	$('.tq3').text("TALKS");
+	$('.tq3').fadeIn(1300);
+});

@@ -59,7 +59,7 @@ $( "select" )
                 $(this).css("background-color","#fff");
                 $(this).css("color","grey");
             });
-            window.location.replace("./astro.html#/event");            
+            window.location.replace("./astro.html#/iupc");            
 
             $('#Robotics').hide();
             $('#Management').hide();

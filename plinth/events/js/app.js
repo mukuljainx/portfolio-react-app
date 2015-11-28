@@ -41,7 +41,7 @@ app.config(function($routeProvider)
 	})
 	.when('/sif',{
 		controller : 'MainController',
-		templateUrl : 'views/sifx.html'
+		templateUrl : 'views/sifxx.html'
 	})
 	.when('/bplan',{
 		controller : 'MainController',
@@ -55,9 +55,9 @@ app.config(function($routeProvider)
 		controller : 'MainController',
 		templateUrl : 'views/bigqx.html'
 	})
-	.when('/',{
+	.when('/iupc',{
 		controller : 'MainController',
-		templateUrl : 'views/eventx.html'
+		templateUrl : 'views/iupc.html'
 	})
 	.when('/asgard',{
 		controller : 'MainController',
