@@ -77,3 +77,10 @@ nav>ul>li{
 .parallax__layer--back {
   transform: translateZ(-1px);
 }
+
+
+.compt-margin{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
