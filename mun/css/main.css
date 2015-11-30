@@ -140,7 +140,7 @@ section.module.parallax h1 {
 }
 
 #just-a-line{
-	/*border: 1px solid #bcbcbc;*/
+	border: 1px solid #bcbcbc;
 	width: 80%;
 	margin-left: 10%;
 }
@@ -354,14 +354,12 @@ footer.page-footer{
 }
 .span-card-x{
 	float: left;
-	margin-top: 65px;
-	/*border: 1px solid;*/
 }
 
 .span-x-name{
 	float: left;
 	width: 200px;
-	margin-top: 135px;
+	margin-top: 45px;
 	/*border: 1px solid red;*/
 }
 .span-x-head{
@@ -374,9 +372,11 @@ footer.page-footer{
 }
 .span-x-box-1{
 	float: left;	
+	margin-top: 70px;
 }
 .span-x-box-2{
 	float: right;	
+	margin-top: 70px;
 }
 .name-text-head{
 	font-size: 20px;
