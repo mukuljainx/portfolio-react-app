@@ -121,6 +121,23 @@ nav{
 }
 }
 
+@media screen and (width: 1600px) {
+.iframevideo1,.iframevideo2{
+	width:500px;
+	height:294px;
+}
+
+.iframevideo1{
+	margin-left: 25px;
+}
+.iframevideo2{
+	margin-left: 20px;
+}
+#aboutus-container{
+	height: 800px;
+}
+}
+
 
 @media screen and (max-width: 1280px) {
 .iframevideo1,.iframevideo2{

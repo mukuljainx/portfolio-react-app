@@ -55,3 +55,14 @@ $('.event-semi-card7').mouseleave(function(){
     $('.event-semi-card7>img').css("display", "inline");
     $('.event-semi-card7>.even-card-name').css("display","inline"); 
 });
+
+$('.event-semi-card8').click(function(){
+    $('.event-semi-card8>.even-card-coming-soon').css("display", "inline");
+    $('.event-semi-card8>img').css("display", "none");
+    $('.event-semi-card8>.even-card-name').css("display", "none");
+});
+$('.event-semi-card8').mouseleave(function(){
+    $('.event-semi-card8>.even-card-coming-soon').css("display", "none");
+    $('.event-semi-card8>img').css("display", "inline");
+    $('.event-semi-card8>.even-card-name').css("display","inline"); 
+});

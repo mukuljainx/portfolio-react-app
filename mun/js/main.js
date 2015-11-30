@@ -51,29 +51,6 @@ $('.contactx').click(function(){
   );
 
 
-var l_marginx = (window.innerWidth -235)/2;
-document.getElementById("make_center").style.marginLeft = l_marginx + "px";
-
-var x_widthx = $("#com_container").width();
-var x_heigthx = $("#com_container").height();
-var x_marginx = (window.innerWidth -x_widthx)/2;
-document.getElementById("com_container").style.marginLeft = x_marginx + "px";
-document.getElementById("map").style.marginTop = x_heigthx+ "px";
-
-$(window).resize(function(){
-    var l_margin = (window.innerWidth -235)/2;
-    document.getElementById("make_center").style.marginLeft = l_margin + "px";
-    
-    var x_width = $("#com_container").width();
-    var x_heigth = $("#com_container").height();
-    var x_margin = (window.innerWidth -x_width)/2;
-    document.getElementById("com_container").style.marginLeft = x_margin+ "px";
-    document.getElementById("map").style.marginTop = x_heigth+ "px";
-    console.log("margin : "+ x_margin + " x " + window.innerWidth )
-    console.log("width : " + x_width)
-});
-
-
 
 
 $(function(){

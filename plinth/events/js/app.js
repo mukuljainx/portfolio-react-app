@@ -25,7 +25,7 @@ app.config(function($routeProvider)
 	})
 	.when('/robosoccer',{
 		controller : 'MainController',
-		templateUrl : 'views/robosoccerxx.html'
+		templateUrl : 'views/robosoccerx.html'
 	})
 	.when('/technovation',{
 		controller : 'MainController',
@@ -58,6 +58,14 @@ app.config(function($routeProvider)
 	.when('/iupc',{
 		controller : 'MainController',
 		templateUrl : 'views/iupc.html'
+	})
+	.when('/diupc',{
+		controller : 'MainController',
+		templateUrl : 'views/diupc.html'
+	})
+	.when('/fixtb',{
+		controller : 'MainController',
+		templateUrl : 'views/fixtb.html'
 	})
 	.when('/asgard',{
 		controller : 'MainController',
