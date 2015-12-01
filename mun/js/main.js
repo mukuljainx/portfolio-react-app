@@ -23,41 +23,50 @@ $('.schedulex').click(function(){
 
 $('.cfpx').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top 
+        scrollTop: $( $(this).attr('href') ).offset().top -100 
     }, 500);
     return false;
 });
 
 $('.speakerx').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-$('.registerx').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $( $(this).attr('href') ).offset().top -100
     }, 500);
     return false;
 });
 
-$('.faqx').click(function(){
+$('.organizerx').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $( $(this).attr('href') ).offset().top -100
+    }, 500);
+    return false;
+});
+
+$('.comittieesx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top -100
+    }, 500);
+    return false;
+});
+
+
+$('.boardx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top -100
     }, 500);
     return false;
 });
 
 $('.locationx').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $( $(this).attr('href') ).offset().top -100
     }, 500);
     return false;
 });
 
 $('.contactx').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $( $(this).attr('href') ).offset().top -100
     }, 500);
     return false;
 });
