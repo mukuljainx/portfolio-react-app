@@ -31,17 +31,15 @@
 
 .nav-wrapper>ul{
 	float: left !important;
-	min-width: 970px;
+	width: 903px;
 	/*border: 1px solid black;*/
-	width: 65%;
-	margin-left: 13%;
 }
 
 .nav-wrapper>ul>li{
 	/*border: 1px solid red;*/
-	min-width: 190px;
+	min-width: 150px;
 	text-align: center;
-	width: 16%;
+	width: 15%;
 }
 
 #homex{
@@ -392,7 +390,7 @@ footer.page-footer{
 	height: 400px;
 	/*border: 1px solid red;*/
 	float: left;
-	margin-left: 210px;
+	margin-left: 380px;
 }
 
 .eb-card-2{
@@ -408,7 +406,7 @@ footer.page-footer{
 	height: 400px;
 	/*border: 1px solid red;*/
 	float: left;
-	margin-left: 210px;
+	margin-left: 380px;
 }
 
 .eb-card-4{
@@ -420,11 +418,34 @@ footer.page-footer{
 }
 
 .eb-card-5{
-	width: 1120px;
+	width: 1160px;
 	height: 400px;
 	/*border: 1px solid violet;*/
 	float: left;
-	margin-left: 210px;
+	margin-left: 380px;
+}
+}
+
+@media screen and (max-width:1600px) {
+.eb-card-1{
+	margin-left: 220px;
+}
+
+.eb-card-2{
+	margin-left: 20px;
+}
+
+.eb-card-3{
+	margin-left: 220px;
+}
+
+.eb-card-4{
+	margin-left: 20px;
+}
+
+.eb-card-5{
+	margin-left: 220px;
+	width: 1145px;
 }
 }
 
@@ -447,6 +468,7 @@ footer.page-footer{
 
 .eb-card-5{
 	margin-left: 85px;
+	width: 1140px;
 }
 }
 

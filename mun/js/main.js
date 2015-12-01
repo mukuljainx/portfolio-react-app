@@ -14,23 +14,43 @@ $('.aboutx').click(function(){
     return false;
 });
 
-$('.registereebx').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 300
-    }, 500);
-    return false;
-});
-
-$('.organizerx').click(function(){
+$('.schedulex').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top -100
     }, 500);
     return false;
 });
 
-$('.comittieesx').click(function(){
+$('.cfpx').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top 
+    }, 500);
+    return false;
+});
+
+$('.speakerx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+$('.registerx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
+$('.faqx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
+$('.locationx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
 });
@@ -42,50 +62,10 @@ $('.contactx').click(function(){
     return false;
 });
 
-  $('.modal-trigger').leanModal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .4, // Opacity of modal background
-      in_duration: 700, // Transition in duration
-      out_duration: 700, // Transition out duration
-    }
-  );
+var l_marginx = (window.innerWidth -903)/2;
+document.getElementById("nav-mobile").style.marginLeft = l_marginx + "px";
 
-
-
-
-$(function(){
-
-    var note = $('#note'),
-        ts = new Date(2015, 10, 17),
-        newYear = true;
-
-    if((new Date()) > ts){
-        // The new year is here! Count towards something else.
-        // Notice the *1000 at the end - time must be in milliseconds
-        ts = (new Date()).getTime() + 10*24*60*60*1000;
-        newYear = false;
-    }
-
-    $('#countdown').countdown({
-        timestamp   : ts,
-        callback    : function(days, hours, minutes, seconds){
-
-            var message = "";
-
-            message += days + " day" + ( days==1 ? '':'s' ) + ", ";
-            message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
-            message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
-            message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
-
-            if(newYear){
-                message += "left until the new year!";
-            }
-            else {
-                message += "left to 10 days from now!";
-            }
-
-            note.html(message);
-        }
-    });
-
+$(window).resize(function(){
+    var l_margin = (window.innerWidth -903)/2;
+    document.getElementById("nav-mobile").style.marginLeft = l_margin + "px";
 });
