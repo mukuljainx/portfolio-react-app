@@ -1,5 +1,5 @@
 $(".button-collapse").sideNav();
- $('.modal-trigger').leanModal();
+//$('.modal-trigger').leanModal();
 $('.homex').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
@@ -67,6 +67,13 @@ $('.locationx').click(function(){
 $('.contactx').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top -100
+    }, 500);
+    return false;
+});
+
+$('.registereebx').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top -300
     }, 500);
     return false;
 });
