@@ -13,7 +13,9 @@
   src: url(../font/roboto/Roboto-Regular.ttf);
 }
 
-
+body{
+	min-width: 660px;
+}
 
 .nav-wrapper{
 	font-family: roboto-light;
@@ -363,7 +365,7 @@ footer.page-footer{
 .span-x-head{
 	width: 200px;
 	float: left;
-	margin-left: 35px;
+	margin-left: 50px;
 	margin-top: 110px;
 	line-height: 40px;
 	font-weight: 300;
