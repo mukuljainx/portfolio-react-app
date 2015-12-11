@@ -1,0 +1,63 @@
+<link rel="import"  href="../bower_components/polymer/polymer.html">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css.min">
+
+<dom-module id="event-box">
+	<style>
+	h1{
+		font-weight: 900;
+		font-size: 25px;
+		line-height: 10px;
+		text-align: center;
+	}
+	h2{
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 12px;
+		text-align: center;
+	}
+	h3{
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 10px;
+		text-align: center;
+	}
+	h4{
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 15px;
+		text-align: center;
+	}
+	.panel-custom{
+		margin: 10px 0px 0px 0px;
+		width: 500px;
+	}		
+	</style>
+
+	<template>
+	<div class="panel panel-default panel-custom">
+  	<div class="panel-body">
+   		
+   		<h1>{{title}}</h1>
+		<h2>{{category}}</h2>
+		<h3>venue : {{venue}}</h3>
+		<h4>{{time}}</h4>
+	
+	</div>
+	</div>	
+	</template>
+
+</dom-module>
+
+<script >
+	Polymer({
+		is : "event-box",
+		properties :{
+			title : String,
+			category : String,
+			venue : String,
+			time : String,
+		},
+
+	});
+
+</script>
