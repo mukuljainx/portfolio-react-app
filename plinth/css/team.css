@@ -1,22 +1,24 @@
 .span-card{
-	width: 240px;
-	height: 390px;
+	width: 260px;
+	height: 410px;
 	/*border: 1px solid;*/
 	float: left;
-	margin-left: 65px;
+	margin-left: 50px;
 }
 .name-text-head{
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
 	position: relative;
 	top: -49px;
+	font-family: regular;
 }
 
 .name-text-pos{
-	font-size: 20px;
+	font-size: 17px;
 	position: relative;
 	top: -49px;
 	font-weight: 200;
+	/*font-family: thin;	*/
 }
 
 #fb-x{
@@ -24,7 +26,7 @@
 	/*border-radius:25px;*/
 	position: relative;
     top: -45px;
-    left: 102px;
+    left: 48px;
 }
 
 #in-x{
@@ -32,7 +34,7 @@
 	/*border-radius:25px;*/
 	position: relative;
     top: -70px;
-    left: 164px;
+    left: 106px;
 }
 
 #just-a-line{
