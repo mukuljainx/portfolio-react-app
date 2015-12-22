@@ -10,11 +10,11 @@
 	font-weight: 400;
 	position: relative;
 	top: -49px;
-	font-family: regular;
+	font-family: Roboto Regular;
 }
 
 .name-text-pos{
-	font-size: 17px;
+	font-size: 18px;
 	position: relative;
 	top: -49px;
 	font-weight: 200;
@@ -25,16 +25,16 @@
 	/*border:5px solid white; */
 	/*border-radius:25px;*/
 	position: relative;
-    top: -45px;
-    left: 48px;
+    top: -40px;
+    left: 40px;
 }
 
 #in-x{
 	/*border:5px solid white;*/
 	/*border-radius:25px;*/
 	position: relative;
-    top: -70px;
-    left: 106px;
+     top: -65px;
+    left: 102px;
 }
 
 #just-a-line{
@@ -48,4 +48,8 @@
 	position: relative;
     top: -5px;
     left: 10px;	
+}
+
+.shift-left{
+	margin-left: -15px;
 }
