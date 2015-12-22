@@ -16,9 +16,13 @@
 .name-text-pos{
 	font-size: 18px;
 	position: relative;
-	top: -49px;
+	top: -56px;
 	font-weight: 200;
 	/*font-family: thin;	*/
+}
+
+a{
+	color: black;
 }
 
 #fb-x{
