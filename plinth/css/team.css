@@ -1,0 +1,49 @@
+.span-card{
+	width: 240px;
+	height: 390px;
+	/*border: 1px solid;*/
+	float: left;
+	margin-left: 65px;
+}
+.name-text-head{
+	font-size: 20px;
+	font-weight: 300;
+	position: relative;
+	top: -49px;
+}
+
+.name-text-pos{
+	font-size: 20px;
+	position: relative;
+	top: -49px;
+	font-weight: 200;
+}
+
+#fb-x{
+	/*border:5px solid white; */
+	/*border-radius:25px;*/
+	position: relative;
+    top: -45px;
+    left: 102px;
+}
+
+#in-x{
+	/*border:5px solid white;*/
+	/*border-radius:25px;*/
+	position: relative;
+    top: -70px;
+    left: 164px;
+}
+
+#just-a-line{
+	position: relative;
+	top: -19px;
+	width: 90%;
+	left:-5%;
+}
+
+#make-up{
+	position: relative;
+    top: -5px;
+    left: 10px;	
+}
