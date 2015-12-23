@@ -4,6 +4,7 @@
 	/*border: 1px solid;*/
 	float: left;
 	margin-left: 50px;
+	margin-bottom: 30px;
 }
 .name-text-head{
 	font-size: 20px;
@@ -56,4 +57,11 @@ a{
 
 .shift-left{
 	margin-left: -15px;
+}
+
+.top-card-1{
+	margin: 0px 20px 30px 360px;
+}
+.top-card-2{
+	margin: 0px 200px 30px 20px;
 }
