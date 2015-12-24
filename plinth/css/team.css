@@ -57,6 +57,7 @@ a{
 
 .shift-left{
 	margin-left: -15px;
+	position: relative;
 }
 
 .top-card-1{
