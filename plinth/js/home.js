@@ -26,7 +26,7 @@ $('.exhibation').mouseleave(function(){
     $('.exhibation').css("-webkit-transform", "rotateY(0deg)");
     $('.exhibation').css("-moz-transform", "rotateY(0deg)");
 	$('.tq2').fadeOut(0);
-	$('.tq2').text("EXHIBATIONS");
+	$('.tq2').text("EXHIBITIONS");
 	$('.tq2').fadeIn(1300);
 });
 $('.speaker').click(function(){

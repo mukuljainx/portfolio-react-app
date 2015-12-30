@@ -11,7 +11,7 @@
 	font-weight: 400;
 	position: relative;
 	top: -49px;
-	font-family: Roboto Regular;
+	/*font-family: Roboto Regular;*/
 }
 
 .name-text-pos{
@@ -62,7 +62,9 @@ a{
 
 .top-card-1{
 	margin: 0px 20px 30px 360px;
+	height: 330px;
 }
 .top-card-2{
 	margin: 0px 200px 30px 20px;
+	height: 330px;
 }

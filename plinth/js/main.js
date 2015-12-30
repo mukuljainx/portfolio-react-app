@@ -1,3 +1,5 @@
+// window.location.href = window.location.href;
+
 $(".button-collapse").sideNav();
 $(".parallax").parallax();
 
