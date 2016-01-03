@@ -8,7 +8,7 @@
 }
 
 .other-mem{
-	height: 340px;
+	height: 350px;
 }
 
 .name-text-head{
@@ -94,6 +94,13 @@ a{
 	height: 30px;
 	background-image: url('../media/images/t_call.png');
 	background-size: 100% 100%;
+}
+
+.contact-no{
+	position: absolute;
+    margin-top: -52px;
+    margin-left: -110px;
+    display: none;
 }
 
 .shift-left-x{
