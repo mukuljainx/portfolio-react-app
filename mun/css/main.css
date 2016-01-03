@@ -17,6 +17,60 @@ body{
 	min-width: 660px;
 }
 
+#social_nav>img{
+	width: 50px;
+	height: 50px;
+}
+
+#contact_us_btn{
+
+	margin-top: 30px;
+	background-color: #3F51B5; 
+}
+
+#social_nav{
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+  /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #0C46A0;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #0C46A0;
+     box-shadow: 0 1px 0 0 #0C46A0;
+   }
+   .input-field input[type=email]:focus + label {
+     color: #0C46A0;
+   }
+
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #0C46A0;
+     box-shadow: 0 1px 0 0 #0C46A0;
+   }
+
+   .input-field input[type=text]:focus + label {
+     color: #0C46A0;
+   }
+
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #0C46A0;
+     box-shadow: 0 1px 0 0 #0C46A0;
+   }
+
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #0C46A0;
+   }
+
+
 .nav-wrapper{
 	font-family: roboto-light;
 	background-color: #0c46a0;
@@ -523,3 +577,4 @@ footer.page-footer{
 	height: 2250px;
 }
 }
+

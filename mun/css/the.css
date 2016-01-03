@@ -1,0 +1,22 @@
+body{
+	background-color: #1976D3;
+}
+
+.mun-container{
+	width: 280px;
+	/*border: 1px solid;*/
+	margin-left: 108px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.sec-card{
+	width: 250px;
+	border: 0px solid white;
+	border-radius: 300px;
+	padding: 5px;
+}
+
+h6,h5{
+	color: white;
+}
