@@ -18,6 +18,18 @@ body{
   background-size: 100% 100%;
 }
 
+#skip-btn{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  width: 70px;
+  z-index: 99999999999;
+}
+
+#skip-btn:hover{
+  cursor: hand;
+}
+
 .date{
     position: fixed;
     top: 70px;
@@ -241,66 +253,66 @@ body{
 
 .robotics:hover{
     -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 
 .quiz:hover{
  -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 .e-cell:hover{
   -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 .exhibation:hover{
   -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
   }
 
 .speaker:hover{
   -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 
 .literary:hover{
 -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 .cybros:hover{
  -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 .astronomy:hover{
  -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 
 .mun:hover{
   -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 .workshops:hover{
     -webkit-transition: -webkit-transform .1s;
-    -webkit-transform : scale(1.2);
-    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.05);
+    -moz-transform : scale(1.05); 
     z-index: 99;
 }
 

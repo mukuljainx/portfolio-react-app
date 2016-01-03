@@ -66,3 +66,15 @@ $('.event-semi-card8').mouseleave(function(){
     $('.event-semi-card8>img').css("display", "inline");
     $('.event-semi-card8>.even-card-name').css("display","inline"); 
 });
+
+$('.event-semi-card1').click(function(){
+    $('.event-semi-card').fadeOut(500);
+    $('.event-x-btn').fadeIn(500);
+    $('.event-x').fadeIn(500);
+});
+
+$('.event-x-btn').click(function(){
+    $('.event-semi-card').fadeIn(500);
+    $('.event-x').fadeOut(500);
+    $('.event-x-btn').fadeOut(500);
+});

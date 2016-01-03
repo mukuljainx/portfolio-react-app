@@ -60,11 +60,12 @@ Into its second version, this festival comprises of a plethora of events as well
         <a href="home.html" class="brand-logo"><img id= "logo_img" src="./media/images/logo.png"></a>
         <a href="##" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
             <li><a href="event.html">Events</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
             <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">Our Team</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
@@ -73,6 +74,7 @@ Into its second version, this festival comprises of a plethora of events as well
             <li><a href="event.html">Events</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
             <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">Our Team</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
       </ul>
       </div>
@@ -81,6 +83,9 @@ Into its second version, this festival comprises of a plethora of events as well
 <video id="myvid" autoplay onended="videoended()" >
 <source src="./media/video/welcome.mp4"  type="video/mp4">
 </video>
+
+<img src="./media/images/skip.png" id="skip-btn">
+
 <div class="mini-fb-page-container">
   <div class="fb-page" data-href="https://www.facebook.com/Plinth.LNMIIT/?fref=ts" data-width="300px" data-height="400px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Plinth.LNMIIT/?fref=ts"><a href="https://www.facebook.com/Plinth.LNMIIT/?fref=ts">Plinth, The LNMIIT-Jaipur</a></blockquote></div></div>
 </div>
@@ -211,9 +216,6 @@ Into its second version, this festival comprises of a plethora of events as well
   ul>li>a{
     color: white;
 }
-nav{
-  top :-64px !important;
-}
 </style>
 
     <!---JS-->
@@ -225,7 +227,14 @@ nav{
   function videoended(){
     $('#myvid').fadeOut(500);
     $('#myvid-wrap').fadeOut(500);
+    $('#skip-btn').fadeOut(500);
   }
+
+  $('#skip-btn').click(function(){
+      $('#myvid').fadeOut(500);
+    $('#skip-btn').fadeOut(500);
+    $('#myvid-wrap').fadeOut(500);
+  });
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    $('#myvid').fadeOut(0);
@@ -234,21 +243,6 @@ nav{
 
   </script>
 
-<script type="text/javascript">
-video = document.getElementById("myvid");
-video.addEventListener("timeupdate", navbar_up, false);
-
-function navbar_up(){
-    if(this.currentTime > this.duration-2.7){
-
-    $('nav').css("-webkit-transition" , "0.1s ease-out");
-    $('nav').css("-webkit-transform" , "translate(0,64px)");
-    $('nav').css("-moz-transition" , "0.1s ease-out");
-    $('nav').css("-moz-transform" , "translate(0,64px)");
-    }
-  }
-
-</script>
 
 </body>
 </html>

@@ -1,4 +1,9 @@
-// window.location.href = window.location.href;
+$.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()); 
+
+if($.browser.chrome){
+	location.reload(true);
+}
+
 
 $(".button-collapse").sideNav();
 $(".parallax").parallax();

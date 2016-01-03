@@ -3,29 +3,29 @@ var app= angular.module('CompetitionEvent', ['ngRoute']);
 app.config(function($routeProvider)
 {
 	$routeProvider
-	.when('/transporter',{
-		controller : 'MainController',
-		templateUrl : 'views/transporterx.html'
-	})
 	.when('/robowar',{
 		controller : 'MainController',
-		templateUrl : 'views/robowarx.html'
+		templateUrl : 'views/robowary.html',
+	})
+	.when('/transporter',{
+		controller : 'MainController',
+		templateUrl : 'views/transporterk.html'
 	})
 	.when('/linefollower',{
 		controller : 'MainController',
-		templateUrl : 'views/linefollowerx.html'
+		templateUrl : 'views/linefolloweryy.html'
 	})
 	.when('/lumos',{
 		controller : 'MainController',
-		templateUrl : 'views/lumosx.html'
+		templateUrl : 'views/lumosk.html'
 	})
 	.when('/roborace',{
 		controller : 'MainController',
-		templateUrl : 'views/roboracex.html'
+		templateUrl : 'views/roboracey.html'
 	})
 	.when('/robosoccer',{
 		controller : 'MainController',
-		templateUrl : 'views/robosoccerx.html'
+		templateUrl : 'views/robosoccerk.html'
 	})
 	.when('/technovation',{
 		controller : 'MainController',

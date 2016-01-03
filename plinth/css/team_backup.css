@@ -1,0 +1,301 @@
+.span-card{
+	width: 260px;
+	height: 410px;
+	/*border: 1px solid;*/
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+.name-text-head{
+	font-size: 20px;
+	font-weight: 400;
+	position: relative;
+	top: -49px;
+	/*font-family: Roboto Regular;*/
+}
+
+.name-text-pos{
+	font-size: 18px;
+	position: relative;
+	top: -56px;
+	font-weight: 200;
+	/*font-family: thin;	*/
+}
+
+a{
+	color: black;
+}
+
+#fb-x{
+	/*border:5px solid white; */
+	/*border-radius:25px;*/
+	position: relative;
+    top: -40px;
+    left: 40px;
+}
+
+#in-x{
+	/*border:5px solid white;*/
+	/*border-radius:25px;*/
+	position: relative;
+     top: -65px;
+    left: 102px;
+}
+
+#just-a-line{
+	position: relative;
+	top: -19px;
+	width: 90%;
+	left:-5%;
+}
+
+#make-up{
+	position: relative;
+    top: -5px;
+    left: 10px;	
+}
+
+.shift-left{
+	margin-left: -15px;
+	position: relative;
+}
+
+.top-card-1{
+	margin: 0px 20px 30px 675px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 200px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 365px;
+}
+.sidd{
+	margin-left: 40px;
+}
+.sethia{
+	margin-right: 100px;
+}
+
+.tabs .tab a {
+	color: grey;
+}
+
+.tabs .indicator {
+	background-color: grey !important;
+}
+
+.tabs .tab a:hover {
+    color: #9C9C9C;
+}
+
+
+@media screen and (max-width: 1600px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 520px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 200px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 210px;
+}
+.sidd{
+	margin-left: 50px;
+}
+.sethia{
+	margin-right: 0px;
+}
+}
+@media screen and (max-width: 1366px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 360px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 200px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 50px;
+}
+.sidd{
+	margin-left: 50px;
+}
+.sethia{
+	margin-right: 0px;
+}
+}
+
+@media screen and (max-width: 1024px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 227px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 200px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 226px;
+}
+.sidd{
+	margin-left: 226px;
+}
+.sethia{
+	margin-right: 0px;
+}
+}
+
+@media screen and (max-width: 990px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 198px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 20px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 191px;
+}
+.sidd{
+	margin-left: 191px;
+}
+.sethia{
+	margin-right: 0px;
+}
+}
+
+@media screen and (max-width: 780px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 100px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 20px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 100px;
+}
+.sidd{
+	margin-left: 100px;
+}
+.sethia{
+	margin-right: 0px;
+}
+.left-x{
+	margin-left: 100px;
+}
+}
+
+@media screen and (max-width: 680px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 50px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 20px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 50px;
+}
+.sidd{
+	margin-left: 50px;
+}
+.sethia{
+	margin-right: 0px;
+}
+.left-x{
+	margin-left: 50px;
+}
+}
+
+@media screen and (max-width: 600px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 20px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 20px 30px 20px;
+	height: 330px;
+}
+.dangi{
+	margin-left: 20px;
+}
+.sidd{
+	margin-left: 20px;
+}
+.sethia{
+	margin-right: 0px;
+}
+.left-x{
+	margin-left: 20px;
+}
+}
+
+@media screen and (max-width: 590px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 120px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 20px 30px 120px;
+	height: 330px;
+}
+.span-card{
+	margin-left: 120px;
+}
+.dangi{
+	margin-left: 120px;
+}
+.sidd{
+	margin-left: 120px;
+}
+.sethia{
+	margin-right: 0px;
+}
+.left-x{
+	margin-left: 120px;
+}
+}
+
+@media screen and (max-width: 400px){
+	
+.top-card-1{
+	margin: 0px 20px 30px 70px;
+	height: 330px;
+}
+.top-card-2{
+	margin: 0px 20px 30px 70px;
+	height: 330px;
+}
+.span-card{
+	margin-left: 70px;
+}
+.dangi{
+	margin-left: 70px;
+}
+.sidd{
+	margin-left: 70px;
+}
+.sethia{
+	margin-right: 0px;
+}
+.left-x{
+	margin-left: 70px;
+}
+}

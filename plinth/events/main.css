@@ -43,7 +43,7 @@ nav>ul>li{
 }
 
 #event_head{
-	text-align: center;	
+	text-align: center;	 
 }
 }
 #event_img{
@@ -52,10 +52,35 @@ nav>ul>li{
 	height: 100px;
 }
 
+#price-worth{
+	position: relative;
+    top: -71px;
+    left: 3px;
+    font-size: 37px;
+    font-weight: 400;
+    color: black;
+}
+
+#price-value{
+    position: relative;
+    top: -92px;
+    left: 107px;
+    font-weight: 400;
+    font-size: 48px;
+    color: black;
+}
+
+.price-card>img{
+	width: 100px;
+}
 
 
-
-
+.price-card{
+    width: 354px;
+	height: 168px;
+    margin-left: 24%;
+    margin-bottom: 50px;
+}
 
 
 .parallax {

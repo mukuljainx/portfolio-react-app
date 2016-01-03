@@ -39,7 +39,7 @@ $( "select" )
                 $(this).css("background-color","#fff");
                 $(this).css("color","grey");
             });
-            window.location.replace("./management.html#/sif");            
+            window.location.replace("./management.html#/bplan");            
             $('#Robotics').hide();
     		$('#Management').show();
     		$('#Coding').hide();
