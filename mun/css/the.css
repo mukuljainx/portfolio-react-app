@@ -11,12 +11,22 @@ body{
 }
 
 .sec-card{
-	width: 250px;
+	width: 220px;
 	border: 0px solid white;
 	border-radius: 300px;
 	padding: 5px;
+	position: relative;
+	left:20px;
 }
 
 h6,h5{
 	color: white;
+}
+
+.the-name{
+	line-height: 0px;
+}
+
+.the-pos{
+	line-height: 22px;
 }
