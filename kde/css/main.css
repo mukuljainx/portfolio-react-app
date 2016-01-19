@@ -13,6 +13,9 @@
   src: url(../font/roboto/Roboto-Regular.ttf);
 }
 
+body{
+	min-width: 400px;
+}
 
 .hide-on-med-and-down{
 	width: 712px;
@@ -157,9 +160,27 @@ section.module.parallax h1 {
 }
 
 footer.page-footer{
-	background-color: #000;
-	margin-top: 0px;
+background-color: #2196F3;
+margin-top: 0px;
+box-shadow: 0px -2px 20px #000100;
+padding-bottom: 1px;
 }
+
+
+.social-icon>a>img{
+	width: 45px;
+	margin-left: 40px;
+	border: 0px solid black;
+	border-radius: 45px;
+	box-shadow: 2px 2px 5px #000000;
+}
+
+.contact-1,.contact-2{
+	position: relative;
+	top: 7px;
+	left: -3px;
+}
+
 
 #DateCountdown{
 	width: 70%;
@@ -191,4 +212,149 @@ footer.page-footer{
 
 .downtown_size{
 	width: 100%;
+}
+
+
+@media screen and (max-width: 1920px) {
+
+.speaker-1{
+	margin-left: 33% !important;
+}
+.social-icon{
+	margin-left: 80px;
+}
+.contact-1{
+	margin-left: 55px;
+}
+
+}
+
+@media screen and (max-width: 1600px) {
+
+.speaker-1{
+	margin-left: 30% !important;
+}
+
+}
+
+@media screen and (max-width: 1366px) {
+
+.speaker-1{
+	margin-left: 25.5% !important;
+}
+.social-icon{
+	margin-left: 70px;
+}
+.contact-1{
+	margin-left: 55px;
+}
+
+}
+@media screen and (max-width: 1280px) {
+
+.speaker-1{
+	margin-left: 25.5% !important;
+}
+
+.social-icon{
+	margin-left: 50px;
+}
+.contact-1{
+	margin-left: 55px;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+.speaker-1{
+	margin-left: 20% !important;
+}
+
+.social-icon{
+	margin-left: 20px;
+}
+.contact-1{
+	margin-left: 25px;
+}
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+.speaker-1{
+	margin-left: 10% !important;
+}
+#map{
+	height: 600px;	
+}
+.social-icon{
+	margin-left: 28%;
+}
+.contact-1{
+	margin-left: 27%;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+
+.speaker-1{
+	margin-left: 2% !important;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+.speaker-1,.speaker-2{
+	margin-left: 26% !important;
+}
+#map{
+	height: 500px;	
+}
+.social-icon{
+	margin-left: 22%;
+}
+.contact-1{
+	margin-left: 22%;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+
+.speaker-1,.speaker-2{
+	margin-left: 20% !important;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+
+.speaker-1,.speaker-2{
+	margin-left: 14% !important;
+}
+
+#map{
+	height: 400px;	
+}
+
+.social-icon{
+	margin-left: 12%;
+}
+.contact-1{
+	margin-left: 12%;
+}
+
+}
+@media screen and (max-width: 400px) {
+
+.speaker-1,.speaker-2{
+	margin-left: 10% !important;
+}
+
 }
