@@ -137,7 +137,7 @@ nav ul a {
 
 
 .aboutUs{
-	height: 100%;
+	/*height: 100%;*/
 	/*background-image: url('http://www.siwallpaper.com/wp-content/uploads/2015/07/geometric_simple_design_wallpaper.jpg');*/
 	background-color: #EEE;
 }
@@ -230,9 +230,6 @@ nav ul a {
 	margin-left: 30px;
 }
 
-.team-1{
-	margin-left: 100px;
-}
 
 .teamSpaceCover{
 	height: 240px;
@@ -264,34 +261,203 @@ footer.page-footer{
 
 @media screen and (max-width: 1920px) {
 
-.speaker-1{
-	margin-left: 33% !important;
+#logo{
+	margin-top: 25%;
 }
+
+.team-1{
+	margin-left: 22%;
+}
+
 .social-icon{
-	margin-left: 80px;
+	margin-left: 26.5%;
 }
 .contact-1{
-	margin-left: 55px;
+	margin-left: 25%;
+}
+
+.aboutUs-1{
+	margin-left: 33%;
 }
 
 }
 
 @media screen and (max-width: 1600px) {
 
-.speaker-1{
-	margin-left: 30% !important;
+#logo{
+	margin-top: 25%;
+}
+
+.team-1{
+	margin-left: 16%;
+}
+
+.social-icon{
+	margin-left: 22%;
+}
+.contact-1{
+	margin-left: 23%;
+}
+
+.aboutUs-1{
+	margin-left: 21%;
 }
 
 }
 
 @media screen and (max-width: 1366px) {
 
-.speaker-1{
-	margin-left: 25.5% !important;
+#logo{
+	/*margin-top: 25%;*/
 }
+
+.team-1{
+	margin-left: 8%;
+}
+
 .social-icon{
-	margin-left: 70px;
+	margin-left: 18%;
 }
 .contact-1{
-	margin-left: 55px;
+	margin-left: 18%;
+}
+
+.aboutUs-1{
+	margin-left: auto;
+}
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+.social-icon{
+	margin-left: 16%;
+}
+.contact-1{
+	margin-left: 16%;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+.social-icon{
+	margin-left: 5%;
+}
+.contact-1{
+	margin-left: 5%;
+}
+
+.team-card{
+	margin-left: 5px;
+}
+
+.team-1{
+	margin-left: 0;
+}
+
+.aboutUs-1,.aboutUs-2{
+	margin-left: 23%;
+}
+
+}
+
+@media screen and (max-width: 1018px) {
+	.teamSpaceCover{
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+.userOptionMargin{
+	margin-left:25%; 
+}
+
+.frontPanelUserHead{
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.social-icon{
+	margin-left: 28%;
+}
+.contact-1{
+	margin-left: 28%;
+}
+
+.team-card{
+	margin-left: 5px;
+}
+
+.team-1,.team-3{
+	margin-left: 19%;
+	margin-bottom: 30px;
+}
+
+.aboutUs-1,.aboutUs-2{
+	margin-left: 10%;
+}
+
+}
+
+@media screen and (max-width: 630px) {
+	.teamSpaceCover{
+		height: 750px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+#login{
+	top: 10px;	
+	right: 20px;
+}
+#signup{
+	top: 40px;	
+	right: 18px;
+}
+
+#logo{
+	margin-left: 35%;
+}
+
+
+.userOptionMargin{
+	margin-left:13%; 
+}
+
+.frontPanelUserHead{
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.social-icon{
+	margin-left: 4%;
+}
+.contact-1{
+	margin-left: 24%;
+}
+.contact-2{
+	margin-left: 29%;
+	margin-bottom: 30px;
+}
+
+.team-card{
+	margin-left: 5px;
+}
+
+.team-1,.team-2,.team-3,.team-4{
+	margin-left: 17%;
+	margin-bottom: 30px;
+}
+
+.aboutUs-1,.aboutUs-2{
+	margin-left: 0%;
+	width: 100%;
+	height: 220px;
+}
+
 }
