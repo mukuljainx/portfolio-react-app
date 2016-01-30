@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+
+html, body {margin:0;padding:0;height:100%;}
+
+body{
+	/*background-image: url('http://www.siwallpaper.com/wp-content/uploads/2015/07/geometric_simple_design_wallpaper.jpg');*/
+	background-color: #EEE;
+}
+.margin-remove{
+	margin: 0px;
+}
+.material-icons{
+	position: relative;
+}
+
+.indicators{	
+	display: none;
+}
+
+.main-slider{
+	position: fixed;
+	top: 0px;
+	z-index: -1;
+}
+
+.become{
+	height: 60px;
+	background-color: white;
+	padding: 11px 0px;
+	display: none;
+	position: fixed;
+	width: 100%;
+	z-index: 998;
+}
+
+.become-close{
+	float: right;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.frontPanelUser{
+	height: 100%;
+	/*border: 3px solid white;*/
+}
+
+#logo{
+	    margin-left: 45%;
+    margin-top: 282px;
+}
+
+#signup,#login{
+	position: absolute;
+    right: 120px;
+    top: 45px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    /*border: 2px solid white;*/
+    padding: 2px;
+    border-radius: 4px;
+}
+
+#login{
+	right: 40px;
+}
+
+#signup:hover,#login:hover{
+	background-color: rgba(255,255,255,0.4);
+	/*text-shadow: 1px 1px grey;*/
+}
+
+.frontPanelUserHead{
+	font-weight: 600;
+    font-size: 45px;
+    margin-top: 10px;
+    text-shadow:2px 2px #000000;
+}
+
+.userOptionMargin{
+	margin-left: 325px;
+}
+
+label{
+	color: white;
+}
+
+
+nav{
+	/*position: fixed;*/
+	position: absolute;
+	top: calc(100%);
+	background-color: #2196F3;
+	z-index: 999 !important;
+}
+
+nav ul a {
+	color : white;
+	font-weight: 400;
+}
+
+.nav-container{
+	z-index: 999;
+}
+
+.categories{
+	/*height: 100%;*/
+	background-color: #EEE;
+	/*background-image: url('http://www.siwallpaper.com/wp-content/uploads/2015/07/geometric_simple_design_wallpaper.jpg');*/
+	/*background-size: 100% 100%;*/
+}
+
+.category-image>.row{
+	width: 80%;
+}
+
+#spacework{
+	height: 0px;
+	/*border: 1px solid red;*/
+}
+
+.categoryHead{
+	color: black;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-weight: 100;
+    /*text-shadow: 3px 4px #888888;*/
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+.clientSayRow{
+	width: 90%;
+}
+
+
+.aboutUs{
+	height: 100%;
+	/*background-image: url('http://www.siwallpaper.com/wp-content/uploads/2015/07/geometric_simple_design_wallpaper.jpg');*/
+	background-color: #EEE;
+}
+
+#indroductionHead1{
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.icon-1{
+	top: 8px;
+	font-size: 40px;
+}
+
+.aboutUs-1, .aboutUs-2{
+	/*border: 1px solid red;*/
+	width: 500px;
+	/*margin-left: 30.5%;*/
+	height: 190px;
+	    /*width: auto;*/
+}
+
+.aboutUs-para-1{
+	text-align:left;
+	padding-left:9%;
+}
+
+.aboutUsContent{
+	width: 90%;
+	padding-left: 5%;
+}
+
+
+/*Team*/
+
+.teamHead{
+	color: black;
+    padding-bottom: 40px;
+    /*padding-top: 10px;*/
+    font-weight: 200;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.span-card{
+	width: 260px;
+	height: 320px;
+	/*border: 1px solid;*/
+	/*float: left;*/
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.name-text-head{
+	font-size: 19px !important;
+	font-weight: 400 !important;
+	position: relative;
+	/*top: -74px;*/
+	/*text-align: center ;*/
+}
+
+.name-text-pos{
+	font-size: 14px !important;
+	position: relative;
+	/*top: -80px;	*/
+	/*text-align: center;*/
+	font-weight: 400;
+	font-style: bold;
+}
+
+.fbx-img{
+	display: none;
+	position: relative;
+	width: 40px !important;/*
+    top: -86px !important;
+    left: 187px !important;*/
+}
+
+.inx-img{
+	display: none;
+	position: relative;
+	width: 40px !important;/*
+    top: -89px !important;
+    left: 168px !important;*/
+}
+
+.team-card{
+	float: left;
+	/*border: 1px solid red;*/
+	width: 250px;
+	margin-left: 30px;
+}
+
+.team-1{
+	margin-left: 100px;
+}
+
+.teamSpaceCover{
+	height: 240px;
+}
+.random-box{
+	height: 300px;
+	background-color: red;
+}
+
+footer.page-footer{
+	padding-bottom: 1px;
+	background-color: #2196F3;
+	box-shadow: -1px -3px 8px #888888;
+}
+
+.social-icon>a>img{
+	width: 45px;
+	margin-left: 40px;
+	border: 0px solid black;
+	border-radius: 45px;
+	box-shadow: 2px 2px 5px #000000;
+}
+
+.contact-1,.contact-2{
+	position: relative;
+	top: 7px;
+	left: -3px;
+}
+
+@media screen and (max-width: 1920px) {
+
+.speaker-1{
+	margin-left: 33% !important;
+}
+.social-icon{
+	margin-left: 80px;
+}
+.contact-1{
+	margin-left: 55px;
+}
+
+}
+
+@media screen and (max-width: 1600px) {
+
+.speaker-1{
+	margin-left: 30% !important;
+}
+
+}
+
+@media screen and (max-width: 1366px) {
+
+.speaker-1{
+	margin-left: 25.5% !important;
+}
+.social-icon{
+	margin-left: 70px;
+}
+.contact-1{
+	margin-left: 55px;
+}
