@@ -1,0 +1,329 @@
+<!-- style="background: rgba(255,255,255,0.7); border:0px; border-radius:10px; color: black; padding: 4px 6px 10px 6px; " -->
+
+<link rel="stylesheet" type="text/css" href="css/imageeffect.css">
+
+<iframe class="main-slider" src="./slider.html"></iframe>
+
+<div class="frontPanelUser">
+<div class="topContentWrapper">
+  <a href="#"><img src="./media/images/logo.png" id="logo" class="center"></a>
+
+  <h2 class="white-text center frontPanelUserHead">Get Best Photograpy With Just One Click</h2>
+
+  <div class="userOption blackPannel">
+  
+    <div class="userOptionMargin" >
+    <div class="white-text">
+      <div class="homeCityInput"> 
+        <!-- <label>City</label> -->
+        <md-select  ng-model="eventCity">
+          <md-option  ng-value="city.id" ng-repeat="city in cities">{{ city.city }}</md-option>
+        </md-select>
+      </div>
+      <div class="homeProfInput"> 
+        <!-- <label>Cinematographer or Photographer</label> -->
+        <md-input-container class="md-block" flex-gt-sm>
+            <md-select  required ng-model="eventSelectedType">
+              <md-option ng-repeat="type in types" value="{{type.name}}">
+                {{type.name}}
+              </md-option>
+            </md-select>
+          </md-input-container>
+      </div>
+      
+      <div class="center">
+      <a ng-click="homeSubmit()" id="div-submit" class="waves-effect waves-light btn submit_btn" style="background-color:rgba(0,0,0,0); border:1px solid rgba(255,255,255,.4);" >SUBMIT</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br><br>
+
+<h2 class="center categoryHead">Our Work</h2>
+<div class="category-image">
+<div class="row">
+    <div class="col s12 m4">
+      <div class="view view-tenth aniright">  
+        <img src="./media/images/dlsuhackercup.jpg" />  
+        <div class="mask">  
+          <h2>Category</h2>  
+        <a href="#" class="info">Explore</a><br>
+        <a href="#" class="info">Book Now</a>    
+      </div>  
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="view view-tenth anidown">  
+        <img src="./media/images/dlsuhackercup.jpg" />  
+        <div class="mask">  
+          <h2>Category</h2>  
+        <a href="#" class="info">Explore</a><br>
+        <a href="#" class="info">Book Now</a>    
+      </div>  
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="view view-tenth anileft">  
+        <img src="./media/images/dlsuhackercup.jpg" />  
+        <div class="mask">  
+          <h2>Category</h2>  
+        <a href="#" class="info">Explore</a><br>
+        <a href="#" class="info">Book Now</a>    
+      </div>  
+      </div>
+    </div>
+
+
+  <!-- </div> -->
+
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="view view-tenth aniright">  
+        <img src="./media/images/dlsuhackercup.jpg" />  
+        <div class="mask">  
+          <h2>Category</h2>  
+        <a href="#" class="info">Explore</a><br>
+        <a href="#" class="info">Book Now</a>    
+      </div>  
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="view view-tenth aniup">  
+        <img src="./media/images/dlsuhackercup.jpg" />  
+        <div class="mask">  
+          <h2>Category</h2>  
+        <a href="#" class="info">Explore</a><br>
+        <a href="#" class="info">Book Now</a>    
+      </div>  
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="view view-tenth anileft">  
+        <img src="./media/images/dlsuhackercup.jpg" />  
+        <div class="mask">  
+          <h2>Category</h2>  
+        <a href="#" class="info">Explore</a><br>
+        <a href="#" class="info">Book Now</a>    
+      </div>  
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="partner" id="partner_s">
+<div id="spacework"></div>
+
+<h2 class="center categoryHead">Happy Clients</h2>
+
+<div class="row clientSayRow">
+
+   <div class="col s12 m4 clientSay clientSay1">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 clientSay">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 clientSay">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 clientSay">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 clientSay">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 clientSay">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 clientSay">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row margin-remove valign-wrapper">
+              <img src="https://tctechcrunch2011.files.wordpress.com/2013/04/new-logo-vertical-dark.jpg" alt="" class="circle responsive-img" width="100px;"> 
+            <div class="col s12">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+   
+</div>
+</div>
+
+<div class="aboutUs" id="about_us">
+<div id="spacework"></div>
+
+<h2 class="center categoryHead">About Us</h2>
+<div class="row aboutUsContent">
+<div class="col s6" style="width: auto;">
+<div class="center aboutUs-1">
+  
+  <span id="indroductionHead1">Introduction</span>
+  <p class="aboutUs-para-1">India's 1st exclusive Event Photography company for sleek and sophisticated photography and cinematography solutions , lead by passionate and uber progressive team that lives and breathes photography.</p>
+</div>
+</div>
+<div class="col s6" style="width: auto;">
+
+<div class="center aboutUs-2">
+  <span id="indroductionHead1">Motivation</span>
+  <p class="aboutUs-para-1">The biggest motivation is to provide a platform to all skilled photographers/cinematographers to showcase their talent in the real market. The motto behind this is to increase value for money for the customers and to nullify monopoly in the market.</p>
+</div>
+</div>
+</div>
+
+<!-- Team -->
+
+<h2 class="center categoryHead">Our Team</h2>
+
+  
+  
+    <div class="team-card team-1">
+      <img width="100px" style="border:0px solid; border-radius:200px; margin-left:67.5px;" src="./media/images/team/1.jpg">
+      <br><span class="card-title name-text-head grey-text text-darken-4" style="line-height:30px; font-size: 20px; left:17px;">DHIYAVASU BHADAURIA</span>
+      <br><span class="card-title name-text-pos grey-text text-darken-4" style="left:63px;">FOUNDER AND CEO</span>
+    </div>
+
+    <div class="team-card team-2">
+      <img width="100px" style="border:0px solid; border-radius:200px; margin-left:67.5px;" src="./media/images/team/2.jpg">
+      <br><span class="card-title name-text-head grey-text text-darken-4" style="line-height: 30px; font-size: 20px; left:45px;">KARMESH GUPTA</span>
+      <br><span class="card-title name-text-pos grey-text text-darken-4" style="left:35px;">DIRECTOR OF OPERATIONS</span>
+    </div>
+
+    <div class="team-card team-3">
+      <img width="100px" style="border:0px solid; border-radius:200px; margin-left:67.5px;" src="./media/images/team/3.jpg">
+      <br><span class="card-title name-text-head grey-text text-darken-4" style="line-height: 30px; font-size: 20px; left:55px;" >JEET KANJANI</span>
+      <br><span class="card-title name-text-pos grey-text text-darken-4" style="left:29px;">DIRECTOR OF PHOTOGRAPHY</span>
+    </div>
+
+    <div class="team-card team-4">
+      <img width="100px" style="border:0px solid; border-radius:200px; margin-left:67.5px;" src="./media/images/team/4.jpg">
+      <br><span class="card-title name-text-head grey-text text-darken-4" style="line-height: 30px; font-size: 20px; left:55px;">MOHIT KHATRI</span>
+      <br><span class="card-title name-text-pos grey-text text-darken-4" style="left:18px;">DIRECTOR OF CINEMATOGRAPHY</span>
+    </div>
+<div class="teamSpaceCover"></div>
+ 
+<div class="center">
+  <a href="##">Join</a> Us as a Photographer/Cinemotpgrapher
+</div>
+<br>
+
+<script type="text/javascript">
+  $(window).scroll(function() {
+    $('.aniright').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideRight");
+      }
+    });
+  });
+  $(window).scroll(function() {
+    $('.anileft').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideLeft");
+      }
+    });
+  });
+  $(window).scroll(function() {
+    $('.aniup').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideUp");
+      }
+    });
+  }); 
+  $(window).scroll(function() {
+    $('.anidown').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideDown");
+      }
+    });
+  });  
+
+  $(window).scroll(function() {
+    $('.clientSay1').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $('.clientSay').addClass("Hatch");
+      }
+    });
+  });  
+ 
+</script>

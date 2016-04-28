@@ -1,0 +1,54 @@
+body,html{
+}
+
+#calenderIFrame{
+	overflow: hidden !important;
+	width: 416px ;
+	height: 440px ;
+	border: 0px solid ;	
+	display: inline-block;
+	-ms-transform: scale(.8); /* IE 9 */
+	-moz-transform: scale(.8); /* IE 9 */
+	-webkit-transform: scale(.8); /* Safari */
+	transform: scale(.8);
+
+}
+
+.iframeDIV{
+	display: inline-block;
+	width: 416px ;
+	margin-left: 11%;
+	margin-right: 2%;
+	/*border: 1px solid #2196F3;*/
+}
+
+.addevent{
+	/*border: 1px solid #2196F3;*/
+	display: inline-block;
+ 	width: 45%;
+	margin-right: 5%;
+    position: relative;
+    top: -70px;
+    padding: 20px;
+}
+
+.belowCalendar{
+	position: relative;
+	/*border: 1px solid blue;*/
+	top: -51px;
+}
+
+label{
+	color: black !important;
+font-size: 16px;
+}
+
+a.md-button.md-default-theme[disabled], a.md-button[disabled], a.md-button.md-default-theme.md-raised[disabled], a.md-button.md-raised[disabled], a.md-button.md-default-theme.md-fab[disabled], a.md-button.md-fab[disabled], a.md-button.md-default-theme.md-accent[disabled], a.md-button.md-accent[disabled], a.md-button.md-default-theme.md-warn[disabled], a.md-button.md-warn[disabled], .md-button.md-default-theme[disabled], .md-button[disabled], .md-button.md-default-theme.md-raised[disabled], .md-button.md-raised[disabled], .md-button.md-default-theme.md-fab[disabled], .md-button.md-fab[disabled], .md-button.md-default-theme.md-accent[disabled], .md-button.md-accent[disabled], .md-button.md-default-theme.md-warn[disabled], .md-button.md-warn[disabled]{
+color: white !important;
+background-color:grey !important;
+}
+
+.submit-btn{
+background-color: black !important;
+color: white !important;
+}

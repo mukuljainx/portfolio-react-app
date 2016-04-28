@@ -1,0 +1,109 @@
+<div class="row headx">
+  
+</div>
+<a class="btn-floating btn-large waves-effect waves-light black writemore" ng-click="writeQuery()"><i class="fa fa-pencil"></i></a>
+<div layout="row" class="zero">
+  
+  <div class="one" flex="33">
+    <div layout="row" class="card hoverable queryBookID" ng-repeat="i in Bigdata" ng-click="setBigdataTemp($index)" ng-class="{ requestClass: $index == requestNumber }">
+    <div flex="15">
+    <i class="fa fa-2x fa-bookmark fa-icon"></i>
+    </div>
+    <div flex="70" style="margin-top: 15px">
+      <span style="font-size: 18px; line-height: 22px;">Booking ID : {{i[0].requestId}} </span><br>
+      {{i.length}} Issues
+    </div>
+    <div flex="15">
+    <i class="fa fa-2x fa-chevron-right fa-icon nextButton"></i>
+    </div>
+    </div>
+    <div id="border-line"></div>
+     
+  </div>
+
+  <div class="one" flex="33">
+    <div layout="row" class="card hoverable queryIssue" ng-repeat="j in BigdataTemp" ng-click="setBigdataMessage($index)" ng-class="{ requestClass: $index == queryNumber }">
+    <div flex="15">
+    <i class="fa fa-2x fa-envelope-o fa-icon"></i>
+    </div>
+    <div flex="70" style="margin-top: 15px">
+      <span style="font-size: 20px; line-height: 22px;">{{j.type}} </span><br>
+      query id : {{j.queryID}}
+    </div>
+    <div flex="15">
+    <i class="fa fa-2x fa-chevron-right fa-icon nextButton"></i>
+    </div>
+    </div>
+    <div id="border-line"></div>
+  </div>
+
+    <div class="one" flex="33">
+    <div layout="row" class="card hoverable queryChat">
+    <div flex="70">
+    <p><b>Query</b> : {{BigdataMessageC}}
+    </div>
+    </div>
+    <div layout="row" class="card hoverable queryChat">
+    <div flex="70">
+    <p> <b style="color: ">Response</b> : {{BigdataMessageP}}
+    </div>
+    </div>
+    <div id="border-line"></div>
+  </div>
+
+</div>
+
+<style type="text/css">
+  .headx{}
+
+  .zero{
+  
+    min-height: calc(100% - 64px);
+  }
+  .one{
+    border-right: 1px solid grey;
+    /*border: 1px solid red;*/
+
+  }
+  .queryBookID{
+    width: 98%;
+    margin-left: 1%;
+    padding: 10px;
+    height: 90px;
+  }
+  .queryIssue{
+  width: 98%;
+  margin-left: 1%;  
+    padding: 10px;
+    height: 90px;
+  }
+  .queryBookID,.queryIssue{
+    cursor: pointer;
+  }
+
+  .queryChat{
+  width: 98%;
+  margin-left: 1%; 
+    padding: 10px;
+  }
+  #border-line{
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 1px solid grey;
+  }
+  .fa-icon{
+    color : grey;
+    margin-top: 20px;
+    margin-left: 14px;
+  }
+
+  .requestClass .nextButton{
+    color: black;
+  }
+
+  .writemore{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+</style>

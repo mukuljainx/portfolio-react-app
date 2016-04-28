@@ -1,0 +1,55 @@
+<md-dialog aria-label="faq" style="height: 80%; width: 80%; ">
+    <md-toolbar>
+      <div class="md-toolbar-tools center" style="background-color:black;">
+        <h2 >Payment</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content style="position: relative; overflow: hidden;">
+    <iframe src="./faq.html" style="width: 100%; height: 100%;"></iframe>
+    
+    </md-dialog-content>
+    <md-dialog-actions layout="row" style="height: 50px;">
+      <!-- <span flex></span> -->
+
+      <md-button md-no-ink class="md-primary promoBTN" ng-click="displayPromo()" style="text-transform: capitalize;">Have Promocode !</md-button>
+      <span class="promoCodeOption" >
+      <span style="color: red">{{userMessage}}</span>
+      <md-input-container style="width: 150px; margin-top: 40px;">
+        <label class="labeldia">Promo Code</label>
+        <input ng-model="userPromoCode">
+      </md-input-container> 
+      <md-button md-no-ink class="md-primary" ng-click="tryPromoCode()" style="text-transform: capitalize; padding: 0px;">Apply</md-button></span>
+      <md-button class="md-raised" ng-click="proceedToPay()" style="margin-right: 10px; margin-left: 10px;">Proceed to Pay</md-button>
+    </md-dialog-actions>
+</md-dialog>
+
+
+<style type="text/css">
+
+.promoCodeOption{
+  display: none;
+}
+
+md-dialog-content{
+  min-width: 400px;
+}
+
+md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+  color: black;
+}
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+  color: #3CA2F4;
+  background: #3CA2F4;
+}
+
+a.md-button.md-default-theme[disabled], a.md-button[disabled], a.md-button.md-default-theme.md-raised[disabled], a.md-button.md-raised[disabled], a.md-button.md-default-theme.md-fab[disabled], a.md-button.md-fab[disabled], a.md-button.md-default-theme.md-accent[disabled], a.md-button.md-accent[disabled], a.md-button.md-default-theme.md-warn[disabled], a.md-button.md-warn[disabled], .md-button.md-default-theme[disabled], .md-button[disabled], .md-button.md-default-theme.md-raised[disabled], .md-button.md-raised[disabled], .md-button.md-default-theme.md-fab[disabled], .md-button.md-fab[disabled], .md-button.md-default-theme.md-accent[disabled], .md-button.md-accent[disabled], .md-button.md-default-theme.md-warn[disabled], .md-button.md-warn[disabled]{
+    color: white !important;
+    background-color:grey !important;
+}
+
+</style>

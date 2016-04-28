@@ -1,0 +1,29 @@
+<div class="center verifyDiv">
+<h3>PLease verify your Email Address</h3>
+
+Please Check your account {{email}} to verify.<br>
+<br>
+<md-button ng-click="accountVerify()" class="md-raised">DONE</md-button><br>
+{{accountVerifyStatus}}
+<br><br>
+Click <u ng-click="accountVerifyAPI()">here</u> to resend Email.
+</div>
+
+<style type="text/css">
+	.verifyDiv{
+		margin-top: 15%;
+	}
+
+	footer.page-footer{  
+		/*height: 162px;*/
+	    position: absolute;
+	    width: 100%;
+	    bottom: 0;
+   	}
+
+   	body,html{
+   		/*height: 100% !important;*/
+   		overflow:hidden !important; 
+   	}
+
+</style>

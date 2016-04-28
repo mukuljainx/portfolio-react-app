@@ -1,65 +1,59 @@
 <html lang="en">
 <head>
 
-  <title>Event Graphia</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="./js/main.js"></script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <!-- Navbar -->
-  <link rel="stylesheet" href="./css/leftnav.css">
-
-  <!-- Animation -->
-  <link rel="stylesheet" href="css/animations.css">
+  <title>Event Graphia | FAQ</title>
 
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body ng-app="EGApp" ng-cloak ng-controller="mainCtrl">
+<body ng-app="faqApp" ng-cloak>
 
-<div ng-view class="vieDiv"></div>  
+<style type="text/css">
+  footer.page-footer{  
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+  }
+  h2{
+    font-family : 'kaushan script', cursive;
+  }
 
+</style>
 
-<div class="leftSubMenu">
-<div class="leftmenuoption firstoption"><a href="#/">Home</a></div>
-<div class="leftmenuoption"><a href="#/">About Us</a></div>
-<div class="leftmenuoption"><a href="#/">Our Work</a></div>
-<div class="leftmenuoption"><a href="#/">Happy Clients</a></div>
-<div class="leftmenuoption"><a href="./faq.html">FAQ</a></div>
-<div class="leftmenuoption"><a href="#/privacy">Privacy Policy</a></div>
-<div class="leftmenuoption"><a href="#/">Contact Us</a></div>
-</div>
-
-<div class="leftoverlay"></div>
-
-<div class="nav-container">
-  <nav>
-    <div class="nav-wrapper"> 
-    <div id="nav-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-     <a href="#/" class="brand-logo center"><img src="./media/images/logo.png" style="width: 90px; margin: 5px; margin-right: 27px;"></a>
-      <ul class="right">
-        <li><a href="#/">Home</a></li>
-        <li><a ng-click="signupBTN($event)" flex="100"  flex-gt-md="auto">{{LoginEle[0]}}</a></li>
-        <li><a ng-click="loginBTN($event)" flex="100"  flex-gt-md="auto">{{LoginEle[1]}}</a></li>
+<div class="categories" id="our_work">
+  <div class="nav-container">
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="./media/images/logo.png" style="width: 90px; margin: 5px;"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#our_work">Works</a></li>
+        <li><a href="#about_us">About</a></li>
+        <li><a href="mobile.html">Partner</a></li>
+        <li><a href="mobile.html">Sign Up</a></li>
+        <li><a href="mobile.html">Log In</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#our_work">Works</a></li>
+        <li><a href="#about_us">About</a></li>
+        <li><a href="mobile.html">Partner</a></li>
+        <li><a href="mobile.html">Sign Up</a></li>
+        <li><a href="mobile.html">Log In</a></li>
       </ul>
     </div>
   </nav>
 </div>
+<br><br><br><br><br><br><br><br><br>
+<div class="thankyou">
+  <h2 class="center">Thank You</h2>
+</div>
 
- <footer id="contactx" class="page-footer">
+
+<footer id="contactx" class="page-footer">
           <div class="container">
             <div class="row">
             <div class="col l6 s12 white-text" >
@@ -84,6 +78,7 @@
           </div>
 
 </footer>
+</div>
 
 
 
@@ -95,14 +90,19 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
-  <script src="js/angular-base64.js"></script>
+
+
 
   <!-- Angular Material Library -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
   
   <!-- Your application bootstrap  -->
-  <script src="./js/app/app.js"></script>
+  <script src="./js/app/faqApp.js"></script>
+  <!-- // <script src="./js/main.js"></script> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 
 </body>
 </html>

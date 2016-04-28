@@ -1,0 +1,158 @@
+footer.page-footer{  
+/*position: absolute;
+width: 100%;
+bottom: 0px;*/
+}
+
+
+.mybookingdiv{
+width: 900px;
+margin-left: calc(50% - 450px);
+}
+
+.mybookingcontent{
+	min-height: 70%;
+}
+
+.mybookingboxdiv{
+	border-bottom: 1px solid grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.mybookingbox{
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+.mybookingboxcard{
+	padding: 25px 10px 10px 10px;
+	height: 120px;
+	width: 200px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.editbutton{
+	width: 20px;
+	margin-top: 4px;
+}
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    color: black;
+    background: black;
+}
+
+.pptab{
+	color: black;
+}
+
+
+md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+	color: black;
+}
+
+
+
+@media screen and (max-width: 1920px) {
+
+md-pagination-wrapper {
+	margin-left: 35.5%;
+}
+md-content{
+	width: 90%;
+	margin-left: 5%;
+}
+
+}
+
+@media screen and (max-width: 1600px) {
+
+md-pagination-wrapper {
+	margin-left: 31.5%;
+}
+
+}
+
+
+@media screen and (max-width: 1366px) {
+
+md-pagination-wrapper {
+	margin-left: 30%;
+}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+md-pagination-wrapper {
+	margin-left: 30.5%;
+}
+
+.ppdiv{
+	width: 80%;
+	margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 1024px) {
+
+md-pagination-wrapper {
+	margin-left: 25.5%;
+}
+
+.ppdiv{
+	width: 80%;
+	margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+md-pagination-wrapper {
+	margin-left: 19.5%;
+}
+
+.ppdiv{
+	width: 90%;
+	margin-left: 5%;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+md-pagination-wrapper {
+	margin-left: 14.5%;
+}
+
+.ppdiv{
+	width: 90%;
+	margin-left: 5%;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+md-pagination-wrapper {
+	margin-left: 11.5%;
+}
+
+.ppdiv{
+	width: 100%;
+	margin-left: 0%;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+md-pagination-wrapper {
+	margin-left: 4%;
+}
+}
+
+@media screen and (max-width: 360px) {
+
+md-pagination-wrapper {
+	margin-left: 0%;
+}
+}

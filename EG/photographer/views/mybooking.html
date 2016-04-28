@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="css/mybooking.css">
+
+
+<br>
+<h4 class="center"> Hello {{userNamex}}, </h4>
+
+<br>
+<div class="mybookingdiv">
+<md-content class="mybookingcontent">
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="Pending">
+        <md-content class="md-padding">
+          <div class="mybookingboxdiv" ng-repeat="i in myBookingPending">
+            <div class="center card hoverable mybookingboxcard" ng-repeat="i in myBookingPending[$index].data">
+              <span class="mybookingbox">{{i.eventType}}</span><br>
+              <span class="mybookingbox">{{i.date}}</span><br>
+              <span class="mybookingbox">{{cities[i.city-1].city}}</span><br>
+            </div>
+            <div class="mybookingID center"><b>Booking ID</b> : {{i.requestId}} | <b>Status</b> : {{i.status}}</div>
+          </div>  
+    </md-content>
+      </md-tab>
+      <md-tab label="Upcoming">
+        <md-content class="md-padding">
+          <div class="mybookingboxdiv" ng-repeat="i in myBookingUpcoming">
+            <div class="center card hoverable mybookingboxcard" ng-repeat="i in myBookingUpcoming[$index].data">
+              <span class="mybookingbox">{{i.eventType}}</span><br>
+              <span class="mybookingbox">{{i.date}}</span><br>
+              <span class="mybookingbox">{{cities[i.city-1].city}}</span><br>
+            </div>
+          </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="All">
+        <md-content class="md-padding">
+          <div class="mybookingboxdiv" ng-repeat="i in BigEventList">
+            <div class="center card hoverable mybookingboxcard" ng-repeat="i in BigEventList[$index].data">
+              <span class="mybookingbox">{{i.eventType}}</span><br>
+              <span class="mybookingbox">{{i.date}}</span><br>
+              <span class="mybookingbox">{{cities[i.city-1].city}}</span><br>
+            </div>
+            <div class="center"><b>Booking ID</b> : {{i.requestId}} | <b>Status</b> : {{i.status}}<br>
+            <md-button ng-hide="eventcanelbuttoncheck(i.status)" ng-click="cancelEvent(i.requestId)">Cancel</md-button>
+            </div>
+          </div>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
+<br>
+  <div class="center">
+       <md-button class="md-raised" ng-click="eventsVerified()">DONE</md-button>
+       <md-button class="md-raised" href="#/event">ADD Event</md-button>
+</div>
+<br>

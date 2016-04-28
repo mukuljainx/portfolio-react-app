@@ -1,0 +1,15 @@
+.calandarContainer{
+	width: 406px !important;
+	margin: 0 !important;
+	height: 414px;
+}
+
+.CalanderMainContainer{
+	width: 406px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.col{
+	padding: 0 !important;
+}

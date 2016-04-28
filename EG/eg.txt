@@ -1,0 +1,93 @@
+short name
+
+home : shadow -> something else
+
+photographer profile
+
+
+1. payment integrate. --> link not available
+2. signup -> hello user --> done 
+3. left submenu. --
+4. calender date fix.
+
+
+apple tv effect
+
+
+messages (booking-ID, queries[1,2,3] different question and different responses to different quries)
+
+a-106 - api end point and ip address.
+
+
+
+
+
+
+
+
+////////////////
+
+
+
+
+
+  <div id="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+     <a href="#/" class="brand-logo center"><img src="./media/images/logo.png" style="width: 90px; margin: 5px;"></a>
+                    <ul class="right usermenuul"> <li><a class="usermenu"> '+ $scope.userNamex +' &nbsp; &nbsp; <i class="fa fa-chevron-circle-down"></i> </a> <ul> <div class="usermenudiv"> <div class="usermenupic"><span>'+$scope.userNamex+'</span> <img src="https://image.freepik.com/free-icon/male-user-shadow_318-34042.png"> </div> <div class="usermenuopt"><a href="#/mybooking">My Booking</a></div> <div class="usermenuopt"><a href="#/profile">Profile</a></div> <div class="usermenuopt"><a onclick="logOut()">LogOut</a></div> </div> </ul> </li> </ul> <script>
+                        $('#nav-icon').click(function(){
+    $(this).toggleClass('open');
+    $('.leftSubMenu').toggleClass('leftsubmenupos');
+    $('.leftoverlay').toggleClass('leftmenubackdrop');
+    $('nav').toggleClass('navbarline');
+    });
+                    $(".usermenu, .usermenudiv").mouseenter(function() { $(".usermenudiv").show(); $(".usermenu").addClass("usermenuwhite"); }); $(".usermenu, .usermenudiv").mouseleave(function() { $(".usermenudiv").hide(); $(".usermenu").removeClass("usermenuwhite"); });</script>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//after logout
+
+
+
+    <div id="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+     <a href="#/" class="brand-logo center"><img src="./media/images/logo.png" style="width: 90px; margin: 5px;"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#/">Home</a></li>
+        <li><a onclick="signupBTNx()" flex="100"  flex-gt-md="auto">' + $scope.LoginEle[0] + '</a></li>
+        <li><a onclick="loginBTNx()" flex="100"  flex-gt-md="auto">' + $scope.LoginEle[1] + '</a></li>
+      </ul>
+      <script>
+    $('#nav-icon').click(function(){
+    $(this).toggleClass('open');
+    $('.leftSubMenu').toggleClass('leftsubmenupos');
+    $('.leftoverlay').toggleClass('leftmenubackdrop');
+    $('nav').toggleClass('navbarline');
+    });
+    </script>

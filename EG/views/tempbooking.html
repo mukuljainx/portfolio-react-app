@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="css/mybooking.css">
+
+<style type="text/css">
+  .mybookingboxcard {
+    padding: 16px 10px 10px 10px;
+  }
+</style>
+
+<br>
+<h4 class="center"> Unsaved Bookings </h4>
+
+<br>
+<div class="mybookingdiv">
+<md-content class="mybookingcontent">
+        <md-content class="md-padding">
+          <div class="mybookingboxdiv">
+            <div class="center card hoverable mybookingboxcard" ng-repeat="i in x">
+              <span class="mybookingbox">{{i.eventType}}</span><br>
+              <span class="mybookingbox">{{i.date}}</span><br>
+              <span class="mybookingbox">{{cities[i.city-1].city}}</span><br>
+              <span class="mybookingbox"><a style="color:black"><i class="fa fa-pencil" ng-click="editTempEventList($index)">&nbsp;</i></a><a style="color:black"><i class="fa fa-times" ng-click="removeTempEventList($index)"></i></a></span><br>
+            </div>
+          </div>  
+    </md-content>
+  </md-content>
+</div>
+<br>
+  <div class="center">
+       <md-button class="md-raised" href="#/event">Add More</md-button>
+       <md-button class="md-raised" href="" ng-click="eventsVerified()">Submit</md-button>
+</div>
+<br>
