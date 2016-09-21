@@ -1,0 +1,45 @@
+
+.primary-h1{
+	color: $primary;
+	font-weight: 200;
+  font-size: 40px;
+}
+
+.head-text{
+	margin-top: 80px;
+}
+
+.semi-head{
+	margin: 40px 0px;
+	font-size: 30px;
+}
+
+.mac-container{
+	margin-top: 80px;
+	position: relative;
+	img{
+		// position: absolute;
+	}
+	.screen{
+		position: absolute;
+		border : 1px solid red;
+	}
+}
+
+.get-social-images img{
+	padding: 10px;
+	max-width: 80px;
+}
+
+.border-button{
+	border: 1px solid $primary;
+	border-radius: $border-radius;
+	background: transparent;
+	color: $primary;
+	width: 90px;
+}
+
+.border-button:hover, .border-button:focus{
+	color: white;
+	background: $primary;
+}
