@@ -1,0 +1,94 @@
+@font-face {
+  font-family: caviar;
+  src: url(../fonts/CaviarDreams_Bold_0.ttf);
+}
+
+@font-face {
+  font-family: rez;
+  src: url(../fonts/REZ_0.ttf);
+}
+
+.home-effect{
+  /*border: 1px solid red;*/
+  position: absolute;
+  top:20%;
+  left: 33%;
+  width: 500px;
+}
+
+#p{
+  color:#41a4f4 ;
+  font-family: 'rez';
+  font-size: 180px;
+  /*border: 1px solid black;*/
+}
+
+#l{
+  color:#ffed57;
+  font-family: 'rez';
+  font-size: 180px; 
+}
+
+#i{
+  color:#EE524f;
+  font-family: 'rez';
+  font-size: 180px; 
+}
+
+#n{
+  color:#9474cc;
+  font-family: 'rez';
+  font-size: 180px; 
+}
+
+#t{
+  color:#EE524f;
+  font-family: 'rez';
+  font-size: 180px; 
+}
+
+#h{
+  color:#25a599;
+  font-family: 'rez';
+  font-size: 180px; 
+}
+
+#typed1{
+  position: relative;
+  /*border: 1px solid green;*/
+  font-family: caviar;
+  font-size: 27px;
+  margin-left: 22px;
+  top:-74px;
+}
+
+#date-fest{
+  font-family: caviar;
+  font-size: 43px;
+}
+
+.home-effect>img{
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 80px;
+  height: 80px;
+}
+
+
+#enter-btn>img{
+
+  width: 40%;
+  height: 70px;
+  margin-left: 30%;
+  margin-top: -60px;
+}
+
+#welcome-wrapper{
+  height: 100%;
+  width: 100%;
+  z-index: 44;
+}
+
+#main-wrapper{
+  display: none;
+}

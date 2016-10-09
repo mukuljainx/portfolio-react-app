@@ -1,0 +1,72 @@
+*{overflow: hidden;}
+
+@font-face {
+  font-family: MyHelvetica;
+  src: local("HelveticaNeueLT Pro 45 Lt"),
+       url(../fonts/xx.ttf);
+}
+
+.menu{
+  top: 30px;
+  left: 10px;
+  position: relative;
+  width: 80px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'MyHelvetica';
+}
+
+.menu>h3{
+ width: 60px;
+}
+.menu>ul{
+  padding: 0px;
+  border: 1px solid red;
+  position: relative;
+  top: -10px;
+}
+
+.menu>li>ul{
+  display: flex;
+}
+ #me0, #me1, #me2, #me3{
+  position: relative;
+  left: -90px;
+ }
+
+ #me{position: relative;}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+#me0> a:hover,#me1> a:hover,#me2> a:hover,#me3> a:hover
+{
+  zoom : 1.2;
+}
+
+
+
+
+#main-content{
+	width: 100%;
+	background-image: url("../media/images/contactbg.jpg");
+	background-size: 100% 100%;
+}
+
+
+#contactus{
+	position: relative;
+	-ms-transform: rotate(-6.8deg); /* IE 9 */
+    -webkit-transform: rotate(-6.8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-6.8deg);
+	top: 9.6%;
+	left: 31.5%;
+	width: 40.5%;
+	height: 51.4%;
+	background-color: white;
+	border-radius: 3px;
+	background-image: url("../media/images/ipadin.jpg");
+	background-position: 100% 100%;
+	background-size: 70%;
+}

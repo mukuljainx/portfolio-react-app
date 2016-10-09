@@ -1,0 +1,51 @@
+.contact{
+	/*border: 1px solid white;*/
+	display: table;
+	width:100%;
+}
+
+.visit-us, .mail-us{
+	width: 50%;
+	/*border: 1px solid red;*/
+	height: 230px;
+	display: table-cell;
+	padding-left: 10%;
+}
+
+.visit-us{
+	padding-left: 22%;
+}
+
+.mail-us{
+	padding-left: 15%;
+}
+
+.contact>.visit-us>.fa{
+border-bottom: 2px solid white;
+}
+
+.contact>.mail-us>.fa{
+border-bottom: 2px solid white;
+}
+
+.social-button{
+	text-align: center;
+}
+
+.fa-2x{
+	padding-top: 3px;
+	width: 40px;
+	height: 35px;
+	border-radius: 6px;
+}
+
+.fa:hover{
+	background-color: white;
+	color: black;
+
+}
+
+p{
+	text-align: left;
+	font-size: 15px;
+}

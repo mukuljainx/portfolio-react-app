@@ -1,0 +1,93 @@
+body{
+overflow-x: hidden;
+}
+.spic {
+position: relative;
+display: table-cell;
+margin: 0px 12px 0px 12px;
+padding: 50px;
+vertical-align: middle;
+padding-top: 55px;
+}
+
+.stype{
+display: table-cell;
+margin-left: 20px;
+margin-right: 20px;
+width: 200px;
+
+}
+
+.stype {
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+.container{
+	text-align: center;
+}
+
+.logo {
+	display: table-row;
+}
+
+.desc {
+	display: table-row;
+}
+
+.rows {
+	display: table;
+	margin: auto;
+	position: relative;
+}
+
+.sponsor_container h3 {
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.spic h3 {
+	
+
+width: 62%;
+text-transform: uppercase;
+text-decoration: none;
+/*font-family: sans-serif;*/
+position: absolute;
+top: 1px;
+}
+
+.sponsor_container h2 {
+	text-align: center;
+}
+
+.sponsor_container {
+	
+	color: black;
+	position: absolute;
+	top: 25%;
+	overflow-y: auto;
+	width: 90%;
+	overflow-x:hidden;
+	height: 70%;
+	visibility: visible;
+	margin-left: 5%;
+}
+
+
+.sponsor_container a {
+	text-decoration: none;
+	color: black;
+
+}
+.sponsor_container img {
+ 	display: block;
+    margin: auto;
+}
+
+.spic a{
+	text-decoration: none;
+	color: black;
+}

@@ -1,0 +1,23 @@
+
+body{
+  background-color: black;
+   color: #FFFFFF; 
+}
+
+.main{
+  border: 1px solid white;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.main>img{
+  border: 1px solid red;
+}
+
+.main>h1{
+  float: right;
+  font-size: 400%;
+  padding-top: 14;
+  padding-right: 40%;
+}

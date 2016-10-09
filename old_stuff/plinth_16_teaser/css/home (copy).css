@@ -1,0 +1,60 @@
+@font-face {
+  font-family: caviar;
+  src: url(../fonts/CaviarDreams_0.ttf);
+}
+
+@font-face {
+  font-family: rez;
+  src: url(../fonts/REZ_0.ttf);
+}
+
+@font-face {
+  font-family: sourcesans;
+  src: url(../fonts/SourceSansPro-Regular_0.ttf);
+}
+
+body{
+	background-size: 100% 100%;
+}
+
+
+#plinth{
+	font-family: rez;
+	font-size: 700%;
+}
+
+#plinth-2016{
+	font-family: caviar;
+	font-size: 150%;
+	margin-left: 18px;
+}
+
+#plinth-line{
+	font-family: caviar;
+	font-size: 100%;	
+	margin-left:13px ;
+	margin-top: -43px;
+}
+
+
+.small_video{
+	width: 40%;
+	height: 45%;
+	margin-left: 30%;
+	margin-top:3%; 	
+}
+
+.head{
+	/*border: 1px solid red; 	*/
+	width: 30%;
+	height: 22%;
+	margin-top: 3%;
+	margin-left: 39%;
+}
+
+.plinth-head{
+	/*border: 1px solid green;*/
+	width:auto;
+	height: auto;
+	padding-top: -10%;
+}

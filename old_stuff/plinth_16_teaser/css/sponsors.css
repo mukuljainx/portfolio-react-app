@@ -1,0 +1,40 @@
+@font-face {
+  font-family: MyHelvetica;
+  src: local("HelveticaNeueLT Pro 45 Lt"),
+       url(../fonts/helventica.ttf);
+}
+
+
+body{
+	background-image: url("../media/images/spons.png");
+	background-size: 100% 100%;
+}
+	
+
+.old_sponsors{
+	position: absolute;
+	top: 17%;
+	left: 25%;
+	width: 26%;
+	height: 8%;
+}
+
+.call-sponsor{
+	font-family: MyHelvetica;
+	font-size: 15px;
+	position: absolute;
+	top: 77%;
+	margin: 0px 0px -28px;
+	left: 27%;
+	width: 318px;
+	text-align: center;
+}
+
+.nav{
+	margin-top: -40px;
+}
+
+
+#one-nav{
+	margin-left: 7%;
+}

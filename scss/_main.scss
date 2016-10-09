@@ -14,15 +14,70 @@
 	font-size: 30px;
 }
 
-.mac-container{
-	margin-top: 80px;
-	position: relative;
-	img{
-		// position: absolute;
-	}
+.macbook-pro-container{
+	width: 100%;
 	.screen{
+		margin-left: auto;
+		margin-right: auto;
+		width: 84%;
+		height: 10%;
+		border-radius: 1.875em;
+    border: solid 0.1875em #C1C1C1;
+		position: relative;
+	}
+	.camera-container{
 		position: absolute;
-		border : 1px solid red;
+		top: 0.5em;
+		width: 100%;
+		.camera{
+			width: 0.5em;
+	    height: 0.5em;
+	    border-radius: 100%;
+	    background: #3A4044;
+	    border: 0.2em solid grey;
+	    margin-left: auto;
+	    margin-right: auto;
+		}
+	}
+	.retina-container{
+		padding : 1.5em 1em 1em 1em;
+		width: 100%;
+		height: 100%;
+		background: #010101;
+		border-radius: 1.675em;
+		.retina{
+			background: #444444;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.base-container{
+		width: 100%;
+		position: relative;
+		top: -0.4em;
+		.lid-opener-container{
+			position: absolute;
+			width: 100%;
+			.lid-opener{
+				margin-left: auto;
+				margin-right: auto;
+				width: 4em;
+				height: 0.4em;
+				background: #858585;
+				border-radius: 0em 0em 0.3em 0.3em;
+			}
+		}
+		.base-1{
+			width: 100%;
+			height: 0.5em;
+			background: #AAABB1;
+		}
+		.base-2{
+			width: 100%;
+			height: 0.5em;
+			background: #97989C;
+			border-radius: 0em 0em .4em .4em;
+		}
 	}
 }
 

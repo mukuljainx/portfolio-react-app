@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Contrail+One);
+
+#nav-img{
+  margin: 0px 0px;
+  padding: 0px 0px;
+  height: 103%;
+  position: fixed;
+  z-index: -10;
+}
+
+.nav{
+  /*position: absolute;*/
+  margin-top: 30px;
+  font-size: 170%;
+  background-color: rgba(0,0,0,.3);
+  /*border: 1px solid red;*/
+  height: 50px;
+  margin-left: -10%;
+  width: 120%;
+  font-family: 'Contrail One', cursive;
+  z-index: 3333;
+}
+
+.menu>ul{
+  display: flex;
+  /*border:1px solid red; */
+  width : 80%;
+  float : right;
+  height: 10%;
+  margin-top: 5px;
+
+}
+
+.menu>ul>li{
+  margin-left: 7.5%;
+}
+
+#one-nav{
+  margin-left: 7.8%;
+}
+
+#nav-img{
+  width: 80px;
+  height: 80px;
+  float: left;
+  top: 20px;
+  left:3.6%;
+  z-index: 5;
+}
+
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.active{
+  color: #FEF200;
+}
+
+a:hover{
+  color: #41a4f4;
+}
+
+ul{
+  top: .8%;
+}
+
+.social-btn>div{
+  /*border: 1px solid red;*/
+  height: 50px;
+  width: 60px;
+}
+
+.social-btn{
+  position: fixed;
+  top: 40%;
+  right: 0px;
+}
+
+.social-btn img{
+  width: 50px;
+  height: 50px;
+  z-index: 9999999;
+}
+
+.social-btn img:hover{
+  position: absolute;
+  right: 30px;
+}
