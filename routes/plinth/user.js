@@ -1,15 +1,15 @@
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
-var google = require('../authenticate').google;
-var facebook = require('../authenticate').facebook;
-var facebookValidate = require('../authenticate').facebookValidate;
-var googleValidate = require('../authenticate').googleValidate;
+var google = require('../../authenticate').google;
+var facebook = require('../../authenticate').facebook;
+var facebookValidate = require('../../authenticate').facebookValidate;
+var googleValidate = require('../../authenticate').googleValidate;
 var GoogleAuth = require('google-auth-library');
 var Verify = require('./verify');
-var User = require('../models/user');
-var UserEvent = require('../models/userevent');
-var googleSetting = require('../config/auth').googleAuth;
+var User = require('../../models/user');
+var UserEvent = require('../../models/userevent');
+var googleSetting = require('../../config/auth').googleAuth;
 
 /* GET users listing. */
 router.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }), function(req,res){});

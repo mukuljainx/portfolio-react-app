@@ -11,16 +11,17 @@ var authenticate = require('./authenticate');
 // data base connection
 var DBconfig = require('./config/dbconfig')
 mongoose.Promise = global.Promise;
-mongoose.connect(DBconfig.url);
+// mongoose.connect(DBconfig.url);
 
-var db = mongoose.connection;
-
-db.on('error',console.error.bind(console, 'connection error:'));
-db.once('open', function(){
-  console.log('connected to db server successfully');
-});
+// var db = mongoose.connection;
+//
+// db.on('error',console.error.bind(console, 'connection error:'));
+// db.once('open', function(){
+//   console.log('connected to db server successfully');
+// });
 // database connection done
-var index = require('./routes/index');
+
+var routes = require('./routes/index');
 var plinthRoutes = require('./routes/plinth/index');
 var plinthUser = require('./routes/plinth/user');
 var plinthEvents = require('./routes/plinth/event');
@@ -52,6 +53,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+app.use('/', routes);
 app.use('/work/plinth', plinthRoutes);
 app.use('/work/plinth/user', plinthUser);
 app.use('/work/plinth/events', plinthEvents);
