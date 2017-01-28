@@ -1,0 +1,76 @@
+@font-face {
+    font-family: cl;
+    src: url("../font/ChampagneAndLimousines.ttf");
+}
+
+.usr-profile-wrap{
+/*    margin: auto;*/
+/*    max-width: 700px;*/
+/*    background-color: darkgray;*/
+    margin-top: 50px;
+}
+
+.usr-img-wrap{
+    margin: auto;
+    text-align: center;
+}
+
+.usr-name{
+    font: normal 20px cl;
+}
+
+.usr-profile-h{
+    font: bold 20px 'Roboto';
+    margin-top: 50px;
+}
+
+.usr-profile-h span{
+    border-bottom:3px solid #95ea95;
+
+}
+
+.user-profile-subh{
+    font: bold 15px 'Roboto';
+/*    padding-right: 30px;*/
+/*    background-color: #4a4a4a;*/
+    width: 75px;
+    display: inline-block;
+}
+
+.usr-email, .usr-phone, .usr-clg, .usr-city{
+    font: normal 15px 'Roboto';
+    opacity: 0.8;
+    display: inline-block;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.usr-clg{
+/*    padding-left: 38px;*/
+}
+
+.usr-city{
+/*    padding-left: 60px;*/
+}
+
+.usr-phone{
+/*    padding-left: 44px;*/
+}
+
+.event-date-time{
+    font: normal 15px 'Roboto';
+    opacity: 0.8;
+    display: inline-block;
+/*    background-color: #4a4a4a;*/
+/*    padding-left: 50px;*/
+}
+
+.reg-status{
+    font: normal 15px 'Roboto';
+    opacity: 0.8;
+    display: inline-block;
+/*    background-color: #4a4a4a;*/
+/*    padding-left: 40px;*/
+}

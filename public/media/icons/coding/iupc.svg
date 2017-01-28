@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="253px" viewBox="0 0 323 253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>browser</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-82.000000, -364.000000)">
+            <g id="browser" transform="translate(82.000000, 364.000000)">
+                <g id="Layer_1">
+                    <path d="M0.2,251.5 C0.2,252.3 0.8,252.9 1.6,252.9 L321.4,252.9 C322.2,252.9 322.8,252.3 322.8,251.5 L322.8,14.1 L0.2,14.1 L0.2,251.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    <path d="M322.8,50.4 L322.8,8.7 C322.8,4 319,0.2 314.3,0.2 L8.7,0.2 C4,0.2 0.2,4 0.2,8.7 L0.2,50.4 L322.8,50.4 L322.8,50.4 Z" id="Shape" fill="#FF7058"></path>
+                    <g id="Group" transform="translate(210.000000, 14.000000)" fill="#FFFFFF">
+                        <circle id="Oval" cx="74.5" cy="11.3" r="10.9"></circle>
+                        <circle id="Oval" cx="42.9" cy="11.3" r="10.9"></circle>
+                        <circle id="Oval" cx="11.2" cy="11.3" r="10.9"></circle>
+                    </g>
+                    <g id="Group" transform="translate(44.000000, 81.000000)" fill="#E6E9EE">
+                        <rect id="Rectangle-path" x="1" y="0.9" width="222" height="12"></rect>
+                        <rect id="Rectangle-path" x="0" y="28.7" width="108.2" height="12"></rect>
+                        <rect id="Rectangle-path" x="0" y="56.5" width="143" height="12"></rect>
+                        <rect id="Rectangle-path" x="0" y="139.9" width="143" height="12"></rect>
+                        <rect id="Rectangle-path" x="0" y="84.3" width="108.2" height="12"></rect>
+                        <rect id="Rectangle-path" x="0" y="112.1" width="108.2" height="12"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

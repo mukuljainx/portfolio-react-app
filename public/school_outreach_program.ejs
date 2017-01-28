@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Outreach Program | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/sop.css" />
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="content">
+            <div class="row">
+                <div class="small-10 small-centered text-center columns">
+                    <h4>School Outreach Program</h4>
+                </div>
+            </div>
+        </div>
+
+      <div class="content">
+            <div class="row">
+                <div class="small-10 small-centered text-center columns">
+                    Plinth'17 specially focuses on a programme for school students and have many events for them to participate in. We invite school students to be a part of this endeavor, to expose the world of engineering and a place filled with exciting technology.
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="small-10 small-centered columns">
+                <div class="row">
+                    <div class="small-12 medium-6 large-3 large-offset-3 columns text-center">
+                        <div class="card">
+                            <img src="media/icons/project.svg">
+                            <br>
+                            <span class="text">Project Display</span>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-3 columns end text-center">
+                        <div class="card">
+                            <img src="media/icons/ideatoinnovate.svg">
+                            <br>
+                            <span>i2i</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-10 small-centered columns">
+                <div class="row">
+                    <div class="small-12 medium-4 large-3 large-offset-1-5 columns text-center">
+                        <div class="card">
+                            <img src="media/icons/quiz/quest.svg">
+                            <br>
+                            <span>Quiz</span>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns text-center">
+                        <div class="card">
+                            <img src="media/icons/literary/rostrum.svg">
+                            <br>
+                            <span>Formal Debate</span>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-4 large-3 columns end  text-center">
+                        <div class="card">
+                            <img src="media/icons/robotics/roborace.svg">
+                            <br>
+                            <span>Roborace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="small-8 small-centered text-center columns">
+                <span class="content-head">For Any Queries Contact</span>
+                <br />
+                <br />
+                <span>Kritika Karwasra : +91-7073157758</span>
+                <br />
+                <span>Vishal Jain : +91-7877376851</span>
+            </div>
+        </div>
+
+        <% include partials/footer %>
+
+    </body>
+</html>

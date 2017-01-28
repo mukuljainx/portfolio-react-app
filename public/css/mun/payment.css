@@ -1,0 +1,244 @@
+.plinth-logo-content{
+    height: 56px;
+    margin-top: 50px;
+}
+.plinth-logo-plinth{
+    font: normal 52.5px rez;
+    letter-spacing: 1px;
+}
+
+.plinth-logo-2017{
+    font: bold 25px hn;
+    letter-spacing: 1px;
+    position: relative;
+    left:7.5px;
+}
+
+.plinth-logo-desc{
+    font: normal 10.5px caviar;
+    position: relative;
+    top: -18.5px;
+    left: 2.5px;
+}
+.mun-logo-content{
+    font-family: 'Raleway', sans-serif;
+}
+.mun-inline{
+    display: inline-block;
+}
+.mun-logo-content img{
+    width: 68px;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
+.mun-head-lnmiit{
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+.mun-head-text{
+    font-size: 32px;
+    color: #4a4a4a;
+    position: relative;
+    top: -2px;
+}
+.mun-card{
+    margin: 80px auto;
+    padding: 20px 20px 45px 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.mun-card h4{
+    font-family: raleway;
+}
+
+.mun-card p{
+    margin-bottom: 30px;
+    margin-top: -12px;
+}
+.mun-button{
+    display: inline-block;
+    background-color: #20B9ED;
+    padding:10px;
+    width:110px;
+    color:white;
+    margin:10px;
+    margin-top: 0px;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align : center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size : 14px;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+.btn-11 {
+    padding:10px;
+    width:206px;
+    position: relative;
+    color: #20B9ED;
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: 1px solid #20B9ED;
+    text-decoration: none;
+}
+.btn-11:focus{
+    color: white;
+}
+.btn-11:before, .btn-11:after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #20B9ED;
+  border-radius: 50%;
+  z-index: -1;
+}
+.btn-11:before {
+  left: -20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.btn-11:after {
+  right: -20px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+.btn-11:hover {
+  color: white;
+}
+.btn-11:hover:before {
+  -webkit-animation: criss-cross-left 0.4s both;
+          animation: criss-cross-left 0.4s both;
+}
+.btn-11:hover:after {
+  -webkit-animation: criss-cross-right 0.4s both;
+          animation: criss-cross-right 0.4s both;
+}
+
+.btn-ip{
+    margin-right: 10px;
+}
+.btn-selectecd-payment{
+    background: #20B9ED;
+    color: white;
+}
+
+@media screen and (max-width : 768px){
+    .btn-ip{
+        margin-right: 0px;
+    }
+}
+
+
+/*form css*/
+#mun-payment-form{
+    width: 300px;
+    margin: 20px auto;
+    display: none;
+}
+.amount-mun-total{
+    margin-bottom: -20px !important;
+    margin-top: 35px !important;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+.btn-11-form{
+    background-color: #20B9ED;
+    color: white;
+    margin-top: 30px;
+}
+
+.group input:focus ~ label, .group input:valid ~ label, .group textarea:focus ~ label, .group textarea:valid ~ label {
+    color: #20B9ED;
+}
+
+.group input:focus, .group textarea:focus {
+    border-bottom: 2px solid #20B9ED;
+}
+
+.accommodation-p{
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+}
+
+.accommodation-btn{
+    color: #20b9ed;
+    border: 2px solid;
+    padding: 3px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accommodation-btn:hover{
+    color: white;
+    background: #20b9ed;
+}

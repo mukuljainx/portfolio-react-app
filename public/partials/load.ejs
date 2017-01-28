@@ -1,0 +1,496 @@
+<style>
+            @font-face {
+                font-family: rez;
+                src: url("../font/REZ.ttf");
+            }
+
+            @font-face {
+                font-family: caviar;
+                src: url("../font/CaviarDreams.ttf");
+            }
+
+            @font-face {
+                font-family: cl;
+                src: url("../font/ChampagneAndLimousines.ttf");
+            }
+
+            @font-face {
+                font-family: hn;
+                src: url("../font/HelveticaNeue.ttf");
+            }
+
+            .master-wrapper{
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                background-color: white;
+                z-index: 999999999999999;
+            }
+
+
+            .load-main-logo{
+/*
+                max-width:600px;
+                height: 400px;
+*/
+                color: black;
+
+/*                margin-left:40px;*/
+                margin-top: 90px;
+
+/*                AAborder: 1px solid white;*/
+/*                padding: 50px;*/
+            }
+
+            .load-logo-content{
+                color: black
+            }
+
+            .load-logo-clg{
+                font: normal 20px cl;
+            }
+            .load-logo-plinth{
+                font: normal 105px rez;
+                letter-spacing: 2px;
+            }
+
+            .load-logo-2017{
+                font: bold 50px hn;
+                letter-spacing: 2px;
+                position: relative;
+                left:15px;
+            }
+
+            .load-logo-desc{
+                font:normal 22px caviar;
+                position:relative;
+                top:-25px;
+                left:15px;
+            }
+
+            .load-logo-date{
+                font:bold 20px hn;
+                position:relative;
+                top:-25px;
+                left:75px;
+            }
+
+
+            .load-load-super{
+                vertical-align: super;
+                font:bold 12px hn;
+            }
+
+            .load-plinth-logo-img{
+                position: relative;
+                left: -244px;
+                top: 175px;
+                width: 100px;
+                height: auto;
+/*
+                margin-top:100px;
+                margin-left:250px;
+*/
+            }
+
+
+            @media screen and (max-width: 700px) {
+    .load-logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-35px;
+    }
+    .load-logo-plinth{
+        font: normal 100px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 45px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 17px caviar;
+        position: relative;
+        left:-18px;
+    }
+
+    .load-logo-date{
+        font:bold 15px hn;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .load-logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-20px;
+    }
+    .load-logo-plinth{
+        font: normal 95px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 40px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 17px caviar;
+        position: relative;
+        left:-8px;
+    }
+
+    .load-logo-date{
+        font:bold 15px hn;
+    }
+/*
+    .load-main-logo{
+                margin-left:10px;
+            }
+*/
+}
+
+@media screen and (max-width: 600px) {
+    .load-logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 90px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 35px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 17px caviar;
+        position: relative;
+        left: 0px;
+    }
+
+    .load-logo-date{
+        font:bold 15px hn;
+    }
+
+/*
+    .load-logo-content{
+        position: relative;
+        top: -200px;
+    }
+*/
+
+    .load-plinth-logo-img{
+        width:70px;
+        left:-190px;
+        top:160px;
+    }
+    .load-ei-logo-img{
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .load-logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 80px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 30px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -20px;
+    }
+
+    .load-logo-date{
+        font:bold 13px hn;
+    }
+
+    .load-plinth-logo-img{
+        width:70px;
+        left:-170px;
+        top:150px;
+    }
+
+    .load-ei-logo-img{
+        width:50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .load-logo-clg{
+        font: normal 11px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 70px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 25px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -8px;
+    }
+
+    .load-logo-date{
+        font:bold 10px hn;
+    }
+
+    .load-plinth-logo-img{
+        width:60px;
+        left:-150px;
+        top:140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .load-logo-clg{
+        font: normal 11px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 70px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 25px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -8px;
+        top:-25px;
+    }
+
+    .load-logo-date{
+        font:bold 10px hn;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .load-logo-clg{
+        font: normal 11px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 70px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 25px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -8px;
+        top:-25px;
+    }
+
+    .load-logo-date{
+        font:bold 10px hn;
+        position: relative;
+        left: 60px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .load-logo-clg{
+        font: normal 10px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 60px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 25px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: 0px;
+        top:-22px;
+    }
+
+    .load-logo-date{
+        font:bold 10px hn;
+        position: relative;
+        left: 50px;
+    }
+
+    .load-plinth-logo-img{
+        width:60px;
+        left:-140px;
+        top:130px;
+    }
+    .load-ei-logo-img{
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .load-logo-clg{
+        font: normal 9px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .load-logo-plinth{
+        font: normal 60px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 25px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: 0px;
+        top:-22px;
+    }
+
+    .load-logo-date{
+        font:bold 10px hn;
+        position: relative;
+        left: 50px;
+    }
+
+/*
+    .load-logo-content{
+        position: relative;
+        top: -140px;
+    }
+*/
+}
+
+@media screen and (max-width: 360px) {
+    .load-logo-clg{
+        font: normal 9px cl;
+        position: relative;
+        left:5px;
+    }
+
+    .load-logo-plinth{
+        font: normal 50px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 20px hn;
+        position: relative;
+        left:2px;
+    }
+
+    .load-logo-desc{
+        font:normal 10px caviar;
+        position: relative;
+        left: 0px;
+        top:-22px;
+    }
+
+    .load-logo-date{
+        font:bold 9px hn;
+        position: relative;
+        left: 30px;
+    }
+
+/*
+    .load-logo-content{
+        position: relative;
+        top: -125px;
+    }
+*/
+    .load-plinth-logo-img{
+        width:50px;
+        left:-120px;
+        top:115px;
+    }
+    .load-ei-logo-img{
+        width:40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .load-logo-clg{
+        font: normal 9px cl;
+        position: relative;
+        left:5px;
+    }
+    .load-logo-plinth{
+        font: normal 50px rez;
+    }
+
+    .load-logo-2017{
+        font: bold 20px hn;
+    }
+
+    .load-logo-desc{
+        font:normal 10px caviar;
+        position: relative;
+        left:3px;
+    }
+
+    .load-logo-date{
+        font:bold 9px hn;
+    }
+    .load-plinth-logo-img{
+        width:40px;
+        left:-110px;
+        top:110px;
+    }
+    .load-ei-logo-img{
+        width:35px;
+    }
+}
+
+        </style>
+</head>
+
+<div class="master-wrapper">
+        <div class="row">
+                <div class="small-10 small-centered column text-center load-main-logo">
+                    <div>
+                    <img src="../media/logo.svg" alt="plinth" class="load-plinth-logo-img"/>
+                    </div>
+                    <div>
+                    <img src="../media/ei-logo.svg" alt="plinth" class="load-ei-logo-img"/>
+                    </div>
+                    <div class="load-logo-content">
+                        <span class="load-logo-clg">EngineerIndya <span style="font-size: 12px;">presents</span></span>
+                        <br /><span class="load-logo-plinth">plinth</span>   <span class="load-logo-2017">2017</span>
+                        <br /><span class="load-logo-desc">Techno-Management Literary Fest</span>
+                        <br /><span class="load-logo-date">January 18-19, 2017</span>
+                    </div>
+            </div>
+        </div>
+</div>

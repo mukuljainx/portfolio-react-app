@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Archives | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <style>
+    .master-wrapper{
+        display: none;
+    }
+    </style>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+
+        <div class="row arch footer-adjust">
+            <div class="column small-12">
+                <img src="media/literary.svg" id="my_svg_element" />
+            </div>
+        </div>
+
+
+         <% include partials/footer %>
+         <script src="js/index.js"></script>
+         <script src="js/vendor/drawsvg.js"></script>
+         <script>
+                var mySVG = $('#my_svg_element').drawsvg();
+                mySVG.drawsvg('animate');
+         </script>
+
+    </body>
+</html>

@@ -1,0 +1,632 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%- eventDetail.displayName %> | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/robotics.css" />
+    </head>
+    <body>
+
+        <% include header %>
+        <% if ( eventDetail.eventName === 'sif') { %>
+            <% include sifForm %>
+
+            <!-- form for startup payment -->
+
+            <div class="reveal" id="startup-payment-modal" data-reveal style="padding : 30px;">
+                <h5 class="text-center" style="color: #00b9f5; font-weight: 300;">Payment</h5>
+                <div class="payment-get-email">
+                    <form action="javascript:void(0)">
+                        <div class="group">
+                            <input type="email" id="in-name" class="sif-payment-email">
+                            <span class="highlight"></span>
+                            <label>Representative Email</label>
+                        </div>
+                        <div class="text-center">
+                            <p class="email-not-foun-error-msg sif-error-msg">Email not found please try Again. Make Sure you are entering Email of member 1</p>
+                            <input type="submit" value="Pay" class="reg-form-btn-register sif-pay-email-proceed-next" onclick="fetchMemberAndPay()">
+                        </div>
+                    </form>
+                </div>
+                <div class="payment-list-email" style="display:none">
+                    <div class="row">
+                        <div class="column small-12 medium-10 medium-centered">
+                            <div class="team-member-list"></div>
+                            <p class="total-amount text-right"></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+        <% } %>
+
+        <a data-open="event-registration-form" class="event-registration-form-btn" style="opacity:0; width : 0px; height : 0px;">Register</a>
+
+        <!-- Payment Modal -->
+
+        <div class="reveal" id="payment-modal" data-reveal style="padding : 30px;">
+            <h5 class="text-center" style="color: #00b9f5; font-weight: 300;">Payment</h5>
+            <div class="payment-get-email">
+                <form action="javascript:void(0)">
+                    <div class="group">
+                        <input type="email" id="in-name" class="payment-email">
+                        <span class="highlight"></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="text-center">
+                        <p class="email-not-foun-error-msg">Email not found please try Again. Make Sure you are entering Email of member 1</p>
+                        <input type="submit" value="Next" class="reg-form-btn-register get-email-proceed-next" onclick="fetchAmountAndMember()">
+                    </div>
+                </form>
+            </div>
+            <div class="payment-list-email" style="display:none">
+                <div class="row">
+                    <div class="column small-12 medium-10 medium-centered">
+                        <div class="team-member-list"></div>
+                        <p class="total-amount text-right"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="small-2 columns">
+                    <a href="/competitions/<%- eventDetail.clubName %>"><i class="fa fa-long-arrow-left fa-2x" style="color:#3ca37c" aria-hidden="true"></i></a>
+                </div>
+                <div class="small-8 text-center columns end">
+                    <h4 style="text-transform: capitalize;"><%- eventDetail.clubName %></h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-10 small-centered columns">
+                <div class="row">
+                    <div class="small-7 small-push-4 medium-5 large-4 large-push-3 columns">
+                        <div class="dp-image">
+                            <%if ( eventDetail.eventName === 'armageddon'){ %>
+                                <img src="media/icons/coding/cola.svg" alt="<%- eventDetail.eventName %> representational Image" />
+                            <% } else { %>
+                                <img src="<%- eventDetail.imageLink %>" alt="<%- eventDetail.eventName %> representational Image" />
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="small-10 medium-5 large-5 large-pull-1 columns">
+                        <div class="details">
+                            <span class="title-workshop"><%- eventDetail.displayName %></span>
+                            <br />
+                            <br />
+                            <span>Fee INR. : <%- eventDetail.eventFee %></span>
+                            <br />
+                            <span>Date : <%- eventDetail.eventDate %></span>
+                            <br />
+                            <span>Venue : <%- eventDetail.eventVenue %></span>
+                            <br />
+                            <br />
+                            <ul <% if(eventDetail.eventName === 'wrangle'){ %> style="display : none" <%}%>>
+                                <%if (isLoggedIn) { %>
+                                    <%if (user.events.indexOf(eventDetail.eventName) !== -1) { %>
+                                        <li><a class="reg-btn" >Registered</a></li>
+                                    <% } else { %>
+                                        <li><a class="reg-btn" onClick="loggedUserRegistration()">Register ></a></li>
+                                    <% } %>
+                                    <li><a data-open="payment-modal" onclick="fetchAmountAndMember()">Make Payment ></a></li>
+                                <% } else { %>
+                                    <li><a class="reg-btn" onclick="loggedUserRegistration()">Register ></a></li>
+                                    <li><a data-open="payment-modal" class="make-payment-btn-events">Make Payment ></a></li>
+                                <% } %>
+                                <% if ( eventDetail.eventName === 'sif') { %>
+                                    <li><a href="#" ><a data-open="sif-registration-form" class="sifForm">Startup Register ></a></li>
+                                    <li><a href="#" ><a data-open="startup-payment-modal" class="sifForm">Startup Payment ></a></li>
+                                <% } %>
+                                <!-- <li><a class="reg-btn" onclick=userAccommodation()">Accommodation ></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        registeration form modal-->
+
+        <%- eventDetail.sponsor %>
+
+        <% if ( eventDetail.eventName !== 'sif' && eventDetail.prizeWorth !== '0') { %>
+          <div class="card" style="margin-bottom:25px;box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.06)">
+              <div class="row">
+                  <div class="small-4 small-offset-1 columns">
+                      <img src="media/icons/trophy.svg" / style="padding: 10px;">
+                  </div>
+                  <div class="small-6 columns end">
+                      <div class="prize">
+                      <span>Prize Worth</span>
+                      <br />
+                      <span><%- eventDetail.prizeWorth %></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <% } %>
+        <div class="rows">
+            <div class="column medium-8 small-12 medium-centered custom-column">
+                <ul class="tabs event-tabs-silver text-center" data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Synopsis</a></li>
+                  <li class="tabs-title"><a href="#panel2">Event Description</a></li>
+                  <li class="tabs-title"><a href="#panel3">Rules</a></li>
+                  <% if( eventDetail.clubName === 'robotics'){ %><li class="tabs-title" <% if(eventDetail.judges=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  ><a href="#panel4">Arena</a></li><% }else{ %>
+                  <li class="tabs-title" <% if(eventDetail.judges=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  ><a href="#panel4"><% if(eventDetail.eventName === 'sif'){ %> Registered Startup<% }else{ %>Judges<% } %></a></li><% } %>
+                  <li class="tabs-title" <% if(eventDetail.sponsors=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  ><a href="#panel6">Sponsors</a></li>
+                </ul>
+
+                <div class="dropdown-pane" style="padding:0px" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+                    <div class="event-tabs-mobile" data-tabs id="example-tabs">
+                      <div class="tabs-title tabs-title-mobile is-active"><a href="#panel1" aria-selected="true">Synopsis</a></div>
+                      <div class="tabs-title tabs-title-mobile"><a href="#panel2">Event Description</a></div>
+                      <div class="tabs-title tabs-title-mobile"><a href="#panel3">Rules</a></div>
+                      <% if( eventDetail.clubName === 'robotics'){ %><div class="tabs-title tabs-title-mobile"
+                      <% if(eventDetail.judges=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  ><a href="#panel4">Arena</a></div><% }else{ %>
+                      <div class="tabs-title tabs-title-mobile" <% if(eventDetail.judges=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  ><a href="#panel4"><% if(eventDetail.eventName === 'sif'){ %> Registered Startup<% }else{ %>Judges<% } %></a></div><% } %>
+                      <div class="tabs-title tabs-title-mobile" <% if(eventDetail.sponsors=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  ><a href="#panel6">Sponsors</a></div>
+                  </div>
+                </div>
+
+
+                <div class="tabs-content" data-tabs-content="example-tabs">
+                    <div class="mobile-tab-container">
+                        <a data-toggle="example-dropdown-1" class="mobile-tab-toggler"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="tabs-panel is-active" id="panel1">
+                        <%- eventDetail.synopsis %>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                        <%- eventDetail.eventDescription %>
+                    </div>
+                    <div class="tabs-panel" id="panel3">
+                        <%- eventDetail.rules %>
+                    </div>
+                    <div class="tabs-panel" id="panel4" <% if(eventDetail.judges=="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %>  >
+                        <%- eventDetail.judges %>
+                    </div>
+                    <div class="tabs-panel sponsor-pannel" id="panel6" <% if(eventDetail.sponsors =="<p>Details will be Updated soon</p>") { %> style="display: none" <% } %> >
+                        <%- eventDetail.sponsors %>
+                    </div>
+                </div>
+            </div>
+        <div>
+        <div class="row" style="margin-top:40px;">
+            <div class="column small-10 small-centered">
+                <div style='font-weight :500; text-align:center; margin-bottom:20px'>For Any Queries Contact</div>
+                <div class="text-center">
+                    <p><%- eventDetail.query %></p>
+                </div>
+            </div>
+
+        </div>
+        <% include footer %>
+
+        <script>
+        workshopProceedNext(); //to hide workshop message
+        $('.event-registration-form-part').css('display', 'none'); //to hide from
+        $('.memberUpperLimit').text('<%- eventDetail.memberUpperLimit %>');
+        $('.memberLowerLimit').text('<%- eventDetail.memberLowerLimit %>');
+
+        if("<%- eventDetail.eventName %>" === "sif"){
+            $('.student-sif-checkbox').show();
+            $('.student-resume').show();
+        }
+
+        multiUser = [];
+        multiUserCount = 0;
+        teamMail = []; // email of all member will be here so no two member can have same email
+
+
+        function formSubmissionEvent(url, datax){
+            data = datax;
+            activateLoader();
+            $.post( {
+                url: url,
+                contentType: 'application/json; charset=utf-8',
+                dataType : 'json',
+                data: JSON.stringify(data)
+            })
+            .done(function( data ) {
+                deactivateLoader();
+                if(data.response){
+                    notifDisplay(1,1);
+                    $('.reg-btn').text('Registered');
+                }
+                else {
+                    notifDisplay(0,0);
+                }
+            })
+            .fail(function(response) {
+                apiCallFail(response);
+            });
+        }
+
+
+        <%if (isLoggedIn) { %>
+            $('.reg-social').css('display', 'none');
+            function loggedUserRegistration(){
+                    if(<%- eventDetail.memberUpperLimit %> === 1 && <%- eventDetail.memberLowerLimit %> === 1){
+                        multiUser = [];
+                        multiUser.push(intialUser);
+                        if("<%- eventDetail.eventName %>" === 'sif'){
+                            $(".event-registration-form-btn").trigger('click');
+                            $('.event-registration-form-btnx').removeClass("btn-disabled");
+                            return;
+                        }
+                        data = {"eventName" : "<%- eventDetail.eventName %>", "clubName" : "<%- eventDetail.clubName %>" , "userDetails" : multiUser};
+                        activateLoader();
+                        $.post( {
+                            url: "/events/register",
+                            contentType: 'application/json; charset=utf-8',
+                            dataType : 'json',
+                            data: JSON.stringify(data)
+                        })
+                        .done(function( data ) {
+                            deactivateLoader();
+                            if(data.response){
+                                notifDisplay(1,1);
+                            }
+                            else {
+                                notifDisplay(0,0);
+                            }
+                        })
+                        .fail(function(response) {
+                            apiCallFail(response);
+                        });
+                    }else {
+                        $(".event-registration-form-btn").trigger('click');
+                        if(<%- eventDetail.memberLowerLimit %> === 1){
+                            $('.event-registration-form-btnx').removeClass("btn-disabled");
+                        }
+                    }
+                }
+                // function hitting the backend
+                // trigeres on Register btn click
+                function eventUserComplete(){
+                    if((multiUserCount + 1) < <%- eventDetail.memberLowerLimit %>){
+                        return
+                    }
+                    else{
+                        userx = getUserDetails();
+                        if("<%- eventDetail.eventName %>" === "sif" ){
+                            var fieldOption = ['technical', 'management', 'content', 'social'];
+                            userx.field = [];
+                            for(var i=0; i<4; i++){
+                                if($('.student-sif-checkbox-' + i).is(":checked")){
+                                    userx.field.push(fieldOption[i]);
+                                }
+                            }
+                            if(userx.field.length === 0){
+                                notifDisplay(2,5);
+                                return;
+                             };
+                             userx.resume = $('.resume').val();
+                         }
+                        if(!validateUserDetails(userx)) return;
+                        if(teamMail.indexOf(userx.email) !== -1){ // will not allow two member two have same email
+                            notifDisplay(2,6);
+                            return;
+                        }
+                        console.log(userx)
+                        multiUser[multiUserCount] = userx;
+                        $('.close-button').trigger('click');
+                        reqBody = {"eventName" : "<%- eventDetail.eventName %>", "clubName" : "<%- eventDetail.clubName %>" , "userDetails" : multiUser};
+                        formSubmissionEvent("/events/register", reqBody)
+                    }
+                } // function hitting backend compltes
+
+                //for accommodation
+                function  userAccommodation(){
+                    //Open a popup with deatils about accommodation and registration yourself for accommodation once is enough
+                    //If user is registered with team then ask user if wants pay for the whole team or alone
+
+
+                }
+                // accommodation completes
+                intialUser = {
+                    "name"         : "<%- user.name %>",
+                    "gender"       : "<%- user.gender %>",
+                    "phoneNumber"  : "<%- user.phoneNumber %>",
+                    "email"        : "<%- user.email %>",
+                    "college"      : "<%- user.college %>",
+                    "year"         : "<%- user.year %>",
+                    "city"         : "<%- user.city %>",
+                    "accommodation" : "<%- user.accommodation %>",
+                }
+
+                setFormValue(intialUser);
+        <% } else { %>
+            //when user press register
+            function eventUserComplete(){
+                debugger
+                if(formReg === 1){
+                    registerUserComplete();
+                    return;
+                }
+                if((multiUserCount + 1) < <%- eventDetail.memberLowerLimit %>){
+                    return
+                }
+                else{
+                    var userx = getUserDetails();
+                    if(teamMail.indexOf(userx.email) !== -1){ // will not allow two member two have same email
+                        notifDisplay(2,6);
+                        return;
+                    }
+                    if(!validateUserDetails(userx)){
+                        return;
+                    }
+                    if("<%- eventDetail.eventName %>" === "sif" ){
+                        var fieldOption = ['technical', 'management', 'content', 'social'];
+                        userx.field = [];
+                        for(var i=0; i<4; i++){
+                            if($('.student-sif-checkbox-' + i).is(":checked")){
+                                userx.field.push(fieldOption[i]);
+                            }
+                        }
+                        if(userx.field.length === 0){
+                            notifDisplay(2,5);
+                            return;
+                        };
+                        userx.resume = $('.resume').val();
+                    }
+                    multiUser[multiUserCount] = userx;
+                    $('.close-button').trigger('click');
+                    reqBody = {"eventName" : "<%- eventDetail.eventName %>", "clubName" : "<%- eventDetail.clubName %>" , "userDetails" : multiUser};
+                    formSubmissionEvent("/events/register", reqBody);
+                }
+            }
+            //when user opens form
+            function loggedUserRegistration(){
+                formReg = 0;
+                $('.reg-social').css("display","block"); // register btn with fb and google
+                $('.add-member-btn').css("display", "inline-block");
+                $('.reg-form-event-pagging').css('display','block');
+                $('.event-registration-form-btnx').addClass('btn-disabled');
+                $(".event-registration-form-btn").trigger('click');
+                if(<%- eventDetail.memberLowerLimit %>  === 1){
+                    $('.event-registration-form-btnx').removeClass("btn-disabled");
+                }
+
+                if(<%- eventDetail.memberUpperLimit %> === 1 && <%- eventDetail.memberLowerLimit %> === 1){
+                    multiUser = [];
+                    proceedNext();
+                    $('.add-member-btn').css('display', 'none');
+
+                }else {
+                    $(".event-registration-form-btn").trigger('click');
+                    if(<%- eventDetail.memberLowerLimit %> === 1){
+                        $('.event-registration-form-btnx').removeClass("btn-disabled");
+                    }
+                }
+            }
+        <% } %>
+        function addMember(){
+            var userx = getUserDetails();
+            if(!validateUserDetails(userx) || multiUserCount === ( <%- eventDetail.memberUpperLimit %> - 1)){
+                return;
+            }
+            if(teamMail.indexOf(userx.email) !== -1){ // will not allow two member two have same email
+                notifDisplay(2,6);
+                return;
+            }
+
+            if((multiUserCount + 2) === <%- eventDetail.memberUpperLimit %>){ //reached team limit
+                $('.add-member-btn').css('display','none');
+            }
+            multiUser[multiUserCount] = userx;
+            teamMail[multiUserCount] = userx.email;
+            multiUserCount++;
+            $('.event-registration-form-member-number').text(multiUserCount + 1);
+            setFormFree();
+            if((multiUserCount + 1) === <%- eventDetail.memberLowerLimit %>){
+                $('.event-registration-form-btnx').removeClass("btn-disabled");
+            }
+        }
+
+        $('.event-registration-form-prev').click(function(){
+            $('.add-member-btn').css('display','inline-block');
+            if(multiUserCount === 0)
+                return
+            else{
+                multiUserCount--;
+                if(multiUserCount + 1 < <%- eventDetail.memberLowerLimit %>){
+                    $('.event-registration-form-btnx').addClass('btn-disabled');
+                }
+                $('.event-registration-form-member-number').text(multiUserCount + 1);
+                setFormValue(multiUser[multiUserCount]);
+            }
+        });
+        $('.event-registration-form-next').click(function(){
+            if(multiUserCount === ( <%- eventDetail.memberUpperLimit %> - 1) || $('.event-registration-form-member-number').text() == multiUser.length + 1 || multiUser.length === 0)
+                return
+            else{
+                multiUserCount++;
+                $('.event-registration-form-member-number').text(multiUserCount + 1);
+                if(multiUser[multiUserCount] !== undefined) setFormValue(multiUser[multiUserCount]);
+                else setFormFree();
+            }
+        });
+
+
+        function setFormValue(user){
+            $('.user-name').val(user.name);
+            $('input:radio[name=gender]')[user.gender === "male" ? 0 : 1].checked = true;
+            $('.phone').val(user.phoneNumber);
+            $('.email').val(user.email);
+            $('.college').val(user.college);
+            $('input:radio[name=year]')[user.year - 1].checked = true;
+            $('.city').val(user.city);
+            $('input:radio[name=acc]')[user.accommodation ? 0 : 1].checked = true;
+        }
+        function setFormFree(){
+            $('.user-name').val("");
+            $('.phone').val("");
+            $('.email').val("");
+            $('input:radio[name=gender]').attr('checked',false);
+            $('input:radio[name=year]').attr('checked',false);
+        }
+
+        function fetchAmountAndMember(){
+            <%if (isLoggedIn) { %>
+                var email = "<%- user.email %>"
+            <% }else{ %>
+                var email = $('.payment-email').val()
+            <% } %>
+            if(email ==="" || email.indexOf('@') === -1){
+                return;
+            }
+            var data ={
+                eventName : "<%- eventDetail.eventName %>",
+                clubName  : "<%- eventDetail.clubName %>",
+                email     : email
+            }
+
+            activateLoader();
+            $.post( {
+                url: '/payment/fetchData',
+                contentType: 'application/json; charset=utf-8',
+                dataType : 'json',
+                data: JSON.stringify(data)
+            })
+            .done(function( response ) {
+                deactivateLoader();
+                if(response.data.length === 0){
+                    $('.email-not-foun-error-msg').css("opacity","1");
+                    return;
+                }
+                var totalAmount = response.totalAmount;
+                $('.payment-get-email').hide()
+                $('.payment-list-email').show()
+                if(response.data.length > 1){
+                    var totalListHTML ="<p class='text-center'>We found mulitple registration with this email, you can choose any particular and attend the event with that team other registration will be discarded."
+                }
+                else{
+                    var totalListHTML = "";
+                }
+                for(var i=0; i<response.data.length; i++){
+                    var team = response.data[i].team;
+                    var renderHTML = "<div class='team-box-gray'>Registration " + (i + 1) + " :<ol>"
+                    for(var j=0; j<team.length; j++ ){
+                        renderHTML = renderHTML + "<li><span>" + team[j].name + "</span> | <span style='margin-left:10px'>" +
+                        team[j].email + "</span></li>";
+                    }
+                    renderHTML = renderHTML + "</ol>"
+                    + "<div class='row'>"
+                    + "<div class='column small-6'>"
+                    + "<div class='total-amount text-left'> Total Amount : &#8377; " + totalAmount
+                    + "/-</div>"
+                    + "</div>"
+                    + "<div class='column small-6' style='padding-top : 10px;'>"
+                    + "<div class='text-right pay-now-div'>";
+
+
+
+                    if(response.data[i].payment.status === "TXN_SUCCESS"){
+                        renderHTML = renderHTML + "<a class='reg-form-btn-register get-email-proceed-next' style='background: #2ECC71; cursor: default;'>Paid</a></div></div>"
+                    }
+                    else{
+                        renderHTML = renderHTML + "<a class='reg-form-btn-register get-email-proceed-next' onclick='makePayment(\"" + response.data[i]._id + "\")'>Pay Now</a></div></div>"
+                    }
+
+                    renderHTML = renderHTML + "</div></div>"
+                    totalListHTML = totalListHTML + renderHTML;
+                }
+                $(".team-member-list").html(totalListHTML);
+            })
+            .fail(function(response) {
+                apiCallFail(response);
+                return;
+            });
+        }
+        function makePayment(id){
+            window.location.replace( location.origin + "/payment/initiatepayment?id=" + id + "&clubName=<%-eventDetail.clubName %>&eventName=<%- eventDetail.eventName %>");
+        }
+
+        // for startup
+        <% if(eventDetail.eventName === 'sif'){ %>
+            function fetchMemberAndPay(){
+                <%if (isLoggedIn) { %>
+                    var email = "<%- user.email %>"
+                <% }else{ %>
+                    var email = $('.sif-payment-email').val()
+                <% } %>
+                debugger
+                if($('.sif-payment-email').val() !== ''){
+                    email = $('.sif-payment-email').val();
+                }
+                if(email ==="" || email.indexOf('@') === -1){
+                    return;
+                }
+                var data ={
+                    email : email
+                }
+
+                activateLoader();
+                $.post( {
+                    url: '/payment/sif/fetchData',
+                    contentType: 'application/json; charset=utf-8',
+                    dataType : 'json',
+                    data: JSON.stringify(data)
+                })
+                .done(function( response ) {
+                    deactivateLoader();
+                    if(response.status === false){
+                        $('.sif-error-msg').css("opacity","1");
+                        return;
+                    }
+                    else{
+                        window.location.replace( location.origin + "/payment/sif/initiatepayment?id=" + response.id);
+                    }
+                })
+                .fail(function(response) {
+                    apiCallFail(response);
+                    return;
+                });
+
+            }
+        <% } %>
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+            .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+            });
+            return result;
+        }
+
+        if(findGetParameter('type') === 'payment'){
+            if(findGetParameter('user') !== null){
+                $('.payment-email').val(findGetParameter('user'));
+                $('.reg-form-btn-register').trigger('click');
+                $('.make-payment-btn-events').trigger('click');
+                fetchAmountAndMember();
+            }
+        }
+
+        if(findGetParameter('type') === 'register'){
+            $('.reg-btn').trigger("click");
+        }
+        </script>
+
+    </body>
+</html>

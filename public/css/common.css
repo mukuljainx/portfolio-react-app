@@ -1,0 +1,611 @@
+@font-face {
+    font-family: rez;
+    src: url("../font/REZ.ttf");
+}
+
+@font-face {
+    font-family: caviar;
+    src: url("../font/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: cl;
+    src: url("../font/ChampagneAndLimousines.ttf");
+}
+
+@font-face {
+    font-family: hn;
+    src: url("../font/HelveticaNeue.ttf");
+}
+
+.app-promotion{
+    background: white;
+    width: 100%;
+    height: 60px;
+    color: black;
+    padding-top: 10px;
+}
+.app-promotion p{
+    display: inline-block;
+}
+
+.app-promotion i{
+    float: right;
+}
+
+.app-promotion a{
+    color: black;
+}
+.app-promotion img{
+    height: 40px;
+    margin-left: 10px;
+}
+
+nav{
+    height: 70px;
+    padding: 20px 20px 0px ;
+}
+
+.header-logo{
+    width: 60px;
+    display: inline-block;
+
+}
+
+.navitem{
+/*    position: relative;*/
+/*    top: -40px;*/
+    display: inline-block;
+    float: right;
+    font:normal 1.125em cl;
+    margin-top: -5px;
+    letter-spacing: 1px;
+}
+
+.navitem li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.navitem a{
+    color:black;
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.navitem-active:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: black;
+    border-radius: 5px;
+    visibility: visible !important;
+}
+
+.navitem a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background: black;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.navitem a:hover:before,a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.ham-btn{
+    display: none;
+    position: fixed;
+    top:25px;
+    right: 10px;
+    z-index: 99;
+}
+.ham-wrapper{
+    position: fixed;
+    top:0px;
+    right: 0px;
+    z-index:9999;
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.1);
+    color: black;
+}
+
+.ham-content{
+    font:normal 1.125em hn;
+}
+
+.ham-content li{
+    list-style: none;
+    padding:30px;
+}
+
+.ham-content a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.ham-close{
+    display: none;
+    float: right;
+    position: fixed;
+    top:10px;
+    right: 10px;
+    opacity: 0.5;
+}
+
+
+.ham-close span{
+    font:normal 20px 'Roboto';
+}
+
+.back{
+    color: #0431B4;
+}
+
+.back:hover{
+    opacity: 0.8;
+}
+
+.social-wrapper{
+}
+
+.social{
+    max-width: 500px;
+}
+
+.social li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.social a{
+    text-decoration: none;
+    color:#4a4a4a;
+}
+
+
+.footer-text{
+/*    max-width: 600px;*/
+}
+
+.footer-text li{
+    list-style: none;
+    display: inline-block;
+    padding:0px 15px;
+    font:bold 18px hn;
+}
+
+.footer-text a{
+    text-decoration: none;
+    color:#4a4a4a;
+}
+
+.footer-fixed{
+  position: absolute;
+  bottom: 10px;
+  left: calc( 50% - 410px);
+}
+
+
+#register-pop-up-window{
+  padding-top: 20px;
+    color: black;
+}
+#register-pop-up-window h5{
+  font-family: cl;
+  font-size: 26px;
+    color: black;
+}
+#register-pop-up-window p{
+  font-family: robo;
+  font-size: 16px;
+  padding: 20px;
+    color: black;
+}
+
+.btn-register{
+  margin-right: 10px;
+  background: white;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,0.2);
+  padding: 12px 25px;
+  color: black;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.btn-register i{
+  margin-right: 10px;
+}
+
+.notif{
+    z-index: 9999999;
+    text-align: right;
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font: normal 15px 'Roboto';
+    padding: 20px;
+    background-color: white;
+}
+
+
+.reg-status{
+    padding-left: 15px;
+}
+
+.reg-status-img{
+    padding: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+    background-color:#1585cf;
+    border-radius: 100%;
+}
+
+.profile-drop-down{
+    text-align: right;
+    display: none;
+    position: fixed;
+    top: 48px;
+    right: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+    font: normal 15px 'Roboto';
+    padding:20px 10px 20px;
+    background-color: white;
+    z-index: 999;
+}
+
+.drop-down-ele a{
+    font: normal 15px 'Roboto';
+    color: black;
+}
+
+/* registration form */
+
+.form-silver-wrap{
+    width: 300px;
+    margin: auto;
+}
+
+.reg-form{
+    background-color: white;
+    box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2);
+    padding:50px 0px;
+    align-content: center;
+}
+
+
+.reg-form-display{
+    display: block;
+}
+
+.reg-form-btn{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.reg-form-btn-register{
+    box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2);
+    padding: 10px 20px 10px;
+    font:bold 22px cl;
+    color:black;
+    background: white;
+    border: none;
+}
+
+.add-memb{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.add-memb span{
+    text-decoration: underline;
+}
+
+.add{
+    font:bold 22px cl;
+    color:black;
+}
+
+
+.reg-social ul{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.reg-social li{
+    list-style: none;
+    color: black;
+    font:normal 18px cl;
+    display: inline-block;
+    box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2);
+    padding:10px 20px 10px;
+}
+
+.reg-social a{
+    color: black;
+}
+
+.fa-facebook, .fa-google-plus{
+    padding-right: 10px;
+}
+
+.group {
+  position: relative;
+}
+
+.group input, .group textarea {
+    box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  display: block;
+  width: 300px;
+}
+
+.group input:focus, .group textarea:focus {
+  outline: none;
+    border:none;
+    box-shadow: none;
+    border-bottom: 2px solid black;
+}
+
+.group input:focus ~ label, .group input:valid ~ label, .group textarea:focus ~ label, .group textarea:valid ~ label {
+  top: -10px;
+  font-size: 17px;
+  color: black;
+}
+
+.group label {
+  font:normal 22px cl;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ .bar:before, textarea:focus ~ .bar:before {
+  left: 0;
+  right: 0;
+}
+
+.radio-gender{
+    margin-bottom: -22px;
+    padding-top: 10px;
+}
+
+.reg-gender-h{
+    font:normal 22px cl;
+}
+
+.reg-gender{
+    position: relative;
+    top:-28px;
+    margin-left: 80px;
+}
+
+.radio-year{
+    margin-bottom: -22px;
+    padding-top: 5px;
+}
+
+.radio-year label{
+    margin-right: 0px;
+}
+
+.radio-year .reg-gender{
+    margin-left: 50px;
+}
+
+.reg-acc-h{
+    font:normal 22px cl;
+}
+
+.reg-acc{
+    margin-top: -30px;
+    margin-left: 150px;
+}
+
+/*radio button*/
+
+.radButtonWorkload {
+    opacity: 0;
+/*    display: none;*/
+/*    visibility: hidden;*/
+    width: 0px;
+}
+
+label[for="radioWorkload1"], label[for="radioWorkload2"], label[for="radioWorkload3"], label[for="radioWorkload4"], label[for="radioWorkload5"], label[for="radioWorkload6"], label[for="radioWorkload7"], label[for="radioWorkload8"], label[for="radioWorkload9"]{
+/*    position: relative;*/
+/*    left: -30px;*/
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid #4a4a4a;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  box-shadow: 0px 0px 0px 3px #fff inset;
+}
+
+.radButtonSpanWorkload{
+    font:normal 22px cl;
+}
+
+.event-main-page-image{
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#workshop-modal, #lectures-modal{
+    padding: 50px 0px 50px; !important
+}
+
+@media screen and (max-width: 1366px) {
+    .radButtonSpanWorkload{
+        margin-left: -16px;
+    }
+    .reg-form-btn-register{
+        box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2);
+        padding: 10px 15px;
+        font:bold 20px cl;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .navitem{
+        display:none;
+    }
+    .ham-btn{
+        display: block;
+    }
+}
+
+.btn-disabled{
+    color: rgba(0,0,0,0.2);
+    cursor: default !important;
+}
+
+
+/*loader*/
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+.loader {
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 5px solid rgba(33,153,232, 0.2);
+  border-right: 5px solid rgba(33,153,232, 0.2);
+  border-bottom: 5px solid rgba(33,153,232, 0.2);
+  border-left: 5px solid #2199e8;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+  margin-right: 10px;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.notif-loader{
+    display: none;
+    text-align: right;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font: normal 15px 'Roboto';
+    padding: 20px 14px;
+    background-color: white;
+    z-index: 99999999999;
+    height: 70px;
+}
+
+.notif-loader div{
+    display: inline-block;
+}
+
+.notif-loader-text{
+    position: relative;
+    top: -12px;
+    font-size: 16px;
+}
+
+
+.cryptex-notifty{
+    position: absolute;
+    border: 2px solid;
+    padding: 4px 20px 4px 23px;
+    border-radius: 2px;
+    font-family: cl;
+    font-weight: 600;
+    right: 20px;
+    color: #4a4a4a;
+    width: 150px;
+    text-align: center;
+}
+
+.notify-2{
+    margin-top: 46px;
+}
+
+.notify-3{
+    margin-top: 93px;
+}
+
+.notify-4{
+    margin-top: 140px;
+}
+
+.cryptex-notifty-small{
+    position: static;
+}
+
+.game-is-on-green{
+    display: inline-block;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background: rgb(66, 183, 42);
+    margin-left: 10px;
+}

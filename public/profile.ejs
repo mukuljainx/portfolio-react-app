@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/profile.css" />
+    </head>
+    <body>
+
+        <% include partials/header %>
+
+        <div class="row usr-profile-wrap">
+            <div class="small-10 small-centered columns">
+                <div class="row">
+                    <div class="small-10 small-centered text-center columns">
+                        <div class="usr-img-wrap">
+                            <span class="usr-img"><img src="media/icons/profile/<%- user.gender %>.svg" width="100"/></span>
+                            <br />
+                            <br />
+                            <span class="usr-name"><%- user.name %></span>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="small-12 medium-6 large-5 columns">
+                        <div class="usr-profile-h"><span>About</span></div>
+                        <br />
+                        <div class="user-profile-subh">Email</div><div class="usr-email"><%- user.email %></div>
+                        <br />
+                        <div class="user-profile-subh">Phone</div><div class="usr-phone"><%- user.phoneNumber %></div>
+                        <br />
+                        <div class="user-profile-subh">College</div><div class="usr-clg"><%- user.college %></div>
+                        <br />
+                        <div class="user-profile-subh">City</div><div class="usr-city"><%- user.city %></div>
+                        <br />
+                    </div>
+                    <div class="small-12 medium-6 large-5 columns">
+                        <div class="usr-profile-h"><span>Events</span></div>
+                        <br />
+                        <!-- <%- user.events %> -->
+                        <% if(user.events.length === 1) { %>
+                            <div>Registered Events will apear here</div>
+                        <% } else { %>
+                            <% for(var i=1; i<user.events.length; i++) { %>
+                            <div class="user-profile-subh" style="text-transform:capitalize"><%= user.events[i] %></div><div class="reg-status"><a href="#">Payment</a></div>
+                            <br />
+                            <% } %>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% include partials/footer %>
+
+    </body>
+</html>

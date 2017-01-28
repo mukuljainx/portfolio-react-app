@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Startups | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body>
+        <% include header %>
+
+        <style>
+            body{
+        		background-color: #EFEEEF;
+		    	font-family: 'Roboto', sans-serif;
+        	}
+            nav {
+                height: 78px;
+                background: #4B7CE7;
+            }
+            footer{
+                background: #4B7CE7;
+                padding-top: 20px;
+            }
+            footer a{
+                color: white !important;
+            }
+            .navitem a {
+                color: white;
+            }
+        	.content{
+                transition: 0.3s;
+                box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+        		background-color: white;
+        		padding: 20px;
+        	}
+            .content:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+        </style>
+
+        <section>
+            <% for(var i=0; i<results.length; i++) { %>
+                <div class="row content">
+                    <div class="column small-12 partial-card medium-4">
+                        Name : <%= results[i].detail.name %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Website : <a href="http://<%= results[i].detail.website %>"><%= results[i].detail.website %></a>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Fee status : <%= results[i].payment.status %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Representative Name : <%= results[i].detail.representativeName %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Email : <%= results[i].detail.representativeEmail %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Contact : <%= results[i].detail.representativeContact %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Opening : <%= results[i].detail.numberofOpening %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Stipend : <%= results[i].detail.stipend %>
+                    </div>
+                    <div class="column small-12 partial-card medium-4">
+                        Fields : <%= results[i].detail.field %>
+                    </div>
+                    <hr />
+                    <div class="column small-12 partial-card medium-12">
+                        <%= results[i].detail.description %>
+                    </div>
+                </div>
+                <br>
+            <% } %>
+        </section>
+
+        <div class="row" style="margin-top:40px;">
+            <div class="column small-10 small-centered">
+                <div style='font-weight :500; text-align:center; margin-bottom:20px'>For Any Queries Contact</div>
+                <div class="text-center">
+                    plinth@lnmiit.ac.in
+                </div>
+            </div>
+
+        </div>
+
+        <% include footer %>
+
+    </body>
+</html>

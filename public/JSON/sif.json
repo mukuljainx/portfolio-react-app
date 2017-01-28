@@ -1,0 +1,23 @@
+{
+    "imageLink" : "media/icons/management/sif.svg",
+    "registerLink" : "/registration/management/sif",
+    "paymentLink" : "",
+    "payment0" : "<li><a href='#' data-open='paymentpop'>Make Payment></a></li>",
+    "payment1" : "",
+    "memberUpperLimit" : 1,
+    "memberLowerLimit" : 1,
+    "clubName" : "management",
+    "eventName" : "sif",
+    "displayName" : "Startup Intern Fair'17",
+    "eventDate" : "19th Jan 2017",
+    "eventVenue" : "The LNMIIT, Jaipur",
+    "prizeWorth" : "INR. 30,000",
+    "synopsis" : "<p>As the name very well suggests, SIF aims at bringing the budding startups and the aspiring students all under one umbrella. Here, the associated startups would be able to find just the right intern for their company whether it be for summers ,winters or workfrom-home. On the other hand, the students would be able to apply their acquired skills and broaden their technical horizons, by working in a thriving startup environment. The process would be an aggregated one and the students would be screened on the spot and would get the opportunity to land up amidst some cool entrepreneurs.</p>",
+    "eventDescription" : "<p>Our inboxes are usually spammed with mails from internship and training websites. With the startup boom in our country, fresh ideas are launching everyday. They definitely need creative problem-solvers, out-of-the-box thinkers, who share the same vision as that of the company. Applying through virtual platforms is tedious and time consuming. With multiple screening rounds, group discussions etc, the wait to hire the perfect candidate gets even longer! This is why we present to you SIF. We here at the Startup Intern Fair would open the gates of entrepreneurship to a lot of creative minds. Thus, to bridge the gap between the talent-seekers and the talented, we present Startup Intern Fair in its very first edition at PLINTH'16, the annual technomanagement literary fest of LNMIIT.</p>",
+    "rules" : " <ol><li> Carry at least two passport size photographs and a valid College ID. Without it, your entry in SIF shall be denied.</li><li>Students must bring their own copies of resumes. Carry at least as many copies as the internship profiles you are applying for.</li><li>One student can apply for multiple internship openings but can be selected in maximum of three. Once a student gets selected in 3 internships, he/she shall be debarred from applying further.</li></ol>",
+    "judges" : "<p>Details will be Updated soon</p>",
+    "mentors" : "<p>Details will be Updated soon</p>",
+    "query" : "Akhilesh Maheshwari: +91-9772565365<br>Mayuri Agrawal: +91-9414048295<br>sif.plinth@gmail.com<br>",
+    "sponsors" : "<h4 class='text-center'>Sponsors 2016</h4><img src='media/icons/management/sponsors_16/1.png' /><img src='media/icons/management/sponsors_16/2.png' /><img src='media/icons/management/sponsors_16/3.png' /><img src='media/icons/management/sponsors_16/4.png' />"
+}
+

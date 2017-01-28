@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events Edit | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/robotics.css" />
+        <style>
+        .label{
+            text-transform: capitalize;
+            margin-bottom: 8px;
+            font-family: 'exo 2';
+        }
+        </style>
+    </head>
+    <body>
+        <% include header %>
+
+        <div class="row">
+            <div class="columns small-10 small-centered">
+                <form>
+                    <% for (var i=0; i<nameArray.length; i++) { %>
+                        <p class="label"><%= nameArray[i] %></p>
+                        <textarea placeholder="small-12.columns" class="<%= nameArray[i] %>"><%= eventData[nameArray[i]] %></textarea>
+                    <%}%>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column small-10 small-centered">
+                <a class="btn" onclick="eventEditFormSubmission()">Update</a>
+            </div>
+        </div>
+        <% include footer %>
+
+    </body>
+    <script>
+        function eventEditFormSubmission(){
+            var nameArray = ["imageLink" ,"memberUpperLimit" , "memberLowerLimit","clubName", "eventName", "displayName", "eventDate", "eventVenue", "prizeWorth", "sponsor" ,"eventFee", "synopsis", "eventDescription" ,"rules", "judges", "query", "sponsors"];
+
+            var data = {}
+
+            for(var i=0; i<nameArray.length; i++){
+                data[nameArray[i]] = $('.' + nameArray[i]).val();
+            }
+
+            activateLoader();
+            $.post( {
+                url: '/events/update',
+                contentType: 'application/json; charset=utf-8',
+                dataType : 'json',
+                data: JSON.stringify(data)
+            })
+            .done(function( data ) {
+                deactivateLoader();
+                if(data.response){
+                    notifDisplay(1,1);
+                }
+                else {
+                    notifDisplay(0,0);
+                }
+            })
+            .fail(function(response) {
+                apiCallFail(response);
+            });
+
+        }
+    </script>
+</html>

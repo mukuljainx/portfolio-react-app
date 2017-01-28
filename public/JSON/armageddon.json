@@ -1,0 +1,22 @@
+{
+    "imageLink" : "images/icons/coding/cola.svg",
+    "registerLink" : "/registration/astronomy/armageddon",
+    "paymentLink" : "",
+    "payment0" : "<li><a href='#' data-open='paymentpop'>Make Payment></a></li>",
+    "payment1" : "",
+    "memberUpperLimit" : 5,
+    "memberLowerLimit" : 1,
+    "clubName" : "astronomy",
+    "eventName" : "armageddon",
+    "displayName" : "armageddon",
+    "eventDate" : "19th Jan 2017",
+    "eventVenue" : "The LNMIIT, Jaipur",
+    "prizeWorth" : "INR. 30,000",
+    "synopsis" : "<p>Scientists at NASA have discovered an asteroid 65 miles wide, named as Destroyer786. It is composed of large quantities of carbon      molecules as well as the more usual rocks and metals.It has it's collision course set with Earth. The asteroid is supposed to make its impact 1.5 years from today. Destroyer786 is travelling at a speed of 30,000 miles per hour and is approaching the earth from the direction of the sun. Keeping the estimated flyby distance in mind, it is supposed to cause a mass destruction if not total wipeout of humanity from the face of Earth.</p><p>All countries have come together, understanding the grim situation and are ready to take extreme measures to stop the 'end of the world'. You are chosen to be a part of core team of scientists that is going to save the humanity.</p><p>Devise a plan to save Earth and humanity.<br>Fate of humanity lies in your hand.<br>This event consists of two rounds. First round will be online. The participants have to submit a report before the given deadline. After the date of submission, we will select the teams for the second round on the basis of their report. All the teams selected teams will have to present their report in front of the judges during plinth.</p>",
+    "eventDescription" : "<p><b>Problem Statement</b><ol><li>You have no economic constraints as all countries are willing to pool their resources in an attempt to save humanity.</li><li>You have 547 days in total to save earth, delay of even an hour will lead to human extinction.</li><li>Level of technology is not much advance than today, therefore make assumptions that are almost realistic.</li></ol></p> The final project report should be mailed to astronomy.lnmiit@gmail.com with the subject Plinth: Armageddon Project Report: TeamId.</p><b>Last date of submission of project is 30th december</b>",
+    "rules" : "<p><b>General Rules </b><ol><li>Any form of copying of textual material would lead to disqualification.</li><li>You can work alone or in a team of at most five.</li><li>One project should be submitted by only one team/individual. If same project is submitted by two teams/individuals, first one would be evaluated and second would be disqualified.</li></ol></p><p><b>Format of the project </b><ol><li>The project should be submitted in a pdf.</li><li>There is no strict format that you need to stick to. Make it as comprehensible as possible. </li></ol></p>",
+    "judges" : "<p><b>Evaluation Methodology </b><ol><li>Your report would be evaluated on how many different aspects you have deliberated upon and how many of these are in line with the physics of the planet.</li><li>The more descriptive you are, the more points your report will score.</li><li>You can use diagrams and pictures.</li></ol></p>",
+    "mentors" : "<p>Details will be Updated soon</p>",
+    "query" : "Smriti Jha: +91-7742603667 | smritijha369@gmail.com<br>Kushagra Garg: +91-8561801305 | kushrulesu@gmail.com<br>astronomy.lnmiit@gmail.com<br>",
+    "sponsors" : "<p>Details will be Updated soon</p>"
+}

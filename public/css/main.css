@@ -1,0 +1,448 @@
+body{
+/*    background-image: url("../media/bg.png");*/
+    color:white;
+    background: url("../media/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navitem a{
+    color:white;
+    text-decoration: none;
+}
+.navitem a:before {
+    background: #ffffff !important;
+}
+.main-logo{
+    max-width:600px;
+    height: 400px;
+    AAborder: 1px solid white;
+    padding: 50px;
+}
+
+.logo-content{
+    position: relative;
+    top: -225px;
+}
+
+.logo-clg{
+    font: normal 20px cl;
+    position: relative;
+    left:-100px;
+}
+.logo-plinth{
+    font: normal 105px rez;
+    letter-spacing: 2px;
+}
+
+.logo-2017{
+    font: bold 50px hn;
+    letter-spacing: 2px;
+    position: relative;
+    left:15px;
+}
+
+.logo-desc{
+    font:normal 22px caviar;
+    position:relative;
+    top:-24px;
+    left:15px;
+}
+
+.logo-date{
+    font:bold 20px hn;
+    position:relative;
+    top:-25px;
+    left:96px;
+}
+
+
+.super{
+    vertical-align: super;
+    font:bold 12px hn;
+}
+
+
+.social{
+    AAborder:1px solid white;
+    max-width: 500px;
+}
+
+.social li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.social a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.footer-text{
+/*    max-width: 600px;*/
+}
+
+/*
+.footer-text li{
+    list-style: none;
+    display: inline-block;
+    padding:0px 15px;
+    font:normal 18px hn;
+}
+*/
+
+.footer-text a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.footer-fixed{
+  position: absolute;
+  bottom: 10px;
+  left: calc( 50% - 410px);
+}
+
+
+#workshop-modal, #lectures-modal, .notif{
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-35px;
+    }
+    .logo-plinth{
+        font: normal 100px rez;
+    }
+
+    .logo-2017{
+        font: bold 45px hn;
+    }
+
+    .logo-desc{
+        font:normal 17px caviar;
+        position: relative;
+        left:-18px;
+    }
+
+    .logo-date{
+        font:bold 15px hn;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-20px;
+    }
+    .logo-plinth{
+        font: normal 95px rez;
+    }
+
+    .logo-2017{
+        font: bold 40px hn;
+    }
+
+    .logo-desc{
+        font:normal 17px caviar;
+        position: relative;
+        left:-8px;
+    }
+
+    .logo-date{
+        font:bold 15px hn;
+        left:90px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 90px rez;
+    }
+
+    .logo-2017{
+        font: bold 35px hn;
+    }
+
+    .logo-desc{
+        font:normal 17px caviar;
+        position: relative;
+        left: 0px;
+    }
+
+    .logo-date{
+        font:bold 15px hn;
+        left: 85px;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -200px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo-clg{
+        font: normal 13px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 80px rez;
+    }
+
+    .logo-2017{
+        font: bold 30px hn;
+    }
+
+    .logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -20px;
+    }
+
+    .logo-date{
+        font:bold 13px hn;
+        left: 80px;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -180px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-clg{
+        font: normal 11px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 70px rez;
+    }
+
+    .logo-2017{
+        font: bold 25px hn;
+    }
+
+    .logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -8px;
+    }
+
+    .logo-date{
+        font:bold 10px hn;
+        left: 75px;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -170px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-clg{
+        font: normal 11px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 70px rez;
+    }
+
+    .logo-2017{
+        font: bold 25px hn;
+    }
+
+    .logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -8px;
+        top:-25px;
+    }
+
+    .logo-date{
+        font:bold 10px hn;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -160px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .logo-clg{
+        font: normal 11px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 70px rez;
+    }
+
+    .logo-2017{
+        font: bold 25px hn;
+    }
+
+    .logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: -8px;
+        top:-25px;
+    }
+
+    .logo-date{
+        font:bold 10px hn;
+        position: relative;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -150px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo-clg{
+        font: normal 10px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 60px rez;
+    }
+
+    .logo-2017{
+        font: bold 25px hn;
+    }
+
+    .logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: 0px;
+        top:-22px;
+    }
+
+    .logo-date{
+        font:bold 10px hn;
+        position: relative;
+        left: 65px;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -140px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .logo-clg{
+        font: normal 9px cl;
+        position: relative;
+        left:-10px;
+    }
+
+    .logo-plinth{
+        font: normal 60px rez;
+    }
+
+    .logo-2017{
+        font: bold 25px hn;
+    }
+
+    .logo-desc{
+        font:normal 12px caviar;
+        position: relative;
+        left: 0px;
+        top:-18px;
+    }
+
+    .logo-date{
+        font:bold 10px hn;
+        position: relative;
+        left: 65px;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -140px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo-clg{
+        font: normal 9px cl;
+        position: relative;
+        left:5px;
+    }
+
+    .logo-plinth{
+        font: normal 50px rez;
+    }
+
+    .logo-2017{
+        font: bold 20px hn;
+        position: relative;
+        left:2px;
+    }
+
+    .logo-desc{
+        font:normal 10px caviar;
+        position: relative;
+        left: 0px;
+        top:-22px;
+    }
+
+    .logo-date{
+        font:bold 9px hn;
+        position: relative;
+        left: 40px;
+    }
+
+    .logo-content{
+        position: relative;
+        top: -125px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+     .logo-content{
+        position: relative;
+        top: -100px;
+    }
+
+}
+.cryptex-notifty {
+    color: white;
+}
+
+
+.cmd-intro a{
+    color: white;
+    font-family: 'Roboto';
+    margin-bottom: 60px;
+}

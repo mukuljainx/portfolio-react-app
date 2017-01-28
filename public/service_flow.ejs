@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Service Flow | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <style>
+
+          .img-wrap img{
+            width: 400px;
+            height: 200px;
+          }
+          .img-wrap{
+            padding: 20px;
+          }
+          .img-wrap span{
+            font-family: 'Roboto';
+          }
+          .foot{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="row">
+          <div class="small-10 small-centered columns">
+            <div class="row">
+              <div class="small-12 medium-6 large-6 columns">
+                <div class="img-wrap">
+                  <img src="media/gateway/1.jpg" /><br />
+                  <span>1. User Registered for an event</span>
+                </div>
+              </div>
+              <div class="small-12 medium-6 large-6 columns">
+                <div class="img-wrap">
+                  <img src="media/gateway/2.jpg" /><br />
+                  <span>2. User Click on Make Payment</span>
+                </div>
+              </div>
+              <div class="small-12 medium-6 large-6 columns">
+                <div class="img-wrap">
+                  <img src="media/gateway/3.jpg" /><br />
+                  <span>2.1 User enters his email if not logged on then proceed</span>
+                </div>
+              </div>
+              <div class="small-12 medium-6 large-6 columns">
+                <div class="img-wrap">
+                  <img src="media/gateway/4.jpg" /><br />
+                  <span>3. User pays through Gateway</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">*Images are only for representational purpose</div><br />
+        <% include partials/footer %>
+
+    </body>
+</html>

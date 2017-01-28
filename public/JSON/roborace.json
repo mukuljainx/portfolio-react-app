@@ -1,0 +1,23 @@
+{
+    "imageLink" : "media/icons/robotics/roborace.svg",
+    "registerLink" : "/registration/robotics/roborace",
+    "paymentLink" : "",
+    "payment0" : "<li><a href='#' data-open='paymentpop'>Make Payment></a></li>",
+    "payment1" : "",
+    "memberUpperLimit" : 5,
+    "memberLowerLimit" : 3,
+    "clubName" : "robotics",
+    "eventName" : "roborace",
+    "displayName" : "roborace",
+    "eventDate" : "18th - 19th Jan 2017",
+    "eventVenue" : "The LNMIIT, Jaipur",
+    "prizeWorth" : "INR. 30,000",
+    "synopsis" : "<p>For all those who believe in setting the place on fire! Here’s a live experience of a racing tournament. Build your own robot and come on board!</p>",
+    "eventDescription" : "<p><b>Problem Statement</b><ol><li>Construct Your Machine to have the maximum speed to beat another machine on the given track to reach the final destination in minimum time.</li><li>You have to build a manually controlled robot capable of traversing over different terrain and unseen hurdles.</li><li>There will be separate points for overcoming the obstacles as well as the other parameter being within time. Thus the bot with the most cumulative points will win.</li><li>The aim of the event is to check the robustness of the vehicle and its competence with the opponent on the same track.</li></ol></p>",
+    "rules" : "<p><b>General Rules </b><ol><li>No human intervention is allowed in between the race.</li><li>The track will contain certain number of check¬points and if the bot goes out of the track then it has to start with the previous check¬point.</li><li>There will be certain number of hurdles and obstacles. Each obstacle and hurdle will be assigned some specific points and have to be completed in a stipulated time limit.</li><li>Point description will be disclosed on the spot before commencement of event.</li><li>This will be solely based on total cumulative points of previous round</li><li>One should not use the wires for lifting up or moving the bot.</li><li>Points earned will be calculated within the time limit and free time of 3 min will be provided Only once if any technical problem occurs.</li><li>In case of any discrepancies organizer’s decision will be final and binding.</li><li>The organizers reserve the right to change any or all of the rules as they desire.</li><li>Change in the rules as if any will be informed through e¬mail or via Facebook page.</li><li>Participants need to carry their own power source (preferably 12V battery).</li></ol></p>",
+    "judges" : "<p>Details will be Updated soon</p>",
+    "mentors" : "<p>Details will be Updated soon</p>",
+    "query" : "plinth@Lnmiit.ac.in",
+    "sponsors" : "<p>Details will be Updated soon</p>"
+}
+

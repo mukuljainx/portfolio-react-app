@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | Plinth'17</title>
+        <meta name="Description" content="Plinth, the annual techno-management-literary fest of LNMIIT. Contact Us. Get your tickets. Be sure to be here.">
+        <meta property="og:title" content="Contact Us | Plinth'17" />
+        <meta property="og:type" content="event" />
+        <meta property="og:url" content="https://plinth.in/contact_us" />
+        <meta property="og:image" content="https://plinth.in/media/logo.svg" />
+        <meta property="og:description" content="Plinth, the annual techno-management-literary fest of LNMIIT. Contact Us. Get your tickets. Be sure to be here." />
+        <meta property="og:site_name" content="Plinth" />
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@PlinthLNMIIT">
+        <meta name="twitter:title" content="Contact Us | Plinth'17">
+        <meta name="twitter:description" content="Plinth, the annual techno-management-literary fest of LNMIIT. Contact Us. Get your tickets. Be sure to be here.">
+        <meta name="twitter:creator" content="@PlinthLNMIIT">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/contact.css" />
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="content">
+            <div class="row head">
+                <div class="small-10 small-centered columns text-center">
+                    <h4>Get In Touch With Us !</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row big-wrapper form-container">
+
+                <div class="medium-8 large-5 large-offset-1 columns text-centered">
+
+                        <form action="javascript:void(0)">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            <div class="group">
+                                <input class="contact-name" type="text" id="in-name" required>
+                                <span class="highlight"></span>
+                                <label>Name</label>
+                            </div>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <div class="group">
+                                <input class="contact-email" type="email" id="in-email" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
+                            </div>
+                            <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                            <div class="group">
+                                <textarea id="in-query" class="contact-query"></textarea>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Query</label>
+                            </div>
+
+                            <input type="submit" class="button success" onclick="contactUs()" id="btn-submit"/>
+
+                        </form>
+
+                </div>
+
+                <div class="medium-4 large-5 large-pull-1 columns text-centered">
+                    <div class="card-contact">
+                        <span class="h0">For any Query :</span>
+                        <ul>
+                            <li><i class="fa fa-phone-square" aria-hidden="true"></i> +91-9468590302</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> plinth@lnmiit.ac.in</li>
+                        </ul>
+                        <br />
+                        <span class="h0">Address:</span>
+                        <ul><li>The LNM Institute of Information Technology<br />Rupa ki Nangal, Post-Sumel, Via-Jamdoli<br />Jaipur-302031,<br />(Rajasthan) INDIA</p></li></ul>
+                    </div>
+                </div>
+
+        </div>
+
+        <% include partials/footer %>
+        <script src="js/contact.js"></script>
+
+    </body>
+</html>

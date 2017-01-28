@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/contact.css" />
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="content">
+            <div class="row head">
+                <div class="small-10 small-centered columns text-center">
+                    <h4>How To Reach</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row big-wrapper form-container">
+
+                <div class="small-10 columns text-centered">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.020568546761!2d75.9241481362457!3d26.934562401460173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1421642727353" width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+                    </div>
+        </div>
+
+        <% include partials/footer %>
+        <script src="js/contact.js"></script>
+
+    </body>
+</html>

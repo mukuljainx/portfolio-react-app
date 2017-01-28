@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terms and Conditions | Plinth'17</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/atvImg.css" />
+    </head>
+    <body>
+
+        <style>
+        h5{
+            font-weight: 500;
+        }
+        .desc{
+            margin-bottom: 20px;
+        }
+        .head{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        </style>
+
+        <% include partials/header %>
+
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+            <div class="row head">
+                <div class="small-10 small-centered columns text-center">
+                    <h4 style="color : black">Terms and Conditions</h4>
+                </div>
+            </div>
+
+            <div class="row desc">
+                <div class="small-12 columns text-left">
+                    <h5>Disclaimer</h5>
+                    <p>This service is provided to facilitate access and make payments online.
+                    Plinth’17 or the payment service provider do not make any representation of any kind, explicit or
+                    implicit, as to the payment gateway other than what is specified on Plinth’s website.
+                    By accepting/agreeing to these terms and conditions, the user agrees that the use of online payment
+                    service is entirely at own risk and responsibility.</p>
+                </div>
+            </div>
+
+
+        <div class="row desc">
+            <div class="small-12 columns text-left">
+                <h5>Privacy Policy</h5>
+                <ul>
+                    <li><strong>Information we collect</strong> : We ensure that the collection of personal information is limited to what is necessary to fulfill the purpose as mentioned. If your information is used in a manner different than the purpose it is collected, then we will ask you for your consent prior to its use.</li>
+                    <li><strong>How do we use your information</strong> : Your information will be used to process transactions. Your information will not be sold, exchanged or given to any other institution for reason whatsoever, without your consent, other than delivering the purchased service or product.</li>
+                    <li><strong>Cookies</strong> : Plinth.in uses cookies to store information about visitors' preferences, to personalize or customize our web page content based upon visitors' browser type or other information that the visitor sends via their browser. Any information collected via cookies will not be shared with any third party.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row desc">
+            <div class="small-12 columns text-left">
+                <h5>Consent</h5>
+                <p>By using our website, you hereby consent to our privacy policy and agree to its terms and conditions.</p>
+            </div>
+        </div>
+
+        <div class="row desc">
+            <div class="small-12 columns text-left">
+                <h5>Cancellation Policy</h5>
+                <p>No amount will be refunded upon the cancellation of your tickets or passes. In case of any conflict, the decision of the organizers will be final. In any event, the organizers shall not be liable for special, punitive, consequential or incidental damages, including lost revenue, profits or other benefits.</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <% include partials/footer %>
+
+    </body>
+</html>

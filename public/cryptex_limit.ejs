@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Plinth'17" />
+        <meta name="description" content="Plinth is the Annual Techno-Management Literary Fest of LNMIIT Jaipur.">
+        <meta name="keywords" content="Plinth, Plinth'17, Technical Fest, Management Fest, Literary Fest, MUN, Fest, LNMIIT, Jaipur, Robotics, Astronomy, Workshops, WikitoLearn, Vivacity, Desportivos">
+        <meta name="robots" content="index"/>
+        <meta property="og:title" content="Plinth'17">
+        <meta property="og:description" content="Plinth is the Annual Techno-Management Literary Fest of LNMIIT Jaipur.">
+        <meta property="og:image" content="https://plinth.in/media/plinth-preview.jpg">
+        <meta property="og:url" content="https://plinth.in/">
+        <meta property="fb:app_id" content="168845313579478">
+        <meta name="author" content="Mukul Jain">
+        <meta name="twitter:title" content="Plinth'17">
+        <meta name="twitter:description" content="Plinth is the Annual Techno-Management Literary Fest of LNMIIT Jaipur.">
+        <meta name="twitter:image" content="https://plinth.in/media/plinth-preview.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <title>Cryptex | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/cryptex.css">
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+            <div class="row footer-adjust">
+                <div class="small-12 small-centered column text-center main-logo">
+                    <div>
+                    	<div class="scaledown">
+                    		<span class="logo-plinth">plinth</span>   <span class="logo-2017">2017</span>
+                    		<br /><span class="logo-desc">Techno-Management Literary Fest</span>
+                    	</div>
+                    	<br /><span class="logo-present">presents</span>
+                    	<br /><span class="logo-name">Cryptex</span>
+                    	<div class="login">
+                            <span class="cryptex-game-begins">Game is On</span>
+                            <p class="cryptex-game-begins-desc">
+                                Congrulation, you have solved all question.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <% include partials/footer%>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

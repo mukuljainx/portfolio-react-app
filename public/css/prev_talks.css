@@ -1,0 +1,98 @@
+.content{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+h4{
+    font: normal 40px 'Roboto';
+    color:#b5001d;
+    padding-bottom: 10px;
+}
+
+.desc{
+    font-family: 'Roboto';
+    max-width: 1100px;
+}
+
+.wrapper{
+    margin-bottom: 50px;
+}
+
+/*
+
+
+.know-more{
+    font:normal 15px 'Roboto';
+    color: #b5001d;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+*/
+
+.profile-card{
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    border-radius: 5px;
+    height:270px;
+/*    max-width: 237px;*/
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+.profile-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.profile-dp img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+/*    background-color: darkgray;*/
+/*    margin-left: 50px;*/
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.profile-name{
+    font:bold 18px 'Roboto';
+}
+
+.profile-content{
+    font:normal 15px 'Roboto';
+    color:#626262;
+    height: 40px;
+}
+
+.profile-social ul{
+    list-style: none;
+/*
+    margin-top: 5px;
+    margin-bottom: 15px;
+*/
+    margin-top: 10px;
+}
+
+.profile-social li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.profile-social a{
+    color: #b5001d
+}
+
+
+footer{
+    margin-top: 100px;
+}
+
+.button.hollow.alert{
+    color: #b5001d;
+    border: 1px solid;
+}
+
+.button.hollow.alert:focus, .button.hollow.alert:hover {
+    background: #b5001d;
+    color: white;
+}

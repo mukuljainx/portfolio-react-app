@@ -1,0 +1,529 @@
+@font-face {
+    font-family: rez;
+    src: url("../font/REZ.ttf");
+}
+
+@font-face {
+    font-family: caviar;
+    src: url("../font/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: cl;
+    src: url("../font/ChampagneAndLimousines.ttf");
+}
+
+@font-face {
+    font-family: hn;
+    src: url("../font/HelveticaNeue.ttf");
+}
+.aboutUs,.organizer,.committees,.register,.contactUS{
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+.heading{
+	font-family: 'Exo 2', sans-serif;
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+.organizerImage{
+	text-align: center;
+	/*line-height: 18px;*/
+	font-family: 'Exo 2', sans-serif;
+}
+
+.organizerImage img{
+	padding-bottom: 10px; width: 200px; border-radius: 100%;
+}
+
+.organizerImage .name{
+	font-weight: 300;
+	font-size: 18px;
+	display: block;
+	margin-bottom: -8px;
+	color: black;
+}
+.organizerImage .post{
+	font-weight: 600;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.committees-card-row div{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.card {
+    transition: 0.3s;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 20px;
+	width: 100%;
+    position: relative;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.know-more{
+    position: absolute;
+    color : #02B9EF;
+    bottom: 4px;
+    right: 8px;
+}
+.committees-img{
+	height: 120px;
+}
+.cardText{
+	text-align: center;
+	padding-top: 20px;
+}
+a{
+	color: black;
+}
+
+
+/*navbar and footer*/
+
+nav{
+    height: 70px;
+    padding: 20px 20px 0px ;
+	position: fixed;
+    width: 100%;
+}
+.nav-white{
+    box-shadow: 0 0px 16px 2px rgba(0,0,0,0.1);
+    background: white;
+    z-index: 2;
+}
+
+.header-logo{
+    width: 60px;
+    display: inline-block;
+
+}
+
+.navitem{
+	display: inline-block;
+	font: normal 1.125em cl;
+	right: 10px;
+	position: fixed;
+	top: 10px;
+}
+
+.navitem li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 800;
+	margin-left: 10px;
+}
+
+.navitem a{
+    color:white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.ham-btn{
+    display: none;
+    position: fixed;
+    top:25px;
+    right: 10px;
+    z-index: 99;
+	color: white;
+}
+.ham-wrapper{
+    position: fixed;
+    top:0px;
+    right: 0px;
+    z-index:9999;
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.1);
+    color: black;
+}
+
+
+.ham-content{
+    font:normal 1.125em hn;
+}
+
+.ham-content li{
+    list-style: none;
+    padding:30px;
+}
+
+.ham-content a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.ham-close{
+    display: none;
+    float: right;
+    position: fixed;
+    top:10px;
+    right: 10px;
+    opacity: 0.5;
+}
+
+
+.ham-close span{
+    font:normal 20px 'Roboto';
+}
+
+@media screen and (max-width: 845px) {
+    .navitem{
+        display:none;
+    }
+    .nav-white{
+        background: rgba(0,0,0,0);
+        box-shadow: 0 0 0 0;
+    }
+    .ham-btn{
+        display: block;
+    }
+}
+
+.btn-disabled{
+    color: rgba(0,0,0,0.2);
+    cursor: default !important;
+}
+
+.back{
+    color: #0431B4;
+}
+
+.back:hover{
+    opacity: 0.8;
+}
+
+.social-wrapper{
+}
+
+.social{
+    max-width: 500px;
+}
+
+.social li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.social a{
+    text-decoration: none;
+    color:#4a4a4a;
+}
+
+
+.footer-text{
+    max-width: 600px;
+}
+
+.footer-text li{
+    list-style: none;
+    display: inline-block;
+    padding:0px 15px;
+    font:bold 18px hn;
+}
+
+.footer-text a{
+    text-decoration: none;
+    color:#4a4a4a;
+}
+
+.footer-fixed{
+  position: absolute;
+  bottom: 20px;
+  margin-left: calc( 50% - 300px );
+}
+
+
+
+/*MUn and plinth top*/
+
+.home{
+	background-image: url('media/mun/images/mun-bg.png');
+	height: 768px;
+}
+
+.plinth-logo-content{
+    height: 56px;
+    margin-top: 250px;
+	margin-bottom: -15px;
+	color: white;
+    transition: 0.4s;
+}
+.plinth-logo-plinth{
+    font: normal 48px rez;
+    letter-spacing: 1px;
+}
+
+.plinth-logo-2017{
+    font: bold 23.2px hn;
+    letter-spacing: 1px;
+    position: relative;
+    left:6px;
+}
+
+.plinth-logo-desc{
+	font: normal 9.6px caviar;
+	position: relative;
+	top: -18.5px;
+	left: 1.5px;
+}
+.mun-logo-content{
+    font-family: 'Raleway', sans-serif;
+}
+.mun-inline{
+    display: inline-block;
+    transition: 0.4s;
+}
+.mun-logo-content img{
+	width: 82px;
+	margin-right: 4px;
+	position: relative;
+	top: -71px;
+	transition: 0.4s;
+}
+.mun-img-top-send{
+    position: fixed !important;
+    top: -1px !important;
+    left: 7px !important;
+    width: 70px !important;
+    z-index: 2;
+}
+
+.mun-head-lnmiit{
+    font-size: 20px;
+    position: relative;
+    top: 22px;
+	color: white;
+}
+.mun-head-text{
+    font-size: 54px;
+    color: white;
+}
+
+.mun-head-dates{
+	color: white;
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 20px;
+    position: relative;
+    top: -22px;
+}
+
+.mun-home-button{
+	color: white;
+	border: 3px solid;
+	padding: 8px 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 2px;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.mun-home-button:hover{
+	color: white;
+}
+
+@media screen and (max-width: 630px) {
+	.mun-logo-content img {
+		position: fixed;
+		top : 10px;
+		left:10px;
+	}
+	.plinth-logo-content{
+		margin-bottom: -25px;
+		margin-top: 200px;
+	}
+	.mun-inline{
+		transform: scale(0.7);
+	}
+	.home{
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 539px) {
+	.mun-logo-content img {
+		position: fixed;
+		top : 10px;
+		left:10px;
+	}
+	.plinth-logo-content{
+		margin-bottom: -25px;
+		margin-top: 200px;
+	}
+	.mun-head-text{
+		font-size: 46px;
+	}
+	.home{
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.mun-logo-content img {
+		position: fixed;
+		top : 10px;
+		left:10px;
+	}
+	.home{
+		height: 600px;
+	}
+	.plinth-logo-content{
+		margin-bottom: -2px;
+		margin-top: 200px;
+	}
+	.mun-head-lnmiit{
+		font-size: 15px;
+		top: 15px;
+	}
+	.mun-head-text{
+		font-size: 36px;
+	}
+	.mun-head-dates{
+		top: -14px;
+		font-size: 16px;
+	}
+	.mun-inline{
+		transform: scale(1);
+	}
+	.mun-home-button{
+		margin-top: 60px;
+	}
+}
+.mun-blue-button{
+    padding: 11px 22px;
+    max-width: 200px;
+    color: white;
+    background: #02B9EF;
+    border-radius: 2px;
+}
+.mun-blue-button:hover{
+    color: white;
+}
+
+.eb-btns{
+    margin: auto;
+}
+
+.eb-btns button{
+    width: 150px;
+}
+
+
+.button.hollow{
+    border: 1px solid #02B9EF;
+    color: #02B9EF;
+}
+
+.button.hollow:hover{
+    background-color: #02B9EF;
+    border: 1px solid #02B9EF;
+    color: white;
+}
+
+.register .button.hollow a{
+    color: #02B9EF;
+    
+}
+
+.register .button.hollow:hover a{
+    color: white;
+}
+
+
+.eb-cardText{
+	text-align: center;
+}
+
+.eb-unga img, .eb-loksabha img, .eb-who img, .eb-unodc img, .eb-unhrc img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.eb-name{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.eb-post{
+    color: gray;
+}
+
+.eb-btns .hollow{
+    max-width: 120px ;
+}
+
+
+.register .button.hollow{
+    width: 180px;
+}
+
+
+.eb-btn-active{
+    background-color: #02B9EF !important;
+    border: 1px solid #02B9EF !important;
+    color: white !important;
+}
+
+.eb-unga, .eb-who, .eb-unodc, .eb-unhrc{
+    display: none;
+}
+
+.small-foot li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 20px;
+/*    width: 20%;*/
+    color: #02B9EF;
+}
+
+.small-foot a{
+    color: #02B9EF;
+}
+
+.small-foot a:hover{
+    border-bottom: 2px solid #02B9EF;
+}
+
+.small-foot a:active{
+    border-bottom: 1px solid #02B9EF;
+    background-color: white;
+    color: #02B9EF;
+}
+
+.small-foot ul{
+    font-size: 15px;
+    margin: auto;
+}
+
+.small-foot{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    border-top: 2px solid #02B9EF;
+    text-align: justify;
+    width: 100%;
+    padding: 15px;
+}
+
+@media screen and (max-width: 640px){
+    .contactUs p{
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Armageddon" : "/competitions/astronomy/armAgeddon",
+    "Astro Hunt" : "/competitions/astronomy/astro_hunt",
+    "Star Trek" : "/competitions/astronomy/star_trek",
+    "Fix The Bug" : "/competitions/coding/fix_the_bug",
+    "IUPC" : "/competitions/coding/iupc",
+    "IUPC Distraction" : "/competitions/coding/iupc_distraction",
+    "Wrangle" : "/competitions/literature/wrangle",
+    "SIF" : "/competitions/management/sif",
+    "Quest" : "/competitions/quizzing/quest",
+    "LFR" : "/competitions/robotics/lfr",
+    "Quadcopter" : "/competitions/robotics/quadcopter",
+    "Transporter" : "/competitions/robotics/transporter",
+    "Roborace" : "/competitions/robotics/roborace",
+    "Robowar" : "/competitions/robotics/robowar",
+    "Robosoccer" : "/competitions/robotics/robosoccer"
+}

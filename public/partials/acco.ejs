@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teams | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <style type="text/css">
+        	body{
+        		background-color: #EFEEEF;
+		    	font-family: 'Roboto', sans-serif;
+        	}
+            nav {
+                height: 78px;
+                background: #4B7CE7;
+            }
+            footer{
+                background: #4B7CE7;
+                padding-top: 20px;
+            }
+            footer a{
+                color: white !important;
+            }
+            .navitem a {
+                color: white;
+            }
+        	.content{
+                transition: 0.3s;
+                box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+        		background-color: white;
+        		padding: 20px;
+        		margin-bottom: 20px;
+        	}
+            .content:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <% include header %>
+        <div class="row">
+            <h3 style="text-transform: capitalize;"><%= results[0].eventName %></h3>
+        	<h6 style="text-transform: capitalize;">Paid <%= success %> / <%= results.length %></h6>
+            <br>
+        </div>
+        <% for(var i=0; i<results.length; i++) { %>
+    	    <div class="row content">
+    	    	<div class="small-12 columns">
+                    
+                </div>
+    	    </div>
+        <% } %>
+        <br>
+        <% include footer %>
+
+    </body>
+</html>

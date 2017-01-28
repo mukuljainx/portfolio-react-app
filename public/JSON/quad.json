@@ -1,0 +1,22 @@
+{
+    "imageLink" : "media/icons/robotics/quadcopter.svg",
+    "registerLink" : "/registration/robotics/quadcopter",
+    "paymentLink" : "",
+    "payment0" : "<li><a href='#' data-open='paymentpop'>Make Payment></a></li>",
+    "payment1" : "",
+    "memberUpperLimit" : 5,
+    "memberLowerLimit" : 3,
+    "clubName" : "robotics",
+    "eventName" : "quadcopter",
+    "displayName" : "quadcopter",
+    "eventDate" : "18th - 19th Jan 2017",
+    "eventVenue" : "The LNMIIT, Jaipur",
+    "prizeWorth" : "INR. 30,000",
+    "synopsis" : " <p>Details will be Updated soon</p>",
+    "eventDescription" : "<p><b>Problem Statement</b><ol><li>Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. </li></ol></p>",
+    "rules" : "<p><b>General Rules </b><ol><li>Points earned will be calculated within the time limit and free time will be provided only once if any technical problem occurs.</li><li>In case of any discrepancies organiser’s decision will be final and binding.</li><li>The organizers reserve the right to change any or all of the rules as they desire. Change in the rules as if any will be informed through e- mail or via Facebook page.</li><li>Any team found flouting any rules would be automatically disqualified.</li></ol></p><p><b>Machine Specification</b><ol><li>Machine should fit into the dimension box of 50cm x 50cm x 30cm.</li><li>Machines should be powered/propelled by non¬ hydrocarbon engine.</li><li>Teams can bring not only Drones but other flying machines as mentioned Zeplin, Coaxial chopper, Tail rotor chopper, Quadrotor, Hexapod, Tripod and Octacopter.</li></ol></p><p><b>Eligibility</b><p>All students with a valid identity card of their respective educational institutions are  eligible to participate.</p></p>",
+    "judges" : "<p><b>Evaluation Methodology </b><ol><li>Your report would be evaluated on how many different aspects you have deliberated upon and how many of these are in line with the physics of the planet.</li><li>The more descriptive you are, the more points your report will score.</li><li>You can use diagrams and pictures.</li></ol></p>",
+    "mentors" : "<p>Details will be Updated soon</p>",
+    "query" : "plinth@Lnmiit.ac.in",   
+    "sponsors" : "<p>Details will be Updated soon</p>"
+}

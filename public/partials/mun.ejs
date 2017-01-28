@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MUN Payments | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+
+    </head>
+    <style>
+    body{
+        background-color: #EFEEEF;
+        font-family: 'Roboto', sans-serif;
+    }
+    nav {
+        height: 78px;
+        background: #4B7CE7;
+    }
+    footer{
+        background: #4B7CE7;
+        padding-top: 20px;
+    }
+    footer a{
+        color: white !important;
+    }
+    .navitem a {
+        color: white;
+    }
+    .content{
+        transition: 0.3s;
+        box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .content:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .status{
+        color : red;
+    }
+
+    </style>
+    <body>
+        <% include header %>
+
+        <section>
+            accommodation : <%= accommodation_x %>
+            delegate : <%= delegate_x %>
+            ip : <%= ip_x %>
+            <% for(var i=0; i<results.length; i++) { %>
+                <% if(results[i].name === 'TXN_SUCCESS'){ %>
+                    <style>
+                        .status{
+                            color : green;
+                        }
+                    </style>
+                <% } %>
+                <% if(results[i].email === '123@123.co' || results[i].email === 'jainmukul1996@gmail.com' || results[i].email === undefined){ %>
+                <% }else{ %>
+            	    <div class="row content">
+            	    	<div class="small-12 columns">
+            		        <div class="row">
+            		        	<div class="small-12 medium-4 large-3 columns end">
+            		        		Name : <%= results[i].name %><br>
+            		        		Email : <%= results[i].email %><br>
+                                </div>
+                                <div class="small-12 medium-4 large-3 columns end">
+            		        		Phone : <%= results[i].phoneNumber %><br>
+                                    Type : <%= results[i].type %><br>
+                                </div>
+                                <div class="small-12 medium-4 large-3 columns end">
+                                    Order-id : <%= results[i].order_id %><br>
+                                    Accommodation : <%= results[i].accommodation %><br>
+                                </div>
+                                <div class="small-12 medium-4 large-3 columns end">
+                                    <% if(results[i].status === 'TXN_SUCCESS'){ %>
+                                        Status : <span style="color : green"><%= results[i].status %></span><br>
+                                    <% }else{ %>
+                                        Status : <span style="color : red"><%= results[i].status %></span><br>
+                                    <% } %>
+                                    Amount : <%= results[i].amount - results[i].accommodation*200 %> + <%= results[i].accommodation*200 %> <br>
+                                </div>
+            		        </div>
+            		    </div>
+            	    </div>
+                <% } %>
+            <% } %>
+        </section>
+
+        <div class="row" style="margin-top:40px;">
+            <div class="column small-10 small-centered">
+                <div style='font-weight :500; text-align:center; margin-bottom:20px'>For Any Queries Contact</div>
+                <div class="text-center">
+                    plinth@lnmiit.ac.in
+                </div>
+            </div>
+
+        </div>
+
+        <% include footer %>
+
+    </body>
+</html>

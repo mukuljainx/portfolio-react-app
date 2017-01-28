@@ -1,0 +1,142 @@
+body{
+	background-color: #25313E;
+}
+.Plinth{
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+img{
+	vertical-align: initial
+}
+.plinthText{
+	display: inline-block;
+	line-height: 0px;
+	position:relative;
+	top: 9px;
+}
+h1{
+	font-size:60px;
+	display: inline-block;
+	font-family: rez;
+	padding-bottom:0px;
+}
+.smallText{
+	font-size: 10px;
+	position:relative;
+	bottom:27px;
+	left: 1px;
+	letter-spacing:0.8px;
+}
+.year{
+	font-size: 25px;
+	font-family: 'caviar', sans-serif;
+}
+.terminaltwo{
+	width:70% !important;
+}
+.menuBar {
+  /*width: 800px;*/
+  position:relative;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #E0E8F0;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-top: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.icons{
+	display: inline-block;
+	position: absolute;
+}
+.close{
+	width: 10px;
+  height: 10px;
+	background: #E96E4C;
+	border-radius: 100px;
+	margin-right: 3px;
+	display: inline-block;
+}
+.minimize{
+	width: 10px;
+ 	height: 10px;
+	background: #E6A935;
+	border-radius: 100px;
+	margin-right: 3px;
+	display: inline-block;
+}
+.maximize{
+	width: 10px;
+  height: 10px;
+	background: #85C33D;
+	border-radius: 100px;
+	display: inline-block;
+}
+.title{
+	display: inline-block;
+	text-align: center;
+	font-family: "caviar";
+}
+.content{
+	color: white;
+	/*width: 800px;*/
+  height: 450px;
+	box-sizing: border-box;
+	background-color: #30353A;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.morse{
+	padding: 50px;
+}
+.circle{
+	border-style: solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	display: inline-block;
+}
+.bluecircle{
+	border-color: #589FD6;
+	background-color: #589FD6;
+}
+.greencircle{
+	border-color: #26A69A;
+	background: #26A69A;
+}
+.redcircle{
+	border-color: #EE5451;
+	background: #EE5451;
+}
+.purplecircle{
+	border-color: #775BA7;
+	background: #775BA7;
+}
+.yellowcircle{
+	border-color: #FDED62;
+	background: #FDED62;
+}
+/*
+.terminal-output{
+	font-family: Roboto;
+}*/
+
+
+.paddingParent{
+    padding:10px;
+    display: block;
+    text-align: center;
+}
+
+.paddingChild{
+    padding:5px;
+}
+
+.desc{
+    line-height: 8px;
+}

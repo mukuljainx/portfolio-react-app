@@ -1,0 +1,117 @@
+@font-face {
+ font-family: caviar;
+ src: url("../font/CaviarDreams.ttf");
+}
+@font-face {
+ font-family: rez;
+ src: url("../font/REZ.ttf");
+}
+.rez{
+	font-family: rez;
+}
+.caviar{
+	font-family: caviar;
+}
+.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.exo2{
+	font-family: 'Exo 2', sans-serif;
+}
+.navBar{
+	background-color: #FFFFFF;
+	height: 64px;
+	text-align: right;
+	font-family: 'Exo 2', sans-serif;
+	box-shadow: 0px 2px 4px 0 rgba(0,0,0,.5);
+}
+.links{
+	display: inline-block;
+  	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+	padding: 20px 20px 15px 20px;
+}
+.links:hover{
+  border-bottom: 5px solid #4A90E2;
+}
+
+.navBar .active{
+  border-bottom: 5px solid #4A90E2;
+}
+.menulinks{
+	color: black;
+}
+.blue{
+	color: #589FD6;
+}
+.green{
+	color: #26A69A;
+}
+.red{
+	color: #EE5451;
+}
+.purple{
+	color: #775BA7;
+}
+.yellow{
+	color: #FDED62;
+}
+.register{
+	padding:0px;
+	padding-right: 16px;
+	position: fixed;
+}
+.socialRegister{
+	padding:0px;
+	margin-left: 0px;
+	margin-bottom: 15px;
+	/*margin-right: 20px;
+	height: 100%;	*/
+	box-shadow: 1px 2px 1px 0px rgba(0,0,0,.3);
+}
+.link{
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	padding:0px;
+	padding-top: 10px;
+	/*min-height: 50px;
+	max-height: 50px;*/
+}
+.logo{
+	display: inline-block;
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 50px;
+	max-width:50px;
+	padding:0px;
+	margin: 0px;
+}
+#googlePlus a{
+	color: #E3411F;
+}
+#facebook a{
+	color: #364270;
+}
+#twitter a{
+	color: #65A2D9;
+}
+.social{
+	padding:0px;
+	padding-left: 18px;
+	position: fixed;
+}
+.socialFollow{
+	padding:0px;
+	/*margin-left: 20px;*/
+	margin-right: 0px;
+	margin-bottom: 15px;
+	height: 100%;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.5);
+}
+/*plinth - rez
+ plinthsupporting - caviar
+ heading/menu links exo 2
+ body text roboto

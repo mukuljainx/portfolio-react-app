@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Competitions | Plinth'17</title>
+        <meta name="Description" content="Wrangling, squabbling, giving it all and going for the gold. Sound like a perfect weekend? Head to Plinth, One of The Best Tech fests in India.">
+        <meta property="og:title" content="Competitions | Plinth'17" />
+        <meta property="og:type" content="event" />
+        <meta property="og:url" content="https://plinth.in/competitions" />
+        <meta property="og:image" content="https://plinth.in/media/logo.svg" />
+        <meta property="og:description" content="Wrangling, squabbling, giving it all and going for the gold. Sound like a perfect weekend? Head to Plinth, One of The Best Tech fests in India." />
+        <meta property="og:site_name" content="Plinth" />
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@PlinthLNMIIT">
+        <meta name="twitter:title" content="Competitions | Plinth'17">
+        <meta name="twitter:description" content="Wrangling, squabbling, giving it all and going for the gold. Sound like a perfect weekend? Head to Plinth, One of The Best Tech fests in India.">
+        <meta name="twitter:creator" content="@PlinthLNMIIT">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/competitions.css" />
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="content">
+            <div class="row head">
+                <div class="small-10 small-centered columns text-center">
+                    <h4>Competitions</h4>
+                </div>
+            </div>
+            <div class="row desc">
+                <div class="small-12 columns text-center">
+                    <p><i>“What if I fall?”</i><br /><i>“Oh dear, what if you fly?”</i><br />The thrill of competition. We live it. We fight endlessly, fail, get up and yet start again this journey of defeating who we were a day before. Join us in this celebration of innovation and technology, and leave your mark by solving the mind boggling challenges.</p><p>Come and discover what the technology has brought you this winter. Good luck.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="big-wrapper">
+            <div class="row">
+                <div class="large-8 large-centered small-10 small-centered columns">
+                    <div class="row">
+                        <div class="small-10 medium-4 large-4 small-centered medium-uncentered columns">
+                            <div class="card text-center">
+                                <a href="/competitions/astronomy"><img src="media/saturn.svg" />
+                                <div class="container">
+                                    <p class="name">Astronomy</p>
+                                    <p class="name-desc">Universe- unimaginably large and still right down to being incredibly small.</p>
+                                </div>
+                                <div class="know-more">Know More ></div></a>
+                            </div>
+                          </div>
+                          <div class="small-10 medium-4 large-4 small-centered medium-uncentered columns">
+                            <div class="card text-center">
+                              <a href="/competitions/coding"><img src="media/coding.svg" width="120px"/>
+                              <div class="container">
+                                <p class="name">Coding</p>
+                                <p class="name-desc">Coders are the ones who can storm off their brains and come up with a new solution to each problem that exists. </p>
+                              </div>
+                              <div class="know-more">Know More ></div></a>
+                            </div>
+                          </div>
+                          <div class="small-10 medium-4 large-4 small-centered medium-uncentered columns">
+                            <div class="card text-center">
+                              <a href="/competitions/robotics"><img src="media/robotics.svg" />
+                              <div class="container">
+                                  <p class="name">Robotics</p>
+                                  <p class="name-desc">Robots are fun to play with; robots are even much more fun to build.</p>
+                              </div>
+                              <div href="/competitions/robotics" class="know-more">Know More ></div></a>
+                            </div>
+                          </div>
+                          <div class="small-10 medium-4 large-4 small-centered medium-uncentered columns">
+                            <div class="card text-center">
+                              <a href="/competitions/quizzing"><img src="media/quiz.svg" />
+                              <div class="container">
+                                  <p class="name">Quizzing</p>
+                                  <p class="name-desc">You think you know this world? You think you know this world? </p>
+                              </div>
+                              <div class="know-more">Know More ></div></a>
+                            </div>
+                          </div>
+                          <div class="small-10 medium-4 large-4 small-centered medium-uncentered columns">
+                            <div class="card text-center">
+                              <a href="/competitions/literature"><img src="media/literary.svg" />
+                              <div class="container">
+                                      <p class="name">Literature</p>
+                                      <p class="name-desc">Bring alive the artist in you and heave yourself in the ocean of literature</p>
+                              </div>
+                              <div class="know-more">Know More ></div></a>
+                            </div>
+                        </div>
+                        <div class="small-10 medium-4 large-4 end small-offset-1 medium-uncentered columns">
+                            <div class="card text-center">
+                              <a href="/competitions/management"><img src="media/analytics.svg" />
+                              <div class="container">
+                                  <p class="name">Management</p>
+                                  <p class="name-desc">From the street fairs to the global economy, we are filled to the brim with hustle and bustle every now and then. </p>
+                              </div>
+                              <div class="know-more">Know More ></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% include partials/footer %>
+
+    </body>
+</html>

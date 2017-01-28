@@ -1,0 +1,6 @@
+Everytime user passes a level it will be added to his db with the time, level and time.
+Time should be less and level higher in sorting.
+We can't position of any user by using indexOf.
+
+User Table : 50 in one time, more(50) load on scrolling down.
+db.users.find({'cryptexLevel' : { $exists : true}}).pretty()^C

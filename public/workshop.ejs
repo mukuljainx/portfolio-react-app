@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workshops | Plinth'17</title>
+        <meta name="Description" content="Learn. Create. Design. Innovate. Accomplish them all in our workshops at Plinth 17, the annual techfest might just be the right platform for you to excel.">
+        <meta property="og:title" content="Workshops | Plinth'17" />
+        <meta property="og:type" content="event" />
+        <meta property="og:url" content="https://plinth.in/workshops/" />
+        <meta property="og:image" content="https://plinth.in/workshops/media/icons/workshop/w2.svg" />
+        <meta property="og:description" content="Learn. Create. Design. Innovate. Accomplish them all in our workshops at Plinth 17, the annual techfest might just be the right platform for you to excel." />
+        <meta property="og:site_name" content="Plinth" />
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@PlinthLNMIIT">
+        <meta name="twitter:title" content="Workshops | Plinth'17">
+        <meta name="twitter:description" content="Learn. Create. Design. Innovate. Accomplish them all in our workshops at Plinth 17, the annual techfest might just be the right platform for you to excel.">
+        <meta name="twitter:creator" content="@PlinthLNMIIT">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/workshop.css" />
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="content">
+            <div class="row">
+                <div class="small-10 small-centered text-center columns">
+                    <h4>Workshops</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-8 large-centered small-10 small-centered columns">
+                <div class="row">
+                    <div class="small-10 medium-5 large-5 small-offset-1 medium-offset-0 large-offset-1 columns">
+                      <div class="card text-center">
+                        <a href="/workshops/photography"><img src="media/icons/workshop/w4.svg" />
+                        <br>
+                        <div class="container">
+                          <p class="name">Photography Workshop</p>
+                          <p class="name-desc">Learn and master the skill of photography, by India's one of the most famous photographer, "Auditya Venkatesh".</p>
+                        </div>
+                        <div class="know-more">Know More ></div></a>
+                      </div>
+                    </div>
+                    <div class="small-10 medium-5 large-5 small-offset-1 medium-offset-0 end columns">
+                      <div class="card text-center">
+                        <a href="/workshops/3d-printer-workshop"><img src="media/icons/workshop/w5.svg" />
+                        <br>
+                        <div class="container">
+                          <p class="name">3D Printer Workshop</p>
+                          <p class="name-desc">Learn about the materials, designing of CAD models, working of a 3D Printer.</p>
+                        </div>
+                        <div class="know-more">Know More ></div></a>
+                      </div>
+                    </div>
+                      <div class="small-10 medium-5 large-5 small-offset-1 medium-offset-0 large-offset-1 columns">
+                        <div class="card text-center">
+                          <a href="/workshops/web-o-master"><img src="media/icons/workshop/w1.svg" />
+                          <br>
+                          <div class="container">
+                            <p class="name">Web O Master</p>
+                            <p class="name-desc">Learn and master the secrets of web technologies, Content Managment and Search Engine Optimization.</p>
+                          </div>
+                          <div class="know-more">Know More ></div></a>
+                        </div>
+                      </div>
+                      <div class="small-10 medium-5 large-5 small-offset-1 medium-offset-0 end columns">
+                        <div class="card text-center">
+                          <a href="/workshops/touch-augmented-realities"><img src="media/icons/workshop/w3.svg" />
+                          <br>
+                          <div class="container">
+                            <p class="name">Touch & Augmented Realities</p>
+                            <p class="name-desc">Learn about sixth sense technologies on which Microsoft, Google, Intel & many more.</p>
+                          </div>
+                          <div class="know-more">Know More ></div></a>
+                        </div>
+                      </div>
+                      <div class="small-10 medium-5 large-5 small-offset-1 medium-offset-0 large-offset-1 end columns">
+                        <div class="card text-center">
+                          <a href="/workshops/solar-astronomy"><img src="media/icons/workshop/w6.svg" />
+                          <br>
+                          <div class="container">
+                            <p class="name">Solar Astronomy</p>
+                            <p class="name-desc">Join in to observe the sun with special solar equipment and imaging telescopic observations.</p>
+                          </div>
+                          <div class="know-more">Know More ></div></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+
+
+        <% include partials/footer %>
+
+    </body>
+</html>

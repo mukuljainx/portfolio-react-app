@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Schedule | Plinth'17</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/common.css">
+        <style>
+            footer{
+                margin-top: 150px;
+            }
+
+            .button.hollow{
+                width: 100px !important;
+                border: 1px solid black;
+                color: black;
+            }
+
+            .button.hollow:hover{
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+            }
+
+            .button.hollow:focus{
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+            }
+
+            .arch{
+                margin-top: 100px;
+            }
+
+            .head{
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <% include partials/header %>
+        <%if (!isLoggedIn) { %>
+                <% include partials/reg-form %>
+        <% } %>
+
+        <div class="row head">
+            <div class="small-10 small-centered columns text-center">
+                <h2>Plinth'17 Schedule</h2>
+            </div>
+        </div>
+
+        <div class="row arch footer-adjust">
+            <div class="small-10 small-centered columns text-center archbtn">
+                <a class="hollow button" target="_blank" href="media/pdfs/plinth17-schedule.pdf">Complete</a>
+                <a class="hollow button" target="_blank" href="media/pdfs/plinth17-schedule-day1.pdf">Day 1</a>
+                <a class="hollow button" target="_blank" href="media/pdfs/plinth17-schedule-day2.pdf">Day 2</a>
+            </div>
+        </div>
+
+
+         <% include partials/footer %>
+         <script src="js/index.js"></script>
+
+    </body>
+</html>
