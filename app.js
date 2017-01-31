@@ -11,14 +11,14 @@ var authenticate = require('./authenticate');
 // data base connection
 var DBconfig = require('./config/dbconfig')
 mongoose.Promise = global.Promise;
-// mongoose.connect(DBconfig.url);
+mongoose.connect(DBconfig.url);
 
-// var db = mongoose.connection;
-//
-// db.on('error',console.error.bind(console, 'connection error:'));
-// db.once('open', function(){
-//   console.log('connected to db server successfully');
-// });
+var db = mongoose.connection;
+
+db.on('error',console.error.bind(console, 'connection error:'));
+db.once('open', function(){
+  console.log('connected to db server successfully');
+});
 // database connection done
 
 var routes = require('./routes/index');

@@ -1,0 +1,94 @@
+.modal-know-more-wrapper{
+    position: relative;
+}
+.custom-modal{
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.15);
+    background: white;
+    z-index: 2;
+}
+.custom-modal-none{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    background: white;
+    top:0px;
+    left:50%;
+}
+
+.custom-modal-full-circle{
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    border-radius: 100%;
+    background: white;
+    top: -220px;
+    left: calc(-220px + 50% );
+    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.15);
+}
+
+.custom-modal-final{
+    position: absolute;
+    width: 100%;
+    min-height: 440px;
+    border-radius: 0%;
+    background: white;
+    top: -220px;
+    left:0%;
+    /*height: 1080px; for small view*/
+}
+.know-more-modal img{
+    width: 120px;
+    margin-top: 35px;
+}
+
+.know-more-modal p{
+    margin-top: 50px;
+}
+.custom-modal-final .column-card{
+    padding: 66px 30px;
+}
+
+.custom-modal .column-card{
+    display: none;
+}
+
+.custom-modal-wrapper{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.custom-modal-close-button{
+    float: right;
+    top: 10px;
+    position: absolute;
+    right: 15px;
+    font-style: normal;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media screen and (min-width: 40em){
+    .medium-offset-1-5 {
+        margin-left: 12.63333%;
+    }
+}
+
+@media screen and (max-width: 39.9375em){
+    .card{
+        margin-bottom: 20px;
+    }
+    .custom-modal-final{
+        height: 1080px; /*inner card height*/
+    }
+    .modal-know-more-wrapper-height {
+        height: 960px;
+    }
+}
