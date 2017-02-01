@@ -101,14 +101,15 @@ $( document ).ready(function() {
         for(var j=0; j<skills[i].set.length; j++){
             renderHTML = renderHTML
             + '<div class="column small-12 medium-6 large-4 end">'
-            + '<span class="skill-name roboto">' + skills[i].set[j].name + '</span>';
+            + '<span class="skill-name roboto">' + skills[i].set[j].name + '</span>'
+            + '<div class="skill-point-set">';
             for(var k=0; k < skills[i].set[j].value; k++ ){
                 renderHTML += '<span class="dark-circle"></span>';
             }
             for(var k=0; k < 10 - skills[i].set[j].value; k++ ){
                 renderHTML += '<span class="hollow-circle"></span>';
             }
-            renderHTML += '</div>';
+            renderHTML += '</div></div>';
         }
         renderHTML += '</div>';
         renderHTML += '</div>';

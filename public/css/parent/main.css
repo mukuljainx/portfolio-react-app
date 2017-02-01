@@ -4,13 +4,13 @@ body{
 
 .roboto{
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
 }
 
 .raleway{
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
 }
 
@@ -118,9 +118,10 @@ h2{
 
 /*Navbar css ends here*/
 
+/*Intro head*/
 .intro-head{
-    width: 300px;
-    margin-left: calc( 50% - 150px );
+    width: 302px;
+    margin-left: calc( 50% - 151px );
     margin-top: 185px;
 }
 
@@ -152,6 +153,19 @@ h2{
     margin-top: 25px;
     display: inline-block;
 }
+@media screen and (min-width: 64em) {
+    .intro-head{
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .intro-head{
+        transform: scale(0.7);
+    }
+}
+
+/*Home page css ends here*/
 
 /*Moving Plane*/
 .moving-plane-container{
@@ -233,10 +247,10 @@ footer .cityscape{
     margin-right: 5px;
     font-size: 20px;
 }
-.social-contact a{
+.social-contact a, .main-contact a{
     color: black;
 }
-.social-contact a:hover{
+.social-contact a:hover, .main-contact a:hover{
     color: black;
 }
 .fa-circle-inverse{
@@ -271,6 +285,28 @@ footer .cityscape{
 
 
 /*about sectopn*/
+.about-set-heading{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.skill-point-set{
+    display: inline-block;
+}
+
+.experiance-set h6{
+    margin-bottom: 0px;
+    line-height: 20px;
+    margin-top: 0px;
+}
+
+.experiance-set p{
+    font-size: 16px;
+    line-height: 16px;
+}
+
 
 .intro-head-about{
     margin-top: 70px;
@@ -305,17 +341,23 @@ footer .cityscape{
 }
 
 h6{
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 0px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize;
 }
+
 
 /*skill section ends here*/
 
 /*work section*/
-
+.resume-button{
+    color: black !important;
+    border-color: black !important;
+    margin-top: 75px;
+    padding: 10px 30px;
+}
 .work-row{
     position: relative;
     margin-top: 40px;
@@ -340,6 +382,10 @@ h6{
 
 .weight-light{
     font-weight: 300;
+}
+
+.weight-medium{
+    font-weight: 500;
 }
 
 .work-nav{
