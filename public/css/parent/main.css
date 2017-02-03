@@ -399,6 +399,34 @@ h6{
     right: 0px;
 }
 
+.work-showcase-img-container{
+    position: relative;
+}
+
+.work-showcase-img{
+    width : 100%;
+    /*cursor: pointer;*/
+}
+
+.work-showcase-img-button{
+    color: white !important;
+    border: 2px solid white !important;
+    padding: 12px 22px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: calc( 50% - 20px);
+    left: calc( 50% - 62px );
+    /*display: none;*/
+}
+
+.work-showcase-img-hover{
+    -webkit-filter: blur(3px) grayscale(60%);
+    -moz-filter: blur(3px) grayscale(60%);
+    -o-filter: blur(3px) grayscale(60%);
+    -ms-filter: blur(3px) grayscale(60%);
+    filter: blur(3px) grayscale(60%);
+}
+
 
 @media screen and (max-width: 39.9375em){
     .work-nav img{
@@ -429,8 +457,4 @@ h6{
 
 .work-hidden{
     display: none;
-}
-
-.work-showcase-img{
-    width : 100%;
 }
