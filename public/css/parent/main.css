@@ -405,18 +405,27 @@ h6{
 
 .work-showcase-img{
     width : 100%;
-    /*cursor: pointer;*/
+}
+
+.work-showcase-img-detail{
+    display: none;
+    position: absolute;
+    top: calc(50% - 55px);
+    left: calc(50% - 175px);;
+}
+
+.work-showcase-img-detail p{
+    color: white;
+    margin-bottom: 6px;
 }
 
 .work-showcase-img-button{
     color: white !important;
     border: 2px solid white !important;
     padding: 12px 22px;
-    margin-bottom: 0px;
-    position: absolute;
-    top: calc( 50% - 20px);
-    left: calc( 50% - 62px );
-    /*display: none;*/
+    margin-bottom: 6px;
+    /*top: calc( 50% - 20px);*/
+    /*left: calc( 50% - 62px );*/
 }
 
 .work-showcase-img-hover{

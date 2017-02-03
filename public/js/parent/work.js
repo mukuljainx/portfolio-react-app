@@ -19,41 +19,51 @@ $( document ).ready(function() {
             img : "plinth2017.jpg",
             altImg : "Plinth 2017 | Home Page",
             name : "Plinth, The LNMIIT 2017",
-            stack : "jQuery • Foundation • Nodejs • Expressjs",
-            github : "#",
-            link : "#"
+            stack : "jQuery • Foundation • Nodejs • Expressjs • Sketch",
+            what : "Designed and Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
         },
         {
             img : "mun2017.jpg",
             altImg : "MUN 2017",
             name : "MUN, The LNMIIT 2017",
-            stack : "jQuery • Foundation • Nodejs • Expressjs",
-            github : "#",
-            link : "#"
+            stack : "jQuery • Foundation • Nodejs • Expressjs • Sketch",
+            what : "Designed and Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
         },
         {
             img : "event-graphia.jpg",
             altImg : "Event Graphia",
             name : "Event Graphia",
             stack : "BootStrap • JS • jQuery",
-            github : "#",
-            link : "#"
+            what : "Designed and Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
         },
         {
             img : "zento.jpg",
             altImg : "Zento Gallery",
             name : "Zento, Pure JS Gallery",
             stack : "JS",
-            github : "#",
-            link : "#"
+            what : "Designed and Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
         },
         {
             img : "flash.jpg",
             altImg : "Chatbot Flash",
             name : "Flash - Chatbot",
             stack : "Python • AIML • PyAMIL • Bash",
-            github : "#",
-            link : "#"
+            what : "Designed and Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
         }
     ]
 
@@ -69,10 +79,12 @@ $( document ).ready(function() {
         renderHTML = renderHTML
         + '<div class="column small-10 small-centered medium-9 card work-hidden portfolio-work work-' + i + '">'
         + '<div class="work-showcase-img-container">'
-        + '<img class="work-showcase-img work-showcase-img-hover" src="media/parent/images/work/' + works[i].img + '" alt="' + works[i].altImg  + '" />'
-        // + '<div class="work-showcase-img-hover">'
-        + '<a class="hollow button work-showcase-img-button">View Project</a>'
-        // + '</div>'
+        + '<img class="work-showcase-img" src="media/parent/images/work/' + works[i].img + '" alt="' + works[i].altImg  + '" />'
+        + '<div class="work-showcase-img-detail text-center">'
+        + '<a class="hollow button work-showcase-img-button" href="' + works[i].detailLink + '">View Project</a>'
+        + '<p class="roboto weight-medium">' + works[i].what + "</p>"
+        + '<p class="roboto weight-medium">' + works[i].stack + "</p>"
+        + '</div>'
         + '</div>'
         + '<div class="work-title-div row">'
         + '<div class="column small-12 medium-6">'
@@ -81,8 +93,9 @@ $( document ).ready(function() {
         + '</div>'
         + '<div class="column small-12 medium-6 text-right">'
         + '<p class="roboto">&nbsp;</p>'
-        + '<p class="roboto weight-light"><a href="' + works[i].github + '">Github</a> |'
-        + ' <a href="' + works[i].link + '">Website</a> | <a>View Project</a></p>'
+        + '<p class="roboto weight-light"><a href="' + works[i].githubLink + '">Github</a> | '
+        + '<a href="' + works[i].websiteLink + '">Website</a> | '
+        + '<a href="' + works[i].detailLink + '">View Project</a></p>'
         + '</div>'
         + '</div>'
         + '</div>';
@@ -115,13 +128,13 @@ $( document ).ready(function() {
 
     //hover effect on showcase
 
-    $('.work-showcase-img-button, .work-showcase-img').mouseenter(function(){
+    $('.work-showcase-img-detail, .work-showcase-img').mouseenter(function(){
         $('.work-showcase-img').addClass('work-showcase-img-hover');
-        $('.work-showcase-img-button').css('display','block');
+        $('.work-showcase-img-detail').css('display','block');
     });
     $('.work-showcase-img').mouseleave(function(){
         $('.work-showcase-img').removeClass('work-showcase-img-hover');
-        $('.work-showcase-img-button').css('display','none');
+        $('.work-showcase-img-detail').css('display','none');
     });
 
 });
