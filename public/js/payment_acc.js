@@ -46,7 +46,7 @@ function registerUserCompleteMUN(){
     activateLoader();
 
     $.post({
-        url: "/payment/mun/initiatepayment",
+        url: "/work/plinth/payment/mun/initiatepayment",
         contentType: 'application/json; charset=utf-8',
         dataType : 'json',
         data: JSON.stringify(data)
@@ -57,7 +57,7 @@ function registerUserCompleteMUN(){
             alert('something wrong please try again');
         }
         else{
-            window.location.replace( location.origin + "/payment/mun/initiatepayment?order_id=" + data.order_id);
+            window.location.replace( location.origin + "/work/plinth/payment/mun/initiatepayment?order_id=" + data.order_id);
         }
     })
     .fail(function(response) {

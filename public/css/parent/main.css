@@ -411,7 +411,8 @@ h6{
     display: none;
     position: absolute;
     top: calc(50% - 55px);
-    left: calc(50% - 175px);;
+    width: 90%;
+    left: 5%;
 }
 
 .work-showcase-img-detail p{
@@ -429,11 +430,11 @@ h6{
 }
 
 .work-showcase-img-hover{
-    -webkit-filter: blur(3px) grayscale(60%);
-    -moz-filter: blur(3px) grayscale(60%);
-    -o-filter: blur(3px) grayscale(60%);
-    -ms-filter: blur(3px) grayscale(60%);
-    filter: blur(3px) grayscale(60%);
+    -webkit-filter: blur(3px) grayscale(75%);
+    -moz-filter: blur(3px) grayscale(75%);
+    -o-filter: blur(3px) grayscale(75%);
+    -ms-filter: blur(3px) grayscale(75%);
+    filter: blur(3px) grayscale(75%);
 }
 
 

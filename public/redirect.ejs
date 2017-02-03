@@ -26,32 +26,32 @@
         <% if(!valid){ %>
         <nav>
             <div class="header-logo">
-                <a href="/"><img src="media/logo.svg"/></a>
+                <a href="/work/plinth/"><img src="media/logo.svg"/></a>
             </div>
             <button class="ham-btn"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
             <div class="ham-wrapper">
                 <div class="ham-content text-center">
                     <button class="ham-close"><span>X</span></button>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/competitions">Competitions</a></li>
-                        <li><a href="/talks">Talks</a></li>
-                        <li><a href="/workshops">Workshops</a></li>
-                        <!-- <li><a href="/talks_c">Lectures</a></li> -->
-                        <li><a href="/mun">The LNMIIT MUN</a></li>
-                        <li><a href="/wikitolearn">WikiToLearn</a></li>
+                        <li><a href="/work/plinth/">Home</a></li>
+                        <li><a href="/work/plinth/competitions">Competitions</a></li>
+                        <li><a href="/work/plinth/talks">Talks</a></li>
+                        <li><a href="/work/plinth/workshops">Workshops</a></li>
+                        <!-- <li><a href="/work/plinth/talks_c">Lectures</a></li> -->
+                        <li><a href="/work/plinth/mun">The LNMIIT MUN</a></li>
+                        <li><a href="/work/plinth/wikitolearn">WikiToLearn</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navitem text-right">
                 <ul>
-                    <li><a class="navitem-home" href="/">Home</a></li>
-                    <li><a class="navitem-competitions" href="/competitions">Competitions</a></li>
-                    <li><a class="navitem-workshops" href="/workshops">Workshops</a></li>
-                    <li><a class="navitem-talks" href="/talks">Talks</a></li>
-                    <!-- <li><a href="/talks_c.ejs">Lectures</a></li> -->
-                    <li><a href="/mun">The LNMIIT MUN</a></li>
-                    <li><a href="/wikitolearn">WikiToLearn</a></li>
+                    <li><a class="navitem-home" href="/work/plinth/">Home</a></li>
+                    <li><a class="navitem-competitions" href="/work/plinth/competitions">Competitions</a></li>
+                    <li><a class="navitem-workshops" href="/work/plinth/workshops">Workshops</a></li>
+                    <li><a class="navitem-talks" href="/work/plinth/talks">Talks</a></li>
+                    <!-- <li><a href="/work/plinth/talks_c.ejs">Lectures</a></li> -->
+                    <li><a href="/work/plinth/mun">The LNMIIT MUN</a></li>
+                    <li><a href="/work/plinth/wikitolearn">WikiToLearn</a></li>
                 </ul>
             </div>
         </nav>
@@ -181,7 +181,7 @@
 
         <script>
             function init(){
-                $.post( "/user/user_validate")
+                $.post( "/work/plinth/user/user_validate")
                 .done(function( data ) {
                     deactivateLoader();
                     if(!data.response){
@@ -216,7 +216,7 @@
                 data = {user : x};
                 activateLoader();
                 $.post( {
-                    url: "/user/user_register_complete",
+                    url: "/work/plinth/user/user_register_complete",
                     contentType: 'application/json; charset=utf-8',
                     dataType : 'json',
                     data: JSON.stringify(data)

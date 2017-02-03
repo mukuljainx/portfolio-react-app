@@ -12,7 +12,7 @@ function contactUs(){
     }
     activateLoader();
     $.post( {
-        url: 'events/contact/',
+        url: '/work/plinth/events/contact/',
         contentType: 'application/json; charset=utf-8',
         dataType : 'json',
         data: JSON.stringify(data)

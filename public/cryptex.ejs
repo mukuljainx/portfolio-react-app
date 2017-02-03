@@ -56,20 +56,20 @@
                                 		Start the Game
                                 		</a>
                                     <% }else{ %>
-                                        <a href="/cryptex/play">
+                                        <a href="/work/plinth/cryptex/play">
                                 		Continue Playing
                                 		</a>
                                     <% } %>
                             	</div>
                             <% }else{ %>
                                 <div class="withsocial">
-                            		<a onclick='userLoginInitiate("/user/auth/facebook")'>
+                            		<a onclick='userLoginInitiate("/work/plinth/user/auth/facebook")'>
                             		<i class="fa fa-facebook" aria-hidden="true"></i>
                             		Continue with Facebook
                             		</a>
                             	</div>
                             	<div class="withsocial">
-                            	   	<a onclick='userLoginInitiate("/user/auth/google")'>
+                            	   	<a onclick='userLoginInitiate("/work/plinth/user/auth/google")'>
                             		<i class="fa fa-google-plus" aria-hidden="true"></i>
                             		Continue with Google
                             		</a>
@@ -89,7 +89,7 @@
                 }
                 activateLoader();
                 $.post( {
-                    url: '/cryptex/startthegame',
+                    url: '/work/plinth/cryptex/startthegame',
                     contentType: 'application/json; charset=utf-8',
                     dataType : 'json',
                     // data: JSON.stringify(data)
@@ -98,7 +98,7 @@
                     deactivateLoader();
                     if(data.response){
                         notifDisplay(1,1);
-                        window.location.href = location.origin +  "/cryptex/play";
+                        window.location.href = location.origin +  "/work/plinth/cryptex/play";
                     }
                     else {
                         notifDisplay(0,0);

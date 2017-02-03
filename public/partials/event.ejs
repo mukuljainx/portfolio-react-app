@@ -85,7 +85,7 @@
         <div class="content">
             <div class="row">
                 <div class="small-2 columns">
-                    <a href="/competitions/<%- eventDetail.clubName %>"><i class="fa fa-long-arrow-left fa-2x" style="color:#3ca37c" aria-hidden="true"></i></a>
+                    <a href="/work/plinth/competitions/<%- eventDetail.clubName %>"><i class="fa fa-long-arrow-left fa-2x" style="color:#3ca37c" aria-hidden="true"></i></a>
                 </div>
                 <div class="small-8 text-center columns end">
                     <h4 style="text-transform: capitalize;"><%- eventDetail.clubName %></h4>
@@ -272,7 +272,7 @@
                         data = {"eventName" : "<%- eventDetail.eventName %>", "clubName" : "<%- eventDetail.clubName %>" , "userDetails" : multiUser};
                         activateLoader();
                         $.post( {
-                            url: "/events/register",
+                            url: "/work/plinth/events/register",
                             contentType: 'application/json; charset=utf-8',
                             dataType : 'json',
                             data: JSON.stringify(data)
@@ -327,7 +327,7 @@
                         multiUser[multiUserCount] = userx;
                         $('.close-button').trigger('click');
                         reqBody = {"eventName" : "<%- eventDetail.eventName %>", "clubName" : "<%- eventDetail.clubName %>" , "userDetails" : multiUser};
-                        formSubmissionEvent("/events/register", reqBody)
+                        formSubmissionEvent("/work/plinth/events/register", reqBody)
                     }
                 } // function hitting backend compltes
 
@@ -388,7 +388,7 @@
                     multiUser[multiUserCount] = userx;
                     $('.close-button').trigger('click');
                     reqBody = {"eventName" : "<%- eventDetail.eventName %>", "clubName" : "<%- eventDetail.clubName %>" , "userDetails" : multiUser};
-                    formSubmissionEvent("/events/register", reqBody);
+                    formSubmissionEvent("/work/plinth/events/register", reqBody);
                 }
             }
             //when user opens form
@@ -499,7 +499,7 @@
 
             activateLoader();
             $.post( {
-                url: '/payment/fetchData',
+                url: '/work/plinth/payment/fetchData',
                 contentType: 'application/json; charset=utf-8',
                 dataType : 'json',
                 data: JSON.stringify(data)
@@ -555,7 +555,7 @@
             });
         }
         function makePayment(id){
-            window.location.replace( location.origin + "/payment/initiatepayment?id=" + id + "&clubName=<%-eventDetail.clubName %>&eventName=<%- eventDetail.eventName %>");
+            window.location.replace( location.origin + "/work/plinth/payment/initiatepayment?id=" + id + "&clubName=<%-eventDetail.clubName %>&eventName=<%- eventDetail.eventName %>");
         }
 
         // for startup
@@ -579,7 +579,7 @@
 
                 activateLoader();
                 $.post( {
-                    url: '/payment/sif/fetchData',
+                    url: '/work/plinth/payment/sif/fetchData',
                     contentType: 'application/json; charset=utf-8',
                     dataType : 'json',
                     data: JSON.stringify(data)
@@ -591,7 +591,7 @@
                         return;
                     }
                     else{
-                        window.location.replace( location.origin + "/payment/sif/initiatepayment?id=" + response.id);
+                        window.location.replace( location.origin + "/work/plinth/payment/sif/initiatepayment?id=" + response.id);
                     }
                 })
                 .fail(function(response) {

@@ -19,7 +19,7 @@ var profiles =
 
 
 function logOut(){
-    $.post( "/user/logout")
+    $.post( "/work/plinth/user/logout")
     .done(function( data ) {
         if(data.response){
             location.reload();
@@ -30,7 +30,7 @@ function logOut(){
 function unloadcallback(){
     if(localStorage.temptoken !== undefined){
         activateLoader();
-        $.post( "/user/user_validate", { "token" : localStorage.temptoken })
+        $.post( "/work/plinth/user/user_validate", { "token" : localStorage.temptoken })
         .done(function( data ) {
             deactivateLoader();
 //            cliUserRegisterDetail();
@@ -63,7 +63,7 @@ function registerUserComplete(){
     datax = {"token" : localStorage.temptoken, "user" : x};
     activateLoader();
     $.post( {
-        url: "/user/user_register_complete",
+        url: "/work/plinth/user/user_register_complete",
         contentType: 'application/json; charset=utf-8',
         dataType : 'json',
         data: JSON.stringify(datax)
@@ -101,7 +101,7 @@ function getUserDetails(){
 }
 
 function validateUserDetails(data){
-   
+
     if(data.name === "" || data.gender === undefined || data.phoneNumber === "" || data.email === "" || data.college === "" || data.year === undefined || data.city === "" || data.accommodation === undefined)
         return false;
     else

@@ -52,7 +52,7 @@ $('.register-pop-up').click(function(){
 
 
 function logOut(){
-    $.post( "/user/logout")
+    $.post( "/work/plinth/user/logout")
     .done(function( data ) {
         if(data.response){
             localStorage.setItem("userStatus", 'true');
