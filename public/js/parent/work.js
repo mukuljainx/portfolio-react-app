@@ -13,17 +13,34 @@ $( document ).ready(function() {
           $('footer').removeClass('footer-fixed');
         }
     }
+    var previousWork = function(){
+        if(currentWork === 0){
+            currentWork = totalWork;
+        }
+        currentWork--;
+        $('.portfolio-work').addClass('work-hidden');
+        $('.work-' + currentWork).removeClass('work-hidden');
+        footerHandler();
+    }
+
+    var nextWork = function(){
+        $('.portfolio-work').addClass('work-hidden');
+        currentWork = (currentWork + 1) % totalWork;
+        $('.work-' + currentWork).removeClass('work-hidden');
+        footerHandler();
+    }
 
     var works = [
         {
             img : "plinth2017.jpg",
             altImg : "Plinth 2017 | Home Page",
             name : "Plinth, The LNMIIT 2017",
-            stack : "jQuery • Foundation • Nodejs • Expressjs • Sketch",
+            stack : "jQuery • Foundation • Nodejs • Expressjs • MongoDB • Sketch",
             what : "Designed and Developed",
             githubLink : "#",
             websiteLink : "#",
             detailLink : "#",
+            detailTextColor : "",
         },
         {
             img : "mun2017.jpg",
@@ -34,6 +51,51 @@ $( document ).ready(function() {
             githubLink : "#",
             websiteLink : "#",
             detailLink : "#",
+            detailTextColor : "",
+        },
+        {
+            img : "timespread.jpg",
+            altImg : "Time Spread Android app Image",
+            name : "Time Spread",
+            stack : "Nodejs • Expressjs • MongoDB • Sketch",
+            what : "Designed and Developed Backend",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
+            detailTextColor : "gray29",
+        },
+        {
+            img : "zento.jpg",
+            altImg : "Zento Gallery",
+            name : "Zento, Pure JS Gallery",
+            stack : "Vanilla JavaScript",
+            what : "Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
+            detailTextColor : "gray29",
+        },
+        {
+            img : "flash.jpg",
+            altImg : "Chatbot Flash",
+            name : "Flash - Chatbot",
+            stack : "Python • AIML • PyAMIL • Bash",
+            what : "Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
+            detailTextColor : "",
+        },
+        {
+            img : "plinth2016.jpg",
+            altImg : "Plinth 2017 | Home Page",
+            name : "Plinth, The LNMIIT 2016",
+            stack : "jQuery • Materializecss • AngularJS",
+            what : "Developed",
+            githubLink : "#",
+            websiteLink : "#",
+            detailLink : "#",
+            detailTextColor : "gray29",
         },
         {
             img : "event-graphia.jpg",
@@ -44,27 +106,19 @@ $( document ).ready(function() {
             githubLink : "#",
             websiteLink : "#",
             detailLink : "#",
+            detailTextColor : "",
         },
         {
-            img : "zento.jpg",
-            altImg : "Zento Gallery",
-            name : "Zento, Pure JS Gallery",
-            stack : "JS",
+            img : "event-graphia-dropped.jpg",
+            altImg : "Event Graphia(Uncomplete) Image",
+            name : "Event Graphia(Uncomplete)",
+            stack : "AngularJS • jQuery • Materializecss",
             what : "Designed and Developed",
             githubLink : "#",
             websiteLink : "#",
             detailLink : "#",
+            detailTextColor : "",
         },
-        {
-            img : "flash.jpg",
-            altImg : "Chatbot Flash",
-            name : "Flash - Chatbot",
-            stack : "Python • AIML • PyAMIL • Bash",
-            what : "Designed and Developed",
-            githubLink : "#",
-            websiteLink : "#",
-            detailLink : "#",
-        }
     ]
 
     var totalWork = works.length;
@@ -80,7 +134,7 @@ $( document ).ready(function() {
         + '<div class="column small-10 small-centered medium-9 card work-hidden portfolio-work work-' + i + '">'
         + '<div class="work-showcase-img-container">'
         + '<img class="work-showcase-img" src="media/parent/images/work/' + works[i].img + '" alt="' + works[i].altImg  + '" />'
-        + '<div class="work-showcase-img-detail text-center">'
+        + '<div class="work-showcase-img-detail text-center ' + works[i].detailTextColor + '">'
         + '<a class="hollow button work-showcase-img-button" href="' + works[i].detailLink + '">View Project</a>'
         + '<p class="roboto weight-medium">' + works[i].what + "</p>"
         + '<p class="roboto weight-medium">' + works[i].stack + "</p>"
@@ -109,22 +163,35 @@ $( document ).ready(function() {
     $('.work-0').removeClass('work-hidden');
     $('footer').removeClass('footer-fixed');
 
+    //navigation for work
     $('.work-nav-right').click(function(){
-        $('.portfolio-work').addClass('work-hidden');
-        currentWork = (currentWork + 1) % totalWork;
-        $('.work-' + currentWork).removeClass('work-hidden');
-        footerHandler();
+        nextWork();
     })
 
     $('.work-nav-left').click(function(){
-        if(currentWork === 0){
-            currentWork = totalWork;
-        }
-        currentWork--;
-        $('.portfolio-work').addClass('work-hidden');
-        $('.work-' + currentWork).removeClass('work-hidden');
-        footerHandler();
+        previousWork();
     })
+
+    //Navigation throgh key
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 37: // left
+            previousWork();
+            break;
+
+            case 39: // right
+            nextWork();
+            break;
+
+            case 13: // enter
+            // nextWork();
+            break;
+
+            default: return; // exit this handler for other keys
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    });
+
 
     //hover effect on showcase
 

@@ -420,6 +420,11 @@ h6{
     margin-bottom: 6px;
 }
 
+.gray29 p,.gray29 a{
+    color: #4A4A4A !important;
+    border-color: #4A4A4A !important;
+}
+
 .work-showcase-img-button{
     color: white !important;
     border: 2px solid white !important;

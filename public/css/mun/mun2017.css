@@ -398,10 +398,15 @@ nav{
 		font-size: 16px;
 	}
 	.mun-inline{
-		transform: scale(1);
+		transform: scale(0.7);
 	}
 	.mun-home-button{
 		margin-top: 60px;
+	}
+}
+@media screen and (max-width: 360px) {
+	.mun-inline{
+		transform: scale(0.6);
 	}
 }
 .mun-blue-button{
@@ -437,7 +442,7 @@ nav{
 
 .register .button.hollow a{
     color: #02B9EF;
-    
+
 }
 
 .register .button.hollow:hover a{

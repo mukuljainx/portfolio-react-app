@@ -19,4 +19,5 @@ router.get('/contact', function(req, res, next) {
     res.render('parent/contact')
 });
 
+
 module.exports = router;
