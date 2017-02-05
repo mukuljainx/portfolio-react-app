@@ -149,7 +149,7 @@ $( document ).ready(function() {
         + '<p class="roboto">&nbsp;</p>'
         + '<p class="roboto weight-light"><a href="' + works[i].githubLink + '" target="_blank">Github</a> | '
         + '<a href="' + works[i].websiteLink + '" target="_blank">Website</a> | '
-        + '<a href="/work/' + works[i].detailLink + '">View Project</a></p>'
+        + '<a class="detail-link-button" href="/work/' + works[i].detailLink + '">View Project</a></p>'
         + '</div>'
         + '</div>'
         + '</div>';
@@ -181,10 +181,6 @@ $( document ).ready(function() {
 
             case 39: // right
             nextWork();
-            break;
-
-            case 13: // enter
-            // nextWork();
             break;
 
             default: return; // exit this handler for other keys
