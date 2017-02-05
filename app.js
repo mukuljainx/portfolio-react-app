@@ -22,6 +22,7 @@ db.once('open', function(){
 // database connection done
 
 var routes = require('./routes/index');
+var projects = require('./routes/project');
 var plinthRoutes = require('./routes/plinth/index');
 var plinthUser = require('./routes/plinth/user');
 var plinthEvents = require('./routes/plinth/event');
@@ -54,6 +55,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', routes);
+//for projects
+app.use('/work', projects);
+//to support plinth *this is temporary*
 app.use('/work/plinth', plinthRoutes);
 app.use('/work/plinth/user', plinthUser);
 app.use('/work/plinth/events', plinthEvents);

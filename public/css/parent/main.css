@@ -232,21 +232,17 @@ footer .cityscape{
 
 
 /*contact css*/
-
-.main-contact i{
-    margin-right: 10px;
-    font-size: 18px;
+.social-contact img{
+    width: 20px;
+    margin-right: 1px;
+    vertical-align: text-bottom;
 }
 
-.main-contact .fa-mobile{
-    font-size: 26px;
-    vertical-align: top;
+.main-contact img{
+    margin-right: 3px;
+    vertical-align: text-bottom;
 }
 
-.social-contact i{
-    margin-right: 5px;
-    font-size: 20px;
-}
 .social-contact a, .main-contact a{
     color: black;
 }
@@ -410,7 +406,7 @@ h6{
 .work-showcase-img-detail{
     display: none;
     position: absolute;
-    top: calc(50% - 55px);
+    top: calc(50% - 45px);
     width: 90%;
     left: 5%;
 }

@@ -53,6 +53,7 @@ $( document ).ready(function() {
 
     // navbar active handler
     var navActive = location.pathname.replace("/","");
-    $('.navitem-' + navActive).addClass('navitem-active');
-
+    if(navActive.indexOf('/') === -1){
+        $('.navitem-' + navActive).addClass('navitem-active');
+    }
 });

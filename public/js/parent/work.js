@@ -37,9 +37,9 @@ $( document ).ready(function() {
             name : "Plinth, The LNMIIT 2017",
             stack : "jQuery • Foundation • Nodejs • Expressjs • MongoDB • Sketch",
             what : "Designed and Developed",
-            githubLink : "#",
-            websiteLink : "#",
-            detailLink : "#",
+            githubLink : "https://github.com/jainmukul/plinth_2k17",
+            websiteLink : "work/plinth/",
+            detailLink : "plinth-2017",
             detailTextColor : "",
         },
         {
@@ -48,9 +48,9 @@ $( document ).ready(function() {
             name : "MUN, The LNMIIT 2017",
             stack : "jQuery • Foundation • Nodejs • Expressjs • Sketch",
             what : "Designed and Developed",
-            githubLink : "#",
-            websiteLink : "#",
-            detailLink : "#",
+            githubLink : "https://github.com/jainmukul/plinth_2k17/blob/master/public/mun2017.ejs",
+            websiteLink : "work/plinth/mun",
+            detailLink : "mun",
             detailTextColor : "",
         },
         {
@@ -59,9 +59,9 @@ $( document ).ready(function() {
             name : "Time Spread",
             stack : "Nodejs • Expressjs • MongoDB • Sketch",
             what : "Designed and Developed Backend",
-            githubLink : "#",
+            githubLink : "https://github.com/jainmukul/timespread",
             websiteLink : "#",
-            detailLink : "#",
+            detailLink : "timespread",
             detailTextColor : "gray29",
         },
         {
@@ -70,9 +70,9 @@ $( document ).ready(function() {
             name : "Zento, Pure JS Gallery",
             stack : "Vanilla JavaScript",
             what : "Developed",
-            githubLink : "#",
+            githubLink : "https://github.com/jainmukul/zento",
             websiteLink : "#",
-            detailLink : "#",
+            detailLink : "zento",
             detailTextColor : "gray29",
         },
         {
@@ -81,9 +81,9 @@ $( document ).ready(function() {
             name : "Flash - Chatbot",
             stack : "Python • AIML • PyAMIL • Bash",
             what : "Developed",
-            githubLink : "#",
+            githubLink : "https://github.com/jainmukul/flash_an_interactive_chatbot",
             websiteLink : "#",
-            detailLink : "#",
+            detailLink : "flash",
             detailTextColor : "",
         },
         {
@@ -92,9 +92,9 @@ $( document ).ready(function() {
             name : "Plinth, The LNMIIT 2016",
             stack : "jQuery • Materializecss • AngularJS",
             what : "Developed",
-            githubLink : "#",
-            websiteLink : "#",
-            detailLink : "#",
+            githubLink : "https://github.com/jainmukul/plinth2016",
+            websiteLink : "/website/plinth-2016",
+            detailLink : "plinth-2016",
             detailTextColor : "gray29",
         },
         {
@@ -104,8 +104,8 @@ $( document ).ready(function() {
             stack : "BootStrap • JS • jQuery",
             what : "Designed and Developed",
             githubLink : "#",
-            websiteLink : "#",
-            detailLink : "#",
+            websiteLink : "http://eventgraphia.com",
+            detailLink : "event-graphia",
             detailTextColor : "",
         },
         {
@@ -114,9 +114,9 @@ $( document ).ready(function() {
             name : "Event Graphia(Uncomplete)",
             stack : "AngularJS • jQuery • Materializecss",
             what : "Designed and Developed",
-            githubLink : "#",
+            githubLink : "https://github.com/jainmukul/EventGraphia_Dropped",
             websiteLink : "#",
-            detailLink : "#",
+            detailLink : "event-graphia-angular",
             detailTextColor : "",
         },
     ]
@@ -135,9 +135,9 @@ $( document ).ready(function() {
         + '<div class="work-showcase-img-container">'
         + '<img class="work-showcase-img" src="media/parent/images/work/' + works[i].img + '" alt="' + works[i].altImg  + '" />'
         + '<div class="work-showcase-img-detail text-center ' + works[i].detailTextColor + '">'
-        + '<a class="hollow button work-showcase-img-button" href="' + works[i].detailLink + '">View Project</a>'
+        + '<a class="hollow button work-showcase-img-button" href="/work/' + works[i].detailLink + '">View Project</a>'
         + '<p class="roboto weight-medium">' + works[i].what + "</p>"
-        + '<p class="roboto weight-medium">' + works[i].stack + "</p>"
+        // + '<p class="roboto weight-medium">' + works[i].stack + "</p>"
         + '</div>'
         + '</div>'
         + '<div class="work-title-div row">'
@@ -147,9 +147,9 @@ $( document ).ready(function() {
         + '</div>'
         + '<div class="column small-12 medium-6 text-right">'
         + '<p class="roboto">&nbsp;</p>'
-        + '<p class="roboto weight-light"><a href="' + works[i].githubLink + '">Github</a> | '
-        + '<a href="' + works[i].websiteLink + '">Website</a> | '
-        + '<a href="' + works[i].detailLink + '">View Project</a></p>'
+        + '<p class="roboto weight-light"><a href="' + works[i].githubLink + '" target="_blank">Github</a> | '
+        + '<a href="' + works[i].websiteLink + '" target="_blank">Website</a> | '
+        + '<a href="/work/' + works[i].detailLink + '">View Project</a></p>'
         + '</div>'
         + '</div>'
         + '</div>';
