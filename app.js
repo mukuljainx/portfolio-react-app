@@ -87,8 +87,8 @@ if (app.get('env') === 'development') {
   });
 }
 
-// // production error handler
-// // no stacktraces leaked to user
+// production error handler
+// no stacktraces leaked to user
 if (app.get('env') === 'production') {
     app.use(function(err, req, res, next) {
       res.status(err.status || 500);
