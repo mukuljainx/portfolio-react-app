@@ -1,4 +1,5 @@
 import  React from 'react';
+import PropTypes from 'prop-types';
 
 
 const Experience = ({experience}) => {
@@ -23,5 +24,8 @@ const Experience = ({experience}) => {
   );
 };
 
+Experience.propTypes = {
+  experience: PropTypes.object.isRequired
+};
 
 export default Experience;

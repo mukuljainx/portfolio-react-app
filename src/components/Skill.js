@@ -1,5 +1,5 @@
 import  React from 'react';
-
+import PropTypes from 'prop-types';
 
 const Skill = ({name, n}) => {
   const createSpan = (spanClass, m) => {
@@ -20,6 +20,12 @@ const Skill = ({name, n}) => {
       </div>
     </div>
   );
+};
+
+
+Skill.propTypes = {
+  name : PropTypes.string.isRequired,
+  n : PropTypes.number.isRequired,
 };
 
 

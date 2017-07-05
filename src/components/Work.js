@@ -9,10 +9,9 @@ class Work extends React.Component {
 
   }
 
-
   render() {
     return (
-      <div class="row work-row">
+      <div className="row work-row">
         work
         <Showcase/>
       </div>

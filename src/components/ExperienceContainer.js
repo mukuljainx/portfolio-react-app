@@ -1,12 +1,13 @@
 import  React from 'react';
+import PropTypes from 'prop-types';
 
 import Experience from './Experience';
 
 
 const ExperienceContainer = ({experiences}) => {
-  const getExperienceSet = ()=>{
-    return experiences.map((experience,i) =>{
-      return <Experience key={i} experience={experience} />;
+  const getExperienceSet = () => {
+    return experiences.map((experience, i) => {
+      return <Experience key={i} experience={experience}/>;
     });
   };
 
@@ -27,6 +28,9 @@ const ExperienceContainer = ({experiences}) => {
   );
 };
 
+ExperienceContainer.propTypes = {
+  experiences: PropTypes.array.isRequired
+};
 
 export default ExperienceContainer;
 
