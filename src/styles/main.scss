@@ -398,6 +398,9 @@ h6{
   cursor: pointer;
 }
 
+.work-nav-left{
+  left:0px;
+}
 .work-nav-right{
   transform: rotate(180deg);
   right: 0px;
@@ -405,6 +408,19 @@ h6{
 
 .work-showcase-img-container{
   position: relative;
+}
+
+.work-showcase-img-container:hover{
+  .work-showcase-img-detail{
+    display: block;
+  }
+  img{
+    -webkit-filter: blur(3px) grayscale(75%);
+    -moz-filter: blur(3px) grayscale(75%);
+    -o-filter: blur(3px) grayscale(75%);
+    -ms-filter: blur(3px) grayscale(75%);
+    filter: blur(3px) grayscale(75%);
+  }
 }
 
 .work-showcase-img{
@@ -417,12 +433,12 @@ h6{
   top: calc(50% - 45px);
   width: 90%;
   left: 5%;
+  p{
+    color: white;
+    margin-bottom: 6px;
+  }
 }
 
-.work-showcase-img-detail p{
-  color: white;
-  margin-bottom: 6px;
-}
 
 .gray29 p,.gray29 a{
   color: #4A4A4A !important;
@@ -434,16 +450,6 @@ h6{
   border: 2px solid white !important;
   padding: 12px 22px;
   margin-bottom: 6px;
-  /*top: calc( 50% - 20px);*/
-  /*left: calc( 50% - 62px );*/
-}
-
-.work-showcase-img-hover{
-  -webkit-filter: blur(3px) grayscale(75%);
-  -moz-filter: blur(3px) grayscale(75%);
-  -o-filter: blur(3px) grayscale(75%);
-  -ms-filter: blur(3px) grayscale(75%);
-  filter: blur(3px) grayscale(75%);
 }
 
 

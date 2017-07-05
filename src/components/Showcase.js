@@ -4,11 +4,11 @@ import {Link} from 'react-router';
 
 const Showcase = ({work}) => {
   return (
-    <div className="column small-10 small-centered medium-9 card work-hidden portfolio-work">
+    <div className="column small-10 medium-9 card portfolio-work">
       <div className="work-showcase-img-container">
-        <img className="work-showcase-img" src={work.img}
+        <img className="work-showcase-img" src={require("../media/work/" + work.img)}
              alt={work.altImg} />
-        <div className="work-showcase-img-detail text-center ' + work.detailTextColor + '">
+        <div className={"work-showcase-img-detail text-center " + work.detailTextColor}>
           <Link className="hollow button work-showcase-img-button" to={work.detailLink}>View
             Project</Link>
           <p className="roboto weight-medium">{work.what}</p>
