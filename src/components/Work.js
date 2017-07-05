@@ -6,6 +6,9 @@ class Work extends React.Component {
 
   constructor(props) {
     super(props);
+      this.state = {
+        work : {}
+      }
 
   }
 
@@ -13,7 +16,7 @@ class Work extends React.Component {
     return (
       <div className="row work-row">
         work
-        <Showcase/>
+        <Showcase work={this.state.work}/>
       </div>
     );
   }
