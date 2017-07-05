@@ -1,0 +1,82 @@
+body {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+}
+
+//headers
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: $font-weight-medium;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+}
+
+//other
+
+.full-screen {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: white;
+    .row {
+        height: inherit;
+    }
+    p {
+        color: $primary-color;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.menu-card {
+    box-shadow: $card-shadow;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    right: 0px;
+    background: white;
+    color: $black;
+    top: 20px;
+    p {
+        margin-bottom: 0px;
+    }
+    p:hover {
+        cursor: pointer;
+    }
+}
+
+.default-card {
+    box-shadow: $card-shadow;
+    background: white;
+    color: $black;
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
