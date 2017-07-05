@@ -1,5 +1,5 @@
 import  React from 'react';
-import {Link} from 'react-router';
+import {Link,BrowserRouter} from 'react-router-dom';
 
 import '../styles/modal.scss';
 
@@ -49,11 +49,10 @@ class Modal extends React.Component {
 
   render() {
     return (
-
       <div className="row">
         <div className="column small-12 text-center">
           <div className={"modal-know-more-wrapper " + this.state.modalKnowMoreWrapperClass} ref="modalKnowMoreWrapper">
-            <Link className="know-more raleway" onClick={this.openKnowMoreModal}>Know More</Link>
+            <a className="know-more raleway" onClick={this.openKnowMoreModal}>Know More</a>
             <div className={"custom-modal-wrapper " + this.state.customModalWrapperClass} onClick={this.closeKnowMoreModal} ref="customModalWrapper"/>
             <div className={"custom-modal custom-modal-none row align-center align-middle " + this.state.customModalClass} ref="customModal">
               <div

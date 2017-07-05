@@ -18,7 +18,6 @@ class Work extends React.Component {
   }
 
   componentWillMount() {
-    console.log(workList.length);
     this.setState((prevState) => {
       return {
         work: workList[prevState.index]
