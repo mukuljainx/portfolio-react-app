@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Work from './Work';
 import WorkDetail from './WorkDetail';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 import {BrowserRouter, Route} from 'react-router-dom';
 
@@ -14,14 +15,17 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <Header/>
-          {/*{this.props.children}*/}
-
-          <div>
+          <CSSTransitionGroup
+            transitionName="carousel"
+            transitionEnterTimeout={300}
+            transitionLeaveTimeout={300}
+          >
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
-            <Route exact path="/work" component={Work}/>
+            <Route exact path="/work" component={Work} />
+            <Route exact path="/work/:id" component={Work}/>
             <Route path="/work/details/:id" component={WorkDetail}/>
-          </div>
+          </CSSTransitionGroup>
           <Footer/>
         </div>
       </BrowserRouter>

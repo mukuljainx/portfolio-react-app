@@ -7,7 +7,7 @@ import workDetails from './data/workDetails';
 
 const pathToId = {
   "plinth-2017": "plinth2017",
-  "mun": "mun",
+  "mun-2017": "mun2017",
   "timespread":"timeSpread",
   "zento" : "zento",
   "flash": "flashChat" ,
@@ -33,7 +33,6 @@ class WorkDetail extends React.Component {
     this.setState({
       work: workDetails[pathToId[pathNameArray[pathNameArray.length - 1]]]
     });
-    console.log(pathToId[pathNameArray[pathNameArray.length - 1]]);
   }
 
   getFeaturesList() {

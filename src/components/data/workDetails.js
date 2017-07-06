@@ -2,7 +2,7 @@ const workDetailList = {
     egOld: {
       title: "Event Graphia",
       jobType: "Developed",
-      mainImg: "event-graphia-old/main.png",
+      mainImg: "event-graphia-old.png",
       altMainImg: "Event Graphia Representational Image",
       website: "",
       github: "",
@@ -15,7 +15,7 @@ const workDetailList = {
     egNew: {
       title: "Event Graphia (Dropped Project)",
       jobType: "Design and Developed",
-      mainImg: "event-graphia-new/main.png",
+      mainImg: "event-graphia-new.png",
       altMainImg: "Event Graphia Representational Image",
       website: "",
       github: "https://github.com/mukuljainx/EventGraphia_Dropped",
@@ -28,7 +28,7 @@ const workDetailList = {
     flashChat: {
       title: "Flash (Chatbot)",
       jobType: "Developed",
-      mainImg: "flash/main.png",
+      mainImg: "flash.png",
       altMainImg: "Flash Representational Image",
       website: "https://www.youtube.com/watch?v=qAhkqu-n1V8&t=296s",
       github: "https://github.com/mukuljainx/flash_an_interactive_chatbot",
@@ -90,7 +90,7 @@ const workDetailList = {
     zento: {
       title: "Zento (JS Gallery)",
       jobType: "Developed",
-      mainImg: "mun.png",
+      mainImg: "zento.png",
       altMainImg: "Zento Representational Image",
       website: "",
       github: "https://github.com/mukuljainx/zento",

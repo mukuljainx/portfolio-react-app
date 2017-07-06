@@ -19,7 +19,7 @@ const workList = [
     what : "Designed and Developed",
     githubLink : "https://github.com/mukuljainx/plinth_2k17/blob/master/public/mun2017.ejs",
     websiteLink : "work/plinth/mun",
-    detailLink : "mun",
+    detailLink : "mun-2017",
     detailTextColor : "",
     id : "mun2017"
   },
