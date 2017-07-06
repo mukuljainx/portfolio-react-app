@@ -15,6 +15,7 @@ export default (
     <Route path="Work" component={Work}/>
     <Route path="Work/:id" component={Work}/>
     <Route path="Work/details/:id" component={WorkDetail}/>
+    <Route path="contact" component={About}/>
     {/*<Route path="challenge" component={ChallengePage}/>*/}
     {/*<Route path="challenge/:id" component={ChallengePage}/>*/}
   </Route>

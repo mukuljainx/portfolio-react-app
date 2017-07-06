@@ -24,10 +24,10 @@ class App extends React.Component {
           >
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact} />
             <Route exact path="/work" component={Work} />
             <Route exact path="/work/:id" component={Work}/>
             <Route path="/work/details/:id" component={WorkDetail}/>
-            <Route path="contact" component={Contact} />
           </CSSTransitionGroup>
           <Footer/>
         </div>
