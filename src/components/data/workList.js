@@ -9,6 +9,7 @@ const workList = [
     websiteLink : "work/plinth/",
     detailLink : "plinth-2017",
     detailTextColor : "",
+    id : "plinth2017"
   },
   {
     img : "mun2017.jpg",
@@ -20,6 +21,7 @@ const workList = [
     websiteLink : "work/plinth/mun",
     detailLink : "mun",
     detailTextColor : "",
+    id : "mun2017"
   },
   {
     img : "timespread.jpg",
@@ -31,6 +33,7 @@ const workList = [
     websiteLink : "#",
     detailLink : "timespread",
     detailTextColor : "gray29",
+    id : "timeSpread"
   },
   {
     img : "zento.jpg",
@@ -42,6 +45,7 @@ const workList = [
     websiteLink : "#",
     detailLink : "zento",
     detailTextColor : "gray29",
+    id : "zento"
   },
   {
     img : "flash.jpg",
@@ -53,6 +57,7 @@ const workList = [
     websiteLink : "#",
     detailLink : "flash",
     detailTextColor : "",
+    id : "flashChat"
   },
   {
     img : "plinth2016.jpg",
@@ -64,6 +69,7 @@ const workList = [
     websiteLink : "/website/plinth-2016",
     detailLink : "plinth-2016",
     detailTextColor : "gray29",
+    id : "plinth2016"
   },
   {
     img : "event-graphia.jpg",
@@ -72,9 +78,10 @@ const workList = [
     stack : "BootStrap • JS • jQuery",
     what : "Designed and Developed",
     githubLink : "#",
-    websiteLink : "http://eventgraphia.com",
+    websiteLink : "",
     detailLink : "event-graphia",
     detailTextColor : "",
+    id : "egOld"
   },
   {
     img : "event-graphia-dropped.jpg",
@@ -86,6 +93,7 @@ const workList = [
     websiteLink : "#",
     detailLink : "event-graphia-angular",
     detailTextColor : "",
+    id : "egNew"
   },
 ];
 

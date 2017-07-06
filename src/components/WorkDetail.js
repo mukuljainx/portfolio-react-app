@@ -1,8 +1,20 @@
 import  React from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/work-details.scss';
 
 import workDetails from './data/workDetails';
+
+const pathToId = {
+  "plinth-2017": "plinth2017",
+  "mun": "mun",
+  "timespread":"timeSpread",
+  "zento" : "zento",
+  "flash": "flashChat" ,
+  "plinth-2016": "plinth2016",
+  "event-graphia": "egOld",
+  "event-graphia-angular":"egNew"
+};
 
 class WorkDetail extends React.Component {
 
@@ -17,7 +29,11 @@ class WorkDetail extends React.Component {
   }
 
   componentWillMount() {
-    debugger;
+    const pathNameArray = this.props.location.pathname.split('/');
+    this.setState({
+      work: workDetails[pathToId[pathNameArray[pathNameArray.length - 1]]]
+    });
+    console.log(pathToId[pathNameArray[pathNameArray.length - 1]]);
   }
 
   getFeaturesList() {
@@ -67,11 +83,11 @@ class WorkDetail extends React.Component {
         <div className="row align-center">
           <div className="column small-10">
             <h3 className="raleway about-set-heading">Technical Sheet</h3>
-              {this.state.work.otherTech !== "" && <p>{this.state.work.otherTech}</p>}
+            {this.state.work.otherTech !== "" && <p>{this.state.work.otherTech}</p>}
 
-              {this.state.work.frontEndTech !== "" && <p><b>Front-End:</b><br /> {this.state.work.frontEndTech} </p>}
+            {this.state.work.frontEndTech !== "" && <p><b>Front-End:</b><br /> {this.state.work.frontEndTech} </p>}
 
-              {this.state.work.backEndTech !== "" && <p><b>Back-End:</b><br /> {this.state.work.backEndTech} </p>}
+            {this.state.work.backEndTech !== "" && <p><b>Back-End:</b><br /> {this.state.work.backEndTech} </p>}
           </div>
         </div>
 
@@ -88,6 +104,10 @@ class WorkDetail extends React.Component {
     );
   }
 }
+
+WorkDetail.propTypes = {
+  location: PropTypes.object,
+};
 
 
 export default WorkDetail;

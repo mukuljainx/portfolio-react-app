@@ -41,7 +41,7 @@ const workDetailList = {
     mun2017: {
       title: "MUN 2017",
       jobType: "Design and Developed",
-      mainImg: "mun/main.png",
+      mainImg: "mun.png",
       altMainImg: "MUN 2017 Representational Image",
       website: "https://plinth.mukuljain.me/mun",
       github: "https://github.com/mukuljainx/plinth_2k17/blob/master/public/mun2017.ejs",
@@ -56,7 +56,7 @@ const workDetailList = {
     plinth2016: {
       title: "Plinth 2016",
       jobType: "Developed",
-      mainImg: "plinth-2016/main.png",
+      mainImg: "plinth-2016.png",
       altMainImg: "Plinth 2016 representational image",
       website: "/website/plinth-2016",
       github: "https://github.com/mukuljainx/plinth2016",
@@ -70,7 +70,7 @@ const workDetailList = {
     plinth2017: {
       title: "Plinth 2017",
       jobType: "Design and Developed",
-      mainImg: "plinth/main.png",
+      mainImg: "plinth.png",
       altMainImg: "Plinth 2017 Representational images",
       website: "https://plinth.mukuljain.me",
       github: "https://github.com/mukuljainx/plinth_2k17",
@@ -90,7 +90,7 @@ const workDetailList = {
     zento: {
       title: "Zento (JS Gallery)",
       jobType: "Developed",
-      mainImg: "mun/main.png",
+      mainImg: "mun.png",
       altMainImg: "Zento Representational Image",
       website: "",
       github: "https://github.com/mukuljainx/zento",
@@ -103,7 +103,7 @@ const workDetailList = {
     timeSpread: {
       title: "Time Spread",
       jobType: "Design and Developed",
-      mainImg: "timespread/main.png",
+      mainImg: "timespread.png",
       altMainImg: "Time Spread Android app representational image",
       website: [],
       github: "https://github.com/mukuljainx/timespread",

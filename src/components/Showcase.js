@@ -9,7 +9,7 @@ const Showcase = ({work}) => {
         <img className="work-showcase-img" src={require("../media/work/" + work.img)}
              alt={work.altImg}/>
         <div className={"work-showcase-img-detail text-center " + work.detailTextColor}>
-          <Link className="hollow button work-showcase-img-button" to={"work/details/" + work.detailLink}>
+          <Link className="hollow button work-showcase-img-button" to={ {pathname: "work/details/" + work.detailLink, query: work.id}}>
             View Project
           </Link>
           <p className="roboto weight-medium">{work.what}</p>
