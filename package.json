@@ -30,7 +30,7 @@
   "license": "MIT",
   "dependencies": {
     "animated": "0.2.0",
-    "foundation-sites": "6.3.1",
+    "foundation-sites": "6.4.1",
     "object-assign": "4.1.0",
     "react": "15.5.4",
     "react-dom": "15.5.4",

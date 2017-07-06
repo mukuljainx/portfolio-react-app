@@ -12,7 +12,6 @@ const Experience = ({experience}) => {
         </div>
         <div className="column small-10 small-offset-1 medium-5 medium-offset-0 end">
           <p className="show-for-medium text-right">{experience.startDate}</p>
-          <p className="show-for-small-only">{experience.endDate}</p>
         </div>
       </div>
       <div className="row align-center">

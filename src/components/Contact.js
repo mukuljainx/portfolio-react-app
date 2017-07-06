@@ -1,7 +1,6 @@
 import  React from 'react';
 import AnimatedWrapper from "./AnimatedWrapper";
 
-
 const ContactComponent = () => {
   return (
     <section>
@@ -17,19 +16,33 @@ const ContactComponent = () => {
       </div>
 
       <div className="row align-center">
-        <div className="small-1 contact-seprator">
+        <div className="small-1 small-centered contact-seprator" style={{"margin-bottom": "40px"}}>
           {/*<!-- css handles these divs -->*/}
-          <div />
-          <div />
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div className="row align-center text-center" style={{"margin-bottom": "40px"}}>
+        <div className="columns">
+          Hire me through <a href="https://codementor.io/mukuljainx" target="_blank">Codementor</a>
         </div>
       </div>
 
       <div className="row align-center">
-        <div className="column small-10 medium-10 text-center social-contact">
+        <div className="small-1 small-centered contact-seprator">
+          {/*<!-- css handles these divs -->*/}
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div className="row align-center">
+        <div className="column small-10 medium-10 small-centered text-center social-contact">
           <div className="row">
             <div className="column small-12 large-2 medium-4 large-offset-1">
               <p>
-                <a href="https://github.com/jainmukul" target="_blank">
+                <a href="https://github.com/mukuljainx" target="_blank">
                   <img src={require("../media/github.svg")} alt="github icon"/>/mukuljainx
                 </a>
               </p>

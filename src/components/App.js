@@ -38,13 +38,6 @@ class App extends React.Component {
                 {match && <About {...rest} />}
               </TransitionGroup>
             )}/>
-          <Route
-            path="/contact"
-            children={({match, ...rest}) => (
-            <TransitionGroup component={firstChild}>
-              {match && <Contact {...rest} />}
-            </TransitionGroup>
-          )} />
           {/*<Route*/}
             {/*exact*/}
             {/*path="/work"*/}
@@ -62,16 +55,25 @@ class App extends React.Component {
               {/*</TransitionGroup>*/}
             {/*)}/>*/}
           <Route
+            exact
             path="/work/details/:id"
             children={({match, ...rest}) => (
               <TransitionGroup component={firstChild}>
                 {match && <WorkDetail {...rest} />}
               </TransitionGroup>
             )}/>
-          {/*<Route path="/contact" component={Contact} />*/}
+          <Route
+            exact
+            path="/contact"
+            children={({match, ...rest}) => (
+              <TransitionGroup component={firstChild}>
+                {match && <Contact {...rest} />}
+              </TransitionGroup>
+            )} />
+
           <Route exact path="/work" component={Work} />
           <Route exact path="/work/:id" component={Work}/>
-          {/*<Route path="/work/details/:id" component={WorkDetail}/>*/}
+
 
           <Footer/>
         </div>
