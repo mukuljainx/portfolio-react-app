@@ -23,9 +23,11 @@ const Showcase = ({work}) => {
         </div>
         <div className="column shrink text-right">
           <p className="roboto">&nbsp;</p>
-          <p className="roboto weight-light"><a href={work.githubLink} target="_blank">Github</a> |
-            <a href={work.websiteLink} target="_blank">Website</a> |
-            <Link className="detail-link-button" to={"/work/" + work.detailLink}>View Project</Link></p>
+          <p className="roboto weight-light">
+            {work.githubLink !== "" && <span><a href={work.githubLink} target="_blank">Github</a> |</span>}
+            {work.websiteLink !== "" && <span><a href={work.websiteLink} target="_blank">Website</a> |</span>}
+            <Link className="detail-link-button" to={"/work/details/" + work.detailLink}>View Project</Link>
+          </p>
         </div>
       </div>
     </div>

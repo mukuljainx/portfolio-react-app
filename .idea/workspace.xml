@@ -2,108 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0e7a0e2-6301-4f15-959b-06bebc12e75c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/About.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/AboutInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/AnimatedWrapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Experience.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ExperienceContainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/HomeInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Showcase.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ShowcaseButton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Skill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/SkillContainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Work.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/WorkDetail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/common/Footer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/common/Header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/experiences.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/skills.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/workDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/workList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/app.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/component/footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/component/header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/foundation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/modal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/work-details.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/webpack-public-path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/.yarnclean" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/analyzeBundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/chalkConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/distServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/fileMock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/nodeVersionCheck.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/srcServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/startMessage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/testCi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.prod.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-dropped.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-dropped.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-new.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-new.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-old.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-old.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/flash.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/flash.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/flash.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/flash.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/mun.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/mun.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/mun2017.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/mun2017.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth-2016.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth-2016.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth2016.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth2016.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth2017.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth2017.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/timespread.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/timespread.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/timespread.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/timespread.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/zento.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/zento.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/zento.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/zento.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/mukul-jain-resume.jpg" afterPath="$PROJECT_DIR$/src/media/mukul-jain-resume.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/event-graphia-new.png" afterPath="$PROJECT_DIR$/src/media/work-detail/event-graphia-new.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/event-graphia-old.png" afterPath="$PROJECT_DIR$/src/media/work-detail/event-graphia-old.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/flash.png" afterPath="$PROJECT_DIR$/src/media/work-detail/flash.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/mun.png" afterPath="$PROJECT_DIR$/src/media/work-detail/mun.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/plinth-2016.png" afterPath="$PROJECT_DIR$/src/media/work-detail/plinth-2016.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/plinth.png" afterPath="$PROJECT_DIR$/src/media/work-detail/plinth.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/timespread.png" afterPath="$PROJECT_DIR$/src/media/work-detail/timespread.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/zento.png" afterPath="$PROJECT_DIR$/src/media/work-detail/zento.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/event-graphia-dropped.jpg" afterPath="$PROJECT_DIR$/src/media/work/event-graphia-dropped.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/event-graphia.jpg" afterPath="$PROJECT_DIR$/src/media/work/event-graphia.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/flash.jpg" afterPath="$PROJECT_DIR$/src/media/work/flash.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/mun2017.jpg" afterPath="$PROJECT_DIR$/src/media/work/mun2017.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/plinth2016.jpg" afterPath="$PROJECT_DIR$/src/media/work/plinth2016.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/plinth2017.jpg" afterPath="$PROJECT_DIR$/src/media/work/plinth2017.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/timespread.jpg" afterPath="$PROJECT_DIR$/src/media/work/timespread.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/zento.jpg" afterPath="$PROJECT_DIR$/src/media/work/zento.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/about.svg" afterPath="$PROJECT_DIR$/src/media/about.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/behance.svg" afterPath="$PROJECT_DIR$/src/media/behance.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/cityscape.svg" afterPath="$PROJECT_DIR$/src/media/cityscape.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/clouds.svg" afterPath="$PROJECT_DIR$/src/media/clouds.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/contact.svg" afterPath="$PROJECT_DIR$/src/media/contact.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/email.svg" afterPath="$PROJECT_DIR$/src/media/email.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/facebook.svg" afterPath="$PROJECT_DIR$/src/media/facebook.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/github.svg" afterPath="$PROJECT_DIR$/src/media/github.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/google.svg" afterPath="$PROJECT_DIR$/src/media/google.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/left.svg" afterPath="$PROJECT_DIR$/src/media/left.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/linkedin.svg" afterPath="$PROJECT_DIR$/src/media/linkedin.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/mobile.svg" afterPath="$PROJECT_DIR$/src/media/mobile.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/plane.svg" afterPath="$PROJECT_DIR$/src/media/plane.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work.svg" afterPath="$PROJECT_DIR$/src/media/work.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Showcase.js" afterPath="$PROJECT_DIR$/src/components/Showcase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/data/workDetails.js" afterPath="$PROJECT_DIR$/src/components/data/workDetails.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/data/workList.js" afterPath="$PROJECT_DIR$/src/components/data/workList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -118,11 +20,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2554">
               <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Work.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Work.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Showcase.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Showcase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/data/workList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -139,8 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>import {Link} from 'react-router</find>
-      <find>import {Link} from 'react-router'</find>
       <find>link</find>
       <find>plinth2</find>
       <find>main.png</find>
@@ -169,6 +99,8 @@
       <find>.js</find>
       <find>png</find>
       <find>linked</find>
+      <find>website</find>
+      <find>timespr</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;img src={require(&quot;../media</replace>
@@ -228,11 +160,8 @@
         <option value="$PROJECT_DIR$/src/styles/work-details.scss" />
         <option value="$PROJECT_DIR$/src/styles/fonts.scss" />
         <option value="$PROJECT_DIR$/src/components/common/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/data/workList.js" />
-        <option value="$PROJECT_DIR$/src/components/data/workDetails.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/ShowcaseButton.js" />
-        <option value="$PROJECT_DIR$/src/components/Showcase.js" />
         <option value="$PROJECT_DIR$/src/components/Modal.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/components/About.js" />
@@ -253,6 +182,9 @@
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/Contact.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/data/workDetails.js" />
+        <option value="$PROJECT_DIR$/src/components/data/workList.js" />
+        <option value="$PROJECT_DIR$/src/components/Showcase.js" />
       </list>
     </option>
   </component>
@@ -298,6 +230,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jainmukul.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,12 +405,12 @@
       <workItem from="1499201349688" duration="970000" />
       <workItem from="1499203524960" duration="9836000" />
       <workItem from="1499274938380" duration="2089000" />
-      <workItem from="1499277421161" duration="34299000" />
+      <workItem from="1499277421161" duration="34931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49419000" />
+    <option name="totallyTimeSpent" value="50051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="6" />
@@ -483,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/data/skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="76" column="2" lean-forward="false" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/webpack-public-path.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -525,14 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Showcase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="79" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ShowcaseButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -553,22 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/data/workList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/data/workDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -621,14 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/WorkDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/component/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -641,14 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Work.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -769,6 +708,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2554">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/data/workDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/data/skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="76" column="2" lean-forward="false" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/WorkDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="70" column="47" lean-forward="true" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/data/workList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Showcase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding />
         </state>
       </provider>

@@ -6,7 +6,7 @@ const workList = [
     stack : "jQuery • Foundation • Nodejs • Expressjs • MongoDB • Sketch",
     what : "Designed and Developed",
     githubLink : "https://github.com/mukuljainx/plinth_2k17",
-    websiteLink : "work/plinth/",
+    websiteLink : "https://plinth.mukuljain.me",
     detailLink : "plinth-2017",
     detailTextColor : "",
     id : "plinth2017"
@@ -18,7 +18,7 @@ const workList = [
     stack : "jQuery • Foundation • Nodejs • Expressjs • Sketch",
     what : "Designed and Developed",
     githubLink : "https://github.com/mukuljainx/plinth_2k17/blob/master/public/mun2017.ejs",
-    websiteLink : "work/plinth/mun",
+    websiteLink : "https://plinth.mukuljain.me/mun",
     detailLink : "mun-2017",
     detailTextColor : "",
     id : "mun2017"
@@ -30,7 +30,7 @@ const workList = [
     stack : "Nodejs • Expressjs • MongoDB • Sketch",
     what : "Designed and Developed Backend",
     githubLink : "https://github.com/mukuljainx/timespread",
-    websiteLink : "#",
+    websiteLink : "",
     detailLink : "timespread",
     detailTextColor : "gray29",
     id : "timeSpread"
@@ -42,7 +42,7 @@ const workList = [
     stack : "Vanilla JavaScript",
     what : "Developed",
     githubLink : "https://github.com/mukuljainx/zento",
-    websiteLink : "#",
+    websiteLink : "",
     detailLink : "zento",
     detailTextColor : "gray29",
     id : "zento"
@@ -54,7 +54,7 @@ const workList = [
     stack : "Python • AIML • PyAMIL • Bash",
     what : "Developed",
     githubLink : "https://github.com/mukuljainx/flash_an_interactive_chatbot",
-    websiteLink : "#",
+    websiteLink : "",
     detailLink : "flash",
     detailTextColor : "",
     id : "flashChat"
@@ -66,7 +66,7 @@ const workList = [
     stack : "jQuery • Materializecss • AngularJS",
     what : "Developed",
     githubLink : "https://github.com/mukuljainx/plinth2016",
-    websiteLink : "/website/plinth-2016",
+    websiteLink : "",
     detailLink : "plinth-2016",
     detailTextColor : "gray29",
     id : "plinth2016"
@@ -77,7 +77,7 @@ const workList = [
     name : "Event Graphia",
     stack : "BootStrap • JS • jQuery",
     what : "Designed and Developed",
-    githubLink : "#",
+    githubLink : "",
     websiteLink : "",
     detailLink : "event-graphia",
     detailTextColor : "",
@@ -90,7 +90,7 @@ const workList = [
     stack : "AngularJS • jQuery • Materializecss",
     what : "Designed and Developed",
     githubLink : "https://github.com/mukuljainx/EventGraphia_Dropped",
-    websiteLink : "#",
+    websiteLink : "",
     detailLink : "event-graphia-angular",
     detailTextColor : "",
     id : "egNew"
