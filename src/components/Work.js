@@ -48,6 +48,7 @@ class Work extends React.Component {
     const pathName = pathNameArray[pathNameArray.length - 1];
     let workIndex = pathToId[pathName];
     if (pathName === "work") {
+      this.initialPage = true;
       workIndex = 0;
     }
 
@@ -64,7 +65,11 @@ class Work extends React.Component {
 
   showNextWork() {
     const index = (this.state.index + 1) % workList.length;
-    this.props.history.push(workList[index].detailLink);
+    if(this.initialPage){
+      this.props.history.push("/work/"+workList[index].detailLink);
+    }else{
+      this.props.history.push(workList[index].detailLink);
+    }
     this.setState({
       work: workList[index],
       index
@@ -74,7 +79,11 @@ class Work extends React.Component {
 
   showPreviousWork() {
     const index = (((this.state.index - 1) % workListLength) + workListLength) % workListLength; // because JS modules can return negative too!
-    this.props.history.push(workList[index].detailLink);
+    if(this.initialPage){
+      this.props.history.push("/work/"+workList[index].detailLink);
+    }else{
+      this.props.history.push(workList[index].detailLink);
+    }
     this.setState({
       work: workList[index],
       index
@@ -97,6 +106,7 @@ class Work extends React.Component {
 
 Work.propTypes = {
   location: PropTypes.object,
+  history: PropTypes.object,
 };
 
 

@@ -25,7 +25,7 @@ const Showcase = ({work}) => {
           <p className="roboto">&nbsp;</p>
           <p className="roboto weight-light"><a href={work.githubLink} target="_blank">Github</a> |
             <a href={work.websiteLink} target="_blank">Website</a> |
-            <Link className="detail-link-button" to={"/work/" + work.detailLink }>View Project</Link></p>
+            <Link className="detail-link-button" to={"/work/" + work.detailLink}>View Project</Link></p>
         </div>
       </div>
     </div>

@@ -5,9 +5,11 @@ import Home from './Home';
 import About from './About';
 import Work from './Work';
 import WorkDetail from './WorkDetail';
+import Contact from './Contact';
+
 import { CSSTransitionGroup } from 'react-transition-group';
 
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route} from "react-router-dom";
 
 class App extends React.Component {
   render() {
@@ -25,6 +27,7 @@ class App extends React.Component {
             <Route exact path="/work" component={Work} />
             <Route exact path="/work/:id" component={Work}/>
             <Route path="/work/details/:id" component={WorkDetail}/>
+            <Route path="contact" component={Contact} />
           </CSSTransitionGroup>
           <Footer/>
         </div>
