@@ -2,15 +2,14 @@ import  React from 'react';
 
 import HomeInfo from './HomeInfo';
 import Modal from './Modal';
+import AnimatedWrapper from "./AnimatedWrapper";
 
-
-class Home extends React.Component {
+class HomeComponent extends React.Component {
 
   constructor(props) {
     super(props);
 
   }
-
 
   render() {
     return (
@@ -22,5 +21,5 @@ class Home extends React.Component {
   }
 }
 
-
+const Home = AnimatedWrapper(HomeComponent);
 export default Home;

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import '../styles/work-details.scss';
 
 import workDetails from './data/workDetails';
+import AnimatedWrapper from "./AnimatedWrapper";
+
 
 const pathToId = {
   "plinth-2017": "plinth2017",
@@ -16,7 +18,7 @@ const pathToId = {
   "event-graphia-angular":"egNew"
 };
 
-class WorkDetail extends React.Component {
+class WorkDetailComponent extends React.Component {
 
   constructor(props) {
     super(props);
@@ -104,9 +106,9 @@ class WorkDetail extends React.Component {
   }
 }
 
-WorkDetail.propTypes = {
+WorkDetailComponent.propTypes = {
   location: PropTypes.object,
 };
 
-
+const WorkDetail = AnimatedWrapper(WorkDetailComponent);
 export default WorkDetail;

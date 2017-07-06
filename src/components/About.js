@@ -7,9 +7,9 @@ import AboutInfo from './AboutInfo';
 
 import skills from './data/skills';
 import experiences from './data/experiences';
+import AnimatedWrapper from "./AnimatedWrapper";
 
-
-class About extends React.Component {
+class AboutComponent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -34,4 +34,5 @@ class About extends React.Component {
   }
 }
 
+const About = AnimatedWrapper(AboutComponent);
 export default About;

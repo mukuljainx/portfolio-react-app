@@ -5,6 +5,8 @@ import Showcase from './Showcase';
 import ShowcaseButton from './ShowcaseButton';
 
 import workList from './data/workList';
+// import AnimatedWrapper from "./AnimatedWrapper";
+
 const workListLength = workList.length;
 
 const pathToId = {
@@ -18,7 +20,7 @@ const pathToId = {
   "event-graphia-angular": 7
 };
 
-class Work extends React.Component {
+class WorkComponent extends React.Component {
 
   constructor(props) {
     super(props);
@@ -104,10 +106,10 @@ class Work extends React.Component {
   }
 }
 
-Work.propTypes = {
+WorkComponent.propTypes = {
   location: PropTypes.object,
   history: PropTypes.object,
 };
 
-
-export default Work;
+// const Work = AnimatedWrapper(WorkComponent);
+export default WorkComponent;
