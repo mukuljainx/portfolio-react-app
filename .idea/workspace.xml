@@ -1,7 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0e7a0e2-6301-4f15-959b-06bebc12e75c" name="Default" comment="" />
+    <list default="true" id="b0e7a0e2-6301-4f15-959b-06bebc12e75c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/About.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/AboutInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/AnimatedWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/App.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Contact.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Experience.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ExperienceContainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/HomeInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Showcase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ShowcaseButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Skill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/SkillContainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Work.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/WorkDetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/common/Footer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/common/Header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/experiences.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/skills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/workDetails.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data/workList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/app.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/component/footer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/component/header.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/fonts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/foundation.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/global.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/home.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/modal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/settings.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/work-details.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/webpack-public-path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/.yarnclean" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/analyzeBundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/chalkConfig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/distServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/fileMock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/nodeVersionCheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/srcServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/startMessage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/testCi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.dev.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.prod.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-dropped.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-dropped.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-new.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-old.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia-old.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/event-graphia.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/event-graphia.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/flash.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/flash.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/flash.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/flash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/mun.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/mun.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/mun2017.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/mun2017.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth-2016.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth-2016.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth2016.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth2016.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/plinth2017.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/plinth2017.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/timespread.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/timespread.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/timespread.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/timespread.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/zento.jpg" afterPath="$PROJECT_DIR$/dist/public/images/parent/zento.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/public/images/parent/zento.png" afterPath="$PROJECT_DIR$/dist/public/images/parent/zento.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/mukul-jain-resume.jpg" afterPath="$PROJECT_DIR$/src/media/mukul-jain-resume.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/event-graphia-new.png" afterPath="$PROJECT_DIR$/src/media/work-detail/event-graphia-new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/event-graphia-old.png" afterPath="$PROJECT_DIR$/src/media/work-detail/event-graphia-old.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/flash.png" afterPath="$PROJECT_DIR$/src/media/work-detail/flash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/mun.png" afterPath="$PROJECT_DIR$/src/media/work-detail/mun.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/plinth-2016.png" afterPath="$PROJECT_DIR$/src/media/work-detail/plinth-2016.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/plinth.png" afterPath="$PROJECT_DIR$/src/media/work-detail/plinth.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/timespread.png" afterPath="$PROJECT_DIR$/src/media/work-detail/timespread.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work-detail/zento.png" afterPath="$PROJECT_DIR$/src/media/work-detail/zento.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/event-graphia-dropped.jpg" afterPath="$PROJECT_DIR$/src/media/work/event-graphia-dropped.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/event-graphia.jpg" afterPath="$PROJECT_DIR$/src/media/work/event-graphia.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/flash.jpg" afterPath="$PROJECT_DIR$/src/media/work/flash.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/mun2017.jpg" afterPath="$PROJECT_DIR$/src/media/work/mun2017.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/plinth2016.jpg" afterPath="$PROJECT_DIR$/src/media/work/plinth2016.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/plinth2017.jpg" afterPath="$PROJECT_DIR$/src/media/work/plinth2017.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/timespread.jpg" afterPath="$PROJECT_DIR$/src/media/work/timespread.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work/zento.jpg" afterPath="$PROJECT_DIR$/src/media/work/zento.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/about.svg" afterPath="$PROJECT_DIR$/src/media/about.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/behance.svg" afterPath="$PROJECT_DIR$/src/media/behance.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/cityscape.svg" afterPath="$PROJECT_DIR$/src/media/cityscape.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/clouds.svg" afterPath="$PROJECT_DIR$/src/media/clouds.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/contact.svg" afterPath="$PROJECT_DIR$/src/media/contact.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/email.svg" afterPath="$PROJECT_DIR$/src/media/email.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/facebook.svg" afterPath="$PROJECT_DIR$/src/media/facebook.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/github.svg" afterPath="$PROJECT_DIR$/src/media/github.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/google.svg" afterPath="$PROJECT_DIR$/src/media/google.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/left.svg" afterPath="$PROJECT_DIR$/src/media/left.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/linkedin.svg" afterPath="$PROJECT_DIR$/src/media/linkedin.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/mobile.svg" afterPath="$PROJECT_DIR$/src/media/mobile.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/plane.svg" afterPath="$PROJECT_DIR$/src/media/plane.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/work.svg" afterPath="$PROJECT_DIR$/src/media/work.svg" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,11 +121,9 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="-2554">
               <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding>
-                <marker date="1499383725000" expanded="true" signature="0:1262" ph="{&quot;name&quot;: &quot;mukuljain.me-app&quot;...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +257,7 @@
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -167,9 +266,6 @@
     <layout place="tools.popupnpm">
       <scroll-view-position x="0" y="0" />
     </layout>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -202,20 +298,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jainmukul.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jainmukul.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jainmukul.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,12 +419,12 @@
       <workItem from="1499201349688" duration="970000" />
       <workItem from="1499203524960" duration="9836000" />
       <workItem from="1499274938380" duration="2089000" />
-      <workItem from="1499277421161" duration="34078000" />
+      <workItem from="1499277421161" duration="34299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49198000" />
+    <option name="totallyTimeSpent" value="49419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="6" />
@@ -685,11 +767,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="-2554">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <marker date="1499383725000" expanded="true" signature="0:1262" ph="{&quot;name&quot;: &quot;mukuljain.me-app&quot;...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
