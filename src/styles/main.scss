@@ -1,5 +1,41 @@
+html{
+  height:100%;
+}
 body{
   min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#app{
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+#app::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+
+@media (--break-lg) {
+  #app {
+    padding-top: var(--space-lg);
+  }
+  #app::after {
+    margin-top: var(--space-lg);
+  }
+}
+
+#app--full {
+  padding: 0;
+}
+#app--full::after {
+  content: none;
 }
 
 .display-none{
@@ -207,6 +243,7 @@ h2{
 
 footer{
   margin-top: 70px;
+  flex: none;
 }
 footer .cityscape{
   width : 100%;
@@ -483,3 +520,5 @@ h6{
 .work-hidden{
   display: none;
 }
+
+
