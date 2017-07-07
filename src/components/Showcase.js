@@ -17,11 +17,11 @@ const Showcase = ({work}) => {
         </div>
       </div>
       <div className="work-title-div row">
-        <div className="column">
+        <div className="column small-12 medium-7">
           <p className="roboto">{work.name}</p>
           <p className="roboto weight-light">{work.stack}</p>
         </div>
-        <div className="column shrink text-right">
+        <div className="column small-12 medium-5 text-right">
           <p className="roboto">&nbsp;</p>
           <p className="roboto weight-light">
             {work.githubLink !== "" && <span><a href={work.githubLink} target="_blank">Github</a> |</span>}

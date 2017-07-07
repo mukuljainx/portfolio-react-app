@@ -18,8 +18,8 @@ const ContactComponent = () => {
       <div className="row align-center">
         <div className="small-1 small-centered contact-seprator" style={{"margin-bottom": "40px"}}>
           {/*<!-- css handles these divs -->*/}
-          <div></div>
-          <div></div>
+          <div />
+          <div />
         </div>
       </div>
 
@@ -32,8 +32,8 @@ const ContactComponent = () => {
       <div className="row align-center">
         <div className="small-1 small-centered contact-seprator">
           {/*<!-- css handles these divs -->*/}
-          <div></div>
-          <div></div>
+          <div />
+          <div />
         </div>
       </div>
 
