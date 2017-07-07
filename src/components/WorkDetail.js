@@ -1,5 +1,6 @@
 import  React from 'react';
 import PropTypes from 'prop-types';
+import {Redirect} from 'react-router';
 
 import '../styles/work-details.scss';
 
@@ -32,9 +33,14 @@ class WorkDetailComponent extends React.Component {
 
   componentWillMount() {
     const pathNameArray = this.props.location.pathname.split('/');
-    this.setState({
-      work: workDetails[pathToId[pathNameArray[pathNameArray.length - 1]]]
-    });
+    const workId = pathToId[pathNameArray[pathNameArray.length - 1]];
+    if(workId === undefined){
+      this.redirect = true;
+    }else{
+      this.setState({
+        work: workDetails[workId]
+      });
+    }
   }
 
   getFeaturesList() {
@@ -55,6 +61,7 @@ class WorkDetailComponent extends React.Component {
     const about = this.getAboutList();
     return (
       <section >
+        {this.redirect && <Redirect to="/404"/> }
         <div className="row align-center">
           <div className="column small-12 text-center">
             <h3 className="raleway weight-medium work-detail-set-heading">{this.state.work.title}</h3>
