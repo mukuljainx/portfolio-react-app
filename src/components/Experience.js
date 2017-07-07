@@ -17,6 +17,8 @@ const Experience = ({experience}) => {
       <div className="row align-center">
         <div className="column small-10 medium-10">
           <p className="text-justify">{experience.description}</p>
+          <hr/>
+          <br/>
         </div>
       </div>
     </div>

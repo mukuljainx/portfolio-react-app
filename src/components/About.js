@@ -26,7 +26,7 @@ class AboutComponent extends React.Component {
 
         <div className="row align-center">
           <div className="column small-10 small-centered text-center">
-            <a className="hollow button resume-button roboto" href="media/documents/mukul-jain-resume.pdf" download>Resume</a>
+            <a className="hollow button resume-button roboto" href={require('../media/mukul-jain-resume.pdf')} download>Resume</a>
           </div>
         </div>
       </section>

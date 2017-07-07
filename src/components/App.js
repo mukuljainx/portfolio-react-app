@@ -9,6 +9,7 @@ import About from './About';
 import Work from './Work';
 import WorkDetail from './WorkDetail';
 import Contact from './Contact';
+import NoMatch from './NoMatch';
 
 
 const firstChild = props => {
@@ -73,8 +74,14 @@ class App extends React.Component {
 
           <Route exact path="/work" component={Work} />
           <Route exact path="/work/:id" component={Work}/>
-
-
+          <Route
+            exact
+            path="/404"
+            children={({match, ...rest}) => (
+              <TransitionGroup component={firstChild}>
+                {match && <NoMatch {...rest} />}
+              </TransitionGroup>
+            )} />
           <Footer/>
         </div>
       </BrowserRouter>
