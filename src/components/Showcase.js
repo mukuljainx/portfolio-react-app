@@ -1,16 +1,28 @@
-import  React from 'react';
-import Proptypes from 'prop-types';
-import {Link} from 'react-router-dom';
+import React from "react";
+import Proptypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const Showcase = ({work}) => {
+const Showcase = ({ work }) => {
   return (
     <div className="column small-10 medium-9 card portfolio-work">
       <div className="work-showcase-img-container">
-        <img className="work-showcase-img" src={require("../media/work/" + work.img)}
-             alt={work.altImg}/>
-        <div className={"work-showcase-img-detail text-center " + work.detailTextColor}>
-          <Link className="hollow button work-showcase-img-button"
-                to={{pathname: "/work/details/" + work.detailLink, query: work.id}}>
+        <img
+          className="work-showcase-img"
+          src={require("../media/work/" + work.img)}
+          alt={work.altImg}
+        />
+        <div
+          className={
+            "work-showcase-img-detail text-center " + work.detailTextColor
+          }
+        >
+          <Link
+            className="hollow button work-showcase-img-button"
+            to={{
+              pathname: `/work/${work.detailLink}/details/`,
+              query: work.id
+            }}
+          >
             View Project
           </Link>
           <p className="roboto weight-medium">{work.what}</p>
@@ -24,9 +36,28 @@ const Showcase = ({work}) => {
         <div className="column small-12 medium-5 text-right">
           <p className="roboto">&nbsp;</p>
           <p className="roboto weight-light">
-            {work.githubLink !== "" && <span><a href={work.githubLink} target="_blank">Github</a> |</span>}
-            {work.websiteLink !== "" && <span><a href={work.websiteLink} target="_blank">Website</a> |</span>}
-            <Link className="detail-link-button" to={"/work/details/" + work.detailLink}>View Project</Link>
+            {work.githubLink !== "" && (
+              <span>
+                <a href={work.githubLink} target="_blank">
+                  Github
+                </a>{" "}
+                |
+              </span>
+            )}
+            {work.websiteLink !== "" && (
+              <span>
+                <a href={work.websiteLink} target="_blank">
+                  Website
+                </a>{" "}
+                |
+              </span>
+            )}
+            <Link
+              className="detail-link-button"
+              to={`/work/${work.detailLink}/details/`}
+            >
+              View Project
+            </Link>
           </p>
         </div>
       </div>
@@ -37,6 +68,5 @@ const Showcase = ({work}) => {
 Showcase.propTypes = {
   work: Proptypes.object.isRequired
 };
-
 
 export default Showcase;

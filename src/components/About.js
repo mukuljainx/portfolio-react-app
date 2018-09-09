@@ -1,32 +1,33 @@
-import  React from 'react';
+import React from "react";
 
-import SkillContainer from './SkillContainer';
-import ExperienceContainer from './ExperienceContainer';
-import AboutInfo from './AboutInfo';
+import SkillContainer from "./SkillContainer";
+import ExperienceContainer from "./ExperienceContainer";
+import AboutInfo from "./AboutInfo";
 
-
-import skills from './data/skills';
-import experiences from './data/experiences';
-import AnimatedWrapper from "./AnimatedWrapper";
+import skills from "./data/skills";
+import experiences from "./data/experiences";
 
 class AboutComponent extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
     return (
       <section>
-
         <AboutInfo />
         <SkillContainer skills={skills} />
         <ExperienceContainer experiences={experiences} />
 
-
         <div className="row align-center">
           <div className="column small-10 small-centered text-center">
-            <a className="hollow button resume-button roboto" href={require('../media/mukul-jain-resume.pdf')} download>Resume</a>
+            <a
+              className="hollow button resume-button roboto"
+              href={require("../media/mukul-jain-resume.pdf")}
+              download
+            >
+              Resume
+            </a>
           </div>
         </div>
       </section>
@@ -34,5 +35,4 @@ class AboutComponent extends React.Component {
   }
 }
 
-const About = AnimatedWrapper(AboutComponent);
-export default About;
+export default AboutComponent;
