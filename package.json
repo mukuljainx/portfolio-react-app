@@ -25,23 +25,18 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
-    "production:lite" : "http-server dist/"
+    "production:lite": "http-server dist/"
   },
   "author": "Mukul Jain",
   "license": "MIT",
   "dependencies": {
-    "animated": "0.2.0",
     "foundation-sites": "6.4.1",
     "object-assign": "4.1.0",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
-    "react-redux": "5.0.5",
-    "react-router": "4.1.1",
-    "react-router-dom": "4.1.1",
-    "react-router-redux": "4.0.8",
-    "react-transition-group": "1.2.0",
-    "redux": "3.6.0",
-    "redux-thunk": "2.1.0"
+    "react": "16.5.0",
+    "react-dom": "16.5.0",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-transition-group": "2.4.0"
   },
   "devDependencies": {
     "autoprefixer": "6.5.4",

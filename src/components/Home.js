@@ -1,25 +1,21 @@
-import  React from 'react';
+import React from "react";
 
-import HomeInfo from './HomeInfo';
-import Modal from './Modal';
-import AnimatedWrapper from "./AnimatedWrapper";
+import HomeInfo from "./HomeInfo";
+import Modal from "./Modal";
 
 class HomeComponent extends React.Component {
-
   constructor(props) {
     super(props);
-
   }
 
   render() {
     return (
       <div>
-        <HomeInfo/>
-        <Modal openKnowMoreModal={this.openKnowMoreModal}/>
+        <HomeInfo />
+        {/* <Modal openKnowMoreModal={this.openKnowMoreModal} /> */}
       </div>
     );
   }
 }
 
-const Home = AnimatedWrapper(HomeComponent);
-export default Home;
+export default HomeComponent;
