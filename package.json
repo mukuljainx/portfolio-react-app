@@ -4,8 +4,7 @@
   "scripts": {
     "start": "gulp serve",
     "build": "tsc && polymer build --auto-base-path && gulp prpl-server",
-    "build:static": "tsc && polymer build && npm run copy-polyfill",
-    "copy-polyfill": "cp -r ./node_modules/@webcomponents ./build/es5-bundled/src/@webcomponents",
+    "build:static": "tsc && polymer build",
     "serve": "prpl-server --root server/build",
     "serve:static": "polymer serve --port 5000 build/es5-bundled",
     "test": "npm run test:unit && npm run test:integration",
