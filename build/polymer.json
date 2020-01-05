@@ -32,7 +32,6 @@
       "addServiceWorker": true
     }
   ],
-  "npm": true,
-  "componentDir": "node_modules/",
+  "npm": false,
   "moduleResolution": "node"
 }
