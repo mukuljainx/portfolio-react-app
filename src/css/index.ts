@@ -34,7 +34,7 @@ const getDefaultStyle = () => css`
   }
 
   img.clouds {
-    position: fixed;
+    position: absolute;
     left: calc(50% - 421px);
     top: 110px;
     z-index: -1;

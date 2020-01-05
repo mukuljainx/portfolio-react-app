@@ -44,6 +44,28 @@ let Home = class Home extends PageViewElement {
           top: -1px;
           margin: 0;
         }
+
+        .moving-plane-container {
+          position: relative;
+          height: 50px;
+          width: 100%;
+        }
+        .moving-plane {
+          top: 100px;
+          position: absolute;
+          z-index: -1;
+          animation: animate 12s linear infinite;
+          cursor: pointer;
+        }
+
+        @keyframes animate {
+          from {
+            left: calc(100% + 120px);
+          }
+          to {
+            left: -120px;
+          }
+        }
       `
         ];
     }
@@ -60,6 +82,12 @@ let Home = class Home extends PageViewElement {
           </div>
         </div>
         <mx-social-links></mx-social-links>
+        <div class="moving-plane-container">
+          <img
+            src="images/plane.svg"
+            class="moving-plane plane-animation-start"
+          />
+        </div>
       </div>
     `;
     }

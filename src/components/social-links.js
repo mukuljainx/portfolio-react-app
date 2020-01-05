@@ -43,23 +43,23 @@ let SocialLinks = class SocialLinks extends LitElement {
         return html `
       <div class="flex" style="margin-top: 16px">
         <a href="https://github.com/mukuljainx" target="_blank">
-          <img src="images/github.svg" alt="github icon" />
+          <img src="images/social/github.svg" alt="github icon" />
         </a>
 
         <a href="https://www.behance.net/mukuljainx" target="_blank">
-          <img src="images/behance.svg" alt="behance icon" />
+          <img src="images/social/behance.svg" alt="behance icon" />
         </a>
 
         <a href="https://www.linkedin.com/in/mukuljainx" target="_blank">
-          <img src="images/linkedin.svg" alt="linkedin icon" />
+          <img src="images/social/linkedin.svg" alt="linkedin icon" />
         </a>
 
         <a href="https://www.facebook.com/mukuljainx" target="_blank">
-          <img src="images/facebook.svg" alt="facebook icon" />
+          <img src="images/social/facebook.svg" alt="facebook icon" />
         </a>
 
         <a href="https://plus.google.com/+MukulJainx" target="_blank">
-          <img src="images/google.svg" alt="google icon" />
+          <img src="images/social/google.svg" alt="google icon" />
         </a>
       </div>
     `;

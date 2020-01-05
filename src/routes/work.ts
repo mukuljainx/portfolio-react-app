@@ -127,6 +127,16 @@ export class Work extends PageViewElement {
     const work = works[this._workIndex];
     return html`
       <div class="container flex v-center h-center">
+        ${works.map(
+          workImg =>
+            html`
+              <img
+                style="display: none"
+                src="images/work/${workImg.img}"
+                alt=${workImg.altImg}
+              />
+            `
+        )}
         <div class="container flex v-center h-center">
           <button style="margin-right: 32px" @click="${() => this.show(-1)}">
             <img src="images/left.svg" />
