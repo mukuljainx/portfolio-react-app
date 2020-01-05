@@ -9,12 +9,12 @@
   "icons": [
     {
       "src": "images/manifest/icon.png",
-      "sizes": "192x192",
+      "sizes": "144x124",
       "type": "image/png"
     },
     {
       "src": "images/manifest/icon.png",
-      "sizes": "512x512",
+      "sizes": "144x124",
       "type": "image/png"
     }
   ]
