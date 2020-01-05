@@ -6,7 +6,7 @@
     "dev": "gulp serve",
     "build": "tsc && polymer build --auto-base-path && gulp prpl-server",
     "build:static": "tsc && polymer build && npm run copy-polyfill",
-    "copy-polyfill": "cp ./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js ./build/es5-bundled/src/webcomponents-loader.js",
+    "copy-polyfill": "cp -r ./node_modules/@webcomponents ./build/es5-bundled/src/@webcomponents",
     "serve": "prpl-server --root server/build",
     "test": "npm run test:unit && npm run test:integration",
     "test:integration": "tsc && mocha test/integration --timeout=10000",
