@@ -52,7 +52,7 @@ export class App extends LitElement {
         .drawerOpened="${this._drawerOpened}"
       ></mx-menu>
 
-      <!-- <img class="clouds" src="images/clouds.svg" /> -->
+      <img class="clouds" src="images/clouds.svg" />
       <!-- Main content -->
       <main role="main" class="main-content">
         <mx-home class="page" ?active="${this._page === "home"}"></mx-home>
