@@ -6,7 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { LitElement, html, property, customElement } from "lit-element";
 import { setPassiveTouchGestures } from "@polymer/polymer/lib/utils/settings.js";
-import { installMediaQueryWatcher } from "pwa-helpers/media-query.js";
 // import { installOfflineWatcher } from "pwa-helpers/network.js";
 import { updateMetadata } from "pwa-helpers/metadata.js";
 import "@polymer/app-layout/app-drawer/app-drawer.js";
@@ -21,10 +20,6 @@ let App = class App extends LitElement {
         super();
         this.appTitle = "";
         this._page = "";
-        this._drawerOpened = false;
-        this.updateDrawerState = (state) => {
-            this._drawerOpened = state;
-        };
         this.updateCurrentPage = (location) => {
             this._page = getPage(location);
         };
@@ -44,12 +39,7 @@ let App = class App extends LitElement {
         return html `
       <!-- Header -->
 
-      <mx-menu
-        @humburger-click="${this._menuButtonClicked}"
-        @drawer-opened-change="${this._drawerOpenedChanged}"
-        page="${this._page}"
-        .drawerOpened="${this._drawerOpened}"
-      ></mx-menu>
+      <mx-menu page="${this._page}"></mx-menu>
 
       <img class="clouds" src="images/clouds.svg" />
       <!-- Main content -->
@@ -80,7 +70,6 @@ let App = class App extends LitElement {
         // installRouter((location: Location) => this.updateCurrentPage(location));
         routerInit(this.updateCurrentPage);
         // installOfflineWatcher(offline => (this._offline = offline));
-        installMediaQueryWatcher(`(min-width: 460px)`, () => this.updateDrawerState(false));
     }
     updated(changedProps) {
         if (changedProps.has("_page")) {
@@ -95,14 +84,6 @@ let App = class App extends LitElement {
             });
         }
     }
-    _menuButtonClicked(event) {
-        event.stopPropagation();
-        event.preventDefault();
-        this.updateDrawerState(true);
-    }
-    _drawerOpenedChanged(e) {
-        this.updateDrawerState(!!e.target.drawerOpened);
-    }
 };
 __decorate([
     property({ type: String })
@@ -110,9 +91,6 @@ __decorate([
 __decorate([
     property({ type: String })
 ], App.prototype, "_page", void 0);
-__decorate([
-    property({ type: Boolean })
-], App.prototype, "_drawerOpened", void 0);
 App = __decorate([
     customElement("mx-app")
 ], App);

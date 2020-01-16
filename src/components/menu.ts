@@ -3,6 +3,7 @@ import "@polymer/app-layout/app-drawer/app-drawer.js";
 import "@polymer/app-layout/app-header/app-header.js";
 import "@polymer/app-layout/app-scroll-effects/effects/waterfall.js";
 import "@polymer/app-layout/app-toolbar/app-toolbar.js";
+import { installMediaQueryWatcher } from "pwa-helpers/media-query.js";
 
 import { hamBurgerIcon } from "./icon";
 import { routes } from "../router";
@@ -13,7 +14,7 @@ class Menu extends LitElement {
   page: string = "";
 
   @property({ type: Boolean })
-  drawerOpened = false;
+  _drawerOpened = false;
 
   static get styles() {
     return [
@@ -105,7 +106,7 @@ class Menu extends LitElement {
           <button
             class="menu-btn"
             title="Menu"
-            @click="${this._handleHumBurgerClick}"
+            @click="${this._menuButtonClicked}"
           >
             ${hamBurgerIcon}
           </button>
@@ -127,8 +128,8 @@ class Menu extends LitElement {
 
       <!-- Drawer content -->
       <app-drawer
-        .opened="${this.drawerOpened}"
-        @opened-changed="${this._handleDrawerOpenedChange}"
+        .opened="${this._drawerOpened}"
+        @opened-changed="${this._drawerOpenedChanged}"
       >
         <nav class="drawer-list">
           ${routes.map(
@@ -147,24 +148,25 @@ class Menu extends LitElement {
     `;
   }
 
-  private _handleHumBurgerClick = (event: Event) => {
-    this.dispatchEvent(
-      new CustomEvent("humburger-click", {
-        composed: true,
-        detail: {
-          event
-        }
-      })
-    );
+  private updateDrawerState = (state: boolean) => {
+    this._drawerOpened = state;
   };
 
-  private _handleDrawerOpenedChange = () => {
-    this.dispatchEvent(
-      new CustomEvent("drawer-opened-change", {
-        composed: true
-      })
+  protected firstUpdated() {
+    installMediaQueryWatcher(`(min-width: 460px)`, () =>
+      this.updateDrawerState(false)
     );
-  };
+  }
+
+  private _menuButtonClicked(event: Event) {
+    event.stopPropagation();
+    event.preventDefault();
+    this.updateDrawerState(true);
+  }
+
+  private _drawerOpenedChanged(e: Event) {
+    this.updateDrawerState(!!(e.target as any).opened);
+  }
 }
 
 export default Menu;

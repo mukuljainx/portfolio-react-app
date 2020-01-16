@@ -9,25 +9,16 @@ import "@polymer/app-layout/app-drawer/app-drawer.js";
 import "@polymer/app-layout/app-header/app-header.js";
 import "@polymer/app-layout/app-scroll-effects/effects/waterfall.js";
 import "@polymer/app-layout/app-toolbar/app-toolbar.js";
+import { installMediaQueryWatcher } from "pwa-helpers/media-query.js";
 import { hamBurgerIcon } from "./icon";
 import { routes } from "../router";
 let Menu = class Menu extends LitElement {
     constructor() {
         super(...arguments);
         this.page = "";
-        this.drawerOpened = false;
-        this._handleHumBurgerClick = (event) => {
-            this.dispatchEvent(new CustomEvent("humburger-click", {
-                composed: true,
-                detail: {
-                    event
-                }
-            }));
-        };
-        this._handleDrawerOpenedChange = () => {
-            this.dispatchEvent(new CustomEvent("drawer-opened-change", {
-                composed: true
-            }));
+        this._drawerOpened = false;
+        this.updateDrawerState = (state) => {
+            this._drawerOpened = state;
         };
     }
     static get styles() {
@@ -119,7 +110,7 @@ let Menu = class Menu extends LitElement {
           <button
             class="menu-btn"
             title="Menu"
-            @click="${this._handleHumBurgerClick}"
+            @click="${this._menuButtonClicked}"
           >
             ${hamBurgerIcon}
           </button>
@@ -138,8 +129,8 @@ let Menu = class Menu extends LitElement {
 
       <!-- Drawer content -->
       <app-drawer
-        .opened="${this.drawerOpened}"
-        @opened-changed="${this._handleDrawerOpenedChange}"
+        .opened="${this._drawerOpened}"
+        @opened-changed="${this._drawerOpenedChanged}"
       >
         <nav class="drawer-list">
           ${routes.map(route => html `
@@ -154,13 +145,24 @@ let Menu = class Menu extends LitElement {
       </app-drawer>
     `;
     }
+    firstUpdated() {
+        installMediaQueryWatcher(`(min-width: 460px)`, () => this.updateDrawerState(false));
+    }
+    _menuButtonClicked(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        this.updateDrawerState(true);
+    }
+    _drawerOpenedChanged(e) {
+        this.updateDrawerState(!!e.target.opened);
+    }
 };
 __decorate([
     property({ type: String })
 ], Menu.prototype, "page", void 0);
 __decorate([
     property({ type: Boolean })
-], Menu.prototype, "drawerOpened", void 0);
+], Menu.prototype, "_drawerOpened", void 0);
 Menu = __decorate([
     customElement("mx-menu")
 ], Menu);

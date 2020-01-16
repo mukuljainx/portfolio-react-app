@@ -23,6 +23,10 @@ const getDefaultStyle = () => css `
     --app-drawer-selected-color: #78909c;
   }
 
+  mx-menu {
+    z-index: 9;
+  }
+
   mx-app {
   }
 
@@ -33,7 +37,7 @@ const getDefaultStyle = () => css `
   }
 
   img.clouds {
-    position: absolute;
+    position: fixed;
     left: calc(50% - 421px);
     top: 110px;
     z-index: -1;

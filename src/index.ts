@@ -6,7 +6,6 @@ import {
   customElement
 } from "lit-element";
 import { setPassiveTouchGestures } from "@polymer/polymer/lib/utils/settings.js";
-import { installMediaQueryWatcher } from "pwa-helpers/media-query.js";
 // import { installOfflineWatcher } from "pwa-helpers/network.js";
 import { updateMetadata } from "pwa-helpers/metadata.js";
 
@@ -27,9 +26,6 @@ export class App extends LitElement {
   @property({ type: String })
   private _page = "";
 
-  @property({ type: Boolean })
-  private _drawerOpened = false;
-
   // @property({ type: Boolean })
   // private _snackbarOpened = false;
 
@@ -45,12 +41,7 @@ export class App extends LitElement {
     return html`
       <!-- Header -->
 
-      <mx-menu
-        @humburger-click="${this._menuButtonClicked}"
-        @drawer-opened-change="${this._drawerOpenedChanged}"
-        page="${this._page}"
-        .drawerOpened="${this._drawerOpened}"
-      ></mx-menu>
+      <mx-menu page="${this._page}"></mx-menu>
 
       <img class="clouds" src="images/clouds.svg" />
       <!-- Main content -->
@@ -85,17 +76,10 @@ export class App extends LitElement {
     setPassiveTouchGestures(true);
   }
 
-  private updateDrawerState = (state: boolean) => {
-    this._drawerOpened = state;
-  };
-
   protected firstUpdated() {
     // installRouter((location: Location) => this.updateCurrentPage(location));
     routerInit(this.updateCurrentPage);
     // installOfflineWatcher(offline => (this._offline = offline));
-    installMediaQueryWatcher(`(min-width: 460px)`, () =>
-      this.updateDrawerState(false)
-    );
   }
 
   protected updated(changedProps: PropertyValues) {
@@ -116,14 +100,4 @@ export class App extends LitElement {
   private updateCurrentPage = (location: Location) => {
     this._page = getPage(location);
   };
-
-  private _menuButtonClicked(event: Event) {
-    event.stopPropagation();
-    event.preventDefault();
-    this.updateDrawerState(true);
-  }
-
-  private _drawerOpenedChanged(e: Event) {
-    this.updateDrawerState(!!(e.target as any).drawerOpened);
-  }
 }

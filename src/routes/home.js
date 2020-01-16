@@ -45,14 +45,11 @@ let Home = class Home extends PageViewElement {
           margin: 0;
         }
 
-        .moving-plane-container {
-          position: relative;
-          height: 50px;
-          width: 100%;
-        }
         .moving-plane {
-          top: 100px;
-          position: absolute;
+          height: 7%;
+          bottom: 14%;
+          bottom: 100px;
+          position: fixed;
           z-index: -1;
           animation: animate 12s linear infinite;
           cursor: pointer;
@@ -64,6 +61,30 @@ let Home = class Home extends PageViewElement {
           }
           to {
             left: -120px;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .moving-plane {
+            bottom: 60px;
+          }
+          .intro-head {
+            transform: scale(0.7);
+          }
+        }
+
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 60px;
+            line-height: 60px;
+          }
+          h4 {
+            font-size: 32px;
+            line-height: 32px;
+          }
+          p {
+            font-size: 17px;
+            line-height: 17px;
           }
         }
       `

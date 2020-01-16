@@ -121,6 +121,15 @@ let Work = class Work extends PageViewElement {
           transform: rotate(180deg);
           margin-left: 32px;
         }
+
+        @media (max-width: 640px) {
+          button {
+            font-size: 20px;
+          }
+        }
+
+        @media (max-width: 480px) {
+        }
       `
         ];
     }
