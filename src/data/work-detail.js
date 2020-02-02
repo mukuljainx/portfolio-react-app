@@ -1,4 +1,26 @@
 const workDetail = {
+    "smart-grid": {
+        title: "Smart Grid",
+        jobType: "Developed",
+        mainImg: "smart-grid.png",
+        altMainImg: "Smart Grid",
+        website: "https://mukuljainx.github.io/smart-grid/",
+        github: "https://github.com/mukuljainx/smart-grid",
+        about: [
+            "There are penality of React tables, everyone got its pros and cons but they all are pretty heavy, they all have almost the same features and few outstanding features and then there is ag-grid full of awesome feature but it is pretty heavy half of our vendor bundle was ag-grid ~ 200kb.",
+            "There was no other table with pinning support so well, every one which I tried scroll went out of sync for large number of rows.",
+            "Smart Grid as I wrote it myself its only about 850 bytes which supports pinned columns, virtualization and expensive styling support. To know how it works please visit my blog."
+        ],
+        frontEndTech: "ReactJS • TypeScript",
+        features: [
+            "Pin Columns.",
+            "Virtualization, Only Renders what you see, no more heavy lifting to the DOM. ",
+            "Easily Styable, wrap with styled-comoponent.",
+            "Each row, different styling, pass className property in data if any row needs custom style.",
+            "Light, just ~826 bytes (gzipped)"
+        ],
+        shadow: false
+    },
     "budget-book": {
         title: "Budget Book",
         jobType: "Design and Developed",

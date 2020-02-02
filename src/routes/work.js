@@ -31,8 +31,11 @@ let Work = class Work extends PageViewElement {
           width: 100%;
         }
 
+        .flex-column {
+          flex-direction: column;
+        }
+
         .showcase {
-          /* height: 70%; */
           width: 60%;
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
           background: #fff;
@@ -122,33 +125,62 @@ let Work = class Work extends PageViewElement {
           margin-left: 32px;
         }
 
-        @media (max-width: 640px) {
-          button {
-            font-size: 20px;
-          }
+        h2 {
+          display: none;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
+          h2 {
+            display: block;
+          }
+
+          button,
+          .not-mobile {
+            display: none;
+          }
+
+          .container {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .showcase {
+            width: calc(100% - 32px);
+            margin-bottom: 32px;
+          }
+
+          .flex-column {
+            padding-top: 48px;
+          }
+
+          h2 {
+            margin: 0;
+          }
         }
       `
         ];
     }
     render() {
         const work = works[this._workIndex];
+        const isMobile = window.innerWidth <= 640;
         return html `
-      <div class="container flex v-center h-center">
-        ${works.map(workImg => html `
-              <img
-                style="display: none"
-                src="images/work/${workImg.img}"
-                alt=${workImg.altImg}
-              />
-            `)}
+      <div class="container flex v-center h-center flex-column">
+        <h2>Work</h2>
+        <!-- for preloading of images -->
+        ${!isMobile
+            ? works.map(workImg => html `
+                  <img
+                    style="display: none"
+                    src="images/work/${workImg.img}"
+                    alt=${workImg.altImg}
+                  />
+                `)
+            : null}
         <div class="container flex v-center h-center">
           <button style="margin-right: 32px" @click="${() => this.show(-1)}">
             <img src="images/left.svg" />
           </button>
-          <div class="showcase">
+          <div class="showcase not-mobile">
             <div class="showcase-image">
               <img src="images/work/${work.img}" alt=${work.altImg} />
               <div
@@ -182,6 +214,52 @@ let Work = class Work extends PageViewElement {
               </p>
             </div>
           </div>
+
+          <!-- for mobile -->
+          ${isMobile
+            ? works.map(work => html `
+                    <div class="showcase">
+                      <div class="showcase-image">
+                        <img src="images/work/${work.img}" alt=${work.altImg} />
+                        <div
+                          class="showcase-image-hover flex v-center h-center ${work.detailTextColor}"
+                        >
+                          <a
+                            class="showcase-image-hover-a"
+                            href="/work/${work.detailLink}"
+                          >
+                            View Project
+                          </a>
+                          <h4 class="showcase-image-hover-h4">${work.what}</h4>
+                        </div>
+                      </div>
+                      <div class="detail">
+                        <h3>${work.name}</h3>
+                        <p>
+                          <span>${work.stack}</span>
+                          <span>
+                            ${work.websiteLink &&
+                html `
+                                <a target="_blank" href=${work.websiteLink}
+                                  >Live Demo</a
+                                >
+                                |
+                              `}
+                            ${work.githubLink &&
+                html `
+                                <a target="_blank" href=${work.githubLink}
+                                  >Github</a
+                                >
+                                |
+                              `}
+                            <a href="/work/${work.detailLink}">Details</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  `)
+            : null}
+
           <button class="rotate-180" @click="${() => this.show(1)}">
             <img src="images/left.svg" />
           </button>

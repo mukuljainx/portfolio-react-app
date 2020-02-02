@@ -105,23 +105,45 @@ let About = class About extends PageViewElement {
           transform: translate(-50%, -50%);
           position: absolute;
         }
+        a {
+          text-decoration: none;
+          color: #0043e8;
+        }
+        li:not(:last-child) {
+          margin-bottom: 4px;
+        }
       `
         ];
     }
     render() {
-        const dob = new Date("02/06/1996");
-        const today = new Date();
         return html `
       <div class="container">
         <h3>Introduction</h3>
         <p>
-          I am
-          ${Math.floor((today.getTime() - dob.getTime()) / (1000 * 60 * 60 * 24 * 365))}
-          old Full-Stack Web Developer, passionate about the Web with a B.Tech
-          degree in Computer Science and Engineering from The LNM Institute of
-          Information Technology, Jaipur, India. I love building things, I am a
-          design enthusiast, having some designing experience. A Music addict,
-          foodie and hard worker.
+          I am a Full-Stack Web Developer, passionate about the Web with a
+          B.Tech degree in Computer Science and Engineering from The LNM
+          Institute of Information Technology, Jaipur, India. I love building
+          things, I am a design enthusiast, having some designing experience. A
+          Music addict, foodie and hard worker.
+        </p>
+        <p>
+          Some of my favourite work include
+          <ul>
+            <li>
+              <a href="/work/smart-grid">Smart Grid</a
+              >: Created to replace ag-grid in one of the Innovaccer's App to
+              reduce bundle size (50% reduction).
+            </li>
+            <li>
+              <a href="/work/budget-book">Budget Book</a
+              >: A expense management app, created to manage my own expense
+              after trying all other awesome apps
+            </li>
+            <li>
+              <a href="/work/plinth-2017">Plinth 2017</a
+              >: A platform through which various participant view information regarding various events and can register and pay for the event. This was one of the very few college fest website with complete event management at the time.
+            </li>
+          </ul>
         </p>
 
         <h3>Skills</h3>

@@ -1,9 +1,21 @@
 const work = [
   {
+    img: "smart-grid.png",
+    altImg: "Smart Grid",
+    name: "Smart Grid",
+    stack: "ReactJS • TypeScript",
+    what: "Developed",
+    websiteLink: "https://mukuljainx.github.io/smart-grid/",
+    githubLink: "https://github.com/mukuljainx/smart-grid",
+    detailLink: "smart-grid",
+    detailTextColor: "dark",
+    id: "smart-grid"
+  },
+  {
     img: "budget-book.png",
     altImg: "Budget Book | Home Page",
     name: "Budget Book",
-    stack: "ReactJS • Redux • NodeJS • PostgreSQL",
+    stack: "ReactJS • TypeScript • Redux • NodeJS • PostgreSQL",
     what: "Designed and Developed",
     websiteLink: "http://beta.budgetbook.io/",
     detailLink: "budget-book",

@@ -6,12 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { html, customElement, css } from "lit-element";
 import { PageViewElement } from "../components/page-view-element";
-import "../components/social-links";
-import sharedStyle from "../css/shared-styles";
-let Home = class Home extends PageViewElement {
+let About = class About extends PageViewElement {
     static get styles() {
         return [
-            sharedStyle,
             css `
         :host {
           height: 100%;
@@ -19,37 +16,20 @@ let Home = class Home extends PageViewElement {
         }
 
         .container {
+          width: 100%;
           height: 100%;
-          flex-direction: column;
-        }
-
-        h1 {
-          font-size: 102px;
-          line-height: 102px;
-          margin: 0;
-          font-weight: 400;
-        }
-
-        h4 {
-          font-size: 52px;
-          line-height: 52px;
-          margin: 0;
-          top: -3px;
-          font-weight: 400;
-        }
-
-        p {
-          font-size: 27px;
-          line-height: 27px;
-          top: -1px;
-          margin: 0;
+          padding: 0 16px;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .moving-plane {
           height: 7%;
           bottom: 14%;
           bottom: 100px;
-          position: fixed;
+          position: absolute;
           z-index: -1;
           animation: animate 12s linear infinite;
           cursor: pointer;
@@ -68,41 +48,18 @@ let Home = class Home extends PageViewElement {
           .moving-plane {
             bottom: 60px;
           }
-          .intro-head {
-            transform: scale(1);
-          }
-        }
-
-        @media (max-width: 480px) {
-          h1 {
-            font-size: 60px;
-            line-height: 60px;
-          }
-          h4 {
-            font-size: 32px;
-            line-height: 32px;
-          }
-          p {
-            font-size: 17px;
-            line-height: 17px;
-          }
         }
       `
         ];
     }
+    constructor() {
+        super();
+        location.replace("https://medium.com/@mukuljainx");
+    }
     render() {
         return html `
-      <div class="container flex v-center h-center">
-        <div class="intro-head flex v-center h-center">
-          <div>
-            <h1>HI</h1>
-          </div>
-          <div>
-            <h4>I'M Mukul Jain</h4>
-            <p>Full Stack Web Developer</p>
-          </div>
-        </div>
-        <mx-social-links></mx-social-links>
+      <div class="container">
+        <h4>Redirecting to Medium</h4>
         <div class="moving-plane-container">
           <img
             src="images/plane.svg"
@@ -113,7 +70,7 @@ let Home = class Home extends PageViewElement {
     `;
     }
 };
-Home = __decorate([
-    customElement("mx-home")
-], Home);
-export { Home };
+About = __decorate([
+    customElement("mx-blog")
+], About);
+export { About };

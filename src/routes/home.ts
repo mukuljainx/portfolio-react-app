@@ -66,7 +66,7 @@ export class Home extends PageViewElement {
             bottom: 60px;
           }
           .intro-head {
-            transform: scale(0.7);
+            transform: scale(1);
           }
         }
 

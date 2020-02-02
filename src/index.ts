@@ -57,6 +57,10 @@ export class App extends LitElement {
           class="page"
           ?active="${this._page === "contact"}"
         ></mx-contact>
+        <mx-blog
+          class="page"
+          ?active="${this._page === "blog"}"
+        ></mx-contact>
         <mx-error-404
           class="page"
           ?active="${this._page === "Error404"}"

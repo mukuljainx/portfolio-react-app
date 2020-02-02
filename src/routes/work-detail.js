@@ -12,16 +12,22 @@ import WrokDetailData from "../data/work-detail";
 let WrokDetail = class WrokDetail extends PageViewElement {
     constructor() {
         super();
-        const workId = location.pathname
-            .split("/")
-            .pop();
-        this._work = WrokDetailData[workId];
-        const pageTitle = "Mukul Jain - " + this._work.title;
-        updateMetadata({
-            title: pageTitle,
-            description: pageTitle
-            // This object also takes an image property, that points to an img src.
-        });
+        this.getCurrentWork = () => {
+            const workId = location.pathname
+                .split("/")
+                .pop();
+            const work = WrokDetailData[workId];
+            if (!work) {
+                return;
+            }
+            const pageTitle = "Mukul Jain - " + work.title;
+            updateMetadata({
+                title: pageTitle,
+                description: pageTitle
+                // This object also takes an image property, that points to an img src.
+            });
+            return work;
+        };
     }
     static get styles() {
         return [
@@ -62,6 +68,7 @@ let WrokDetail = class WrokDetail extends PageViewElement {
         img {
           margin: 32px 0;
           max-height: 400px;
+          max-width: 90%;
         }
 
         img.shadow {
@@ -101,14 +108,13 @@ let WrokDetail = class WrokDetail extends PageViewElement {
         ];
     }
     render() {
-        // const workId = location.pathname
-        //   .split("/")
-        //   .pop() as keyof typeof WrokDetailData;
-        // const work = WrokDetailData[workId];
-        const work = this._work;
+        const work = this.getCurrentWork();
         if (!work) {
             return html `
-        <p>Hmm, Intresting name</p>
+        <p style="padding: 16px;">
+          Hmm, Intresting app name, ping me at jainmukul1996@gmail.com, let's go
+          through it.
+        </p>
       `;
         }
         return html `

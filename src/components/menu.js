@@ -40,6 +40,11 @@ let Menu = class Menu extends LitElement {
 
         .toolbar-top {
           background-color: var(--app-header-background-color);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          box-sizing: border-box;
+          width: 100%;
         }
 
         .toolbar-list {
@@ -107,6 +112,11 @@ let Menu = class Menu extends LitElement {
         return html `
       <app-header condenses reveals effects="waterfall">
         <app-toolbar class="toolbar-top">
+          <p style="visibility: ${this.page === "home" ? "hidden" : "block"}">
+            <img style="height:16px" src="/images/manifest/icon.png" />
+            Mukul Jain
+          </p>
+
           <button
             class="menu-btn"
             title="Menu"

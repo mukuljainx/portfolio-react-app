@@ -4,7 +4,8 @@ const routes = [
     { name: "home", route: "", displayName: "Home" },
     { name: "about", route: "about", displayName: "About" },
     { name: "work", route: "work", displayName: "Work" },
-    { name: "contact", route: "contact", displayName: "Contact" }
+    { name: "contact", route: "contact", displayName: "Contact" },
+    { name: "blog", route: "blog", displayName: "Blog" }
 ];
 const getPage = (location) => {
     const locationArray = location.pathname.split("/");
@@ -25,6 +26,10 @@ const getPage = (location) => {
             }
             case "contact": {
                 import("./routes/contact");
+                return page;
+            }
+            case "blog": {
+                import("./routes/blog");
                 return page;
             }
         }
