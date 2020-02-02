@@ -6,7 +6,8 @@ const routes = [
   { name: "home", route: "", displayName: "Home" },
   { name: "about", route: "about", displayName: "About" },
   { name: "work", route: "work", displayName: "Work" },
-  { name: "contact", route: "contact", displayName: "Contact" }
+  { name: "contact", route: "contact", displayName: "Contact" },
+  { name: "blog", route: "blog", displayName: "Blog" }
 ] as const;
 
 type PageNameType = typeof routes[number]["name"] | "workDetail";
@@ -31,6 +32,10 @@ const getPage = (location: Location) => {
       }
       case "contact": {
         import("./routes/contact");
+        return page;
+      }
+      case "blog": {
+        import("./routes/blog");
         return page;
       }
     }
