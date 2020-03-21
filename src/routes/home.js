@@ -103,6 +103,18 @@ let Home = class Home extends PageViewElement {
           </div>
         </div>
         <mx-social-links></mx-social-links>
+        <div style="margin-top: 32px">
+          <a
+            href="https://www.producthunt.com/posts/budget-book?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-budget-book"
+            target="_blank"
+            ><img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=188983&theme=light"
+              alt="Budget Book - Manage • Save • Grow | Product Hunt Embed"
+              style="width: 250px; height: 54px;"
+              width="250px"
+              height="54px"
+          /></a>
+        </div>
         <div class="moving-plane-container">
           <img
             src="images/plane.svg"
