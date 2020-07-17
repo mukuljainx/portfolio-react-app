@@ -1,5 +1,28 @@
 const work = [
   {
+    img: "budget-book.png",
+    altImg: "Budget Book | Home Page",
+    name: "Budget Book",
+    stack: "ReactJS • TypeScript • Redux • NodeJS • PostgreSQL",
+    what: "Designed and Developed",
+    websiteLink: "http://beta.budgetbook.io/",
+    detailLink: "budget-book",
+    detailTextColor: "dark",
+    id: "budget-book",
+  },
+  {
+    img: "mokku.png",
+    altImg: "Mokku",
+    name: "Mokku",
+    stack: "Chrome Extension • ReactJS • TypeScript",
+    what: "Developed",
+    websiteLink: "https://mukuljainx.github.io/Mokku/#/",
+    githubLink: "https://github.com/mukuljainx/mokku",
+    detailLink: "mokku",
+    detailTextColor: "dark",
+    id: "mokku",
+  },
+  {
     img: "smart-grid.png",
     altImg: "Smart Grid",
     name: "Smart Grid",
@@ -9,18 +32,7 @@ const work = [
     githubLink: "https://github.com/mukuljainx/smart-grid",
     detailLink: "smart-grid",
     detailTextColor: "dark",
-    id: "smart-grid"
-  },
-  {
-    img: "budget-book.png",
-    altImg: "Budget Book | Home Page",
-    name: "Budget Book",
-    stack: "ReactJS • TypeScript • Redux • NodeJS • PostgreSQL",
-    what: "Designed and Developed",
-    websiteLink: "http://beta.budgetbook.io/",
-    detailLink: "budget-book",
-    detailTextColor: "dark",
-    id: "budget-book"
+    id: "smart-grid",
   },
   {
     img: "plinth2017.jpg",
@@ -32,7 +44,7 @@ const work = [
     websiteLink: "",
     detailLink: "plinth-2017",
     detailTextColor: "",
-    id: "plinth2017"
+    id: "plinth2017",
   },
   {
     img: "mun2017.jpg",
@@ -45,7 +57,7 @@ const work = [
     websiteLink: "",
     detailLink: "mun-2017",
     detailTextColor: "",
-    id: "mun2017"
+    id: "mun2017",
   },
   {
     img: "timespread.jpg",
@@ -57,7 +69,7 @@ const work = [
     websiteLink: "",
     detailLink: "timespread",
     detailTextColor: "dark",
-    id: "timeSpread"
+    id: "timeSpread",
   },
   {
     img: "zento.jpg",
@@ -69,7 +81,7 @@ const work = [
     websiteLink: "",
     detailLink: "zento",
     detailTextColor: "dark",
-    id: "zento"
+    id: "zento",
   },
   {
     img: "flash.jpg",
@@ -81,7 +93,7 @@ const work = [
     websiteLink: "",
     detailLink: "flash",
     detailTextColor: "",
-    id: "flashChat"
+    id: "flashChat",
   },
   {
     img: "plinth2016.jpg",
@@ -93,7 +105,7 @@ const work = [
     websiteLink: "",
     detailLink: "plinth-2016",
     detailTextColor: "dark",
-    id: "plinth2016"
+    id: "plinth2016",
   },
   {
     img: "event-graphia.jpg",
@@ -105,7 +117,7 @@ const work = [
     websiteLink: "",
     detailLink: "event-graphia",
     detailTextColor: "",
-    id: "egOld"
+    id: "egOld",
   },
   {
     img: "event-graphia-dropped.jpg",
@@ -117,8 +129,8 @@ const work = [
     websiteLink: "",
     detailLink: "event-graphia-angular",
     detailTextColor: "",
-    id: "egNew"
-  }
+    id: "egNew",
+  },
 ];
 
 export type IWork = typeof work;
