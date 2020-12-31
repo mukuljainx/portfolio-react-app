@@ -1,16 +1,5 @@
 const work = [
   {
-    img: "budget-book.png",
-    altImg: "Budget Book | Home Page",
-    name: "Budget Book",
-    stack: "ReactJS • TypeScript • Redux • NodeJS • PostgreSQL",
-    what: "Designed and Developed",
-    websiteLink: "http://beta.budgetbook.io/",
-    detailLink: "budget-book",
-    detailTextColor: "dark",
-    id: "budget-book",
-  },
-  {
     img: "mokku.png",
     altImg: "Mokku",
     name: "Mokku",
@@ -21,6 +10,17 @@ const work = [
     detailLink: "mokku",
     detailTextColor: "dark",
     id: "mokku",
+  },
+  {
+    img: "budget-book.png",
+    altImg: "Budget Book | Home Page",
+    name: "Budget Book",
+    stack: "ReactJS • TypeScript • Redux • NodeJS • PostgreSQL",
+    what: "Designed and Developed",
+    websiteLink: "http://beta.budgetbook.io/",
+    detailLink: "budget-book",
+    detailTextColor: "dark",
+    id: "budget-book",
   },
   {
     img: "smart-grid.png",

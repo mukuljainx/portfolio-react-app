@@ -87,7 +87,7 @@ let Home = class Home extends PageViewElement {
             line-height: 17px;
           }
         }
-      `
+      `,
         ];
     }
     render() {
@@ -105,14 +105,14 @@ let Home = class Home extends PageViewElement {
         <mx-social-links></mx-social-links>
         <div style="margin-top: 32px">
           <a
-            href="https://www.producthunt.com/posts/budget-book?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-budget-book"
+            href="https://www.producthunt.com/posts/mokku-api-mocker?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mokku-api-mocker"
             target="_blank"
             ><img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=188983&theme=light"
-              alt="Budget Book - Manage • Save • Grow | Product Hunt Embed"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=211345&theme=light"
+              alt="Mokku: API Mocker - Mock API calls for seamless development and testing | Product Hunt"
               style="width: 250px; height: 54px;"
-              width="250px"
-              height="54px"
+              width="250"
+              height="54"
           /></a>
         </div>
         <div class="moving-plane-container">
