@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="webite-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="contactus" transform="translate(-591.000000, -322.000000)" fill="#000000">
+            <g id="email" transform="translate(591.000000, 322.000000)">
+                <path d="M16.4862798,1.79069317 L16.4862798,0.942353644 L0.785060945,0.942353644 L0.785060945,1.79069317 L8.63567039,8.16369834 L16.4862798,1.79069317 L16.4862798,1.79069317 Z M16.4862798,2.83544284 L16.4862798,11.9917215 L11.5888004,6.80353784 L16.4862798,2.83544284 L16.4862798,2.83544284 Z M15.9313941,12.5797491 L1.34280592,12.5797491 L6.31309507,7.3144328 L8.63567039,9.19625784 L10.9598653,7.31312027 L15.9313941,12.5797491 L15.9313941,12.5797491 Z M0.785060945,11.9947505 L0.785060945,2.83544284 L5.68416076,6.80485037 L0.785060945,11.9947505 L0.785060945,11.9947505 Z M0,0.111111111 L17.2713408,0.111111111 L17.2713408,13.4109916 L0,13.4109916 L0,0.111111111 L0,0.111111111 Z" id="common-email-envelope-mail-outline-stroke"></path>
+            </g>
+        </g>
+    </g>
+</svg>
