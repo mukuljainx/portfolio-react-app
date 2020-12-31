@@ -29,11 +29,9 @@
         "minify": true
       },
       "bundle": true,
-      "addServiceWorker": true,
-      "basePath": true
+      "addServiceWorker": true
     }
   ],
-  "autoBasePath": true,
   "npm": false,
   "moduleResolution": "node"
 }
